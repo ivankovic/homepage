@@ -1,0 +1,18 @@
+    <hr>
+    <footer>
+    {{ template "partials/copyright.html" . }}
+    <p>
+      This is my personal blog. The views expressed on these pages are mine alone and not those of my employer.<br/>
+      It is also a snapshot of my views in time. The inevitable progress of technology will some day make these views obsolete.<br/>
+    </p>
+    <p>
+        <a href="/blog/index.xml"><img src="{{ .Site.BaseURL }}/img/feed-icon.svg" style="width: 16px" />Subscribe</a>
+    </p>
+    </footer>
+
+    {{ template "partials/contact.html" . }}
+
+    {{ template "partials/ga.html" . }}
+
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markos on Marko Ivankovic and Marina Celar Ivankovic - personal website</title>
+    <link>https://www.ivankovic.me/marko/</link>
+    <description>Recent content in Markos on Marko Ivankovic and Marina Celar Ivankovic - personal website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Jul 2014 20:24:51 +0000</lastBuildDate>
+    <atom:link href="https://www.ivankovic.me/marko/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Marko Ivankovic &gt; Contact</title>
+      <link>https://www.ivankovic.me/marko/contact/</link>
+      <pubDate>Thu, 10 Jul 2014 20:24:51 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/marko/contact/</guid>
+      <description>&lt;div itemscope itemtype=&#34;http://schema.org/Person&#34;&gt;
+
+&lt;h1&gt;Contact information&lt;/h1&gt;
+
+&lt;p&gt;The following contact information can be used to reach &lt;span itemprop=&#34;name&#34;&gt;Marko Ivanković&lt;/span&gt;:&lt;p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Main contact: &lt;span class=&#34;email&#34; itemprop=&#34;email&#34;&gt;marko [at] ivankovic (dot) me&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://keybase.io/ivankovic&#34;&gt;Keybase.io profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://github.com/ivankovic&#34;&gt;GitHub profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://twitter.com/ivankovicme&#34;&gt;Twitter profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://www.google.com/+MarkoIvankovic/about&#34;&gt;Google Plus profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/ivankovicmarko&#34;&gt;LinkedIn profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is the canonical list of my profiles. Any other profile is either another person with the same name or a fake.&lt;/p&gt;
+
+&lt;p&gt;My public key is: &lt;b&gt;5307 38FD 7A87 E6E8 9101 BBBE 72FE C3F6 4C87 DF37&lt;/b&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Marko Ivankovic &gt; Resume</title>
+      <link>https://www.ivankovic.me/marko/resume/</link>
+      <pubDate>Wed, 09 Jul 2014 20:40:05 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/marko/resume/</guid>
+      <description>&lt;p&gt;&lt;div itemscope itemtype=&#34;http://schema.org/Person&#34;&gt;
+  &lt;h1&gt;
+    &lt;span itemprop=&#34;name&#34;&gt;Marko Ivanković&lt;/span&gt;
+    - Resume
+  &lt;/h1&gt;
+&lt;p&gt;Last updated: October 14th, 2014.&lt;/p&gt;
+&lt;h2&gt;Work&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;span itemprop=&#34;worksFor&#34; itemscope itemtype=&#34;http://schema.org/Organization&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Google&lt;/span&gt;
+    &lt;/span&gt;
+    -
+    &lt;span itemprop=&#34;jobTitle&#34;&gt;Senior Software Engineer, Tools and Infrastructure&lt;/span&gt;
+    (2014 - present)
+  &lt;/li&gt;
+  &lt;li&gt;Google - Software Engineer, Tools and Infrastructure (2011 - 2014)&lt;/li&gt;
+  &lt;li&gt;Google - Software Engineer, Tools and Infrastructure (2010)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Publications and presentations&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Presentation: &lt;a href=&#34;http://swisstestingday.ch/&#34;&gt;Swiss Testing Day&lt;/a&gt;
+  - &lt;a href=&#34;http://swisstestingday.ch/analyzing-statement-coverage-at-google/&#34;&gt;
+  Analyzing statement coverage at Google&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Presentation: &lt;a href=&#34;http://2014.webcampzg.org/&#34;&gt;WebCamp Zagreb 2014&lt;/a&gt;
+  - &lt;a href=&#34;http://2014.webcampzg.org/speakers/marko-ivankovic-measuring-test-coverage-at-google/&#34;&gt;
+  Measuring test coverage at Google&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Paper: &lt;a href=&#34;http://arxiv.org/abs/1108.4770&#34;&gt;
+  A Classification Framework for Web Browser Cross-Context Communication (arXiv)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Paper: &lt;a href=&#34;http://bib.irb.hr/datoteka/510394.pmrpc_07.pdf&#34;&gt;
+  Cross-context web browser communication with unified communication models and context types (MIPRO)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Open source&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&#34;https://github.com/ivankovic/go-config&#34;&gt;go-config&lt;/a&gt;
+  - Go library for text file based configuration.
+  &lt;li&gt;&lt;a href=&#34;https://github.com/ivankovic/go-competitive&#34;&gt;go-competitive&lt;/a&gt;
+  - a collection of libraries that make Go easire to use in programming competitions.
+  &lt;li&gt;&lt;a href=&#34;https://github.com/izuzak/pmrpc&#34;&gt;PMRPC&lt;/a&gt;
+  - HTML5 inter-window and web workers RPC and publish-subscribe communication library&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Teaching and volounteering&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&#34;http://hsin.hr/coci/&#34;&gt;Croatian Open Competition in Informatics&lt;/a&gt;
+   - Scientific Committee (2007 - 2011)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;http://ioi2007.hsin.hr/index.php?page=organizers&#34;&gt;IOI 2007&lt;/a&gt;
+   - Evaluation Committee&lt;/li&gt;
+  &lt;li&gt;Croatian IOI track competitions - Scientific/Evaluation Committee (2007 - 2011)&lt;/li&gt;
+  &lt;li&gt;TA on several BSc level classes - University of Zagreb (2010 - 2011)&lt;/li&gt;
+  &lt;li&gt;Numerous summer camp courses, one day workshops, high school and elementary school lectures and mentorship of contestants (2006 - 2012)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Education&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;BSc in Computer Science -
+  &lt;span itemprop=&#34;alumniOf&#34; itemscope itemtype=&#34;http://schema.org/Organization&#34;&gt;
+    &lt;span itemprop=&#34;name&#34;&gt;University of Zagreb&lt;/span&gt;
+    &lt;a href=&#34;http://unizg.hr&#34; itemprop=&#34;sameAs&#34;&gt;&lt;a href=&#34;http://unizg.hr&#34;&gt;http://unizg.hr&lt;/a&gt;&lt;/a&gt;
+  &lt;/span&gt;
+  (2007 - 2010)&lt;br/&gt;
+  Thesis: &lt;i&gt;Library for RPC calls over HTTP protocol between web browsers&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;MSc in Computer Science -
+  &lt;span itemprop=&#34;alumniOf&#34; itemscope itemtype=&#34;http://schema.org/Organization&#34;&gt;
+    &lt;span itemprop=&#34;name&#34;&gt;University of Zagreb&lt;/span&gt;
+    &lt;a href=&#34;http://unizg.hr&#34; itemprop=&#34;sameAs&#34;&gt;&lt;a href=&#34;http://unizg.hr&#34;&gt;http://unizg.hr&lt;/a&gt;&lt;/a&gt;
+  &lt;/span&gt;
+  (2010 - 2011)&lt;br/&gt;
+  Thesis: &lt;i&gt;&lt;a href=&#34;https://www.ivankovic.me/doc/MarkoIvankovicDiplomskiRad.pdf&#34;&gt;
+    Software framework for performance benchmarks of cross-context communication systems for Web browsers&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Awards and honors&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+  &lt;a href=&#34;http://ioinformatics.org/locations/ioi06/results.shtml&#34;&gt;&lt;span itemprop=&#34;award&#34;&gt;Silver medal at the IOI 2006&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;span itemprop=&#34;award&#34;&gt;
+      Certificate of achievement at ACM Central European Programming Contest:&lt;br/&gt;
+      Budapest, Hungary (2006.), Prague, Czech Republic (2007.), Wroclaw, Poland (2009.)
+    &lt;/span&gt;&lt;br /&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

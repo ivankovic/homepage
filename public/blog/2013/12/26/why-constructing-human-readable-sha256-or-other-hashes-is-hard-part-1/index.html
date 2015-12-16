@@ -1,0 +1,269 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Why constructing human readable SHA256 (or other hashes) is hard - part 1</title>
+    <link rel="stylesheet" type="text/css" href="https://www.ivankovic.me/css/style.css" media="screen">
+    <link rel="icon" href="/favicon.ico">
+    <meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+      function toggle() {
+        menu = document.getElementById('menu')
+        menu.style.display = (menu.style.display == 'none' || menu.style.display == '' ? 'block' : 'none') 
+      }
+    </script>
+  </head>
+  <body>
+
+
+<div id="mbutton" onclick="toggle();">#</div>
+<div id="menu">
+  <header> 
+    <a href="/">Ivankovic.Me</a>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/marko/contact" > Marko</a>
+      <ul>
+        <li><a href="/marko/contact" >Contact</a></li>
+        <li><a href="/marko/resume" >Resume</a></li>
+        <li><a href="/blog/" >Blog</a></li>
+      </ul>
+      </li>
+      <li><a href="/marina/contact" > Marina</a>
+      <ul>
+        <li><a href="/marina/contact" >Contact</a></li>
+        <li><a href="/marina/resume" >Resume</a></li>
+      </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <footer>
+    <p>
+        <a href="/blog/index.xml"><img src="https://www.ivankovic.me//img/feed-icon.svg" style="width: 16px" />Subscribe</a>
+    </p>
+    <p>
+  By Marko Ivanković <br/>
+  Copyright 2015.
+</p>
+
+  </footer>
+</div>
+
+
+<div id="main">
+  <header>
+    <b> > Marko Ivankovic > Blog > Why constructing human readable SHA256 (or other hashes) is hard - part 1 </b>
+  </header>
+
+  <div id="content" itemscope itemtype="https://schema.org/BlogPosting">
+    
+
+<h1 id="why-constructing-human-readable-sha256-or-other-hashes-is-hard-part-1:786cd415ca4148404d4ce22bf450181d">Why constructing human readable SHA256 (or other) hashes is hard - Part 1</h1>
+
+<p>I have been playing around with the idea of making a human readable version of SHA256 hash. It seems like a nice improvement, in theory.</p>
+
+<p>Instead of the hexadecimal representation of the standard ”The quick brown fox jumps over the lazy dog.” example:</p>
+
+<pre><code>ef537f25c895bfa782526529a9b63d97aa631564d5d789c2b765448c8635fb6c
+</code></pre>
+
+<p>I was trying to encode it as a sequence of words, for example:</p>
+
+<pre><code>battery cow chiropractor black duck random europe fun fact sandy
+</code></pre>
+
+<p>Using real words means that you can easily compare the hash without copy-pasting it. This can be especially important if one of the hashes is not copy-pasteable at all, for example if it is printed on paper.</p>
+
+<h2 id="encoding-a-binary-number-as-a-sequence-of-words:786cd415ca4148404d4ce22bf450181d">Encoding a binary number as a sequence of words</h2>
+
+<p>The idea is quite simple. We take a “good” dictionary of “good” words, for example the <a href="http://world.std.com/~reinhold/diceware.html">Diceware dictionary</a>. Then we use these words to encode the SHA 256 hash (or any other binary number). The encoding algorithm is very simple. We treat the 256 bit number as a number in base N where N is the number of words in the dictionary. Each “digit” in base N is one of the dictionary words. Or in code:</p>
+
+<pre><code>dictionary = &lt;array of strings&gt;
+hash = &lt;the SHA256 hash, as one 256 bit number&gt; 
+N = len(dictionary)
+result = “”
+while hash &gt;= 0:
+  result += dictionary[hash % N]
+  hash /= N
+print result
+</code></pre>
+
+<p>Picking a good dictionary is important. One of the basic things the dictionary influences is the length of the resulting sentence. The Diceware dictionary contains 7776 words. This corresponds to 12.9 bits of information. An encoding that uses all 7776 words could encode the SHA256 hash into a sequence of 20 words.</p>
+
+<p>And this is where the problems begin.</p>
+
+<h2 id="existing-work:786cd415ca4148404d4ce22bf450181d">Existing work</h2>
+
+<p>Converting binary numbers into words has been done before.</p>
+
+<p>The <a href="http://en.wikipedia.org/wiki/PGP_word_list">PGP word list</a> is a set of 2 very carefully chosen word lists, 256 words each.</p>
+
+<p>The <a href="http://en.wikipedia.org/wiki/S/KEY">S/KEY</a> system encodes 64 bit numbers as 6 words taken from a 2048 word dictionary.</p>
+
+<p><a href="http://www.itl.nist.gov/fipspubs/fip181.htm">FIPS 181 standard</a> defines a random word generator that generates random “words”, that may or maynot be actual English words.</p>
+
+<p>The problem with PGP wordlist and the S/KEY encoding is that it produces really long results. The canonical foxy example would be encoded as:</p>
+
+<p>PGP (32 words):</p>
+
+<pre><code>uncut enterprise lockup caravan spaniel Montana slingshot paragraph miser enrollment fracture certify revenge potato commence mosquito reward Galveston backfield getaway sterling stethoscope nightbird repellent seabird glossary crumpled megaton necklace conformist watchword handiwork
+</code></pre>
+
+<p>S/KEY (24 words):</p>
+
+<pre><code>CUNY SEAL UP ADAM OWLY LIAR ARGO SCAR HOOT BEER PAD EDNA ELLA CUNY ANTE CHAR AJAR IDEA SLUG GARB ALTO SLUG EDIT AGO
+</code></pre>
+
+<h2 id="length:786cd415ca4148404d4ce22bf450181d">Length</h2>
+
+<p>20 words is a bit too long. 32 words and 24 words is definitely too long. Very few people could memorize 20 random words, and more words lead to more potential errors. There is some research in this subject, and it has shown that humans can remember 7 (+/- 2) random words on average. So to compare 20 random words, you would need to compare the word lists 4 times, assuming the lower limit of 5 words + a bit of position information and careful comparison. Unfortunately, 20 words is probably the best we can do.</p>
+
+<p>Calculating the number of items in the dictionary we need to encode a SHA256 hash in W words is straightforward.</p>
+
+<p>SHA256 is 256 bits long. A dictionary with <code>N</code> words can be used to encode <code>log2(N)</code> bits per word. So we have:</p>
+
+<pre><code>W = 256 / log&lt;sub&gt;2&lt;/sub&gt;(N)
+</code></pre>
+
+<p>or</p>
+
+<pre><code>N = 2^(256 / W)
+</code></pre>
+
+<p>So for various values of W we have:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Words needed for SHA256 (W)</th>
+<th align="center">Dictionary size (N)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">20</td>
+<td align="center">7132</td>
+</tr>
+
+<tr>
+<td align="center">19</td>
+<td align="center">11 376</td>
+</tr>
+
+<tr>
+<td align="center">18</td>
+<td align="center">19 113</td>
+</tr>
+
+<tr>
+<td align="center">17</td>
+<td align="center">34 132</td>
+</tr>
+
+<tr>
+<td align="center">16</td>
+<td align="center">65 536</td>
+</tr>
+
+<tr>
+<td align="center">15</td>
+<td align="center">137 271</td>
+</tr>
+
+<tr>
+<td align="center">14</td>
+<td align="center">319 558</td>
+</tr>
+
+<tr>
+<td align="center">12</td>
+<td align="center">2 642 246</td>
+</tr>
+
+<tr>
+<td align="center">10</td>
+<td align="center">50 859 008</td>
+</tr>
+
+<tr>
+<td align="center">7</td>
+<td align="center">102 116 749 982</td>
+</tr>
+</tbody>
+</table>
+
+<p>It’s unlikely we would ever create a dictionary of 102 billion words, which would be required if we wanted to encode SHA256 into just 7 words.</p>
+
+<p>In fact, it’s unlikely we could ever construct a good dictionary of 319 558 words to encode SHA256 with 14 words.</p>
+
+<p>According to Wikipedia, the Oxford English Dictionary in November 2005 <a href="http://en.wikipedia.org/wiki/Oxford_English_Dictionary#Entries_and_relative_size">contained about 301000 main entries</a> or 18 bits of information. By using all main entries in the OED, we could encode the SHA256 hash with just 15 words.</p>
+
+<p>[A study by a whole bunch of people] found that there are about 1.000.000 words in the English language. 1.000.000 words is 19.9 bits, or 13 words for SHA256.</p>
+
+<p>The problem is that most of these words are low quality.</p>
+
+<h2 id="quality-metrics:786cd415ca4148404d4ce22bf450181d">Quality metrics</h2>
+
+<p>Making sure that we don’t introduce security pitfalls is important. Because hexadecimal representations of hashes are so difficult to compare manually, the comparison is usually done by the computer. While you can make a human error in this process as well, by copy-pasting the wrong hash, it’s unlikely that this would result in a false match.</p>
+
+<p>But because humans are really good at reading words, we are also really good at seeing the words that are <a href="http://www.marcofolio.net/images/stories/fun/other/word_illusion/paris.gif">not there</a>, or <a href="http://www.marcofolio.net/images/stories/fun/other/word_illusion/first_last.jpg">fixing typos</a>, or a bunch of other tricks our minds play with us. Just look at the examples in this <a href="https://www.google.com/search?q=word+illusions&amp;tbm=isch">Google query</a>.</p>
+
+<p>So we need to make sure that the dictionary contains words which are diverse enough that difference between the strings are easy to spot. We can measure this “distinctivness” by measuring the global minimal and average minimal <a href="http://en.wikipedia.org/wiki/Edit_distance">Levenshtein distance</a>. The larger the two numbers, the more distinct the words in the dictionary are.</p>
+
+<p>The words also have to be memorable, otherwise we lose the usability gain. Memorability and distinctiveness are <a href="http://psycnet.apa.org/psycinfo/2007-06322-000">tied together</a>. There is a <a href="http://scholar.google.ch/scholar?hl=en&amp;as_sdt=0,5&amp;q=memory+distinctiveness">huge body of research</a> about this. We can roughly summarize it as: the more distinctive a word is <em>from the surrounding context</em> the more memorable it is. Distinctiveness of a word is hard to measure because it is dependant on the surrounding context, which requires understanding. For example in the sequence: <code>red white green dog blue yellow</code>, the most memorable item is <code>dog</code>, simply because it is an animal in between colors. However, if all words are unique: <code>red linux dog button maths car</code>, it doesn’t help us at all. This is why, even if we could measure context algorithmically, maximizing such distinctiveness would probably lead to the same issues as minimizing it would. Instead, we should focus on avoiding words that are mutually similar and easily confused for one another, like <a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/RougeAnglesOfSatin">angel and angle, or rouge and rogue</a></p>
+
+<p>The <a href="http://en.wikipedia.org/wiki/Metaphone">Metaphone algorithm</a> produces approximate phonetic representations that we can then compare to identify simmilar sounding words in the word list.</p>
+
+<p>To be able to compare the words quickly, you need to be able to read them quickly. <a href="http://scholar.google.com/scholar?q=readability">Readability</a> is well researched. There are a number of well understood formulas used to compute readability indexes for large texts. The problem is that all of them require sentences and all are researched for English only. We can extract the underlying metrics to adapt this for our needs. Syllable count is a popular metrics in readability. The smaller the syllable count, the more readable a words is. By measuring the maximal and average syllable count, we can have a good overall metrics for any given word list. We can also generate 1000 random SHA256 hashes and treat those as a single large text and compute the readability metrics on that. This is an indirect metric, but still useful.</p>
+
+<h2 id="how-to-construct-a-word-list-with-good-metrics:786cd415ca4148404d4ce22bf450181d">How to construct a word list with good metrics</h2>
+
+<p>So now we have a few metrics we can use to score a word list. As it turns out, all raw wordlists score abysmally low on these metrics. I have tried parsing the <a href="http://dumps.wikimedia.org/enwiktionary/20131117/">English Wiktionary</a>, I have tried parsing books from <a href="http://www.gutenberg.org/">Project Gutenberg</a>, I have tried traditional spellchecking wordlists, and I have tried traditional hacking wordlists. I even tried just constructing wordlists by combining lists of cities, names, animals, plants and so on.</p>
+
+<p>The obvious problem is getting the desired length. It’s super easy to get to around 50.000 words. With a bit of work, like taking the top 100 Gutenberg books, you can get to about 90.000 words. If you add a few lists of cities and so on, you can push that up to 100.000. But this includes “words” like “ahaaaaaaaa”. On the extreme end of this is the Wiktionary, which has millions of “words”, but they are of horrible quality. Indeed, just removing words which contain numbers, non-letter characters, and words with 4 or more consecutive repeating letters, cuts down the Wiktionary list considerably. And the metrics for all these lists are still really bad.</p>
+
+<p>It might be interesting to take a deeper look into various metrics for various lists, but this would sidetrack us from our goal of creating a good wordlist. So I’ll just summarize the most important observations here.</p>
+
+<p>Almost invariably, the global minimal edit distance in a given set of words is 1. Either because of plural forms like “car”/”cars”, or because of “angel”/”angle” like pairs of words. And the average minimal edit distance is not much better. Especially in the Wiktionary list, where it is so close to 1, it might as well be 1.</p>
+
+<p>The syllable frequency is also interesting. It spikes considerably from 50.000 to 90.000 and from 90.000 to 100.000. This is because you have to reach for words like “hexametaphosphate” to fill in the list.</p>
+
+<p>The <a href="http://world.std.com/~reinhold/diceware.wordlist.asc">original Diceware list</a> also does pretty bad, even though it is relatively short. Just look at the first 12 entries:</p>
+
+<pre><code>11111 a
+11112 a&amp;p
+11113 a's
+11114 aa
+11115 aaa
+11116 aaaa
+11121 aaron
+11122 ab
+11123 aba
+11124 ababa
+11125 aback
+11126 abase
+</code></pre>
+
+<p>It also contains such pairs as <code>“acid”/”acidic”</code>, <code>“deal”/”dealt”</code>, <code>“hyman”/”hymen”</code>, <code>“kink”/”kinky”</code> and so on. And while these are great if you have to construct a password, they completely screw up the usability when used to encode binary numbers.</p>
+
+<p>The PGP word list however, is awesome. It was designed specifcally to address these problems, and it shows.</p>
+
+<h2 id="what-s-next:786cd415ca4148404d4ce22bf450181d">What’s next</h2>
+
+<p>So, constructing a good word list is incredibly hard. I tried to construct a good 137 271 item list and failed miserably.</p>
+
+<p>In the next part, I’ll analyze the PGP wordlist and how it scores on a bunch of different metrics and see if I can construct a 8192 word list (13 bits) with similar metrics.</p>
+
+  </div>
+</div>
+
+    <div id="contact"><a href="mailto:marko@ivankovic.me" title="Send me an email!">@</a></div>
+
+  </body>
+</html>
+

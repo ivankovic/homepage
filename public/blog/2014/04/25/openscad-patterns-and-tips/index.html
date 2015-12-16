@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>OpenSCAD patterns and tips</title>
+    <link rel="stylesheet" type="text/css" href="https://www.ivankovic.me/css/style.css" media="screen">
+    <link rel="icon" href="/favicon.ico">
+    <meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+      function toggle() {
+        menu = document.getElementById('menu')
+        menu.style.display = (menu.style.display == 'none' || menu.style.display == '' ? 'block' : 'none') 
+      }
+    </script>
+  </head>
+  <body>
+
+
+<div id="mbutton" onclick="toggle();">#</div>
+<div id="menu">
+  <header> 
+    <a href="/">Ivankovic.Me</a>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/marko/contact" > Marko</a>
+      <ul>
+        <li><a href="/marko/contact" >Contact</a></li>
+        <li><a href="/marko/resume" >Resume</a></li>
+        <li><a href="/blog/" >Blog</a></li>
+      </ul>
+      </li>
+      <li><a href="/marina/contact" > Marina</a>
+      <ul>
+        <li><a href="/marina/contact" >Contact</a></li>
+        <li><a href="/marina/resume" >Resume</a></li>
+      </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <footer>
+    <p>
+        <a href="/blog/index.xml"><img src="https://www.ivankovic.me//img/feed-icon.svg" style="width: 16px" />Subscribe</a>
+    </p>
+    <p>
+  By Marko Ivanković <br/>
+  Copyright 2015.
+</p>
+
+  </footer>
+</div>
+
+
+<div id="main">
+  <header>
+    <b> > Marko Ivankovic > Blog > OpenSCAD patterns and tips </b>
+  </header>
+
+  <div id="content" itemscope itemtype="https://schema.org/BlogPosting">
+    
+
+<h1 id="openscad-patterns-and-tips:0b7e788b536ec9af6360e64c8466b37b">OpenSCAD patterns and tips</h1>
+
+<p>I recently started playing around with <a href="http://www.ivankovic.me/blog/2014/02/15/laser-cut-raspberry-pi-case-with-camera-mount-version-1.html">laser cutters</a> and 3D printers. So far, I have learned two major lessons: my <a href="http://en.wikipedia.org/wiki/Materials_science">material science</a> knowledge is lacking and <a href="http://en.wikipedia.org/wiki/Computer-aided_design">CAD</a> tools are not as advanced as Iron Man would have you believe.</p>
+
+<p>After a bit of searching and trying out, I ended up using <a href="http://www.openscad.org/index.html">OpenSCAD</a> because it fits my programming soul. As with any other programming language, you quickly learn that there are patterns and anti-patterns, so here’s my list of OpenSCAD patterns and tips.</p>
+
+<h2 id="openscad-patterns-and-tips-1:0b7e788b536ec9af6360e64c8466b37b">OpenSCAD patterns and tips:</h2>
+
+<ol>
+<li><p><strong>Design elements in isolation</strong>. Think about how the element will fit in the assembled object, but don’t let that influence the parameters of the element itself. Most importantly, assign priorities to axes and stick with it in all your designs. For example, if you are building the left side of a box, design it as if it was the front side. This helps immensely with <a href="http://en.wikipedia.org/wiki/Constructive_solid_geometry">constructive solid geometry</a> of more complex shapes. It’s also much easier to layout the elements for cutting if they are all in the same plane already.</p></li>
+
+<li><p>As a corollary of 1., <strong>Let the more complex module worry about submodule placement</strong>. Never fix positioning of a submodule (for example one side of the box) by modifying the submodule, use rotation and translation in the supermodule. This makes it much simpler to have different views, like assembled view, print view, exploded view and so on.</p></li>
+
+<li><p><strong>Test your assembled view for overlap</strong>. If you have overlap in the assembled view, your model is obviously physically impossible (unless you use some weird material that allows for quantum superposition). I have this handy script in a module called <code>testing.scad</code> and include it for this purpose:</p>
+
+<p>module test_overlap() {
+  if ($children &gt; 1 ) {
+    for (i = [0 : $children - 2]) {
+      for (j = [i + 1 : $children - 1]) {
+        intersection() {
+          child(i);
+          child(j);
+        }
+      }
+    }
+  }
+}</p></li>
+</ol>
+
+<p>Note that in the above code I use <code>child()</code> and not <code>children()</code> because the current stable OpenSCAD version (2013.06) still uses <code>child()</code>.</p>
+
+<ol>
+<li><p><strong>Add a small epsilon value to differences</strong>. Otherwise you are left with a plane of width 0 that can interfere with 3D printing. If you follow tip 1. this epsilon value will almost always be used in the same axis (in my case Y, but to each his own).</p></li>
+
+<li><p><strong>Define a variable called exploded and use it in design view</strong>. Translate all pieces by a multiple of exploded in a direction that makes sense for that piece. This makes it very easy to switch from exploded to assembled view.</p></li>
+
+<li><p>If designing for a laser cutter, <strong>define a variable called thickness</strong> and make sure that changing the thickness of the material doesn’t screw up the design. Use the <code>test_overlap</code> function from 3. to do this.</p></li>
+</ol>
+
+  </div>
+</div>
+
+    <div id="contact"><a href="mailto:marko@ivankovic.me" title="Send me an email!">@</a></div>
+
+  </body>
+</html>
+

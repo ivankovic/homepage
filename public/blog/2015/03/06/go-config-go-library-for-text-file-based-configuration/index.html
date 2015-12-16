@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>go-config - Go library for text file based configuration</title>
+    <link rel="stylesheet" type="text/css" href="https://www.ivankovic.me/css/style.css" media="screen">
+    <link rel="icon" href="/favicon.ico">
+    <meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+      function toggle() {
+        menu = document.getElementById('menu')
+        menu.style.display = (menu.style.display == 'none' || menu.style.display == '' ? 'block' : 'none') 
+      }
+    </script>
+  </head>
+  <body>
+
+
+<div id="mbutton" onclick="toggle();">#</div>
+<div id="menu">
+  <header> 
+    <a href="/">Ivankovic.Me</a>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/marko/contact" > Marko</a>
+      <ul>
+        <li><a href="/marko/contact" >Contact</a></li>
+        <li><a href="/marko/resume" >Resume</a></li>
+        <li><a href="/blog/" >Blog</a></li>
+      </ul>
+      </li>
+      <li><a href="/marina/contact" > Marina</a>
+      <ul>
+        <li><a href="/marina/contact" >Contact</a></li>
+        <li><a href="/marina/resume" >Resume</a></li>
+      </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <footer>
+    <p>
+        <a href="/blog/index.xml"><img src="https://www.ivankovic.me//img/feed-icon.svg" style="width: 16px" />Subscribe</a>
+    </p>
+    <p>
+  By Marko Ivanković <br/>
+  Copyright 2015.
+</p>
+
+  </footer>
+</div>
+
+
+<div id="main">
+  <header>
+    <b> > Marko Ivankovic > Blog > go-config - Go library for text file based configuration </b>
+  </header>
+
+  <div id="content" itemscope itemtype="https://schema.org/BlogPosting">
+    
+
+<h1 id="go-config-go-library-for-text-file-based-configuration:567eb8a85f7be3e1831957b8a14fb757">Go-config - Go library for text file based configuration</h1>
+
+<p>I just open-sourced a Go library for text file based configuration: <a href="https://github.com/ivankovic/go-config">go-config</a>.</p>
+
+<h2 id="format:567eb8a85f7be3e1831957b8a14fb757">Format</h2>
+
+<p>The format the library supports is a limited subset of the <a href="http://en.wikipedia.org/wiki/INI_file">.INI format</a>:</p>
+
+<pre><code>key=value
+# Comment
+[section]
+key=value
+key=returned_value
+</code></pre>
+
+<p>It supports sections, key value pairs, <code>global</code> section and # line comments. It doesn&rsquo;t support any escaping, in-line comments or semicolon comments. Duplicate names are ok. The last value will be used.</p>
+
+<p>The library is also read-only at the moment. In the future I might implement write support.</p>
+
+<h2 id="usage:567eb8a85f7be3e1831957b8a14fb757">Usage</h2>
+
+<p><a href="https://github.com/ivankovic/go-config/blob/master/config/config_test.go#L8">It&rsquo;s really simple to use</a>:</p>
+
+<pre><code>import &quot;github.com/ivankovic/go-config/config&quot;
+
+...
+
+x := config.Load(&quot;/path/to/config&quot;)
+v := x.Get(&quot;section&quot;, &quot;key&quot;, &quot;default_value&quot;)
+</code></pre>
+
+<h2 id="testing:567eb8a85f7be3e1831957b8a14fb757">Testing</h2>
+
+<p>The library itself is well tested. But perhaps more importantly, any code <em>using</em> the library is easy to test. You can create fully in-memory fake configs just by doing:</p>
+
+<pre><code>c := config.Config{
+    sections: map[string]config.Section{
+      &quot;section_name&quot;:config.Section{
+        values: map[string]string{
+          &quot;key&quot;: &quot;value&quot;,
+        }
+      },
+    },
+}
+</code></pre>
+
+<p>You can see a more <a href="https://github.com/ivankovic/go-config/blob/master/config/config_test.go#L62">concrete example here</a></p>
+
+  </div>
+</div>
+
+    <div id="contact"><a href="mailto:marko@ivankovic.me" title="Send me an email!">@</a></div>
+
+  </body>
+</html>
+

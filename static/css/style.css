@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  padding-top: 24px;
+}
+
+header {
+  height: 64px;
+  line-height: 64px;
+  font-size: 24px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.258824);
+}
+
+p {
+  padding-top: 1em;
+}
+
+div#contact {
+  position: fixed;
+  bottom: 64px;
+  right: 64px;
+  
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+
+  background: rgb(194, 24, 91);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.258824);
+
+  line-height: 64px;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+div#contact a:link, div#contact a:visited, div#contact a:hover, div#contact a:active {
+  color: inherit;
+}
+
+@media (min-width: 896px) {
+  div#menu {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+
+    z-index: 2;
+
+    width: 224px;
+    height: 100%;
+
+    border-right: 1px solid rgba(0, 0, 0, 0.258824);
+  }
+
+  div#main {
+    margin-left: 224px;
+  }
+
+  div#mbutton {
+    display: none;
+  }
+}
+
+@media (max-width: 896px) {
+  div#menu {
+    position: fixed;
+    left: 64px;
+    top: 0px;
+
+    z-index: 2;
+
+    width: 224px;
+    
+    display: none;
+
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.258824);
+    padding-bottom: 1em;
+  }
+
+  div#mbutton {
+    display: block;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+
+    z-index: 2;
+
+    height: 64px;
+    width: 64px;
+    line-height: 64px;
+    font-size: 24px;
+    text-align: center;
+
+    background: rgb(194, 24, 91);
+    color: #ffffff;
+  }
+}
+
+div#menu header, div#menu nav {
+  padding-left: 20px;
+}
+
+div#main {
+  height: 100%;
+  background-color: #f9f9f9;
+}
+
+div#menu header {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+div#menu header a {
+  color: inherit;
+}
+
+div#main header {
+  background: rgb(194, 24, 91);
+  color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.258824);
+}
+
+div#content {
+  background-color: inherit;
+  padding-bottom: 1em;
+}
+
+div#main div#content, div#main header {
+  padding-left: 80px;
+}
+
+div#menu nav ul li {
+  display: block;
+  padding-left: 1em;
+  padding-top: 1em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+div#menu nav ul li ul li {
+  font-weight: normal;
+}
+
+nav a:link, nav a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:active {
+  color: rgb(194, 24, 91);
+  text-decoration: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: rgb(194, 24, 91);
+}
+
+div#content h1 {
+  color: rgb(194, 24, 91);
+
+  padding-top: 2em;
+  padding-bottom: 1em;
+}
+
+div#content h2 {
+  padding-top: 1em;
+}
+
+div#main ul {
+  list-style-type: none;
+}
+
+div#main ul li {
+  margin-top: 10px;
+}
+
+pre {
+  padding-top: 15px;
+}

@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marko Ivankovic and Marina Celar Ivankovic - personal website</title>
+    <link>https://www.ivankovic.me/</link>
+    <description>Recent content on Marko Ivankovic and Marina Celar Ivankovic - personal website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Aug 2015 01:08:07 +0200</lastBuildDate>
+    <atom:link href="https://www.ivankovic.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Installing SSL client certificate on Android</title>
+      <link>https://www.ivankovic.me/blog/2015/08/20/installing-ssl-client-certificate-on-android/</link>
+      <pubDate>Thu, 20 Aug 2015 01:08:07 +0200</pubDate>
+      
+      <guid>https://www.ivankovic.me/blog/2015/08/20/installing-ssl-client-certificate-on-android/</guid>
+      <description>
+
+&lt;h1 id=&#34;installing-ssl-client-certificate-on-android:4e2274b7ab8411fadd6a472888956c1d&#34;&gt;Installing SSL client certificate on Android&lt;/h1&gt;
+
+&lt;p&gt;This is just a quick tip for anyone who is trying to install client SSL certificates on Android devices.&lt;/p&gt;
+
+&lt;p&gt;First, make sure you follow &lt;a href=&#34;https://support.google.com/nexus/answer/2844832?hl=en&#34;&gt;this Google support page&lt;/a&gt;. Pay particular attention to the file &lt;em&gt;extension&lt;/em&gt;. If you have a &lt;a href=&#34;https://en.wikipedia.org/wiki/PKCS_12&#34;&gt;PKCS 12&lt;/a&gt; formatted file, it &lt;strong&gt;must end in &lt;code&gt;.p12&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Next, make sure you download the certificate on the internal memory. Google Drive, Dropbox, your own personal cloud or any other network storage &lt;em&gt;will not work&lt;/em&gt;. And the worst thing is, it will look like it works since you can select the folders in the file chooser, and it doesn&amp;rsquo;t give you any errors. But the certificate files will be &lt;em&gt;greyed out and you will not be able to select it&lt;/em&gt;!&lt;/p&gt;
+
+&lt;p&gt;Last, &lt;strong&gt;don&amp;rsquo;t click on any shortcuts in the file chooser&lt;/strong&gt;. Go through &amp;ldquo;Internal Storage&amp;rdquo; -&amp;gt; &amp;ldquo;Downloads&amp;rdquo;. Otherwise the certificate file will simply be greyed out and you will not be able to select it!!&lt;/p&gt;
+
+&lt;p&gt;So there&amp;rsquo;s that. I spent waaaay to much time figuring this one out. I&amp;rsquo;m leaving the note here in the hope that some other poor soul will find it in their hour of need.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>go-config - Go library for text file based configuration</title>
+      <link>https://www.ivankovic.me/blog/2015/03/06/go-config-go-library-for-text-file-based-configuration/</link>
+      <pubDate>Fri, 06 Mar 2015 22:55:30 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/blog/2015/03/06/go-config-go-library-for-text-file-based-configuration/</guid>
+      <description>
+
+&lt;h1 id=&#34;go-config-go-library-for-text-file-based-configuration:567eb8a85f7be3e1831957b8a14fb757&#34;&gt;Go-config - Go library for text file based configuration&lt;/h1&gt;
+
+&lt;p&gt;I just open-sourced a Go library for text file based configuration: &lt;a href=&#34;https://github.com/ivankovic/go-config&#34;&gt;go-config&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;format:567eb8a85f7be3e1831957b8a14fb757&#34;&gt;Format&lt;/h2&gt;
+
+&lt;p&gt;The format the library supports is a limited subset of the &lt;a href=&#34;http://en.wikipedia.org/wiki/INI_file&#34;&gt;.INI format&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;key=value
+# Comment
+[section]
+key=value
+key=returned_value
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It supports sections, key value pairs, &lt;code&gt;global&lt;/code&gt; section and # line comments. It doesn&amp;rsquo;t support any escaping, in-line comments or semicolon comments. Duplicate names are ok. The last value will be used.&lt;/p&gt;
+
+&lt;p&gt;The library is also read-only at the moment. In the future I might implement write support.&lt;/p&gt;
+
+&lt;h2 id=&#34;usage:567eb8a85f7be3e1831957b8a14fb757&#34;&gt;Usage&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/ivankovic/go-config/blob/master/config/config_test.go#L8&#34;&gt;It&amp;rsquo;s really simple to use&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import &amp;quot;github.com/ivankovic/go-config/config&amp;quot;
+
+...
+
+x := config.Load(&amp;quot;/path/to/config&amp;quot;)
+v := x.Get(&amp;quot;section&amp;quot;, &amp;quot;key&amp;quot;, &amp;quot;default_value&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;testing:567eb8a85f7be3e1831957b8a14fb757&#34;&gt;Testing&lt;/h2&gt;
+
+&lt;p&gt;The library itself is well tested. But perhaps more importantly, any code &lt;em&gt;using&lt;/em&gt; the library is easy to test. You can create fully in-memory fake configs just by doing:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;c := config.Config{
+    sections: map[string]config.Section{
+      &amp;quot;section_name&amp;quot;:config.Section{
+        values: map[string]string{
+          &amp;quot;key&amp;quot;: &amp;quot;value&amp;quot;,
+        }
+      },
+    },
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can see a more &lt;a href=&#34;https://github.com/ivankovic/go-config/blob/master/config/config_test.go#L62&#34;&gt;concrete example here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A nice directory structure for Go code</title>
+      <link>https://www.ivankovic.me/blog/2015/02/18/a-nice-directory-structure-for-go-code/</link>
+      <pubDate>Wed, 18 Feb 2015 20:59:50 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/blog/2015/02/18/a-nice-directory-structure-for-go-code/</guid>
+      <description>
+
+&lt;h1 id=&#34;a-nice-directory-structure-for-go-code:66e9facd3641635f7e0e15acfb12cb3b&#34;&gt;A nice directory structure for Go code&lt;/h1&gt;
+
+&lt;p&gt;I recently discovered the wonders of &lt;a href=&#34;https://golang.org&#34;&gt;Go&lt;/a&gt;. I have been using it at work, on the Raspberry Pi and to solve competitive programming problems on &lt;a href=&#34;https://projecteuler.net/profile/markoivankovic.png&#34;&gt;Project Euler&lt;/a&gt;. I even tried out my hand at &lt;a href=&#34;https://github.com/ivankovic/go-competitive&#34;&gt;open sourcing&lt;/a&gt; some Go code on GitHub. And I found it really really fun to use in all these situations.&lt;/p&gt;
+
+&lt;p&gt;One of the things I like the most about Go is how easy it is to reuse code across projects. The &lt;code&gt;go get&lt;/code&gt; and &lt;code&gt;go install&lt;/code&gt; commands are the best thing since distributed version control systems were invented and the automatic import fetching is just crazy.&lt;/p&gt;
+
+&lt;p&gt;However, I did struggle with one thing initially. Because Go depends a lot on the path structure of your workspace(s?) it was not immediately clear to me what workspace structure would work best for such an eclectic collection of projects. But I think that now I have found one that works really really well.&lt;/p&gt;
+
+&lt;h2 id=&#34;number-of-workspaces:66e9facd3641635f7e0e15acfb12cb3b&#34;&gt;Number of workspaces&lt;/h2&gt;
+
+&lt;p&gt;The obvious first question is: &amp;ldquo;One workspace per project or one big global workspace?&amp;rdquo;. I have found that one big global workspace is a much better choice here. Unless you have other requirements that would force you to have a clean separation between sets of projects, for example having to separate work and private code, there are only upsides to having one global workspace.&lt;/p&gt;
+
+&lt;p&gt;It makes code reuse easier: You have one version of code and that one is used everywhere. No need to cross-import common code.
+It reduces mental overhead: No need to keep track of which workspace you are in. There&amp;rsquo;s only one.
+It reduces management overhead: Just one root directory to back up, just one root directory to secure.&lt;/p&gt;
+
+&lt;h2 id=&#34;directory-structure:66e9facd3641635f7e0e15acfb12cb3b&#34;&gt;Directory structure&lt;/h2&gt;
+
+&lt;p&gt;Let&amp;rsquo;s remind ourselves of the directory structure Go already has built in:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Source code lives under &lt;code&gt;/src&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Compiled binaries live under &lt;code&gt;/bin&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Package objects live under &lt;code&gt;/pkg&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The package name (that appears on the first line of each go file) must be the &lt;strong&gt;last&lt;/strong&gt; element of the package path, unless the file is an executable command in which case it must use &lt;code&gt;package main&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;All files in one package must use the same package name.&lt;/li&gt;
+&lt;li&gt;If the import path starts with &lt;code&gt;&amp;lt;location&amp;gt;.&amp;lt;vcs&amp;gt;/&lt;/code&gt;, where &lt;code&gt;&amp;lt;vcs&amp;gt;&lt;/code&gt; is one of &lt;code&gt;.bzr&lt;/code&gt;, &lt;code&gt;.git&lt;/code&gt;, &lt;code&gt;.hg&lt;/code&gt; or &lt;code&gt;.svn&lt;/code&gt;, then Go will use the appropriate version control system to fetch the repository from &lt;code&gt;&amp;lt;location&amp;gt;&lt;/code&gt;. Note that &lt;code&gt;&amp;lt;location&amp;gt;&lt;/code&gt; in this context is usually of the form &lt;code&gt;&amp;lt;domain&amp;gt;/&amp;lt;path&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;For the 5 popular built-in repositories a custom shorter syntax is built-in.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The built-in repositories are interesting here because we either need to follow their structure or live with inconsistencies. Luckily the structure they use is really good and we can easily copy it for all our code. The built-in repositories almost all use the following structure: &lt;code&gt;&amp;lt;domain&amp;gt;/&amp;lt;username&amp;gt;/&amp;lt;project&amp;gt;/&lt;/code&gt;, with the exception of &lt;code&gt;code.google.com&lt;/code&gt; that doesn&amp;rsquo;t have the &lt;code&gt;&amp;lt;username&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;What is really cool is that we can have almost the same structure with other repositories. The only thing you need to do is choose the level of granularity for you version control system. If you have multiple users and wish to give each user exactly one repository, you would use the following structure: &lt;code&gt;&amp;lt;domain&amp;gt;/&amp;lt;user&amp;gt;.&amp;lt;vcs&amp;gt;/&amp;lt;project&amp;gt;&lt;/code&gt;. If you want each user to have one repository per project, you would use the following structure:
+&lt;code&gt;&amp;lt;domain&amp;gt;/&amp;lt;user&amp;gt;/&amp;lt;project&amp;gt;.&amp;lt;vcs&amp;gt;/&lt;/code&gt;. If you just want one giant repository, you can use &lt;code&gt;&amp;lt;domain&amp;gt;/.&amp;lt;vcs&amp;gt;/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;This leaves just one thing: local files. I find it helps to have a &lt;code&gt;local/&lt;/code&gt; path that mostly contains just one file &lt;code&gt;main.go&lt;/code&gt;. Whenever I need to script a one-off real quick, I just modify this file, run it and move on. Very rarely, I&amp;rsquo;ll &lt;code&gt;cp&lt;/code&gt; that file and have &lt;code&gt;main2.go&lt;/code&gt; and so on.&lt;/p&gt;
+
+&lt;h2 id=&#34;packages:66e9facd3641635f7e0e15acfb12cb3b&#34;&gt;Packages&lt;/h2&gt;
+
+&lt;p&gt;Because each time you import something you need to type the whole path, I strongly recommend you limit the subpackage depth. Since you always have &lt;code&gt;&amp;lt;project&amp;gt;&lt;/code&gt; as part of your path, usually you can just have all packages directly in the project directory. If you need subpackages, consider instead extracting them into a separate project. After all, you might reuse them somewhere else!&lt;/p&gt;
+
+&lt;h2 id=&#34;real-example:66e9facd3641635f7e0e15acfb12cb3b&#34;&gt;Real example&lt;/h2&gt;
+
+&lt;p&gt;This is the current structure of my Go workspace:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;workspace/
+         | bin/
+         | pkg/
+         | src/
+              | github.com/ivankovic/go-competitive/&amp;lt;packages&amp;gt;/*.go          
+              | ivankovic.me/
+                            | projecteuler.git/*.go
+                            | swarm.git/&amp;lt;packages&amp;gt;/*.go
+              | local/main.go
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;rsquo;s all there is to it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SwarmCast: Autostart Tmux with SSH</title>
+      <link>https://www.ivankovic.me/blog/2014/10/14/swarmcast-autostart-tmux-with-ssh/</link>
+      <pubDate>Mon, 13 Oct 2014 22:35:37 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/blog/2014/10/14/swarmcast-autostart-tmux-with-ssh/</guid>
+      <description>
+
+&lt;h1 id=&#34;swarmcast-autostart-tmux-with-ssh:add7d24c8241e85dfbbdde82f143fb90&#34;&gt;SwarmCast: Autostart Tmux with SSH&lt;/h1&gt;
+
+&lt;p&gt;Maintenance tasks on the RPi Swarm nodes can be a bit of a chore. Of course the idea is to &lt;a href=&#34;http://www.ivankovic.me/blog/2014/04/30/raspberry-pi-swarm-automatically-installing-security-updates/&#34;&gt;automate&lt;/a&gt; as much as possible, but sometimes you just need to do the same exact sequence of commands on all nodes at once.&lt;/p&gt;
+
+&lt;p&gt;Luckily, Tmux combined with SSH (using SSH keys and &lt;a href=&#34;http://www.ivankovic.me/blog/2014/05/28/using-ssh-config-file-to-simplify-swarm-management/&#34;&gt;SSH config&lt;/a&gt;) is just the thing we need.&lt;/p&gt;
+
+&lt;h2 id=&#34;starting-tmux-from-a-bash-script:add7d24c8241e85dfbbdde82f143fb90&#34;&gt;Starting Tmux from a Bash script&lt;/h2&gt;
+
+&lt;p&gt;Tmux has a &lt;a href=&#34;http://manpages.ubuntu.com/manpages/precise/man1/tmux.1.html&#34;&gt;really powerfull set of commands&lt;/a&gt;. They allow you to completely control a Tmux session from a Bash script. In this case, we use it to prepare the window with 4 panes, each one with an SSH session to a different swarm node. At the end it turns &lt;code&gt;synchronize-panes&lt;/code&gt; option on. This will instruct Tmux to send all keystrokes to all windows at once.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/bash
+
+tmux new-session -d -n SwarmCast -s swarmcast &amp;quot;ssh &amp;lt;NODE1&amp;gt;&amp;quot;
+tmux split-window &amp;quot;ssh &amp;lt;NODE2&amp;gt;&amp;quot;
+tmux split-window -h &amp;quot;ssh &amp;lt;NODE2&amp;gt;&amp;quot;
+tmux split-window -h -t 0 &amp;quot;ssh &amp;lt;NODE4&amp;gt;&amp;quot;
+tmux set-window-option synchronize-panes 
+tmux attach-session -t swarmcast
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;One interesting thing to note: if a node fails to connect, it&amp;rsquo;s pane will simply disappear and you can just continue working on the online nodes.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Things to remove from a fresh Ubuntu 14.04 install</title>
+      <link>https://www.ivankovic.me/blog/2014/10/02/things-to-remove-from-a-fresh-ubuntu-14-04-install/</link>
+      <pubDate>Thu, 02 Oct 2014 09:00:41 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/blog/2014/10/02/things-to-remove-from-a-fresh-ubuntu-14-04-install/</guid>
+      <description>
+
+&lt;h1 id=&#34;things-to-remove-from-a-fresh-ubuntu-14-04-install:2624161211058c1bb2c51ec4e6852024&#34;&gt;Things to remove from a fresh Ubuntu 14.04 install&lt;/h1&gt;
+
+&lt;p&gt;This is a list of things I removed from my fresh Ubuntu 14.04 install.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;account-plugin-facebook account-plugin-flickr account-plugin-google account-plugin-twitter account-plugin-windows-live adium-theme friends unity-lens-video unity-lens-music unity-scope-video-remote unity-scope-zotero unity-scope-openclipart unity-scope-colourlovers unity-scope-guayadeque unity-scope-clementine unity-scope-audacious unity-scope-gmusicbrowser unity-scope-musique unity-scope-gourmet unity-scope-virtualbox unity-scope-video-remote wodim remmina remmina-common rhythmbox rhythmbox-data brasero gnome-sudoku gnome-mahjongg&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;related:2624161211058c1bb2c51ec4e6852024&#34;&gt;Related&lt;/h2&gt;
+
+&lt;p&gt;For a list of things you can remove from a headless Raspberry Pi Raspbian
+install click &lt;a href=&#34;http://www.ivankovic.me/blog/2013/09/21/raspberry-pi-list-of-packages-you-can-remove-if-you-only-do-ssh/&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Guest post on Google testing blog</title>
+      <link>https://www.ivankovic.me/blog/2014/07/26/guest-post-on-google-testing-blog/</link>
+      <pubDate>Sat, 26 Jul 2014 10:22:08 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/blog/2014/07/26/guest-post-on-google-testing-blog/</guid>
+      <description>
+
+&lt;h1 id=&#34;guest-post-on-google-testing-blog:6db0136578487cffd955fb6c3e8dca14&#34;&gt;Guest post on Google testing blog&lt;/h1&gt;
+
+&lt;p&gt;I had a guest post on the &lt;a href=&#34;https://googletesting.blogspot.com&#34;&gt;Google testing blog&lt;/a&gt;:
+&lt;a href=&#34;https://googletesting.blogspot.com/2014/07/measuring-coverage-at-google.html&#34;&gt;Measuring coverage at Google&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Migrating to Hugo</title>
+      <link>https://www.ivankovic.me/blog/2014/07/26/migrating-to-hugo/</link>
+      <pubDate>Fri, 25 Jul 2014 22:13:55 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/blog/2014/07/26/migrating-to-hugo/</guid>
+      <description>
+
+&lt;h1 id=&#34;migrating-to-hugo:d126bc28dea2bc1bfaf186067b73bc29&#34;&gt;Migrating to Hugo&lt;/h1&gt;
+
+&lt;p&gt;I was recently looking around for a new static site generator.
+&lt;a href=&#34;http://nanoc.ws/&#34;&gt;Nanoc&lt;/a&gt; is good, but I have never liked the way you specify
+URL paths in it. It&amp;rsquo;s run by a relly stand-up guy though, and the Nanoc website
+actually links to a &lt;a href=&#34;http://nanoc.ws/about/#similar-projects&#34;&gt;list of simillar project&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Going through the &lt;a href=&#34;http://staticsitegenerators.net/&#34;&gt;list&lt;/a&gt; I noticed something
+interesting: &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt;. It&amp;rsquo;s one of the most starred generators,
+and the only top 15 generator built in a compiled language: Go.&lt;/p&gt;
+
+&lt;p&gt;I gave it a try, and was so happy I decided to migrate my webpage completely to it.&lt;/p&gt;
+
+&lt;h2 id=&#34;hugo:d126bc28dea2bc1bfaf186067b73bc29&#34;&gt;Hugo&lt;/h2&gt;
+
+&lt;p&gt;One of the prominent features of Hugo is that it is &lt;strong&gt;fast&lt;/strong&gt;. Really fast. It
+recompiles this site in 45 ms. This together with the auto-reload functionality
+the builtin webserver helpfully adds to each file means that you can literally
+type your content and see th changes appear in the browser in almost real-time.&lt;/p&gt;
+
+&lt;p&gt;However, what really won me over was the &lt;a href=&#34;http://hugo.spf13.com/content/organization&#34;&gt;content organization&lt;/a&gt;. The defaults really make sense, generate pretty URLs and they even provide the ability to easily transition your existing URLs by using &lt;a href=&#34;http://hugo.spf13.com/extras/aliases&#34;&gt;aliases&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not completely without it&amp;rsquo;s problems. Because it&amp;rsquo;s relatively new, the documentation can sometimes be a bit lacking. It took me a week to figure out &lt;em&gt;exactly&lt;/em&gt; how it chooses a template for a specific URL.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Marina Celar Ivankovic &gt; Contact</title>
+      <link>https://www.ivankovic.me/marina/contact/</link>
+      <pubDate>Thu, 10 Jul 2014 20:30:02 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/marina/contact/</guid>
+      <description>&lt;div itemscope itemtype=&#34;http://schema.org/Person&#34;&gt;
+
+&lt;h1&gt;Contact information&lt;/h1&gt;
+
+&lt;p&gt;The following contact information can be used to reach &lt;span itemprop=&#34;name&#34;&gt;Marina Čelar Ivanković&lt;/span&gt;:&lt;p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Main contact: &lt;span class=&#34;email&#34; itemprop=&#34;email&#34;&gt;marina [at] ivankovic (dot) me&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://plus.google.com/109500750097728646594/about&#34;&gt;Google Plus profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;http://hr.linkedin.com/in/marinacelarivankovic&#34;&gt;LinkedIn profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is the canonical list of my profiles. Any other profile is either another person with the same name or a fake.&lt;/p&gt;
+
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Marina Celar Ivankovic &gt; Resume</title>
+      <link>https://www.ivankovic.me/marina/resume/</link>
+      <pubDate>Thu, 10 Jul 2014 20:27:05 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/marina/resume/</guid>
+      <description>&lt;p&gt;&lt;h1&gt;dr. vet. med. Marina Čelar Ivanković - Resume&lt;/h1&gt;
+&lt;p&gt;Last updated: Feb 14th, 2015.&lt;/p&gt;
+&lt;h2&gt;Work&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Volounteer work at the &lt;a href=&#34;http://www.vef.unizg.hr/en/&#34;&gt;VEF&lt;/a&gt;
+  clinics for internal medicine (2012. - 2014.)&lt;/li&gt;
+  &lt;li&gt;Volounteer work at the Khulula Wildlife Center, South Africa (2013.)&lt;/li&gt;
+  &lt;li&gt;Volounteer work at the county veterinary station in Varaždin (2005.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Teaching&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;TA on the Internal Medicine classes (2013. - 2014.)&lt;/li&gt;
+  &lt;li&gt;TA on the Comparative Anatomy 101, 102, 103 classes (2009. - 2010.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Publications&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Paper: &lt;a href=&#34;http://www.vef.unizg.hr/veterinar/52_1/veterinar_52_1.pdf&#34;&gt;
+    Procjena bronhoskopije kao dijagnostičke metode u potvrđivanju bolesti donjih dišnih putova u pasa (Veterinar)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Education&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Clerkship_(medicine)&#34;&gt;Clinical clerkship&lt;/a&gt; at &lt;a href=&#34;http://www.vet.uzh.ch/index_en.html&#34;&gt;Vetsuisse Faculty - University of Zurich&lt;/a&gt; (2014.)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Clerkship_(medicine)&#34;&gt;Clinical clerkship&lt;/a&gt; at &lt;a href=&#34;http://www.bessys.ch/&#34;&gt;Bessy&amp;rsquo;s Kleintierklinik&lt;/a&gt; (2014.)&lt;/li&gt;
+  &lt;li&gt;University of Zagreb, Faculty of veterinary medicine - integrated undergraduate and graduate study (2008. - 2015.)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Marko Ivankovic &gt; Contact</title>
+      <link>https://www.ivankovic.me/marko/contact/</link>
+      <pubDate>Thu, 10 Jul 2014 20:24:51 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/marko/contact/</guid>
+      <description>&lt;div itemscope itemtype=&#34;http://schema.org/Person&#34;&gt;
+
+&lt;h1&gt;Contact information&lt;/h1&gt;
+
+&lt;p&gt;The following contact information can be used to reach &lt;span itemprop=&#34;name&#34;&gt;Marko Ivanković&lt;/span&gt;:&lt;p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Main contact: &lt;span class=&#34;email&#34; itemprop=&#34;email&#34;&gt;marko [at] ivankovic (dot) me&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://keybase.io/ivankovic&#34;&gt;Keybase.io profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://github.com/ivankovic&#34;&gt;GitHub profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://twitter.com/ivankovicme&#34;&gt;Twitter profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://www.google.com/+MarkoIvankovic/about&#34;&gt;Google Plus profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/ivankovicmarko&#34;&gt;LinkedIn profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is the canonical list of my profiles. Any other profile is either another person with the same name or a fake.&lt;/p&gt;
+
+&lt;p&gt;My public key is: &lt;b&gt;5307 38FD 7A87 E6E8 9101 BBBE 72FE C3F6 4C87 DF37&lt;/b&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Marko Ivankovic &gt; Resume</title>
+      <link>https://www.ivankovic.me/marko/resume/</link>
+      <pubDate>Wed, 09 Jul 2014 20:40:05 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/marko/resume/</guid>
+      <description>&lt;p&gt;&lt;div itemscope itemtype=&#34;http://schema.org/Person&#34;&gt;
+  &lt;h1&gt;
+    &lt;span itemprop=&#34;name&#34;&gt;Marko Ivanković&lt;/span&gt;
+    - Resume
+  &lt;/h1&gt;
+&lt;p&gt;Last updated: October 14th, 2014.&lt;/p&gt;
+&lt;h2&gt;Work&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;span itemprop=&#34;worksFor&#34; itemscope itemtype=&#34;http://schema.org/Organization&#34;&gt;
+      &lt;span itemprop=&#34;name&#34;&gt;Google&lt;/span&gt;
+    &lt;/span&gt;
+    -
+    &lt;span itemprop=&#34;jobTitle&#34;&gt;Senior Software Engineer, Tools and Infrastructure&lt;/span&gt;
+    (2014 - present)
+  &lt;/li&gt;
+  &lt;li&gt;Google - Software Engineer, Tools and Infrastructure (2011 - 2014)&lt;/li&gt;
+  &lt;li&gt;Google - Software Engineer, Tools and Infrastructure (2010)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Publications and presentations&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Presentation: &lt;a href=&#34;http://swisstestingday.ch/&#34;&gt;Swiss Testing Day&lt;/a&gt;
+  - &lt;a href=&#34;http://swisstestingday.ch/analyzing-statement-coverage-at-google/&#34;&gt;
+  Analyzing statement coverage at Google&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Presentation: &lt;a href=&#34;http://2014.webcampzg.org/&#34;&gt;WebCamp Zagreb 2014&lt;/a&gt;
+  - &lt;a href=&#34;http://2014.webcampzg.org/speakers/marko-ivankovic-measuring-test-coverage-at-google/&#34;&gt;
+  Measuring test coverage at Google&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Paper: &lt;a href=&#34;http://arxiv.org/abs/1108.4770&#34;&gt;
+  A Classification Framework for Web Browser Cross-Context Communication (arXiv)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Paper: &lt;a href=&#34;http://bib.irb.hr/datoteka/510394.pmrpc_07.pdf&#34;&gt;
+  Cross-context web browser communication with unified communication models and context types (MIPRO)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Open source&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&#34;https://github.com/ivankovic/go-config&#34;&gt;go-config&lt;/a&gt;
+  - Go library for text file based configuration.
+  &lt;li&gt;&lt;a href=&#34;https://github.com/ivankovic/go-competitive&#34;&gt;go-competitive&lt;/a&gt;
+  - a collection of libraries that make Go easire to use in programming competitions.
+  &lt;li&gt;&lt;a href=&#34;https://github.com/izuzak/pmrpc&#34;&gt;PMRPC&lt;/a&gt;
+  - HTML5 inter-window and web workers RPC and publish-subscribe communication library&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Teaching and volounteering&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&#34;http://hsin.hr/coci/&#34;&gt;Croatian Open Competition in Informatics&lt;/a&gt;
+   - Scientific Committee (2007 - 2011)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;http://ioi2007.hsin.hr/index.php?page=organizers&#34;&gt;IOI 2007&lt;/a&gt;
+   - Evaluation Committee&lt;/li&gt;
+  &lt;li&gt;Croatian IOI track competitions - Scientific/Evaluation Committee (2007 - 2011)&lt;/li&gt;
+  &lt;li&gt;TA on several BSc level classes - University of Zagreb (2010 - 2011)&lt;/li&gt;
+  &lt;li&gt;Numerous summer camp courses, one day workshops, high school and elementary school lectures and mentorship of contestants (2006 - 2012)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Education&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;BSc in Computer Science -
+  &lt;span itemprop=&#34;alumniOf&#34; itemscope itemtype=&#34;http://schema.org/Organization&#34;&gt;
+    &lt;span itemprop=&#34;name&#34;&gt;University of Zagreb&lt;/span&gt;
+    &lt;a href=&#34;http://unizg.hr&#34; itemprop=&#34;sameAs&#34;&gt;&lt;a href=&#34;http://unizg.hr&#34;&gt;http://unizg.hr&lt;/a&gt;&lt;/a&gt;
+  &lt;/span&gt;
+  (2007 - 2010)&lt;br/&gt;
+  Thesis: &lt;i&gt;Library for RPC calls over HTTP protocol between web browsers&lt;/i&gt;&lt;/li&gt;
+  &lt;li&gt;MSc in Computer Science -
+  &lt;span itemprop=&#34;alumniOf&#34; itemscope itemtype=&#34;http://schema.org/Organization&#34;&gt;
+    &lt;span itemprop=&#34;name&#34;&gt;University of Zagreb&lt;/span&gt;
+    &lt;a href=&#34;http://unizg.hr&#34; itemprop=&#34;sameAs&#34;&gt;&lt;a href=&#34;http://unizg.hr&#34;&gt;http://unizg.hr&lt;/a&gt;&lt;/a&gt;
+  &lt;/span&gt;
+  (2010 - 2011)&lt;br/&gt;
+  Thesis: &lt;i&gt;&lt;a href=&#34;https://www.ivankovic.me/doc/MarkoIvankovicDiplomskiRad.pdf&#34;&gt;
+    Software framework for performance benchmarks of cross-context communication systems for Web browsers&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Awards and honors&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+  &lt;a href=&#34;http://ioinformatics.org/locations/ioi06/results.shtml&#34;&gt;&lt;span itemprop=&#34;award&#34;&gt;Silver medal at the IOI 2006&lt;/span&gt;&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;span itemprop=&#34;award&#34;&gt;
+      Certificate of achievement at ACM Central European Programming Contest:&lt;br/&gt;
+      Budapest, Hungary (2006.), Prague, Czech Republic (2007.), Wroclaw, Poland (2009.)
+    &lt;/span&gt;&lt;br /&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Remote administration node - reverse SSH setup</title>
+      <link>https://www.ivankovic.me/blog/2014/06/15/remote-administration-node-reverse-ssh-setup/</link>
+      <pubDate>Sun, 15 Jun 2014 10:00:00 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/blog/2014/06/15/remote-administration-node-reverse-ssh-setup/</guid>
+      <description>
+
+&lt;h1 id=&#34;remote-administration-node-reverse-ssh-setup:9ce7122a7de8d3ee1521678ff2c3c18b&#34;&gt;Remote administration node - reverse SSH setup&lt;/h1&gt;
+
+&lt;p&gt;Sometimes you just need to remotely administer a network 1000 kilometers away. &lt;a href=&#34;http://tvtropes.org/pmwiki/pmwiki.php/Main/CrazyPrepared&#34;&gt;Thinking ahead&lt;/a&gt; can save you a lot of headache in this situation.&lt;/p&gt;
+
+&lt;p&gt;A R-PI node connected to the remote network can open a &lt;a href=&#34;http://en.wikipedia.org/wiki/Reverse_connection&#34;&gt;reverse SSH tunnel&lt;/a&gt; back to you.&lt;/p&gt;
+
+&lt;h2 id=&#34;reverse-ssh-tunnel-setup:9ce7122a7de8d3ee1521678ff2c3c18b&#34;&gt;Reverse SSH tunnel setup&lt;/h2&gt;
+
+&lt;p&gt;Because one of the devices is in a physically remote location you &lt;strong&gt;should not reuse any cryptographic materials&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;You should create a new restricted user on the server. When creating the user, remember to &lt;strong&gt;change the login shell to &lt;code&gt;/bin/false&lt;/code&gt;&lt;/strong&gt;. This user is only used for port forwarding so there’s no need for a login shell, and if the ssh key ever falls into the wrong hands, the damage they can do is limited.&lt;/p&gt;
+
+&lt;p&gt;On the remote device, &lt;a href=&#34;https://wiki.archlinux.org/index.php/SSH_Keys#Generating_an_SSH_key_pair&#34;&gt;create a new SSH keypair&lt;/a&gt;. Because you will not be there to type the password, the key should be passwordless. Because of this potential vulnerability, this SSH key should only ever be used for the newly created locked down user. You can now copy this key to the newly created user on the server. It’s also probably a good idea to have a key that works the other way, allowing you to connect to the remote device without a password.&lt;/p&gt;
+
+&lt;p&gt;Once you have copied the keys, try connecting to the server from the remote device. If this works, you can set up an entry in the &lt;code&gt;~/.ssh/config&lt;/code&gt; file to simplify further config. The important options are:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;RemoteForward&lt;/code&gt; - This sets up port forwarding. The format is &lt;code&gt;&amp;lt;port on server&amp;gt; localhost:&amp;lt;ssh port&amp;gt;&lt;/code&gt;. For &lt;code&gt;&amp;lt;port on server&amp;gt;&lt;/code&gt; you should choose a high enough, random port. This port &lt;strong&gt;doesn’t need to be exposed externally&lt;/strong&gt;. You can safely &lt;a href=&#34;http://www.ivankovic.me/blog/2013/11/09/basic-network-security-setup-for-rpi.html&#34;&gt;firewall&lt;/a&gt; them on both the server and the remote device.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;ServerAliveInterval&lt;/code&gt; - Because this is a long living connection with no traffic, it’s good to send a null packet every now and then. Once every 60 seconds will do.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;ServerAliveCountMax&lt;/code&gt; - On the other hand, if some (for example 2) of these null packets don’t make it, assume that the connection is dead.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Finally, try out your config. Initiate the SSH tunnel from the remote device. You should now be able to SSH to &lt;code&gt;localhost:&amp;lt;port on server&amp;gt;&lt;/code&gt; on the server itself and get the login prompt for the remote device.&lt;/p&gt;
+
+&lt;h2 id=&#34;automatic-ssh-on-startup:9ce7122a7de8d3ee1521678ff2c3c18b&#34;&gt;Automatic SSH on startup&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.harding.motd.ca/autossh/&#34;&gt;autossh&lt;/a&gt; is a nice little program that will start an SSH session and monitor it, restarting it as necessary. There’s a &lt;a href=&#34;https://packages.debian.org/wheezy/autossh&#34;&gt;Debian package&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can add it to &lt;code&gt;rc.local&lt;/code&gt; to make sure it start on every boot. A simple &lt;code&gt;autossh -M 0 -f -N &amp;lt;host&amp;gt;&lt;/code&gt; will do. For extra points, use &lt;code&gt;su -c autossh -M 0 -f -N &amp;lt;host&amp;gt; &amp;lt;username&amp;gt; &amp;amp;&lt;/code&gt; to run it as an unprivileged user.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using SSH config file to simplify swarm management</title>
+      <link>https://www.ivankovic.me/blog/2014/05/28/using-ssh-config-file-to-simplify-swarm-management/</link>
+      <pubDate>Wed, 28 May 2014 10:00:00 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/blog/2014/05/28/using-ssh-config-file-to-simplify-swarm-management/</guid>
+      <description>
+
+&lt;h1 id=&#34;using-ssh-config-file-to-simplify-swarm-management:39f07bb5d89bfecb462d92772db06fea&#34;&gt;Using SSH config file to simplify Swarm management&lt;/h1&gt;
+
+&lt;p&gt;While the whole point of having a swarm of devices is to automate things as much as possible, sometimes you just have to SSH into some, or all, of them. Increasing security by using &lt;a href=&#34;http://www.ivankovic.me/blog/2013/11/26/how-to-pick-the-best-non-standard-port-for-ssh-or-other-services.html&#34;&gt;non-standard ports&lt;/a&gt; will cause some usability problems though. It’s really easy to work around it using a bit of config.&lt;/p&gt;
+
+&lt;h2 id=&#34;ssh-config:39f07bb5d89bfecb462d92772db06fea&#34;&gt;.ssh/config&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://linux.die.net/man/5/ssh_config&#34;&gt;&lt;code&gt;.ssh/config&lt;/code&gt;&lt;/a&gt; is a fantastic little file. The most important declaration you need to know is &lt;code&gt;Host&lt;/code&gt; because it restricts the all other declarations to the host names that match the specified pattern.&lt;/p&gt;
+
+&lt;p&gt;I personally use just two types of patterns:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;One or two letters or numbers. Because Host patterns match the address specified on the command line, if you create a one letter Host declaration and then give it a HostName declaration that points to a commonly used address it enables you to connect to that host using only a single letter. For example the following setting:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; Host r
+ HostName rpi.local
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Will enable you to connect to rpi.local just by typing ssh r.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;&amp;quot;? , ??&amp;quot;&lt;/code&gt; verbatim. This is the catch-all pattern for all one or two letter hosts. Here I can easily specify the non-standard port and the user name. For example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; Host ? , ??
+ Port 1922
+ User random
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Because the settings that come first take precedence, the &lt;code&gt;Host ? , ??&lt;/code&gt; declaration should be at the end of the file.&lt;/p&gt;
+
+&lt;p&gt;Be careful when using &lt;code&gt;*&lt;/code&gt; as a pattern. This will match &lt;strong&gt;everything&lt;/strong&gt;, so if you specify a non-standard port here it will make connecting to standard SSH servers on the internet very annoying.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Saving 20ma on each RPi node</title>
+      <link>https://www.ivankovic.me/blog/2014/05/01/saving-20ma-on-each-rpi-node/</link>
+      <pubDate>Thu, 01 May 2014 12:00:00 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/blog/2014/05/01/saving-20ma-on-each-rpi-node/</guid>
+      <description>
+
+&lt;h1 id=&#34;saving-20ma-on-each-r-pi-node:90a59cf6fa441910a7e8f64fd211bb81&#34;&gt;Saving 20mA on each R-PI node&lt;/h1&gt;
+
+&lt;p&gt;Most nodes in the R-PI swarm don’t have a display device connected to them. So why keep the display device in standby?&lt;/p&gt;
+
+&lt;p&gt;According to &lt;a href=&#34;http://www.daveakerman.com/?page_id=1294&#34;&gt;Dave Akerman’s blog post&lt;/a&gt; the current usage from these is 20mA.&lt;/p&gt;
+
+&lt;p&gt;All you need to do to disable them is run:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo /opt/vc/bin/tvservice --off
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Don’t forget to add this to your &lt;code&gt;/etc/rc.local&lt;/code&gt; file as well.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi swarm - Automatically installing security updates</title>
+      <link>https://www.ivankovic.me/blog/2014/04/30/raspberry-pi-swarm-automatically-installing-security-updates/</link>
+      <pubDate>Wed, 30 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/blog/2014/04/30/raspberry-pi-swarm-automatically-installing-security-updates/</guid>
+      <description>
+
+&lt;h1 id=&#34;raspberry-pi-swarm-automatically-installing-security-updates:bf8f0fbcb30fa645c12513fccd88bd9a&#34;&gt;Raspberry PI swarm - Automatically installing security updates&lt;/h1&gt;
+
+&lt;p&gt;When the security 0-day hits the fan, you want to update as fast as super humanly possible. &lt;a href=&#34;http://en.wikipedia.org/wiki/Responsible_disclosure&#34;&gt;Responsible disclosure&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/News_embargo&#34;&gt;embargos&lt;/a&gt; on major security updates are fantastic, but if the last mile is not fast enough, you will be targeted by opportunistic internet wide scans.&lt;/p&gt;
+
+&lt;p&gt;Luckily, setting up automatic security updates on Debian is very easy.&lt;/p&gt;
+
+&lt;h2 id=&#34;required-packages:bf8f0fbcb30fa645c12513fccd88bd9a&#34;&gt;Required packages&lt;/h2&gt;
+
+&lt;p&gt;All you need is &lt;a href=&#34;http://en.wikipedia.org/wiki/Anacron&#34;&gt;Anacron&lt;/a&gt; and unnatended-upgrades. Technically you don’t even need anacron, if you are sure all your machines will run &lt;sup&gt;24&lt;/sup&gt;&amp;frasl;&lt;sub&gt;7&lt;/sub&gt;.&lt;/p&gt;
+
+&lt;p&gt;sudo apt-get install anacron unattended-upgrades&lt;/p&gt;
+
+&lt;h2 id=&#34;configuration:bf8f0fbcb30fa645c12513fccd88bd9a&#34;&gt;Configuration&lt;/h2&gt;
+
+&lt;p&gt;You probably don’t need to configure Anacron. You do need to configure unattended-upgrades a bit though.&lt;/p&gt;
+
+&lt;p&gt;There are two main files you need to touch:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;/etc/apt/apt.conf.d/50unattended-upgrades&lt;/code&gt; contains general settings for &lt;code&gt;unattended-upgrades&lt;/code&gt;. You probably want to set &lt;code&gt;Unattended-Upgrade::Mail&lt;/code&gt; to your email address.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;/etc/apt/apt.conf.d/02periodic&lt;/code&gt; you probably need to create from scratch. I recommend the following options:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; // Enable the update/upgrade script (0=disable)
+ APT::Periodic::Enable &amp;quot;1&amp;quot;;
+
+
+ // Do &amp;quot;apt-get update&amp;quot; automatically every n-days (0=disable)
+ APT::Periodic::Update-Package-Lists &amp;quot;1&amp;quot;;
+
+
+ // Do &amp;quot;apt-get upgrade --download-only&amp;quot; every n-days (0=disable)
+ APT::Periodic::Download-Upgradeable-Packages &amp;quot;1&amp;quot;;
+
+
+ // Run the &amp;quot;unattended-upgrade&amp;quot; security upgrade script
+ // every n-days (0=disabled)
+ // Requires the package &amp;quot;unattended-upgrades&amp;quot; and will write
+ // a log in /var/log/unattended-upgrades
+ APT::Periodic::Unattended-Upgrade &amp;quot;1&amp;quot;;
+
+
+ // Do &amp;quot;apt-get autoclean&amp;quot; every n-days (0=disable)
+ APT::Periodic::AutocleanInterval &amp;quot;7&amp;quot;;
+ Testing it out
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can run &lt;code&gt;unattended-upgrades&lt;/code&gt; by hand and check the log, by default located at &lt;code&gt;/var/log/unattended-upgrades/unattended-upgrades.log&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can try out Anacron by running &lt;code&gt;anacron -f -n -s -d&lt;/code&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

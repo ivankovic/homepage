@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Simple fast edit distance in a dictionary</title>
+    <link rel="stylesheet" type="text/css" href="https://www.ivankovic.me/css/style.css" media="screen">
+    <link rel="icon" href="/favicon.ico">
+    <meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+      function toggle() {
+        menu = document.getElementById('menu')
+        menu.style.display = (menu.style.display == 'none' || menu.style.display == '' ? 'block' : 'none') 
+      }
+    </script>
+  </head>
+  <body>
+
+
+<div id="mbutton" onclick="toggle();">#</div>
+<div id="menu">
+  <header> 
+    <a href="/">Ivankovic.Me</a>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/marko/contact" > Marko</a>
+      <ul>
+        <li><a href="/marko/contact" >Contact</a></li>
+        <li><a href="/marko/resume" >Resume</a></li>
+        <li><a href="/blog/" >Blog</a></li>
+      </ul>
+      </li>
+      <li><a href="/marina/contact" > Marina</a>
+      <ul>
+        <li><a href="/marina/contact" >Contact</a></li>
+        <li><a href="/marina/resume" >Resume</a></li>
+      </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <footer>
+    <p>
+        <a href="/blog/index.xml"><img src="https://www.ivankovic.me//img/feed-icon.svg" style="width: 16px" />Subscribe</a>
+    </p>
+    <p>
+  By Marko Ivanković <br/>
+  Copyright 2015.
+</p>
+
+  </footer>
+</div>
+
+
+<div id="main">
+  <header>
+    <b> > Marko Ivankovic > Blog > Simple fast edit distance in a dictionary </b>
+  </header>
+
+  <div id="content" itemscope itemtype="https://schema.org/BlogPosting">
+    
+
+<h1 id="simple-fast-edit-distance-in-a-dictionary:3b8ce9cc07fa8d19c144665e9c11dd2d">Simple fast edit distance in a dictionary</h1>
+
+<p>Edit distance (or Levenshtein distance) is a measure of similarity between two strings. Given two strings A and B, if you are allowed to delete any character in B, insert a new character in B (at any position) or substitute any character in B what is the minimal number of operations required to turn B into A?</p>
+
+<p>The solution is simple dynamic programming. Suppose we want to know how much operations it takes to make the first i characters of A equal the first j characters of B. If A[i] equals B[j] than it’s the same number of operations it takes to make the first i - 1 characters of A equal the first j - 1 characters of B. If not, than its one more operation than making:</p>
+
+<p>The first i - 1 characters of A equal the first j characters of B (this correspond to deleting a character from B)
+The first i characters of A equal the first j - 1 characters of B (this correspond to inserting a character in B)
+The first i - 1 characters of A equal the first j - 1 characters of B (this correspond to substituting a character in B)
+Whichever number is the smallest, plus one, gives the answer. Using this we can solve the problem bottom up or top down. The worst case complexity of this algorithm is O(n * m) where n and m are lengths of strings A and B respectively.</p>
+
+<p>Now, in certain areas this problem is expanded to: given a string A and a dictionary D. Find the closest string (with minimal edit distance) to A in D. The simple solution is to run the algorithm described above and just take the minimal distance. This however, can be greatly improved upon.</p>
+
+<p>Our first observation is this, if the length of string A is n and the length of some string B in D is m. The distance between A and B is at least the absolute value of n - m. Now suppose that we have processed some words in D and the current solution is x. We now know there is no point in even considering any word whose length is more than x away from A.</p>
+
+<p>But suppose we have a string B whose length is less than x away from A. Can we use the current minimum solution to our advantage here? It turns out we can. If you use top-down approach for the algorithm described above, you can maintain the current minimum number of operations. If this number increases above x, you can terminate that entire branch without fear. This reduces the complexity from O(n * m) to O(n * x). If we can rapidly decrease x to small numbers (say 1,2,3) this is quite a speedup.</p>
+
+<p>The best way to rapidly decrease x is to apply the first observation again. The only words who can have edit distance 0 in D are those that have exactly the same number of characters as A. So it makes sense to first start with them and try to get x as small as possible. If we do not find a match, it makes sense to try words who have 1 character more/less first. Then 2. Then 3. Then 4. So by preprocessing D, grouping by word length, we can greatly increase the speed.</p>
+
+<p>Another thing you might notice is that it makes sense to prefer the diagonal top-down move (using i - 1, j - 1 to calculate i, j) first since diagonals are more likely to yield smaller solutions.</p>
+
+<p>If you would like to try out some of the things described here you can try this facebook puzzle. I was able to speed up my solution by a factor of 15 using the observations above.</p>
+
+  </div>
+</div>
+
+    <div id="contact"><a href="mailto:marko@ivankovic.me" title="Send me an email!">@</a></div>
+
+  </body>
+</html>
+

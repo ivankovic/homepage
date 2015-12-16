@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Raspberry Pi - List of packages you can remove if you only do SSH</title>
+    <link rel="stylesheet" type="text/css" href="https://www.ivankovic.me/css/style.css" media="screen">
+    <link rel="icon" href="/favicon.ico">
+    <meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+      function toggle() {
+        menu = document.getElementById('menu')
+        menu.style.display = (menu.style.display == 'none' || menu.style.display == '' ? 'block' : 'none') 
+      }
+    </script>
+  </head>
+  <body>
+
+
+<div id="mbutton" onclick="toggle();">#</div>
+<div id="menu">
+  <header> 
+    <a href="/">Ivankovic.Me</a>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/marko/contact" > Marko</a>
+      <ul>
+        <li><a href="/marko/contact" >Contact</a></li>
+        <li><a href="/marko/resume" >Resume</a></li>
+        <li><a href="/blog/" >Blog</a></li>
+      </ul>
+      </li>
+      <li><a href="/marina/contact" > Marina</a>
+      <ul>
+        <li><a href="/marina/contact" >Contact</a></li>
+        <li><a href="/marina/resume" >Resume</a></li>
+      </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <footer>
+    <p>
+        <a href="/blog/index.xml"><img src="https://www.ivankovic.me//img/feed-icon.svg" style="width: 16px" />Subscribe</a>
+    </p>
+    <p>
+  By Marko Ivanković <br/>
+  Copyright 2015.
+</p>
+
+  </footer>
+</div>
+
+
+<div id="main">
+  <header>
+    <b> > Marko Ivankovic > Blog > Raspberry Pi - List of packages you can remove if you only do SSH </b>
+  </header>
+
+  <div id="content" itemscope itemtype="https://schema.org/BlogPosting">
+    
+
+<h1 id="raspberry-pi-list-of-packages-you-can-remove-if-you-only-do-ssh:087f5745d2c500d7c5bcd05e13ef4226">Raspberry PI - List of packages you can remove if you only do SSH</h1>
+
+<p>If you, like me, only access your R-PI over SSH, don’t have a printer connected to it and don’t use it to play music, you might have a few packages installed that you will never ever use.</p>
+
+<p>Here’s a nice list to help you remove them:</p>
+
+<p><code>alsa-base alsa-utils cups-bsd cups-client cups-common debian-reference-common debian-reference-en desktop-base desktop-file-utils dillo galculator gconf-service gconf2 gconf2-common gnome-icon-theme gnome-themes-standard gnome-themes-standard gpicview gsettings-desktop-schemas gtk2-engines:armhf hicolor-icon-theme idle idle idle3 leafpad leafpad libcups2:armhf libcupsimage2:armhf libgail-3-0:armhf libgail18:armhf libgconf-2-4:armhf libgnome-keyring0:armhf lightdm lxappearance lxde lxde-common lxde-core lxde-icon-theme lxinput lxmenu-data lxpanel lxpolkit lxrandr lxsession lxsession-edit lxshortcut lxshortcut lxtask lxterminal menu-xdg midori netsurf-common netsurf-gtk obconf omxplayer openbox penguinspuzzle pistore plymouth raspberrypi-artwork smartsim tk8.5 whiptail wpagui x11-common x11-utils x11-xserver-utils xarchiver xarchiver xauth xdg-utils xfonts-encodings xfonts-utils xinit xpdf xserver-common xserver-xorg xserver-xorg-core xserver-xorg-video-fbdev xterm zenity</code></p>
+
+<p>Don’t forget to run</p>
+
+<pre><code>apt-get autoremove 
+apt-get purge
+</code></pre>
+
+<p>after to get rid of dependencies.</p>
+
+<p>Of course, you could just use Arch Linux instead, but I prefer stable distributions for non-testing boxes.</p>
+
+  </div>
+</div>
+
+    <div id="contact"><a href="mailto:marko@ivankovic.me" title="Send me an email!">@</a></div>
+
+  </body>
+</html>
+

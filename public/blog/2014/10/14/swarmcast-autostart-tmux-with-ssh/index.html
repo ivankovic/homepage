@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>SwarmCast: Autostart Tmux with SSH</title>
+    <link rel="stylesheet" type="text/css" href="https://www.ivankovic.me/css/style.css" media="screen">
+    <link rel="icon" href="/favicon.ico">
+    <meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+      function toggle() {
+        menu = document.getElementById('menu')
+        menu.style.display = (menu.style.display == 'none' || menu.style.display == '' ? 'block' : 'none') 
+      }
+    </script>
+  </head>
+  <body>
+
+
+<div id="mbutton" onclick="toggle();">#</div>
+<div id="menu">
+  <header> 
+    <a href="/">Ivankovic.Me</a>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/marko/contact" > Marko</a>
+      <ul>
+        <li><a href="/marko/contact" >Contact</a></li>
+        <li><a href="/marko/resume" >Resume</a></li>
+        <li><a href="/blog/" >Blog</a></li>
+      </ul>
+      </li>
+      <li><a href="/marina/contact" > Marina</a>
+      <ul>
+        <li><a href="/marina/contact" >Contact</a></li>
+        <li><a href="/marina/resume" >Resume</a></li>
+      </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <footer>
+    <p>
+        <a href="/blog/index.xml"><img src="https://www.ivankovic.me//img/feed-icon.svg" style="width: 16px" />Subscribe</a>
+    </p>
+    <p>
+  By Marko Ivanković <br/>
+  Copyright 2015.
+</p>
+
+  </footer>
+</div>
+
+
+<div id="main">
+  <header>
+    <b> > Marko Ivankovic > Blog > SwarmCast: Autostart Tmux with SSH </b>
+  </header>
+
+  <div id="content" itemscope itemtype="https://schema.org/BlogPosting">
+    
+
+<h1 id="swarmcast-autostart-tmux-with-ssh:add7d24c8241e85dfbbdde82f143fb90">SwarmCast: Autostart Tmux with SSH</h1>
+
+<p>Maintenance tasks on the RPi Swarm nodes can be a bit of a chore. Of course the idea is to <a href="http://www.ivankovic.me/blog/2014/04/30/raspberry-pi-swarm-automatically-installing-security-updates/">automate</a> as much as possible, but sometimes you just need to do the same exact sequence of commands on all nodes at once.</p>
+
+<p>Luckily, Tmux combined with SSH (using SSH keys and <a href="http://www.ivankovic.me/blog/2014/05/28/using-ssh-config-file-to-simplify-swarm-management/">SSH config</a>) is just the thing we need.</p>
+
+<h2 id="starting-tmux-from-a-bash-script:add7d24c8241e85dfbbdde82f143fb90">Starting Tmux from a Bash script</h2>
+
+<p>Tmux has a <a href="http://manpages.ubuntu.com/manpages/precise/man1/tmux.1.html">really powerfull set of commands</a>. They allow you to completely control a Tmux session from a Bash script. In this case, we use it to prepare the window with 4 panes, each one with an SSH session to a different swarm node. At the end it turns <code>synchronize-panes</code> option on. This will instruct Tmux to send all keystrokes to all windows at once.</p>
+
+<pre><code>#!/bin/bash
+
+tmux new-session -d -n SwarmCast -s swarmcast &quot;ssh &lt;NODE1&gt;&quot;
+tmux split-window &quot;ssh &lt;NODE2&gt;&quot;
+tmux split-window -h &quot;ssh &lt;NODE2&gt;&quot;
+tmux split-window -h -t 0 &quot;ssh &lt;NODE4&gt;&quot;
+tmux set-window-option synchronize-panes 
+tmux attach-session -t swarmcast
+</code></pre>
+
+<p>One interesting thing to note: if a node fails to connect, it&rsquo;s pane will simply disappear and you can just continue working on the online nodes.</p>
+
+  </div>
+</div>
+
+    <div id="contact"><a href="mailto:marko@ivankovic.me" title="Send me an email!">@</a></div>
+
+  </body>
+</html>
+

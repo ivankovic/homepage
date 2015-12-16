@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Encrypting access to all local web consoles using Nginx as reverse SSL proxy</title>
+    <link rel="stylesheet" type="text/css" href="https://www.ivankovic.me/css/style.css" media="screen">
+    <link rel="icon" href="/favicon.ico">
+    <meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+      function toggle() {
+        menu = document.getElementById('menu')
+        menu.style.display = (menu.style.display == 'none' || menu.style.display == '' ? 'block' : 'none') 
+      }
+    </script>
+  </head>
+  <body>
+
+
+<div id="mbutton" onclick="toggle();">#</div>
+<div id="menu">
+  <header> 
+    <a href="/">Ivankovic.Me</a>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/marko/contact" > Marko</a>
+      <ul>
+        <li><a href="/marko/contact" >Contact</a></li>
+        <li><a href="/marko/resume" >Resume</a></li>
+        <li><a href="/blog/" >Blog</a></li>
+      </ul>
+      </li>
+      <li><a href="/marina/contact" > Marina</a>
+      <ul>
+        <li><a href="/marina/contact" >Contact</a></li>
+        <li><a href="/marina/resume" >Resume</a></li>
+      </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <footer>
+    <p>
+        <a href="/blog/index.xml"><img src="https://www.ivankovic.me//img/feed-icon.svg" style="width: 16px" />Subscribe</a>
+    </p>
+    <p>
+  By Marko Ivanković <br/>
+  Copyright 2015.
+</p>
+
+  </footer>
+</div>
+
+
+<div id="main">
+  <header>
+    <b> > Marko Ivankovic > Blog > Encrypting access to all local web consoles using Nginx as reverse SSL proxy </b>
+  </header>
+
+  <div id="content" itemscope itemtype="https://schema.org/BlogPosting">
+    
+
+<h1 id="encrypting-access-to-all-local-web-consoles-using-nginx-as-reverse-ssl-proxy:84ef71d42f6a84b021597a4e570d1356">Encrypting access to all local web consoles (using Nginx as reverse SSL proxy)</h1>
+
+<p>A lot of software I run on Raspberry PI nodes comes with built-in web interfaces. Making sure all of these are encrypted, only allow authenticated users and don’t have vulnerabilities is tiresome and prone to errors. Some interfaces will allow you to hook up to existing Nginx or Apache servers, but some stubbornly insist on using their own built in web server.</p>
+
+<p>Using Nginx and Iptables, we can solve the problem in the other direction, and use a good, secure Nginx server to forward requests to local interfaces.</p>
+
+<p>The idea is:</p>
+
+<ol>
+<li>Use Nginx reverse SSL proxy for encryption.</li>
+<li>Require client side SSL certificates for authentication.</li>
+<li>Use Iptables to block all incoming ports except for HTTPS and SSH.</li>
+</ol>
+
+<h2 id="ssl-certificate-generation:84ef71d42f6a84b021597a4e570d1356">SSL certificate generation</h2>
+
+<p>There are <a href="https://www.google.com/search?q=openssl+public+key+tutorial">many</a> tutorials online on SSL certificate generation. <a href="https://wiki.archlinux.org/index.php/OpenSSL">ArchWiki</a> has a particularly good one that uses OpenSSL.</p>
+
+<p>The important things to look for are:</p>
+
+<ol>
+<li><p><strong>Message digest</strong> (<code>default_md</code> in OpenSSL) should be at least SHA256. <em>Never use MD5</em> it <a href="http://www.kb.cert.org/vuls/id/836068">has been completely broken and should not be used</a>. If you have to use SHA1, you are probably safe for the very near future, but <a href="https://www.schneier.com/blog/archives/2005/02/cryptanalysis_o.html">should migrate to SHA256 as soon as posible</a>.</p></li>
+
+<li><p><strong>Key size</strong> (<code>default_bits</code>) should be at least 2048. 4096 is not a huge performance hit, so you should at least try it out and see if it works.</p></li>
+
+<li><p>Choose a comfortable duration. 1 year from now you will forget you set a 1 year duration and be amazed when things mysteriously start to break. Since you fully control devices on both ends, limiting duration is not as important as for publicly accessible web sites.</p></li>
+</ol>
+
+<h2 id="nginx-configuration:84ef71d42f6a84b021597a4e570d1356">Nginx configuration ##</h2>
+
+<h3 id="nginx-ssl:84ef71d42f6a84b021597a4e570d1356">Nginx SSL</h3>
+
+<p>Nginx has a very good <a href="http://wiki.nginx.org/HttpSslModule">SSL module</a>. Important directives are:</p>
+
+<ol>
+<li><p><code>ssl_verify_client</code> - This should be set to on. We demand client certificates for all requests.</p></li>
+
+<li><p><code>ssl_prefer_server_chipers</code> - This should be set to on. Since you control devices on both ends, you need to set up the cipher list just once on the server. This also helps catch bugs where clients don’t support good quality ciphersuites.</p></li>
+
+<li><p><code>ssl_protocols</code> - You should consider forcing TLS1.2.</p></li>
+
+<li><p><code>ssl_ciphers</code> - <strong>This is important</strong>. You need to make sure that the chipers you use support <a href="http://en.wikipedia.org/wiki/Forward_secrecy">forward secrecy</a>. By default, the config is set to <code>HIGH:!aNULL:!MD5</code>, in <a href="https://www.openssl.org/docs/apps/ciphers.html">OpenSSL cipher list format</a>. The default translates to “high encryption cipher suites (mostly based on key size) but never suites that don’t offer authentication (<code>!aNULL</code>) and most certainly never MD5.”. The exact value for <code>HIGH</code> depends on your OpenSSL version. You should check that <code>ECDHE-*</code> schemes are the preferred suites. The last <code>E</code> in <code>ECDHE</code> means ephemeral and that is what gives forward secrecy. You could consider forcing the algorithms to explicitly list those that use forward secrecy, but then you might miss out on future upgrades, unless you remember to update the config.</p></li>
+</ol>
+
+<p>Mozilla maintains a fantastic <a href="https://wiki.mozilla.org/Security/Server_Side_TLS">wiki</a> for anyone who wants an in-depth analysis.</p>
+
+<h2 id="browser-configuration:84ef71d42f6a84b021597a4e570d1356">Browser configuration</h2>
+
+<p><em>Do not import the CA certificate in the keychain</em>. Even though you control it, there’s no real reason to do this. It’s much better to trust the server certificates on a case by case basis.</p>
+
+<p>Currently I use Firefox to access these internal sites. This is because Firefox works much better with self-signed and self-CA certificates. <a href="https://www.google.com/search?q=firefox+trust+certificate">Trusting a certificate in Firefox</a> is easy to do once, and from then on you are safe and don’t get any warnings.</p>
+
+<p>I didn’t yet figure out how to do this in Chrome, but I didn’t try too hard either. Using different browsers makes XSS attacks against my internal systems much more difficult.</p>
+
+<h2 id="locking-it-all-down:84ef71d42f6a84b021597a4e570d1356">Locking it all down</h2>
+
+<p>You should <a href="http://www.ivankovic.me/blog/2013/11/09/basic-network-security-setup-for-rpi.html">already</a> be using Iptables to block all incoming traffic to your machine. Now simply add https (TCP port 443) to the list of allowed ports in the TCP chain and you are done.</p>
+
+<p>At this point, you probably don’t need any more TCP ports exposed on your machine. You should be able to tunnel everything through SSH and SSL, with the possible exception of <a href="http://en.wikipedia.org/wiki/Multicast_DNS">mDNS</a> (if you need local machine name resolution).</p>
+
+  </div>
+</div>
+
+    <div id="contact"><a href="mailto:marko@ivankovic.me" title="Send me an email!">@</a></div>
+
+  </body>
+</html>
+

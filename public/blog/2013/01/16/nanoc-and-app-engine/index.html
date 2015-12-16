@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Nanoc and App Engine</title>
+    <link rel="stylesheet" type="text/css" href="https://www.ivankovic.me/css/style.css" media="screen">
+    <link rel="icon" href="/favicon.ico">
+    <meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+      function toggle() {
+        menu = document.getElementById('menu')
+        menu.style.display = (menu.style.display == 'none' || menu.style.display == '' ? 'block' : 'none') 
+      }
+    </script>
+  </head>
+  <body>
+
+
+<div id="mbutton" onclick="toggle();">#</div>
+<div id="menu">
+  <header> 
+    <a href="/">Ivankovic.Me</a>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/marko/contact" > Marko</a>
+      <ul>
+        <li><a href="/marko/contact" >Contact</a></li>
+        <li><a href="/marko/resume" >Resume</a></li>
+        <li><a href="/blog/" >Blog</a></li>
+      </ul>
+      </li>
+      <li><a href="/marina/contact" > Marina</a>
+      <ul>
+        <li><a href="/marina/contact" >Contact</a></li>
+        <li><a href="/marina/resume" >Resume</a></li>
+      </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <footer>
+    <p>
+        <a href="/blog/index.xml"><img src="https://www.ivankovic.me//img/feed-icon.svg" style="width: 16px" />Subscribe</a>
+    </p>
+    <p>
+  By Marko Ivanković <br/>
+  Copyright 2015.
+</p>
+
+  </footer>
+</div>
+
+
+<div id="main">
+  <header>
+    <b> > Marko Ivankovic > Blog > Nanoc and App Engine </b>
+  </header>
+
+  <div id="content" itemscope itemtype="https://schema.org/BlogPosting">
+    
+
+<h1 id="nanoc-and-app-engine:a546b2fb73dc4b584e57cd848926ce65">Nanoc and App Engine</h1>
+
+<p>You can get away with a lot these days just by using static sites. Or just by using client side scripts. A lot of services out there cover the basic things a website should have. Need comments? Social networks! Need visitor metrics? Google Analytics! And static website generators are really good now. I recently decided to use <a href="http://nanoc.stoneship.org/">nanoc</a> to make a small website. And it is simple, fast and works really well with Vim.</p>
+
+<p>Another thing you can do these days, if you have a small enough site, is host it for free. Google <a href="https://developers.google.com/appengine/docs/quotas">AppEngine quota</a> is pretty good. Most important for static sites is the 1GB/day upload and 1GB/day download quota. Fantastic for a small site (and if you have a big site, you can always start paying a bit more).</p>
+
+<p>So, how difficult is it to get nanoc and AppEngine to play nice together? Easy. You can get a nanoc compiled site up and serving from AppEngine in minutes. Starting from a totally new nanoc site, you just need to follow this tutorial.</p>
+
+<p>Create a new nanoc item by creating “app.yaml” in the nanoc content directory. This is your usual AppEngine app.yaml. Open the newly created file and put in the default metadata:</p>
+
+<pre><code>application: &lt;app_ID&gt;
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_dir: website
+</code></pre>
+
+<p>Since we have a completely static site, we will use the built-in AppEngine static handler for almost everything.</p>
+
+<p>Next we need to make sure the app.yaml file is copied every time we compile the site. To do this, add the following to Rules file:</p>
+
+<pre><code>compile '/app/' do
+  # GAE, don't filter or layout
+end
+
+route '/app/' do
+  '/app.yaml'
+end
+</code></pre>
+
+<p>Now when you compile the site, the <code>app.yaml</code> file will always be copied to your output folder.</p>
+
+<p>Now we need to modify the Rules file so that it puts the website in the static directory of the AppEngine app. This is super simple:</p>
+
+<pre><code>route '/' do
+  '/website/index.html'
+end
+
+route '*' do
+  if item.binary?
+    # Write item with identifier /foo/ to /foo.ext
+    '/website' + item.identifier.chop + '.' + item[:extension]
+  else
+    '/website' + item.identifier.chop + '.html'
+  end
+end
+</code></pre>
+
+<p>At this point, you can compile your site and actually run it on AppEngine! Try it out with the development server. On of the things you might notice is that if you go to <a href="http://localhost:8080/">http://localhost:8080/</a> you will get an error. This is because the AppEngine static_dir handler maps the files with their full name. So you have to go to <a href="http://localhost:8080/index.html">http://localhost:8080/index.html</a> to get to your site. So let’s fix that. Open up the app.yaml file and add the following:</p>
+
+<pre><code>application: &lt;app_ID&gt;
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  script: redirector.app
+
+- url: /
+  static_dir: website
+</code></pre>
+
+<p>This will make the naked root url (<a href="http://localhost:8080/">http://localhost:8080/</a>) handled by the redirect app. Which we are going to write right now! So you create a redirect.py file in the nanoc content directory with the following content:</p>
+
+<pre><code>import webapp2
+
+class MainPage(webapp2.RequestHandler):
+  def get(self):
+    self.redirect('/index.html') 
+
+
+app = webapp2.WSGIApplication([('/', MainPage)],
+                              debug=True)
+</code></pre>
+
+<p>This is a simple webapp2 app that will handle any request made to the ‘/’ path and redirect to ‘/index.html’ by returning a HTTP 302 response. This is a simple and effective way of doing the redirect, and is according to the standard. You might be wondering, well what about other urls, like “/fake.htm” or “/non-existent.html”. Although we could make an app that would handle those cases as well, I think it is far better to let AppEngine return HTTP 404 for them. Because, they really are not there, and 404 is more appropriate than an redirect.</p>
+
+<p>Now to add some Rules to make the redirect.py file end up in the fight place:</p>
+
+<pre><code>compile '/redirector/' do
+  # GAE, do not touch
+end
+
+route '/redirector/' do
+  '/redirector.py'
+end
+</code></pre>
+
+<p>And that is it. You can now go and host your nanoc compiled site on AppEngine!</p>
+
+<p>(Optional) Make sure you do not auto-prune *.pyc files. I managed to cause the AppEngine development server to have a fit when nanoc purged the compiled python files. In config.yaml, look for the “prune:” section. In there, add ‘.pyc’ to the “exclude:” list.</p>
+
+  </div>
+</div>
+
+    <div id="contact"><a href="mailto:marko@ivankovic.me" title="Send me an email!">@</a></div>
+
+  </body>
+</html>
+
