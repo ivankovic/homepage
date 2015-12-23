@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Markos on Marko Ivankovic and Marina Celar Ivankovic - personal website</title>
-    <link>http://localhost:1313/marko/</link>
+    <link>https://www.ivankovic.me/marko/</link>
     <description>Recent content in Markos on Marko Ivankovic and Marina Celar Ivankovic - personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 10 Jul 2014 20:24:51 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/marko/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.ivankovic.me/marko/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Marko Ivankovic &gt; Contact</title>
-      <link>http://localhost:1313/marko/contact/</link>
+      <link>https://www.ivankovic.me/marko/contact/</link>
       <pubDate>Thu, 10 Jul 2014 20:24:51 +0000</pubDate>
       
-      <guid>http://localhost:1313/marko/contact/</guid>
+      <guid>https://www.ivankovic.me/marko/contact/</guid>
       <description>&lt;div itemscope itemtype=&#34;http://schema.org/Person&#34;&gt;
 
 &lt;h1&gt;Contact information&lt;/h1&gt;
@@ -38,10 +38,10 @@
     
     <item>
       <title>Marko Ivankovic &gt; Resume</title>
-      <link>http://localhost:1313/marko/resume/</link>
+      <link>https://www.ivankovic.me/marko/resume/</link>
       <pubDate>Wed, 09 Jul 2014 20:40:05 +0000</pubDate>
       
-      <guid>http://localhost:1313/marko/resume/</guid>
+      <guid>https://www.ivankovic.me/marko/resume/</guid>
       <description>&lt;p&gt;&lt;div itemscope itemtype=&#34;http://schema.org/Person&#34;&gt;
   &lt;h1&gt;
     &lt;span itemprop=&#34;name&#34;&gt;Marko Ivanković&lt;/span&gt;
@@ -108,7 +108,7 @@
     &lt;a href=&#34;http://unizg.hr&#34; itemprop=&#34;sameAs&#34;&gt;&lt;a href=&#34;http://unizg.hr&#34;&gt;http://unizg.hr&lt;/a&gt;&lt;/a&gt;
   &lt;/span&gt;
   (2010 - 2011)&lt;br/&gt;
-  Thesis: &lt;i&gt;&lt;a href=&#34;http://localhost:1313/doc/MarkoIvankovicDiplomskiRad.pdf&#34;&gt;
+  Thesis: &lt;i&gt;&lt;a href=&#34;https://www.ivankovic.me/doc/MarkoIvankovicDiplomskiRad.pdf&#34;&gt;
     Software framework for performance benchmarks of cross-context communication systems for Web browsers&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Awards and honors&lt;/h2&gt;

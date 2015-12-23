@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Marko Ivankovic and Marina Celar Ivankovic - personal website</title>
-    <link>http://localhost:1313/</link>
+    <link>https://www.ivankovic.me/</link>
     <description>Recent content on Marko Ivankovic and Marina Celar Ivankovic - personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Dec 2015 23:29:21 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.ivankovic.me/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Self-hosting a static personal homepage - Security</title>
-      <link>http://localhost:1313/blog/2015/12/23/self-hosting-a-static-personal-homepage-security/</link>
+      <link>https://www.ivankovic.me/blog/2015/12/23/self-hosting-a-static-personal-homepage-security/</link>
       <pubDate>Wed, 23 Dec 2015 23:29:21 +0100</pubDate>
       
-      <guid>http://localhost:1313/blog/2015/12/23/self-hosting-a-static-personal-homepage-security/</guid>
+      <guid>https://www.ivankovic.me/blog/2015/12/23/self-hosting-a-static-personal-homepage-security/</guid>
       <description>
 
 &lt;h1 id=&#34;self-hosting-a-static-personal-homepage-security:cc763e65dbe54cccb78d1311860964d6&#34;&gt;Self-hosting a static personal homepage - Security&lt;/h1&gt;
@@ -89,10 +89,10 @@
     
     <item>
       <title>Installing SSL client certificate on Android</title>
-      <link>http://localhost:1313/blog/2015/08/20/installing-ssl-client-certificate-on-android/</link>
+      <link>https://www.ivankovic.me/blog/2015/08/20/installing-ssl-client-certificate-on-android/</link>
       <pubDate>Thu, 20 Aug 2015 01:08:07 +0200</pubDate>
       
-      <guid>http://localhost:1313/blog/2015/08/20/installing-ssl-client-certificate-on-android/</guid>
+      <guid>https://www.ivankovic.me/blog/2015/08/20/installing-ssl-client-certificate-on-android/</guid>
       <description>
 
 &lt;h1 id=&#34;installing-ssl-client-certificate-on-android:4e2274b7ab8411fadd6a472888956c1d&#34;&gt;Installing SSL client certificate on Android&lt;/h1&gt;
@@ -111,10 +111,10 @@
     
     <item>
       <title>go-config - Go library for text file based configuration</title>
-      <link>http://localhost:1313/blog/2015/03/06/go-config-go-library-for-text-file-based-configuration/</link>
+      <link>https://www.ivankovic.me/blog/2015/03/06/go-config-go-library-for-text-file-based-configuration/</link>
       <pubDate>Fri, 06 Mar 2015 22:55:30 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2015/03/06/go-config-go-library-for-text-file-based-configuration/</guid>
+      <guid>https://www.ivankovic.me/blog/2015/03/06/go-config-go-library-for-text-file-based-configuration/</guid>
       <description>
 
 &lt;h1 id=&#34;go-config-go-library-for-text-file-based-configuration:567eb8a85f7be3e1831957b8a14fb757&#34;&gt;Go-config - Go library for text file based configuration&lt;/h1&gt;
@@ -169,10 +169,10 @@ v := x.Get(&amp;quot;section&amp;quot;, &amp;quot;key&amp;quot;, &amp;quot;defau
     
     <item>
       <title>A nice directory structure for Go code</title>
-      <link>http://localhost:1313/blog/2015/02/18/a-nice-directory-structure-for-go-code/</link>
+      <link>https://www.ivankovic.me/blog/2015/02/18/a-nice-directory-structure-for-go-code/</link>
       <pubDate>Wed, 18 Feb 2015 20:59:50 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2015/02/18/a-nice-directory-structure-for-go-code/</guid>
+      <guid>https://www.ivankovic.me/blog/2015/02/18/a-nice-directory-structure-for-go-code/</guid>
       <description>
 
 &lt;h1 id=&#34;a-nice-directory-structure-for-go-code:66e9facd3641635f7e0e15acfb12cb3b&#34;&gt;A nice directory structure for Go code&lt;/h1&gt;
@@ -237,10 +237,10 @@ It reduces management overhead: Just one root directory to back up, just one roo
     
     <item>
       <title>SwarmCast: Autostart Tmux with SSH</title>
-      <link>http://localhost:1313/blog/2014/10/14/swarmcast-autostart-tmux-with-ssh/</link>
+      <link>https://www.ivankovic.me/blog/2014/10/14/swarmcast-autostart-tmux-with-ssh/</link>
       <pubDate>Mon, 13 Oct 2014 22:35:37 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2014/10/14/swarmcast-autostart-tmux-with-ssh/</guid>
+      <guid>https://www.ivankovic.me/blog/2014/10/14/swarmcast-autostart-tmux-with-ssh/</guid>
       <description>
 
 &lt;h1 id=&#34;swarmcast-autostart-tmux-with-ssh:add7d24c8241e85dfbbdde82f143fb90&#34;&gt;SwarmCast: Autostart Tmux with SSH&lt;/h1&gt;
@@ -269,10 +269,10 @@ tmux attach-session -t swarmcast
     
     <item>
       <title>Things to remove from a fresh Ubuntu 14.04 install</title>
-      <link>http://localhost:1313/blog/2014/10/02/things-to-remove-from-a-fresh-ubuntu-14-04-install/</link>
+      <link>https://www.ivankovic.me/blog/2014/10/02/things-to-remove-from-a-fresh-ubuntu-14-04-install/</link>
       <pubDate>Thu, 02 Oct 2014 09:00:41 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2014/10/02/things-to-remove-from-a-fresh-ubuntu-14-04-install/</guid>
+      <guid>https://www.ivankovic.me/blog/2014/10/02/things-to-remove-from-a-fresh-ubuntu-14-04-install/</guid>
       <description>
 
 &lt;h1 id=&#34;things-to-remove-from-a-fresh-ubuntu-14-04-install:2624161211058c1bb2c51ec4e6852024&#34;&gt;Things to remove from a fresh Ubuntu 14.04 install&lt;/h1&gt;
@@ -290,10 +290,10 @@ install click &lt;a href=&#34;http://www.ivankovic.me/blog/2013/09/21/raspberry-
     
     <item>
       <title>Guest post on Google testing blog</title>
-      <link>http://localhost:1313/blog/2014/07/26/guest-post-on-google-testing-blog/</link>
+      <link>https://www.ivankovic.me/blog/2014/07/26/guest-post-on-google-testing-blog/</link>
       <pubDate>Sat, 26 Jul 2014 10:22:08 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2014/07/26/guest-post-on-google-testing-blog/</guid>
+      <guid>https://www.ivankovic.me/blog/2014/07/26/guest-post-on-google-testing-blog/</guid>
       <description>
 
 &lt;h1 id=&#34;guest-post-on-google-testing-blog:6db0136578487cffd955fb6c3e8dca14&#34;&gt;Guest post on Google testing blog&lt;/h1&gt;
@@ -305,10 +305,10 @@ install click &lt;a href=&#34;http://www.ivankovic.me/blog/2013/09/21/raspberry-
     
     <item>
       <title>Migrating to Hugo</title>
-      <link>http://localhost:1313/blog/2014/07/26/migrating-to-hugo/</link>
+      <link>https://www.ivankovic.me/blog/2014/07/26/migrating-to-hugo/</link>
       <pubDate>Fri, 25 Jul 2014 22:13:55 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2014/07/26/migrating-to-hugo/</guid>
+      <guid>https://www.ivankovic.me/blog/2014/07/26/migrating-to-hugo/</guid>
       <description>
 
 &lt;h1 id=&#34;migrating-to-hugo:d126bc28dea2bc1bfaf186067b73bc29&#34;&gt;Migrating to Hugo&lt;/h1&gt;
@@ -339,10 +339,10 @@ type your content and see th changes appear in the browser in almost real-time.&
     
     <item>
       <title>Marina Celar Ivankovic &gt; Contact</title>
-      <link>http://localhost:1313/marina/contact/</link>
+      <link>https://www.ivankovic.me/marina/contact/</link>
       <pubDate>Thu, 10 Jul 2014 20:30:02 +0000</pubDate>
       
-      <guid>http://localhost:1313/marina/contact/</guid>
+      <guid>https://www.ivankovic.me/marina/contact/</guid>
       <description>&lt;div itemscope itemtype=&#34;http://schema.org/Person&#34;&gt;
 
 &lt;h1&gt;Contact information&lt;/h1&gt;
@@ -361,10 +361,10 @@ type your content and see th changes appear in the browser in almost real-time.&
     
     <item>
       <title>Marina Celar Ivankovic &gt; Resume</title>
-      <link>http://localhost:1313/marina/resume/</link>
+      <link>https://www.ivankovic.me/marina/resume/</link>
       <pubDate>Thu, 10 Jul 2014 20:27:05 +0000</pubDate>
       
-      <guid>http://localhost:1313/marina/resume/</guid>
+      <guid>https://www.ivankovic.me/marina/resume/</guid>
       <description>&lt;p&gt;&lt;h1&gt;dr. vet. med. Marina Čelar Ivanković - Resume&lt;/h1&gt;
 &lt;p&gt;Last updated: Feb 14th, 2015.&lt;/p&gt;
 &lt;h2&gt;Work&lt;/h2&gt;
@@ -395,10 +395,10 @@ type your content and see th changes appear in the browser in almost real-time.&
     
     <item>
       <title>Marko Ivankovic &gt; Contact</title>
-      <link>http://localhost:1313/marko/contact/</link>
+      <link>https://www.ivankovic.me/marko/contact/</link>
       <pubDate>Thu, 10 Jul 2014 20:24:51 +0000</pubDate>
       
-      <guid>http://localhost:1313/marko/contact/</guid>
+      <guid>https://www.ivankovic.me/marko/contact/</guid>
       <description>&lt;div itemscope itemtype=&#34;http://schema.org/Person&#34;&gt;
 
 &lt;h1&gt;Contact information&lt;/h1&gt;
@@ -422,10 +422,10 @@ type your content and see th changes appear in the browser in almost real-time.&
     
     <item>
       <title>Marko Ivankovic &gt; Resume</title>
-      <link>http://localhost:1313/marko/resume/</link>
+      <link>https://www.ivankovic.me/marko/resume/</link>
       <pubDate>Wed, 09 Jul 2014 20:40:05 +0000</pubDate>
       
-      <guid>http://localhost:1313/marko/resume/</guid>
+      <guid>https://www.ivankovic.me/marko/resume/</guid>
       <description>&lt;p&gt;&lt;div itemscope itemtype=&#34;http://schema.org/Person&#34;&gt;
   &lt;h1&gt;
     &lt;span itemprop=&#34;name&#34;&gt;Marko Ivanković&lt;/span&gt;
@@ -492,7 +492,7 @@ type your content and see th changes appear in the browser in almost real-time.&
     &lt;a href=&#34;http://unizg.hr&#34; itemprop=&#34;sameAs&#34;&gt;&lt;a href=&#34;http://unizg.hr&#34;&gt;http://unizg.hr&lt;/a&gt;&lt;/a&gt;
   &lt;/span&gt;
   (2010 - 2011)&lt;br/&gt;
-  Thesis: &lt;i&gt;&lt;a href=&#34;http://localhost:1313/doc/MarkoIvankovicDiplomskiRad.pdf&#34;&gt;
+  Thesis: &lt;i&gt;&lt;a href=&#34;https://www.ivankovic.me/doc/MarkoIvankovicDiplomskiRad.pdf&#34;&gt;
     Software framework for performance benchmarks of cross-context communication systems for Web browsers&lt;/a&gt;&lt;/i&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Awards and honors&lt;/h2&gt;
@@ -512,10 +512,10 @@ type your content and see th changes appear in the browser in almost real-time.&
     
     <item>
       <title>Remote administration node - reverse SSH setup</title>
-      <link>http://localhost:1313/blog/2014/06/15/remote-administration-node-reverse-ssh-setup/</link>
+      <link>https://www.ivankovic.me/blog/2014/06/15/remote-administration-node-reverse-ssh-setup/</link>
       <pubDate>Sun, 15 Jun 2014 10:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2014/06/15/remote-administration-node-reverse-ssh-setup/</guid>
+      <guid>https://www.ivankovic.me/blog/2014/06/15/remote-administration-node-reverse-ssh-setup/</guid>
       <description>
 
 &lt;h1 id=&#34;remote-administration-node-reverse-ssh-setup:9ce7122a7de8d3ee1521678ff2c3c18b&#34;&gt;Remote administration node - reverse SSH setup&lt;/h1&gt;
@@ -554,10 +554,10 @@ type your content and see th changes appear in the browser in almost real-time.&
     
     <item>
       <title>Using SSH config file to simplify swarm management</title>
-      <link>http://localhost:1313/blog/2014/05/28/using-ssh-config-file-to-simplify-swarm-management/</link>
+      <link>https://www.ivankovic.me/blog/2014/05/28/using-ssh-config-file-to-simplify-swarm-management/</link>
       <pubDate>Wed, 28 May 2014 10:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2014/05/28/using-ssh-config-file-to-simplify-swarm-management/</guid>
+      <guid>https://www.ivankovic.me/blog/2014/05/28/using-ssh-config-file-to-simplify-swarm-management/</guid>
       <description>
 
 &lt;h1 id=&#34;using-ssh-config-file-to-simplify-swarm-management:39f07bb5d89bfecb462d92772db06fea&#34;&gt;Using SSH config file to simplify Swarm management&lt;/h1&gt;
@@ -595,10 +595,10 @@ type your content and see th changes appear in the browser in almost real-time.&
     
     <item>
       <title>Saving 20ma on each RPi node</title>
-      <link>http://localhost:1313/blog/2014/05/01/saving-20ma-on-each-rpi-node/</link>
+      <link>https://www.ivankovic.me/blog/2014/05/01/saving-20ma-on-each-rpi-node/</link>
       <pubDate>Thu, 01 May 2014 12:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/2014/05/01/saving-20ma-on-each-rpi-node/</guid>
+      <guid>https://www.ivankovic.me/blog/2014/05/01/saving-20ma-on-each-rpi-node/</guid>
       <description>
 
 &lt;h1 id=&#34;saving-20ma-on-each-r-pi-node:90a59cf6fa441910a7e8f64fd211bb81&#34;&gt;Saving 20mA on each R-PI node&lt;/h1&gt;

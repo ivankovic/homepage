@@ -2,158 +2,158 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://www.ivankovic.me/</loc>
     <lastmod>2015-12-23T23:29:21+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2015/12/23/self-hosting-a-static-personal-homepage-security/</loc>
+    <loc>https://www.ivankovic.me/blog/2015/12/23/self-hosting-a-static-personal-homepage-security/</loc>
     <lastmod>2015-12-23T23:29:21+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2015/08/20/installing-ssl-client-certificate-on-android/</loc>
+    <loc>https://www.ivankovic.me/blog/2015/08/20/installing-ssl-client-certificate-on-android/</loc>
     <lastmod>2015-08-20T01:08:07+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2015/03/06/go-config-go-library-for-text-file-based-configuration/</loc>
+    <loc>https://www.ivankovic.me/blog/2015/03/06/go-config-go-library-for-text-file-based-configuration/</loc>
     <lastmod>2015-03-06T22:55:30+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2015/02/18/a-nice-directory-structure-for-go-code/</loc>
+    <loc>https://www.ivankovic.me/blog/2015/02/18/a-nice-directory-structure-for-go-code/</loc>
     <lastmod>2015-02-18T20:59:50+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2014/10/14/swarmcast-autostart-tmux-with-ssh/</loc>
+    <loc>https://www.ivankovic.me/blog/2014/10/14/swarmcast-autostart-tmux-with-ssh/</loc>
     <lastmod>2014-10-13T22:35:37+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2014/10/02/things-to-remove-from-a-fresh-ubuntu-14-04-install/</loc>
+    <loc>https://www.ivankovic.me/blog/2014/10/02/things-to-remove-from-a-fresh-ubuntu-14-04-install/</loc>
     <lastmod>2014-10-02T09:00:41+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2014/07/26/guest-post-on-google-testing-blog/</loc>
+    <loc>https://www.ivankovic.me/blog/2014/07/26/guest-post-on-google-testing-blog/</loc>
     <lastmod>2014-07-26T10:22:08+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2014/07/26/migrating-to-hugo/</loc>
+    <loc>https://www.ivankovic.me/blog/2014/07/26/migrating-to-hugo/</loc>
     <lastmod>2014-07-25T22:13:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/marina/contact/</loc>
+    <loc>https://www.ivankovic.me/marina/contact/</loc>
     <lastmod>2014-07-10T20:30:02+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/marina/resume/</loc>
+    <loc>https://www.ivankovic.me/marina/resume/</loc>
     <lastmod>2014-07-10T20:27:05+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/marko/contact/</loc>
+    <loc>https://www.ivankovic.me/marko/contact/</loc>
     <lastmod>2014-07-10T20:24:51+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/marko/resume/</loc>
+    <loc>https://www.ivankovic.me/marko/resume/</loc>
     <lastmod>2014-07-09T20:40:05+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2014/06/15/remote-administration-node-reverse-ssh-setup/</loc>
+    <loc>https://www.ivankovic.me/blog/2014/06/15/remote-administration-node-reverse-ssh-setup/</loc>
     <lastmod>2014-06-15T10:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2014/05/28/using-ssh-config-file-to-simplify-swarm-management/</loc>
+    <loc>https://www.ivankovic.me/blog/2014/05/28/using-ssh-config-file-to-simplify-swarm-management/</loc>
     <lastmod>2014-05-28T10:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2014/05/01/saving-20ma-on-each-rpi-node/</loc>
+    <loc>https://www.ivankovic.me/blog/2014/05/01/saving-20ma-on-each-rpi-node/</loc>
     <lastmod>2014-05-01T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2014/04/30/raspberry-pi-swarm-automatically-installing-security-updates/</loc>
+    <loc>https://www.ivankovic.me/blog/2014/04/30/raspberry-pi-swarm-automatically-installing-security-updates/</loc>
     <lastmod>2014-04-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2014/04/25/openscad-patterns-and-tips/</loc>
+    <loc>https://www.ivankovic.me/blog/2014/04/25/openscad-patterns-and-tips/</loc>
     <lastmod>2014-04-25T22:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2014/04/12/encrypting-access-to-all-local-web-consoles-using-nginx-as-reverse-ssl-proxy/</loc>
+    <loc>https://www.ivankovic.me/blog/2014/04/12/encrypting-access-to-all-local-web-consoles-using-nginx-as-reverse-ssl-proxy/</loc>
     <lastmod>2014-04-12T20:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2014/02/15/laser-cut-raspberry-pi-case-with-camera-mount-version-1/</loc>
+    <loc>https://www.ivankovic.me/blog/2014/02/15/laser-cut-raspberry-pi-case-with-camera-mount-version-1/</loc>
     <lastmod>2014-02-15T09:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2014/01/23/detecting-the-presence-of-a-specific-smartphone-device-on-the-network/</loc>
+    <loc>https://www.ivankovic.me/blog/2014/01/23/detecting-the-presence-of-a-specific-smartphone-device-on-the-network/</loc>
     <lastmod>2014-01-23T09:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2014/01/19/teaching-my-raspberry-pi-nodes-how-to-contact-me/</loc>
+    <loc>https://www.ivankovic.me/blog/2014/01/19/teaching-my-raspberry-pi-nodes-how-to-contact-me/</loc>
     <lastmod>2014-01-19T09:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2013/12/26/why-constructing-human-readable-sha256-or-other-hashes-is-hard-part-1/</loc>
+    <loc>https://www.ivankovic.me/blog/2013/12/26/why-constructing-human-readable-sha256-or-other-hashes-is-hard-part-1/</loc>
     <lastmod>2013-12-26T08:15:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2013/11/26/how-to-pick-the-best-non-standard-port-for-ssh-or-other-services/</loc>
+    <loc>https://www.ivankovic.me/blog/2013/11/26/how-to-pick-the-best-non-standard-port-for-ssh-or-other-services/</loc>
     <lastmod>2013-11-26T22:59:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2013/11/09/raspberry-pi-minimal-network-security-setup-for-a-headless-pi/</loc>
+    <loc>https://www.ivankovic.me/blog/2013/11/09/raspberry-pi-minimal-network-security-setup-for-a-headless-pi/</loc>
     <lastmod>2013-11-09T17:50:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2013/11/05/first-post-on-the-new-blog/</loc>
+    <loc>https://www.ivankovic.me/blog/2013/11/05/first-post-on-the-new-blog/</loc>
     <lastmod>2013-11-05T22:17:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2013/09/21/raspberry-pi-list-of-packages-you-can-remove-if-you-only-do-ssh/</loc>
+    <loc>https://www.ivankovic.me/blog/2013/09/21/raspberry-pi-list-of-packages-you-can-remove-if-you-only-do-ssh/</loc>
     <lastmod>2013-09-21T19:28:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2013/09/15/monitoring-the-raspberry-pi-cpu-temperature/</loc>
+    <loc>https://www.ivankovic.me/blog/2013/09/15/monitoring-the-raspberry-pi-cpu-temperature/</loc>
     <lastmod>2013-09-15T20:37:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2013/01/16/nanoc-and-app-engine/</loc>
+    <loc>https://www.ivankovic.me/blog/2013/01/16/nanoc-and-app-engine/</loc>
     <lastmod>2013-01-16T20:37:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2011/03/26/can-javascript-gettime-be-used-for-measuring-performance-of-javascript-code/</loc>
+    <loc>https://www.ivankovic.me/blog/2011/03/26/can-javascript-gettime-be-used-for-measuring-performance-of-javascript-code/</loc>
     <lastmod>2011-03-26T10:16:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/blog/2010/02/09/simple-fast-edit-distance-in-a-dictionary/</loc>
+    <loc>https://www.ivankovic.me/blog/2010/02/09/simple-fast-edit-distance-in-a-dictionary/</loc>
     <lastmod>2010-02-09T14:32:00+00:00</lastmod>
   </url>
   
