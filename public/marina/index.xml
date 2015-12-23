@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Marinas on Marko Ivankovic and Marina Celar Ivankovic - personal website</title>
-    <link>https://www.ivankovic.me/marina/</link>
+    <link>http://localhost:1313/marina/</link>
     <description>Recent content in Marinas on Marko Ivankovic and Marina Celar Ivankovic - personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 10 Jul 2014 20:30:02 +0000</lastBuildDate>
-    <atom:link href="https://www.ivankovic.me/marina/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/marina/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Marina Celar Ivankovic &gt; Contact</title>
-      <link>https://www.ivankovic.me/marina/contact/</link>
+      <link>http://localhost:1313/marina/contact/</link>
       <pubDate>Thu, 10 Jul 2014 20:30:02 +0000</pubDate>
       
-      <guid>https://www.ivankovic.me/marina/contact/</guid>
+      <guid>http://localhost:1313/marina/contact/</guid>
       <description>&lt;div itemscope itemtype=&#34;http://schema.org/Person&#34;&gt;
 
 &lt;h1&gt;Contact information&lt;/h1&gt;
@@ -33,10 +33,10 @@
     
     <item>
       <title>Marina Celar Ivankovic &gt; Resume</title>
-      <link>https://www.ivankovic.me/marina/resume/</link>
+      <link>http://localhost:1313/marina/resume/</link>
       <pubDate>Thu, 10 Jul 2014 20:27:05 +0000</pubDate>
       
-      <guid>https://www.ivankovic.me/marina/resume/</guid>
+      <guid>http://localhost:1313/marina/resume/</guid>
       <description>&lt;p&gt;&lt;h1&gt;dr. vet. med. Marina Čelar Ivanković - Resume&lt;/h1&gt;
 &lt;p&gt;Last updated: Feb 14th, 2015.&lt;/p&gt;
 &lt;h2&gt;Work&lt;/h2&gt;
