@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Photographies on Marko Ivankovic and Marina Celar Ivankovic - personal website</title>
+    <link>https://www.ivankovic.me/photography/</link>
+    <description>Recent content in Photographies on Marko Ivankovic and Marina Celar Ivankovic - personal website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://www.ivankovic.me/photography/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Wallpapers</title>
+      <link>https://www.ivankovic.me/photography/wallpapers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/photography/wallpapers/</guid>
+      <description>&lt;div class=&#34;photogallery&#34;&gt;
+
+&lt;div class=&#34;photoframe&#34;&gt;
+  &lt;div class=&#34;photo&#34;&gt;
+    &lt;a href=&#34;https://www.ivankovic.me/img/Delicate%20Arch%20At%20Sunset%20-%20Arches%20National%20Part.jpeg&#34;&gt;
+      &lt;img src=&#34;https://www.ivankovic.me/img/Delicate%20Arch%20At%20Sunset%20-%20Arches%20National%20Part%20thumbnail.jpeg&#34; /&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;description&#34;&gt;
+    &lt;div class=&#34;author&#34;&gt;
+      Author: Marina
+    &lt;/div&gt;
+    The Delicate Arch in the Arches national park at sunset.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;photoframe&#34;&gt;
+  &lt;div class=&#34;photo&#34;&gt;
+    &lt;a href=&#34;https://www.ivankovic.me/img/Uetliberg%20in%20dark%20fog.jpeg&#34;&gt;
+      &lt;img src=&#34;https://www.ivankovic.me/img/Uetliberg%20in%20dark%20fog%20thumbnail.jpeg&#34; /&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;description&#34;&gt;
+    &lt;div class=&#34;author&#34;&gt;
+      Author: Marko
+    &lt;/div&gt;
+    The Uto Kulm restaurant and the antenna tower on top of Uetliberg.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;photoframe&#34;&gt;
+  &lt;div class=&#34;photo&#34;&gt;
+    &lt;a href=&#34;https://www.ivankovic.me/img/Snow%20Covered%20HooDoos%20-%20Bryce%20National%20Park.jpeg&#34;&gt;
+      &lt;img src=&#34;https://www.ivankovic.me/img/Snow%20Covered%20HooDoos%20-%20Bryce%20National%20Park%20thumbnail.jpeg&#34; /&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;description&#34;&gt;
+    &lt;div class=&#34;author&#34;&gt;
+      Author: Marko
+    &lt;/div&gt;
+    The HooDoos in Bryce national park, covered in snow.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;photoframe&#34;&gt;
+  &lt;div class=&#34;photo&#34;&gt;
+    &lt;a href=&#34;https://www.ivankovic.me/img/Desert%20Mouse%20-%20Arches%20National%20Park.jpeg&#34;&gt;
+      &lt;img src=&#34;https://www.ivankovic.me/img/Desert%20Mouse%20-%20Arches%20National%20Park%20thumbnail.jpeg&#34; /&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;description&#34;&gt;
+    &lt;div class=&#34;author&#34;&gt;
+      Author: Marko
+    &lt;/div&gt;
+    A small furry desert mouse in the Arches national park.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
