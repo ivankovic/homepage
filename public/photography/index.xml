@@ -72,6 +72,20 @@
   &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&#34;photoframe&#34;&gt;
+  &lt;div class=&#34;photo&#34;&gt;
+    &lt;a href=&#34;https://www.ivankovic.me/img/New%20Year%202015%20Fireworks%20Over%20Zurich.jpeg&#34;&gt;
+      &lt;img src=&#34;https://www.ivankovic.me/img/New%20Year%202015%20Fireworks%20Over%20Zurich%20thumbnail.jpeg&#34; /&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;description&#34;&gt;
+    &lt;div class=&#34;author&#34;&gt;
+      Author: Marko
+    &lt;/div&gt;
+    The 2015 New Years Eve fireworks over Zurich, taken from Felsenegg.
+  &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>

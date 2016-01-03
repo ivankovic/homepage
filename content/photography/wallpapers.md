@@ -60,4 +60,18 @@ title = "Wallpapers"
   </div>
 </div>
 
+<div class="photoframe">
+  <div class="photo">
+    <a href="/img/New%20Year%202015%20Fireworks%20Over%20Zurich.jpeg">
+      <img src="/img/New%20Year%202015%20Fireworks%20Over%20Zurich%20thumbnail.jpeg" />
+    </a>
+  </div>
+  <div class="description">
+    <div class="author">
+      Author: Marko
+    </div>
+    The 2015 New Years Eve fireworks over Zurich, taken from Felsenegg.
+  </div>
+</div>
+
 </div>
