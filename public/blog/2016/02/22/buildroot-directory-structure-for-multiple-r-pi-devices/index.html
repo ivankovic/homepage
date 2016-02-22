@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Buildroot directory structure for multiple R-Pi devices</title>
+    <link rel="stylesheet" type="text/css" href="https://www.ivankovic.me/css/style.css" media="screen">
+    <link rel="icon" href="/favicon.ico">
+    <meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+      function toggle() {
+        menu = document.getElementById('menu')
+        menu.style.display = (menu.style.display == 'none' || menu.style.display == '' ? 'block' : 'none') 
+      }
+    </script>
+  </head>
+  <body>
+
+
+<div id="mbutton" onclick="toggle();">#</div>
+<div id="menu">
+  <header> 
+    <a href="/">Ivankovic.Me</a>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/marko/contact" > Marko</a>
+      <ul>
+        <li><a href="/marko/contact" >Contact</a></li>
+        <li><a href="/marko/resume" >Resume</a></li>
+        <li><a href="/blog/" >Blog</a></li>
+      </ul>
+      </li>
+      <li><a href="/marina/contact" > Marina</a>
+      <ul>
+        <li><a href="/marina/contact" >Contact</a></li>
+        <li><a href="/marina/resume" >Resume</a></li>
+      </ul>
+      </li>
+      <li><a href="/photography/">Photography</a>
+        <ul>
+          <li><a href="/photography/landscapes">Landscapes</a></li>
+          <li><a href="/photography/cityscapes">Cityscapes</a></li>
+          <li><a href="/photography/animals">Animals</a></li>
+          <li><a href="/photography/food">Food</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <footer>
+    <p>
+        <a href="/blog/index.xml"><img src="https://www.ivankovic.me//img/feed-icon.svg" style="width: 16px" />Subscribe</a>
+    </p>
+    <p>
+  Copyright Marko Ivanković<br/>
+  All rights reserved
+</p>
+
+  </footer>
+</div>
+
+
+<div id="main">
+  <header>
+    <b> > Marko Ivankovic > Blog > Buildroot directory structure for multiple R-Pi devices </b>
+  </header>
+
+  <div id="content" itemscope itemtype="https://schema.org/BlogPosting">
+    
+
+<h1 id="buildroot-directory-structure-for-multiple-r-pi-devices:325c100223836bce6bc77704f27d5ca3">Buildroot directory structure for multiple R-Pi devices</h1>
+
+<p>I have been experimenting with embedded Linux builds on my R-Pi devices for quite some time now. There are at least 3 ways you can do that:</p>
+
+<ol>
+<li><a href="http://www.linuxfromscratch.org/">Linux From Scratch</a> - Very good for educational value, almost meaningless for multiple devices since it is completely manual and hard to reproduce</li>
+<li><a href="https://www.yoctoproject.org/">Yocto Project</a> - Linux foundation project aimed at enabling embedded Linux developement. But it offers a lot more than that and can deal with any target size from tiny (1 package extremely specific use case) to &ldquo;too much&rdquo; (100 packages, basically a full distribution for all intents and purposes). Unfortunately as a side-effect it also has a steep learning curve and just feels bulky.</li>
+<li><a href="https://buildroot.org/">Buildroot</a> - Makefile, menuconfig based simple and efficient tool. It still has a learning curve, but perhaps not as steep as Yocto. And it just feels more elegant.</li>
+</ol>
+
+<p>As you might have guessed, after trying them all out, I went with Buildroot and have been using it now for 3-4 months.</p>
+
+<h2 id="buildroot:325c100223836bce6bc77704f27d5ca3">Buildroot</h2>
+
+<p>The <a href="https://buildroot.org/downloads/manual/manual.html">Buildroot documentation</a> is reasonably well done and Buildroot <a href="https://git.busybox.net/buildroot/tree/board/raspberrypi">supports Raspberry Pi</a> 1 and 2 out of the box.</p>
+
+<p>What is less clear however is the directory structure one should use for multiple devices. Now, it&rsquo;s important to note that normal workflow for Buildroot is to clone the Buildroot Git repo, run <code>make menuconfig</code> and <code>make</code> and so on, and then your image and other results can be found in <code>./output</code>. Obviously, if you need different images on different devices using the normal workflow would imply multiple clones of the Buildroot depo for no good reason.</p>
+
+<p>The key to a good directory structure is actually in the manual, but it is very easy to miss! The feature is called <a href="https://buildroot.org/downloads/manual/manual.html#_building_out_of_tree">&ldquo;out-of-tree&rdquo; build</a> and what it does is basically enable you to change the output directory from <code>./output</code> to something else. As a nice usability bonus, it also creates a small Makefile wrapper in the &ldquo;out-of-tree&rdquo; output directory to avoid the need for passing the directory as an environment variable all the time.</p>
+
+<h2 id="directory-structure-for-multiple-devices:325c100223836bce6bc77704f27d5ca3">Directory structure for multiple devices</h2>
+
+<p>&ldquo;out-of-tree&rdquo; builds allow for the following structure:</p>
+
+<pre><code>rpi/
+   | buildroot/
+   | device-1/
+   | device-2/
+   | device-3/
+</code></pre>
+
+<p>Which conveniently allows the use of the same Buildroot source tree from each device-X directory.</p>
+
+<h2 id="sensitive-material-sidenote:325c100223836bce6bc77704f27d5ca3">Sensitive material sidenote</h2>
+
+<p>Another thing you should also consider is to store all cryptographic or otherwise sensitive material completely out from the project structure and move it to an encrypted USB. When you are not actively building the images, there&rsquo;s no need to store that material on the machine.</p>
+
+<p>You can then easily use <a href="https://buildroot.org/downloads/manual/manual.html#rootfs-custom">post-build scripts</a> to copy the material to the image and <a href="https://buildroot.org/downloads/manual/manual.html#_customization_emphasis_after_emphasis_the_images_have_been_created">post-image scripts</a> to copy the image on an SD card and delete the material away from the workstation.</p>
+
+  </div>
+</div>
+
+    <div id="contact"><a href="mailto:marko@ivankovic.me" title="Send me an email!">@</a></div>
+
+  </body>
+</html>
+

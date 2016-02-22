@@ -6,8 +6,57 @@
     <description>Recent content in Blogs on Marko Ivankovic and Marina Celar Ivankovic - personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Dec 2015 23:29:21 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 22 Feb 2016 01:14:28 +0100</lastBuildDate>
     <atom:link href="https://www.ivankovic.me/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Buildroot directory structure for multiple R-Pi devices</title>
+      <link>https://www.ivankovic.me/blog/2016/02/22/buildroot-directory-structure-for-multiple-r-pi-devices/</link>
+      <pubDate>Mon, 22 Feb 2016 01:14:28 +0100</pubDate>
+      
+      <guid>https://www.ivankovic.me/blog/2016/02/22/buildroot-directory-structure-for-multiple-r-pi-devices/</guid>
+      <description>
+
+&lt;h1 id=&#34;buildroot-directory-structure-for-multiple-r-pi-devices:325c100223836bce6bc77704f27d5ca3&#34;&gt;Buildroot directory structure for multiple R-Pi devices&lt;/h1&gt;
+
+&lt;p&gt;I have been experimenting with embedded Linux builds on my R-Pi devices for quite some time now. There are at least 3 ways you can do that:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.linuxfromscratch.org/&#34;&gt;Linux From Scratch&lt;/a&gt; - Very good for educational value, almost meaningless for multiple devices since it is completely manual and hard to reproduce&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.yoctoproject.org/&#34;&gt;Yocto Project&lt;/a&gt; - Linux foundation project aimed at enabling embedded Linux developement. But it offers a lot more than that and can deal with any target size from tiny (1 package extremely specific use case) to &amp;ldquo;too much&amp;rdquo; (100 packages, basically a full distribution for all intents and purposes). Unfortunately as a side-effect it also has a steep learning curve and just feels bulky.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://buildroot.org/&#34;&gt;Buildroot&lt;/a&gt; - Makefile, menuconfig based simple and efficient tool. It still has a learning curve, but perhaps not as steep as Yocto. And it just feels more elegant.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;As you might have guessed, after trying them all out, I went with Buildroot and have been using it now for 3-4 months.&lt;/p&gt;
+
+&lt;h2 id=&#34;buildroot:325c100223836bce6bc77704f27d5ca3&#34;&gt;Buildroot&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://buildroot.org/downloads/manual/manual.html&#34;&gt;Buildroot documentation&lt;/a&gt; is reasonably well done and Buildroot &lt;a href=&#34;https://git.busybox.net/buildroot/tree/board/raspberrypi&#34;&gt;supports Raspberry Pi&lt;/a&gt; 1 and 2 out of the box.&lt;/p&gt;
+
+&lt;p&gt;What is less clear however is the directory structure one should use for multiple devices. Now, it&amp;rsquo;s important to note that normal workflow for Buildroot is to clone the Buildroot Git repo, run &lt;code&gt;make menuconfig&lt;/code&gt; and &lt;code&gt;make&lt;/code&gt; and so on, and then your image and other results can be found in &lt;code&gt;./output&lt;/code&gt;. Obviously, if you need different images on different devices using the normal workflow would imply multiple clones of the Buildroot depo for no good reason.&lt;/p&gt;
+
+&lt;p&gt;The key to a good directory structure is actually in the manual, but it is very easy to miss! The feature is called &lt;a href=&#34;https://buildroot.org/downloads/manual/manual.html#_building_out_of_tree&#34;&gt;&amp;ldquo;out-of-tree&amp;rdquo; build&lt;/a&gt; and what it does is basically enable you to change the output directory from &lt;code&gt;./output&lt;/code&gt; to something else. As a nice usability bonus, it also creates a small Makefile wrapper in the &amp;ldquo;out-of-tree&amp;rdquo; output directory to avoid the need for passing the directory as an environment variable all the time.&lt;/p&gt;
+
+&lt;h2 id=&#34;directory-structure-for-multiple-devices:325c100223836bce6bc77704f27d5ca3&#34;&gt;Directory structure for multiple devices&lt;/h2&gt;
+
+&lt;p&gt;&amp;ldquo;out-of-tree&amp;rdquo; builds allow for the following structure:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rpi/
+   | buildroot/
+   | device-1/
+   | device-2/
+   | device-3/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Which conveniently allows the use of the same Buildroot source tree from each device-X directory.&lt;/p&gt;
+
+&lt;h2 id=&#34;sensitive-material-sidenote:325c100223836bce6bc77704f27d5ca3&#34;&gt;Sensitive material sidenote&lt;/h2&gt;
+
+&lt;p&gt;Another thing you should also consider is to store all cryptographic or otherwise sensitive material completely out from the project structure and move it to an encrypted USB. When you are not actively building the images, there&amp;rsquo;s no need to store that material on the machine.&lt;/p&gt;
+
+&lt;p&gt;You can then easily use &lt;a href=&#34;https://buildroot.org/downloads/manual/manual.html#rootfs-custom&#34;&gt;post-build scripts&lt;/a&gt; to copy the material to the image and &lt;a href=&#34;https://buildroot.org/downloads/manual/manual.html#_customization_emphasis_after_emphasis_the_images_have_been_created&#34;&gt;post-image scripts&lt;/a&gt; to copy the image on an SD card and delete the material away from the workstation.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Self-hosting a static personal homepage - Security</title>
@@ -621,39 +670,6 @@ type your content and see th changes appear in the browser in almost real-time.&
 &lt;p&gt;You should &lt;a href=&#34;http://www.ivankovic.me/blog/2013/11/09/basic-network-security-setup-for-rpi.html&#34;&gt;already&lt;/a&gt; be using Iptables to block all incoming traffic to your machine. Now simply add https (TCP port 443) to the list of allowed ports in the TCP chain and you are done.&lt;/p&gt;
 
 &lt;p&gt;At this point, you probably don’t need any more TCP ports exposed on your machine. You should be able to tunnel everything through SSH and SSL, with the possible exception of &lt;a href=&#34;http://en.wikipedia.org/wiki/Multicast_DNS&#34;&gt;mDNS&lt;/a&gt; (if you need local machine name resolution).&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Laser cut Raspberry Pi case with camera mount - version 1</title>
-      <link>https://www.ivankovic.me/blog/2014/02/15/laser-cut-raspberry-pi-case-with-camera-mount-version-1/</link>
-      <pubDate>Sat, 15 Feb 2014 09:00:00 +0000</pubDate>
-      
-      <guid>https://www.ivankovic.me/blog/2014/02/15/laser-cut-raspberry-pi-case-with-camera-mount-version-1/</guid>
-      <description>
-
-&lt;h1 id=&#34;laser-cut-raspberry-pi-case-with-camera-mount-version-1:cf4b04aeb4df1afc7ba23bb1bd6c1651&#34;&gt;Laser cut Raspberry PI case with camera mount - version 1&lt;/h1&gt;
-
-&lt;p&gt;I feel very happy that I live in a time when hobby laser cutters are a thing. Yay Science!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.ivankovic.me/img/laser-cutter.jpg&#34; alt=&#34;Laser cutter image&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h2 id=&#34;my-first-project:cf4b04aeb4df1afc7ba23bb1bd6c1651&#34;&gt;My first project&lt;/h2&gt;
-
-&lt;p&gt;My first project: A Raspberry PI case with a camera mount. I have a few of these around my apartment acting as a security system. Up until now, they looked more or less like this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.ivankovic.me/img/raspberry-pi-case-before.jpg&#34; alt=&#34;An image of a barebone PI with the camera module sellotaped to a box&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;This has a nice punk feel to it, but it’s somewhat vulnerable to things falling on it, or it falling off things. So for my first project, I remixed the &lt;a href=&#34;http://www.thingiverse.com/thing:142608&#34;&gt;Raspberry PI Case (with Camera)&lt;/a&gt; by &lt;a href=&#34;http://www.thingiverse.com/raster/overview&#34;&gt;raster&lt;/a&gt;. I had to modify it a bit. The most important modification is to extend the holes to fit 3mm acrylic sheets, the holes in the original design are just a tiny bit too narrow. Just to try things out, I also added round air holes and a bit of engraving. The result:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://www.ivankovic.me/img/raspberry-pi-case-after.jpg&#34; alt=&#34;An image of a laser cut PI case with a camera mount&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h2 id=&#34;future-work:cf4b04aeb4df1afc7ba23bb1bd6c1651&#34;&gt;Future work&lt;/h2&gt;
-
-&lt;p&gt;This case is really cool, but I dislike the screw mounting for the camera. It’s fine for this particular camera because it is just sitting on a shelf, but for my next one, I need something that can be moved independently of the case mount. It will be fun to design something like that.&lt;/p&gt;
 </description>
     </item>
     
