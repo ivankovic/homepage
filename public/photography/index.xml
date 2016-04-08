@@ -140,6 +140,48 @@
   &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;div class=&#34;photoframe&#34;&gt;
+  &lt;div class=&#34;photo&#34;&gt;
+    &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FSGpGRGVYNkRxazA&#34;&gt;
+      &lt;img src=&#34;https://www.ivankovic.me/img/Lisbon thumbnail.jpeg&#34;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;description&#34;&gt;
+    &lt;div class=&#34;author&#34;&gt;
+      Author: Marko
+    &lt;/div&gt;
+    Lisbon in the rain, taken from São Jorge Castle.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;photoframe&#34;&gt;
+  &lt;div class=&#34;photo&#34;&gt;
+    &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FZ0habktwTko4MWs&#34;&gt;
+      &lt;img src=&#34;https://www.ivankovic.me/img/Streets of Lisbon thumbnail.jpeg&#34;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;description&#34;&gt;
+    &lt;div class=&#34;author&#34;&gt;
+      Author: Marko
+    &lt;/div&gt;
+    Colourfull streets of Lisbon.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;photoframe&#34;&gt;
+  &lt;div class=&#34;photo&#34;&gt;
+    &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FQXIwaTJRTjUtNjQ&#34;&gt;
+      &lt;img src=&#34;https://www.ivankovic.me/img/Torre de Belém thumbnail.jpeg&#34;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;description&#34;&gt;
+    &lt;div class=&#34;author&#34;&gt;
+      Author: Marko
+    &lt;/div&gt;
+    Torre de Belém in the sunset.
+  &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
@@ -191,6 +233,20 @@
       Author: Marina
     &lt;/div&gt;
     Pumpkins on sale in Wettswil.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;photoframe&#34;&gt;
+  &lt;div class=&#34;photo&#34;&gt;
+    &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FdTRUZEFMS2ZYM2s&#34;&gt;
+      &lt;img src=&#34;https://www.ivankovic.me/img/Tea in Sintra thumbnail.jpeg&#34;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;description&#34;&gt;
+    &lt;div class=&#34;author&#34;&gt;
+      Author: Marko
+    &lt;/div&gt;
+    Tea in Sintra.
   &lt;/div&gt;
 &lt;/div&gt;
 
