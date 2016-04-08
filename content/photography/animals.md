@@ -34,7 +34,7 @@ title = "Animals"
 <div class="photoframe">
   <div class="photo">
     <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FdWE4TzFZZ2liZlE">
-      <img src="/img/Wild%20cat%20in%20Zurich%20Wildnispark%20thumbnail.jpg">
+      <img src="/img/Wild%20cat%20in%20Zurich%20Wildnispark%20thumbnail.jpeg">
     </a>
   </div>
   <div class="description">
@@ -48,7 +48,7 @@ title = "Animals"
 <div class="photoframe">
   <div class="photo">
     <a href="https://drive.google.com/open?id=0B3e2zRvXHH5Fakx1RmZkaUZZam8">
-      <img src="/img/Bear%20in%20Zurich%20Wildnispark%20thumbnail.jpg">
+      <img src="/img/Bear%20in%20Zurich%20Wildnispark%20thumbnail.jpeg">
     </a>
   </div>
   <div class="description">
