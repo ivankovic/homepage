@@ -95,7 +95,7 @@ title = "Cityscapes"
   </div>
   <div class="description">
     <div class="author">
-      Author: Marko
+      Author: Marina
     </div>
     Torre de Belém in the sunset.
   </div>
