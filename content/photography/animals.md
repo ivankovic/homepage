@@ -5,6 +5,20 @@ title = "Animals"
 
 <div class="photoframe">
   <div class="photo">
+    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FbVFkNTlvQjQ2dkU">
+      <img src="/img/My ears touched the chair thumbnail.jpg" />
+    </a>
+  </div>
+  <div class="description">
+    <div class="author">
+      Author: Marina
+    </div>
+    My ears touched the chair! Aaaaaaa!
+  </div>
+</div>
+
+<div class="photoframe">
+  <div class="photo">
     <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FV05mcnplOTBsbG8">
       <img src="/img/Desert%20Mouse%20-%20Arches%20National%20Park%20thumbnail.jpeg" />
     </a>

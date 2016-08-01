@@ -18,6 +18,20 @@
 
 &lt;div class=&#34;photoframe&#34;&gt;
   &lt;div class=&#34;photo&#34;&gt;
+    &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FbVFkNTlvQjQ2dkU&#34;&gt;
+      &lt;img src=&#34;https://www.ivankovic.me/img/My ears touched the chair thumbnail.jpg&#34; /&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;description&#34;&gt;
+    &lt;div class=&#34;author&#34;&gt;
+      Author: Marina
+    &lt;/div&gt;
+    My ears touched the chair! Aaaaaaa!
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;photoframe&#34;&gt;
+  &lt;div class=&#34;photo&#34;&gt;
     &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FV05mcnplOTBsbG8&#34;&gt;
       &lt;img src=&#34;https://www.ivankovic.me/img/Desert%20Mouse%20-%20Arches%20National%20Park%20thumbnail.jpeg&#34; /&gt;
     &lt;/a&gt;
@@ -86,6 +100,62 @@
 
 &lt;div class=&#34;photoframe&#34;&gt;
   &lt;div class=&#34;photo&#34;&gt;
+    &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FektnYlpsV3V3cnM&#34;&gt;
+      &lt;img src=&#34;https://www.ivankovic.me/img/Blue door in Chania thumbnail.jpg&#34; /&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;description&#34;&gt;
+    &lt;div class=&#34;author&#34;&gt;
+      Author: Marina
+    &lt;/div&gt;
+    A blue door in Chania, Crete.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;photoframe&#34;&gt;
+  &lt;div class=&#34;photo&#34;&gt;
+    &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FSGpGRGVYNkRxazA&#34;&gt;
+      &lt;img src=&#34;https://www.ivankovic.me/img/Lisbon thumbnail.jpeg&#34;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;description&#34;&gt;
+    &lt;div class=&#34;author&#34;&gt;
+      Author: Marko
+    &lt;/div&gt;
+    Lisbon in the rain, taken from São Jorge Castle.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;photoframe&#34;&gt;
+  &lt;div class=&#34;photo&#34;&gt;
+    &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FZ0habktwTko4MWs&#34;&gt;
+      &lt;img src=&#34;https://www.ivankovic.me/img/Streets of Lisbon thumbnail.jpeg&#34;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;description&#34;&gt;
+    &lt;div class=&#34;author&#34;&gt;
+      Author: Marko
+    &lt;/div&gt;
+    Colourfull streets of Lisbon.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;photoframe&#34;&gt;
+  &lt;div class=&#34;photo&#34;&gt;
+    &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FQXIwaTJRTjUtNjQ&#34;&gt;
+      &lt;img src=&#34;https://www.ivankovic.me/img/Torre de Belem thumbnail.jpeg&#34;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;description&#34;&gt;
+    &lt;div class=&#34;author&#34;&gt;
+      Author: Marina
+    &lt;/div&gt;
+    Torre de Belém in the sunset.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;photoframe&#34;&gt;
+  &lt;div class=&#34;photo&#34;&gt;
     &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5Fd1A0VS1lUjEwRm8&#34;&gt;
       &lt;img src=&#34;https://www.ivankovic.me/img/Uetliberg%20in%20dark%20fog%20thumbnail.jpeg&#34; /&gt;
     &lt;/a&gt;
@@ -140,48 +210,6 @@
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div class=&#34;photoframe&#34;&gt;
-  &lt;div class=&#34;photo&#34;&gt;
-    &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FSGpGRGVYNkRxazA&#34;&gt;
-      &lt;img src=&#34;https://www.ivankovic.me/img/Lisbon thumbnail.jpeg&#34;&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;description&#34;&gt;
-    &lt;div class=&#34;author&#34;&gt;
-      Author: Marko
-    &lt;/div&gt;
-    Lisbon in the rain, taken from São Jorge Castle.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;photoframe&#34;&gt;
-  &lt;div class=&#34;photo&#34;&gt;
-    &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FZ0habktwTko4MWs&#34;&gt;
-      &lt;img src=&#34;https://www.ivankovic.me/img/Streets of Lisbon thumbnail.jpeg&#34;&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;description&#34;&gt;
-    &lt;div class=&#34;author&#34;&gt;
-      Author: Marko
-    &lt;/div&gt;
-    Colourfull streets of Lisbon.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;photoframe&#34;&gt;
-  &lt;div class=&#34;photo&#34;&gt;
-    &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FQXIwaTJRTjUtNjQ&#34;&gt;
-      &lt;img src=&#34;https://www.ivankovic.me/img/Torre de Belem thumbnail.jpeg&#34;&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;description&#34;&gt;
-    &lt;div class=&#34;author&#34;&gt;
-      Author: Marina
-    &lt;/div&gt;
-    Torre de Belém in the sunset.
-  &lt;/div&gt;
-&lt;/div&gt;
-
 &lt;p&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
@@ -193,6 +221,34 @@
       
       <guid>https://www.ivankovic.me/photography/food/</guid>
       <description>&lt;div class=&#34;photogallery&#34;&gt;
+
+&lt;div class=&#34;photoframe&#34;&gt;
+  &lt;div class=&#34;photo&#34;&gt;
+    &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FdTRUZEFMS2ZYM2s&#34;&gt;
+      &lt;img src=&#34;https://www.ivankovic.me/img/Tea in Sintra thumbnail.jpeg&#34;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;description&#34;&gt;
+    &lt;div class=&#34;author&#34;&gt;
+      Author: Marko
+    &lt;/div&gt;
+    Tea in Sintra.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;photoframe&#34;&gt;
+  &lt;div class=&#34;photo&#34;&gt;
+    &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FU3hRbDV0MklLb1E&#34;&gt;
+      &lt;img src=&#34;https://www.ivankovic.me/img/Apricot pie thumbnail.jpg&#34;&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;description&#34;&gt;
+    &lt;div class=&#34;author&#34;&gt;
+      Author: Marina
+    &lt;/div&gt;
+    Apricot Pie, fresh!
+  &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;div class=&#34;photoframe&#34;&gt;
   &lt;div class=&#34;photo&#34;&gt;
@@ -233,20 +289,6 @@
       Author: Marina
     &lt;/div&gt;
     Pumpkins on sale in Wettswil.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;photoframe&#34;&gt;
-  &lt;div class=&#34;photo&#34;&gt;
-    &lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FdTRUZEFMS2ZYM2s&#34;&gt;
-      &lt;img src=&#34;https://www.ivankovic.me/img/Tea in Sintra thumbnail.jpeg&#34;&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;description&#34;&gt;
-    &lt;div class=&#34;author&#34;&gt;
-      Author: Marko
-    &lt;/div&gt;
-    Tea in Sintra.
   &lt;/div&gt;
 &lt;/div&gt;
 
