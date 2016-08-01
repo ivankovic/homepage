@@ -5,7 +5,7 @@ title = "Cityscapes"
 
 <div class="photoframe">
   <div class="photo">
-    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FSlZQMzBiOWRNTkk">
+    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5Fd1A0VS1lUjEwRm8">
       <img src="/img/Uetliberg%20in%20dark%20fog%20thumbnail.jpeg" />
     </a>
   </div>
@@ -19,7 +19,7 @@ title = "Cityscapes"
 
 <div class="photoframe">
   <div class="photo">
-    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FODZ3MFFIVW96c2M">
+    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FbF9IUkdCZTdsVDQ">
       <img src="/img/New%20Year%202015%20Fireworks%20Over%20Zurich%20thumbnail.jpeg" />
     </a>
   </div>
@@ -33,7 +33,7 @@ title = "Cityscapes"
 
 <div class="photoframe">
   <div class="photo">
-    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FU2oySEZZZEZKek0">
+    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FclVBN29LLXNRRmM">
       <img src="/img/London underground thumbnail.jpg">
     </a>
   </div>
@@ -47,7 +47,7 @@ title = "Cityscapes"
 
 <div class="photoframe">
   <div class="photo">
-    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FT3MtVEMxQjExZ0k">
+    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FNTNRenBJRUZhQlU">
       <img src="/img/London underground escalator thumbnail.jpg">
     </a>
   </div>

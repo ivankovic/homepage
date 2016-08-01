@@ -5,7 +5,7 @@ title = "Landscapes"
 
 <div class="photoframe">
   <div class="photo">
-    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FRWV6TGthZEliXzQ">
+    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5Fb2lqZFRMUGNnZTA">
       <img src="/img/Delicate%20Arch%20At%20Sunset%20-%20Arches%20National%20Part%20thumbnail.jpeg" />
     </a>
   </div>
@@ -19,7 +19,7 @@ title = "Landscapes"
 
 <div class="photoframe">
   <div class="photo">
-    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FZFhzY0IzYTJZX1E">
+    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FX1ZHMkdjVzlfSFE">
       <img src="/img/Snow%20Covered%20HooDoos%20-%20Bryce%20National%20Park%20thumbnail.jpeg" />
     </a>
   </div>
@@ -33,7 +33,7 @@ title = "Landscapes"
 
 <div class="photoframe">
   <div class="photo">
-    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FZm5Sd1F0Y3NfSkU">
+    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FOGZ5NElxTXRfTDQ">
       <img src="/img/Abandoned path down Uetliberg thumbnail.jpg" />
     </a>
   </div>
@@ -47,7 +47,7 @@ title = "Landscapes"
 
 <div class="photoframe">
   <div class="photo">
-    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FMnE4eDE2QzJOTDg">
+    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FcVNuSlpYelZCNFk">
       <img src="/img/Boats moored on Zurisee with Alps thumbnail.jpg" />
     </a>
   </div>
@@ -61,7 +61,7 @@ title = "Landscapes"
 
 <div class="photoframe">
   <div class="photo">
-    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FSVMzb1NuWXJ4XzQ">
+    <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FaEVtaGtSVlFzSW8">
       <img src="/img/Train station on top of Rigi thumbnail.jpg">
     </a>
   </div>
