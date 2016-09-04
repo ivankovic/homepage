@@ -6,8 +6,120 @@
     <description>Recent content in Blogs on Marko Ivankovic and Marina Celar Ivankovic - personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Feb 2016 01:14:28 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 04 Sep 2016 18:16:49 +0200</lastBuildDate>
     <atom:link href="https://www.ivankovic.me/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The layout and security of my home network</title>
+      <link>https://www.ivankovic.me/blog/2016/09/04/the-layout-and-security-of-my-home-network/</link>
+      <pubDate>Sun, 04 Sep 2016 18:16:49 +0200</pubDate>
+      
+      <guid>https://www.ivankovic.me/blog/2016/09/04/the-layout-and-security-of-my-home-network/</guid>
+      <description>
+
+&lt;h1 id=&#34;the-layout-and-security-of-my-home-network:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;The layout and security of my home network&lt;/h1&gt;
+
+&lt;p&gt;I wanted to write this post for quite some time now. Mostly to have an opportunity to critically examine my own setup. If someone else finds this useful, that&amp;rsquo;s just extra.&lt;/p&gt;
+
+&lt;p&gt;In this post I will describe the layout and security layers of my entire home network. I personally strongly believe that security can only come from usability, and I will try to point out in this post paths not taken. Paths that would lead to theoretically safer designs that would practically be less safe because they would be unusable.&lt;/p&gt;
+
+&lt;h2 id=&#34;human-considerations:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;Human considerations&lt;/h2&gt;
+
+&lt;p&gt;The most usable security systems are those that don&amp;rsquo;t even have any usability considerations because they have no user interface. These are by definition completely automated and wherever possible such systems will be preferred. Unfortunately, these are also the rarest. The only systems that I am aware of that fit this description are all on Chromebooks. The Chromebook full disk encryption and secure fully automatic updates Just Work. And they don&amp;rsquo;t just work in best case scenario, they &lt;strong&gt;always work&lt;/strong&gt; without any debugging.&lt;/p&gt;
+
+&lt;p&gt;The next level are setup-only UI systems. They require me to invest time up-front to set them up, but once they are set up they require no further interaction ever. A good example of this would be &lt;code&gt;/home&lt;/code&gt; directory encryption on Ubuntu. Some setup is required, but generally once it is set-up, it works. Note that this implies that they are also rock solid and can &lt;strong&gt;never fail&lt;/strong&gt;. Because if they fail, they fall under the class of&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Non-periodic interaction systems. Hopefully very very rarely interactive systems. These systems do have a UI, but you interact with it only on-demand when it cannot possibly be avoided. A good example of this is The Master Key. Usually stored as safe as possible behind as many security countermeasures as possible, the only time it gets used is when issuing more specific keys, which in my case is basically only when provisioning a new trusted device on the network. Note that the interaction must be non-periodic. In other words, you cannot ever have this knowingly scheduled in advance, because if you do it is…&lt;/p&gt;
+
+&lt;p&gt;Scheduled interaction systems. These are all the systems that the users will interact with over and over and over again. Because of this, they must be &lt;strong&gt;incredibly fast&lt;/strong&gt; and &lt;strong&gt;easy to use&lt;/strong&gt;. Logging in to a laptop falls under this, as does the yearly rotation of PGP keys. Note that within this class there are definite subclasses based on the period of the interaction. Something you do every day must be as frictionless as possible, but also requires less documentation and instructions. On the other hand, something done once per year can be a bit more complex, but must be documented very very well because you are likely to forget it.&lt;/p&gt;
+
+&lt;h2 id=&#34;use-cases-and-classes-of-devices-on-the-network:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;Use cases and classes of devices on the network&lt;/h2&gt;
+
+&lt;p&gt;The network consists of the following classes of devices and the supported use cases:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Chromebooks and Androids&lt;/strong&gt; - I group the two together because most Android apps talk to &amp;ldquo;The Cloud&amp;rdquo; using &lt;code&gt;http&lt;/code&gt;, or hopefully &lt;code&gt;https&lt;/code&gt;, so from the perspective of the network they are very similar. These are also the devices that are used most of the time.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Smart TV and Sonos audio system&lt;/strong&gt; - These two are grouped together because I can&amp;rsquo;t fucking trust them. They are completely closed source and could be doing anything, so the network must isolate them and treat them as semi-hostile elements at all times.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;NAS&lt;/strong&gt; - Basically dumb storage nodes. Everything that lands on them should be encrypted or to be shared with the entertainment system anyhow and they should only store things with appropriate replication.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Small home servers&lt;/strong&gt; - I have a couple of RPis that I use as various servers in my home network. Things like SSH from outside, git repositories, media servers.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Physical security&lt;/strong&gt; - I have a couple of RPis running as security cameras.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Network infrastructure&lt;/strong&gt; - An Asus RT-AC68U running open source firmware and a cable modem + router combination I got from the ISP.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;physical-layer:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;Physical layer&lt;/h2&gt;
+
+&lt;p&gt;Any attacks on the physical layer would require the attacker to be in close physical proximity to the network. I have a door. I have custom made RPi security cameras.&lt;/p&gt;
+
+&lt;h2 id=&#34;link-layer:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;Link layer&lt;/h2&gt;
+
+&lt;p&gt;MAC address leaks. The one I am really worried about here is the ISP provided router. So I keep that one segregated behind the RT-AC68U.&lt;/p&gt;
+
+&lt;p&gt;I guess the smart TV, Sonos and all the other closed source elements can also be collecting MAC addresses and phoning them home, but since I need to connect to those in order for them to function at all there&amp;rsquo;s not much one can do at this layer.&lt;/p&gt;
+
+&lt;p&gt;Of course, I also leak the addresses over WiFi, but that requires physical proximity.&lt;/p&gt;
+
+&lt;p&gt;A funny attack here is the ISP router recognizing this situation and silently sniffing the WiFi traffic around it. Which is why I have it in a metal box bricked into the armed concrete wall, with the antennas screwed out.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not that worried about DoS attacks at link layer, like table exhaustions. Those can happen because of accidents as well and I expect the router software to mostly have those patched at this point. And if they don&amp;rsquo;t, I can just reboot the whole thing if need be.&lt;/p&gt;
+
+&lt;h2 id=&#34;internet-and-transport-layer:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;Internet and transport layer&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;m still waiting for IPv6 :(&lt;/p&gt;
+
+&lt;p&gt;Before that happens, not much. The NAT between the WAN and LAN helps keep things segregated quite a bit. For defense in depth I also map the externally accessible port on the NAT to a random port. Doesn&amp;rsquo;t stop a dedicated, provisioned or adept attacker but it does stop random people that go around scanning port 22 and 80.&lt;/p&gt;
+
+&lt;p&gt;I did purposefully host my personal website on a server rather than from my home so I don&amp;rsquo;t expose my external IP address, so there&amp;rsquo;s that.&lt;/p&gt;
+
+&lt;p&gt;I considered IPSec and might revisit the decision in the future but for now, it&amp;rsquo;s more trouble than it&amp;rsquo;s worth.&lt;/p&gt;
+
+&lt;h2 id=&#34;application-layer:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;Application layer&lt;/h2&gt;
+
+&lt;p&gt;Here&amp;rsquo;s where the fun starts. On all devices that I completely control I try to reduce the application layer to only two endpoints: SSH and HTTPS.&lt;/p&gt;
+
+&lt;p&gt;Note that both SSH and HTTPS secure my information even if the underlying network is outright hostile. Defense in depth.&lt;/p&gt;
+
+&lt;h3 id=&#34;https:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;HTTPS&lt;/h3&gt;
+
+&lt;p&gt;HTTPS is used for end to end encryption of all &amp;ldquo;nice UI&amp;rdquo; parts of the network, like the camera dashboard. I use &lt;a href=&#34;https://www.ivankovic.me/blog/2014/04/12/encrypting-access-to-all-local-web-consoles-using-nginx-as-reverse-ssl-proxy/&#34;&gt;Nginx as a reverse SSL proxy&lt;/a&gt; which allows me to encrypt any tool with a web UI.&lt;/p&gt;
+
+&lt;p&gt;I use a private root certificate to issue SSL certificates for all trusted devices, &lt;strong&gt;including smartphones and Chromebooks&lt;/strong&gt;, which conveniently allows me to set up 2-way SSL.&lt;/p&gt;
+
+&lt;p&gt;This means that my actual useful information is secure even if someone obtains unauthorized access to my private network, even active access to the network infrastructure like the router.&lt;/p&gt;
+
+&lt;p&gt;This also means that I could even expose the HTTPS endpoints to the Internet and access them over crappy hotspot networks and still be OK. Of course I don&amp;rsquo;t actually do this, because it would leak some metadata, but I could make this usability choice if I wanted to.&lt;/p&gt;
+
+&lt;h3 id=&#34;ssh:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;SSH&lt;/h3&gt;
+
+&lt;p&gt;SSH is my control channel. I mostly use it for settings and configuration. Ideally very rarely.&lt;/p&gt;
+
+&lt;p&gt;I have the standard set of precautions in place.&lt;/p&gt;
+
+&lt;p&gt;I &lt;a href=&#34;https://www.ivankovic.me/blog/2013/11/26/how-to-pick-the-best-non-standard-port-for-ssh-or-other-services/&#34;&gt;run SSH on a non-standard port&lt;/a&gt;, &lt;a href=&#34;blog/2014/05/28/using-ssh-config-file-to-simplify-swarm-management/&#34;&gt;using a config&lt;/a&gt; to counteract the usability loss.&lt;/p&gt;
+
+&lt;p&gt;I only allow public key logins, and I use the shiny new &lt;a href=&#34;https://en.wikipedia.org/wiki/EdDSA&#34;&gt;Ed25519&lt;/a&gt; which probably makes the passphrase the weakest link of the entire scheme.&lt;/p&gt;
+
+&lt;h2 id=&#34;usability:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;Usability&lt;/h2&gt;
+
+&lt;p&gt;Almost everything is setup only. Once the keys are distributed on the devices they just work.&lt;/p&gt;
+
+&lt;p&gt;The only non-periodic interaction is entering the SSH key.&lt;/p&gt;
+
+&lt;p&gt;Note that this means that devices that belong to family members get security completely transparently as far as their users are concerned.&lt;/p&gt;
+
+&lt;p&gt;Adding a new device is a rare event (1 / year). For HTTPS it&amp;rsquo;s just provisioning a new certificate and figuring out how to load it on the device. For SSH it&amp;rsquo;s a bit more work to verify the connections as I establish them.&lt;/p&gt;
+
+&lt;p&gt;Rotating the root certificate is a very rare event (0.5 / year) and would require a bit more work to rotate all HTTPS certificates on all devices. Obviously this doesn&amp;rsquo;t impact SSH.&lt;/p&gt;
+
+&lt;h2 id=&#34;next-up:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;Next up&lt;/h2&gt;
+
+&lt;p&gt;Individual device security.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Buildroot directory structure for multiple R-Pi devices</title>
@@ -600,76 +712,6 @@ type your content and see th changes appear in the browser in almost real-time.&
 
 &lt;li&gt;&lt;p&gt;If designing for a laser cutter, &lt;strong&gt;define a variable called thickness&lt;/strong&gt; and make sure that changing the thickness of the material doesn’t screw up the design. Use the &lt;code&gt;test_overlap&lt;/code&gt; function from 3. to do this.&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Encrypting access to all local web consoles using Nginx as reverse SSL proxy</title>
-      <link>https://www.ivankovic.me/blog/2014/04/12/encrypting-access-to-all-local-web-consoles-using-nginx-as-reverse-ssl-proxy/</link>
-      <pubDate>Sat, 12 Apr 2014 20:00:00 +0000</pubDate>
-      
-      <guid>https://www.ivankovic.me/blog/2014/04/12/encrypting-access-to-all-local-web-consoles-using-nginx-as-reverse-ssl-proxy/</guid>
-      <description>
-
-&lt;h1 id=&#34;encrypting-access-to-all-local-web-consoles-using-nginx-as-reverse-ssl-proxy:84ef71d42f6a84b021597a4e570d1356&#34;&gt;Encrypting access to all local web consoles (using Nginx as reverse SSL proxy)&lt;/h1&gt;
-
-&lt;p&gt;A lot of software I run on Raspberry PI nodes comes with built-in web interfaces. Making sure all of these are encrypted, only allow authenticated users and don’t have vulnerabilities is tiresome and prone to errors. Some interfaces will allow you to hook up to existing Nginx or Apache servers, but some stubbornly insist on using their own built in web server.&lt;/p&gt;
-
-&lt;p&gt;Using Nginx and Iptables, we can solve the problem in the other direction, and use a good, secure Nginx server to forward requests to local interfaces.&lt;/p&gt;
-
-&lt;p&gt;The idea is:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Use Nginx reverse SSL proxy for encryption.&lt;/li&gt;
-&lt;li&gt;Require client side SSL certificates for authentication.&lt;/li&gt;
-&lt;li&gt;Use Iptables to block all incoming ports except for HTTPS and SSH.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;ssl-certificate-generation:84ef71d42f6a84b021597a4e570d1356&#34;&gt;SSL certificate generation&lt;/h2&gt;
-
-&lt;p&gt;There are &lt;a href=&#34;https://www.google.com/search?q=openssl+public+key+tutorial&#34;&gt;many&lt;/a&gt; tutorials online on SSL certificate generation. &lt;a href=&#34;https://wiki.archlinux.org/index.php/OpenSSL&#34;&gt;ArchWiki&lt;/a&gt; has a particularly good one that uses OpenSSL.&lt;/p&gt;
-
-&lt;p&gt;The important things to look for are:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Message digest&lt;/strong&gt; (&lt;code&gt;default_md&lt;/code&gt; in OpenSSL) should be at least SHA256. &lt;em&gt;Never use MD5&lt;/em&gt; it &lt;a href=&#34;http://www.kb.cert.org/vuls/id/836068&#34;&gt;has been completely broken and should not be used&lt;/a&gt;. If you have to use SHA1, you are probably safe for the very near future, but &lt;a href=&#34;https://www.schneier.com/blog/archives/2005/02/cryptanalysis_o.html&#34;&gt;should migrate to SHA256 as soon as posible&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Key size&lt;/strong&gt; (&lt;code&gt;default_bits&lt;/code&gt;) should be at least 2048. 4096 is not a huge performance hit, so you should at least try it out and see if it works.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Choose a comfortable duration. 1 year from now you will forget you set a 1 year duration and be amazed when things mysteriously start to break. Since you fully control devices on both ends, limiting duration is not as important as for publicly accessible web sites.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;nginx-configuration:84ef71d42f6a84b021597a4e570d1356&#34;&gt;Nginx configuration ##&lt;/h2&gt;
-
-&lt;h3 id=&#34;nginx-ssl:84ef71d42f6a84b021597a4e570d1356&#34;&gt;Nginx SSL&lt;/h3&gt;
-
-&lt;p&gt;Nginx has a very good &lt;a href=&#34;http://wiki.nginx.org/HttpSslModule&#34;&gt;SSL module&lt;/a&gt;. Important directives are:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;ssl_verify_client&lt;/code&gt; - This should be set to on. We demand client certificates for all requests.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;ssl_prefer_server_chipers&lt;/code&gt; - This should be set to on. Since you control devices on both ends, you need to set up the cipher list just once on the server. This also helps catch bugs where clients don’t support good quality ciphersuites.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;ssl_protocols&lt;/code&gt; - You should consider forcing TLS1.2.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;ssl_ciphers&lt;/code&gt; - &lt;strong&gt;This is important&lt;/strong&gt;. You need to make sure that the chipers you use support &lt;a href=&#34;http://en.wikipedia.org/wiki/Forward_secrecy&#34;&gt;forward secrecy&lt;/a&gt;. By default, the config is set to &lt;code&gt;HIGH:!aNULL:!MD5&lt;/code&gt;, in &lt;a href=&#34;https://www.openssl.org/docs/apps/ciphers.html&#34;&gt;OpenSSL cipher list format&lt;/a&gt;. The default translates to “high encryption cipher suites (mostly based on key size) but never suites that don’t offer authentication (&lt;code&gt;!aNULL&lt;/code&gt;) and most certainly never MD5.”. The exact value for &lt;code&gt;HIGH&lt;/code&gt; depends on your OpenSSL version. You should check that &lt;code&gt;ECDHE-*&lt;/code&gt; schemes are the preferred suites. The last &lt;code&gt;E&lt;/code&gt; in &lt;code&gt;ECDHE&lt;/code&gt; means ephemeral and that is what gives forward secrecy. You could consider forcing the algorithms to explicitly list those that use forward secrecy, but then you might miss out on future upgrades, unless you remember to update the config.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Mozilla maintains a fantastic &lt;a href=&#34;https://wiki.mozilla.org/Security/Server_Side_TLS&#34;&gt;wiki&lt;/a&gt; for anyone who wants an in-depth analysis.&lt;/p&gt;
-
-&lt;h2 id=&#34;browser-configuration:84ef71d42f6a84b021597a4e570d1356&#34;&gt;Browser configuration&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;Do not import the CA certificate in the keychain&lt;/em&gt;. Even though you control it, there’s no real reason to do this. It’s much better to trust the server certificates on a case by case basis.&lt;/p&gt;
-
-&lt;p&gt;Currently I use Firefox to access these internal sites. This is because Firefox works much better with self-signed and self-CA certificates. &lt;a href=&#34;https://www.google.com/search?q=firefox+trust+certificate&#34;&gt;Trusting a certificate in Firefox&lt;/a&gt; is easy to do once, and from then on you are safe and don’t get any warnings.&lt;/p&gt;
-
-&lt;p&gt;I didn’t yet figure out how to do this in Chrome, but I didn’t try too hard either. Using different browsers makes XSS attacks against my internal systems much more difficult.&lt;/p&gt;
-
-&lt;h2 id=&#34;locking-it-all-down:84ef71d42f6a84b021597a4e570d1356&#34;&gt;Locking it all down&lt;/h2&gt;
-
-&lt;p&gt;You should &lt;a href=&#34;http://www.ivankovic.me/blog/2013/11/09/basic-network-security-setup-for-rpi.html&#34;&gt;already&lt;/a&gt; be using Iptables to block all incoming traffic to your machine. Now simply add https (TCP port 443) to the list of allowed ports in the TCP chain and you are done.&lt;/p&gt;
-
-&lt;p&gt;At this point, you probably don’t need any more TCP ports exposed on your machine. You should be able to tunnel everything through SSH and SSL, with the possible exception of &lt;a href=&#34;http://en.wikipedia.org/wiki/Multicast_DNS&#34;&gt;mDNS&lt;/a&gt; (if you need local machine name resolution).&lt;/p&gt;
 </description>
     </item>
     

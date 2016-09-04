@@ -6,8 +6,120 @@
     <description>Recent content on Marko Ivankovic and Marina Celar Ivankovic - personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Feb 2016 01:14:28 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 04 Sep 2016 18:16:49 +0200</lastBuildDate>
     <atom:link href="https://www.ivankovic.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The layout and security of my home network</title>
+      <link>https://www.ivankovic.me/blog/2016/09/04/the-layout-and-security-of-my-home-network/</link>
+      <pubDate>Sun, 04 Sep 2016 18:16:49 +0200</pubDate>
+      
+      <guid>https://www.ivankovic.me/blog/2016/09/04/the-layout-and-security-of-my-home-network/</guid>
+      <description>
+
+&lt;h1 id=&#34;the-layout-and-security-of-my-home-network:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;The layout and security of my home network&lt;/h1&gt;
+
+&lt;p&gt;I wanted to write this post for quite some time now. Mostly to have an opportunity to critically examine my own setup. If someone else finds this useful, that&amp;rsquo;s just extra.&lt;/p&gt;
+
+&lt;p&gt;In this post I will describe the layout and security layers of my entire home network. I personally strongly believe that security can only come from usability, and I will try to point out in this post paths not taken. Paths that would lead to theoretically safer designs that would practically be less safe because they would be unusable.&lt;/p&gt;
+
+&lt;h2 id=&#34;human-considerations:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;Human considerations&lt;/h2&gt;
+
+&lt;p&gt;The most usable security systems are those that don&amp;rsquo;t even have any usability considerations because they have no user interface. These are by definition completely automated and wherever possible such systems will be preferred. Unfortunately, these are also the rarest. The only systems that I am aware of that fit this description are all on Chromebooks. The Chromebook full disk encryption and secure fully automatic updates Just Work. And they don&amp;rsquo;t just work in best case scenario, they &lt;strong&gt;always work&lt;/strong&gt; without any debugging.&lt;/p&gt;
+
+&lt;p&gt;The next level are setup-only UI systems. They require me to invest time up-front to set them up, but once they are set up they require no further interaction ever. A good example of this would be &lt;code&gt;/home&lt;/code&gt; directory encryption on Ubuntu. Some setup is required, but generally once it is set-up, it works. Note that this implies that they are also rock solid and can &lt;strong&gt;never fail&lt;/strong&gt;. Because if they fail, they fall under the class of&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Non-periodic interaction systems. Hopefully very very rarely interactive systems. These systems do have a UI, but you interact with it only on-demand when it cannot possibly be avoided. A good example of this is The Master Key. Usually stored as safe as possible behind as many security countermeasures as possible, the only time it gets used is when issuing more specific keys, which in my case is basically only when provisioning a new trusted device on the network. Note that the interaction must be non-periodic. In other words, you cannot ever have this knowingly scheduled in advance, because if you do it is…&lt;/p&gt;
+
+&lt;p&gt;Scheduled interaction systems. These are all the systems that the users will interact with over and over and over again. Because of this, they must be &lt;strong&gt;incredibly fast&lt;/strong&gt; and &lt;strong&gt;easy to use&lt;/strong&gt;. Logging in to a laptop falls under this, as does the yearly rotation of PGP keys. Note that within this class there are definite subclasses based on the period of the interaction. Something you do every day must be as frictionless as possible, but also requires less documentation and instructions. On the other hand, something done once per year can be a bit more complex, but must be documented very very well because you are likely to forget it.&lt;/p&gt;
+
+&lt;h2 id=&#34;use-cases-and-classes-of-devices-on-the-network:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;Use cases and classes of devices on the network&lt;/h2&gt;
+
+&lt;p&gt;The network consists of the following classes of devices and the supported use cases:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Chromebooks and Androids&lt;/strong&gt; - I group the two together because most Android apps talk to &amp;ldquo;The Cloud&amp;rdquo; using &lt;code&gt;http&lt;/code&gt;, or hopefully &lt;code&gt;https&lt;/code&gt;, so from the perspective of the network they are very similar. These are also the devices that are used most of the time.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Smart TV and Sonos audio system&lt;/strong&gt; - These two are grouped together because I can&amp;rsquo;t fucking trust them. They are completely closed source and could be doing anything, so the network must isolate them and treat them as semi-hostile elements at all times.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;NAS&lt;/strong&gt; - Basically dumb storage nodes. Everything that lands on them should be encrypted or to be shared with the entertainment system anyhow and they should only store things with appropriate replication.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Small home servers&lt;/strong&gt; - I have a couple of RPis that I use as various servers in my home network. Things like SSH from outside, git repositories, media servers.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Physical security&lt;/strong&gt; - I have a couple of RPis running as security cameras.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Network infrastructure&lt;/strong&gt; - An Asus RT-AC68U running open source firmware and a cable modem + router combination I got from the ISP.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;physical-layer:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;Physical layer&lt;/h2&gt;
+
+&lt;p&gt;Any attacks on the physical layer would require the attacker to be in close physical proximity to the network. I have a door. I have custom made RPi security cameras.&lt;/p&gt;
+
+&lt;h2 id=&#34;link-layer:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;Link layer&lt;/h2&gt;
+
+&lt;p&gt;MAC address leaks. The one I am really worried about here is the ISP provided router. So I keep that one segregated behind the RT-AC68U.&lt;/p&gt;
+
+&lt;p&gt;I guess the smart TV, Sonos and all the other closed source elements can also be collecting MAC addresses and phoning them home, but since I need to connect to those in order for them to function at all there&amp;rsquo;s not much one can do at this layer.&lt;/p&gt;
+
+&lt;p&gt;Of course, I also leak the addresses over WiFi, but that requires physical proximity.&lt;/p&gt;
+
+&lt;p&gt;A funny attack here is the ISP router recognizing this situation and silently sniffing the WiFi traffic around it. Which is why I have it in a metal box bricked into the armed concrete wall, with the antennas screwed out.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not that worried about DoS attacks at link layer, like table exhaustions. Those can happen because of accidents as well and I expect the router software to mostly have those patched at this point. And if they don&amp;rsquo;t, I can just reboot the whole thing if need be.&lt;/p&gt;
+
+&lt;h2 id=&#34;internet-and-transport-layer:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;Internet and transport layer&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;m still waiting for IPv6 :(&lt;/p&gt;
+
+&lt;p&gt;Before that happens, not much. The NAT between the WAN and LAN helps keep things segregated quite a bit. For defense in depth I also map the externally accessible port on the NAT to a random port. Doesn&amp;rsquo;t stop a dedicated, provisioned or adept attacker but it does stop random people that go around scanning port 22 and 80.&lt;/p&gt;
+
+&lt;p&gt;I did purposefully host my personal website on a server rather than from my home so I don&amp;rsquo;t expose my external IP address, so there&amp;rsquo;s that.&lt;/p&gt;
+
+&lt;p&gt;I considered IPSec and might revisit the decision in the future but for now, it&amp;rsquo;s more trouble than it&amp;rsquo;s worth.&lt;/p&gt;
+
+&lt;h2 id=&#34;application-layer:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;Application layer&lt;/h2&gt;
+
+&lt;p&gt;Here&amp;rsquo;s where the fun starts. On all devices that I completely control I try to reduce the application layer to only two endpoints: SSH and HTTPS.&lt;/p&gt;
+
+&lt;p&gt;Note that both SSH and HTTPS secure my information even if the underlying network is outright hostile. Defense in depth.&lt;/p&gt;
+
+&lt;h3 id=&#34;https:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;HTTPS&lt;/h3&gt;
+
+&lt;p&gt;HTTPS is used for end to end encryption of all &amp;ldquo;nice UI&amp;rdquo; parts of the network, like the camera dashboard. I use &lt;a href=&#34;https://www.ivankovic.me/blog/2014/04/12/encrypting-access-to-all-local-web-consoles-using-nginx-as-reverse-ssl-proxy/&#34;&gt;Nginx as a reverse SSL proxy&lt;/a&gt; which allows me to encrypt any tool with a web UI.&lt;/p&gt;
+
+&lt;p&gt;I use a private root certificate to issue SSL certificates for all trusted devices, &lt;strong&gt;including smartphones and Chromebooks&lt;/strong&gt;, which conveniently allows me to set up 2-way SSL.&lt;/p&gt;
+
+&lt;p&gt;This means that my actual useful information is secure even if someone obtains unauthorized access to my private network, even active access to the network infrastructure like the router.&lt;/p&gt;
+
+&lt;p&gt;This also means that I could even expose the HTTPS endpoints to the Internet and access them over crappy hotspot networks and still be OK. Of course I don&amp;rsquo;t actually do this, because it would leak some metadata, but I could make this usability choice if I wanted to.&lt;/p&gt;
+
+&lt;h3 id=&#34;ssh:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;SSH&lt;/h3&gt;
+
+&lt;p&gt;SSH is my control channel. I mostly use it for settings and configuration. Ideally very rarely.&lt;/p&gt;
+
+&lt;p&gt;I have the standard set of precautions in place.&lt;/p&gt;
+
+&lt;p&gt;I &lt;a href=&#34;https://www.ivankovic.me/blog/2013/11/26/how-to-pick-the-best-non-standard-port-for-ssh-or-other-services/&#34;&gt;run SSH on a non-standard port&lt;/a&gt;, &lt;a href=&#34;blog/2014/05/28/using-ssh-config-file-to-simplify-swarm-management/&#34;&gt;using a config&lt;/a&gt; to counteract the usability loss.&lt;/p&gt;
+
+&lt;p&gt;I only allow public key logins, and I use the shiny new &lt;a href=&#34;https://en.wikipedia.org/wiki/EdDSA&#34;&gt;Ed25519&lt;/a&gt; which probably makes the passphrase the weakest link of the entire scheme.&lt;/p&gt;
+
+&lt;h2 id=&#34;usability:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;Usability&lt;/h2&gt;
+
+&lt;p&gt;Almost everything is setup only. Once the keys are distributed on the devices they just work.&lt;/p&gt;
+
+&lt;p&gt;The only non-periodic interaction is entering the SSH key.&lt;/p&gt;
+
+&lt;p&gt;Note that this means that devices that belong to family members get security completely transparently as far as their users are concerned.&lt;/p&gt;
+
+&lt;p&gt;Adding a new device is a rare event (1 / year). For HTTPS it&amp;rsquo;s just provisioning a new certificate and figuring out how to load it on the device. For SSH it&amp;rsquo;s a bit more work to verify the connections as I establish them.&lt;/p&gt;
+
+&lt;p&gt;Rotating the root certificate is a very rare event (0.5 / year) and would require a bit more work to rotate all HTTPS certificates on all devices. Obviously this doesn&amp;rsquo;t impact SSH.&lt;/p&gt;
+
+&lt;h2 id=&#34;next-up:6ebf8a256e9904bf4ef1916ea9b0780e&#34;&gt;Next up&lt;/h2&gt;
+
+&lt;p&gt;Individual device security.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Buildroot directory structure for multiple R-Pi devices</title>
@@ -601,47 +713,6 @@ type your content and see th changes appear in the browser in almost real-time.&
 &lt;p&gt;&lt;a href=&#34;http://www.harding.motd.ca/autossh/&#34;&gt;autossh&lt;/a&gt; is a nice little program that will start an SSH session and monitor it, restarting it as necessary. There’s a &lt;a href=&#34;https://packages.debian.org/wheezy/autossh&#34;&gt;Debian package&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;You can add it to &lt;code&gt;rc.local&lt;/code&gt; to make sure it start on every boot. A simple &lt;code&gt;autossh -M 0 -f -N &amp;lt;host&amp;gt;&lt;/code&gt; will do. For extra points, use &lt;code&gt;su -c autossh -M 0 -f -N &amp;lt;host&amp;gt; &amp;lt;username&amp;gt; &amp;amp;&lt;/code&gt; to run it as an unprivileged user.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Using SSH config file to simplify swarm management</title>
-      <link>https://www.ivankovic.me/blog/2014/05/28/using-ssh-config-file-to-simplify-swarm-management/</link>
-      <pubDate>Wed, 28 May 2014 10:00:00 +0000</pubDate>
-      
-      <guid>https://www.ivankovic.me/blog/2014/05/28/using-ssh-config-file-to-simplify-swarm-management/</guid>
-      <description>
-
-&lt;h1 id=&#34;using-ssh-config-file-to-simplify-swarm-management:39f07bb5d89bfecb462d92772db06fea&#34;&gt;Using SSH config file to simplify Swarm management&lt;/h1&gt;
-
-&lt;p&gt;While the whole point of having a swarm of devices is to automate things as much as possible, sometimes you just have to SSH into some, or all, of them. Increasing security by using &lt;a href=&#34;http://www.ivankovic.me/blog/2013/11/26/how-to-pick-the-best-non-standard-port-for-ssh-or-other-services.html&#34;&gt;non-standard ports&lt;/a&gt; will cause some usability problems though. It’s really easy to work around it using a bit of config.&lt;/p&gt;
-
-&lt;h2 id=&#34;ssh-config:39f07bb5d89bfecb462d92772db06fea&#34;&gt;.ssh/config&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://linux.die.net/man/5/ssh_config&#34;&gt;&lt;code&gt;.ssh/config&lt;/code&gt;&lt;/a&gt; is a fantastic little file. The most important declaration you need to know is &lt;code&gt;Host&lt;/code&gt; because it restricts the all other declarations to the host names that match the specified pattern.&lt;/p&gt;
-
-&lt;p&gt;I personally use just two types of patterns:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;One or two letters or numbers. Because Host patterns match the address specified on the command line, if you create a one letter Host declaration and then give it a HostName declaration that points to a commonly used address it enables you to connect to that host using only a single letter. For example the following setting:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; Host r
- HostName rpi.local
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Will enable you to connect to rpi.local just by typing ssh r.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;code&gt;&amp;quot;? , ??&amp;quot;&lt;/code&gt; verbatim. This is the catch-all pattern for all one or two letter hosts. Here I can easily specify the non-standard port and the user name. For example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; Host ? , ??
- Port 1922
- User random
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Because the settings that come first take precedence, the &lt;code&gt;Host ? , ??&lt;/code&gt; declaration should be at the end of the file.&lt;/p&gt;
-
-&lt;p&gt;Be careful when using &lt;code&gt;*&lt;/code&gt; as a pattern. This will match &lt;strong&gt;everything&lt;/strong&gt;, so if you specify a non-standard port here it will make connecting to standard SSH servers on the internet very annoying.&lt;/p&gt;
 </description>
     </item>
     

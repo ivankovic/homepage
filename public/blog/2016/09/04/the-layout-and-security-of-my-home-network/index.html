@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>The layout and security of my home network</title>
+    <link rel="stylesheet" type="text/css" href="https://www.ivankovic.me/css/style.css" media="screen">
+    <link rel="icon" href="/favicon.ico">
+    <meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+      function toggle() {
+        menu = document.getElementById('menu')
+        menu.style.display = (menu.style.display == 'none' || menu.style.display == '' ? 'block' : 'none') 
+      }
+    </script>
+  </head>
+  <body>
+
+
+<div id="mbutton" onclick="toggle();">#</div>
+<div id="menu">
+  <header> 
+    <a href="/">Ivankovic.Me</a>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/marko/contact" > Marko</a>
+      <ul>
+        <li><a href="/marko/contact" >Contact</a></li>
+        <li><a href="/marko/resume" >Resume</a></li>
+        <li><a href="/blog/" >Blog</a></li>
+      </ul>
+      </li>
+      <li><a href="/marina/contact" > Marina</a>
+      <ul>
+        <li><a href="/marina/contact" >Contact</a></li>
+        <li><a href="/marina/resume" >Resume</a></li>
+      </ul>
+      </li>
+      <li><a href="/photography/">Photography</a>
+        <ul>
+          <li><a href="/photography/landscapes">Landscapes</a></li>
+          <li><a href="/photography/cityscapes">Cityscapes</a></li>
+          <li><a href="/photography/animals">Animals</a></li>
+          <li><a href="/photography/food">Food</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <footer>
+    <p>
+        <a href="/blog/index.xml"><img src="https://www.ivankovic.me/img/feed-icon.svg" style="width: 16px" />Subscribe</a>
+    </p>
+    <p>
+  Copyright Marko Ivanković<br/>
+  All rights reserved
+</p>
+
+  </footer>
+</div>
+
+
+<div id="main">
+  <header>
+    <b> > Marko Ivankovic > Blog > The layout and security of my home network </b>
+  </header>
+
+  <div id="content" itemscope itemtype="https://schema.org/BlogPosting">
+    
+
+<h1 id="the-layout-and-security-of-my-home-network:6ebf8a256e9904bf4ef1916ea9b0780e">The layout and security of my home network</h1>
+
+<p>I wanted to write this post for quite some time now. Mostly to have an opportunity to critically examine my own setup. If someone else finds this useful, that&rsquo;s just extra.</p>
+
+<p>In this post I will describe the layout and security layers of my entire home network. I personally strongly believe that security can only come from usability, and I will try to point out in this post paths not taken. Paths that would lead to theoretically safer designs that would practically be less safe because they would be unusable.</p>
+
+<h2 id="human-considerations:6ebf8a256e9904bf4ef1916ea9b0780e">Human considerations</h2>
+
+<p>The most usable security systems are those that don&rsquo;t even have any usability considerations because they have no user interface. These are by definition completely automated and wherever possible such systems will be preferred. Unfortunately, these are also the rarest. The only systems that I am aware of that fit this description are all on Chromebooks. The Chromebook full disk encryption and secure fully automatic updates Just Work. And they don&rsquo;t just work in best case scenario, they <strong>always work</strong> without any debugging.</p>
+
+<p>The next level are setup-only UI systems. They require me to invest time up-front to set them up, but once they are set up they require no further interaction ever. A good example of this would be <code>/home</code> directory encryption on Ubuntu. Some setup is required, but generally once it is set-up, it works. Note that this implies that they are also rock solid and can <strong>never fail</strong>. Because if they fail, they fall under the class of&hellip;</p>
+
+<p>Non-periodic interaction systems. Hopefully very very rarely interactive systems. These systems do have a UI, but you interact with it only on-demand when it cannot possibly be avoided. A good example of this is The Master Key. Usually stored as safe as possible behind as many security countermeasures as possible, the only time it gets used is when issuing more specific keys, which in my case is basically only when provisioning a new trusted device on the network. Note that the interaction must be non-periodic. In other words, you cannot ever have this knowingly scheduled in advance, because if you do it is…</p>
+
+<p>Scheduled interaction systems. These are all the systems that the users will interact with over and over and over again. Because of this, they must be <strong>incredibly fast</strong> and <strong>easy to use</strong>. Logging in to a laptop falls under this, as does the yearly rotation of PGP keys. Note that within this class there are definite subclasses based on the period of the interaction. Something you do every day must be as frictionless as possible, but also requires less documentation and instructions. On the other hand, something done once per year can be a bit more complex, but must be documented very very well because you are likely to forget it.</p>
+
+<h2 id="use-cases-and-classes-of-devices-on-the-network:6ebf8a256e9904bf4ef1916ea9b0780e">Use cases and classes of devices on the network</h2>
+
+<p>The network consists of the following classes of devices and the supported use cases:</p>
+
+<ul>
+<li><p><strong>Chromebooks and Androids</strong> - I group the two together because most Android apps talk to &ldquo;The Cloud&rdquo; using <code>http</code>, or hopefully <code>https</code>, so from the perspective of the network they are very similar. These are also the devices that are used most of the time.</p></li>
+
+<li><p><strong>Smart TV and Sonos audio system</strong> - These two are grouped together because I can&rsquo;t fucking trust them. They are completely closed source and could be doing anything, so the network must isolate them and treat them as semi-hostile elements at all times.</p></li>
+
+<li><p><strong>NAS</strong> - Basically dumb storage nodes. Everything that lands on them should be encrypted or to be shared with the entertainment system anyhow and they should only store things with appropriate replication.</p></li>
+
+<li><p><strong>Small home servers</strong> - I have a couple of RPis that I use as various servers in my home network. Things like SSH from outside, git repositories, media servers.</p></li>
+
+<li><p><strong>Physical security</strong> - I have a couple of RPis running as security cameras.</p></li>
+
+<li><p><strong>Network infrastructure</strong> - An Asus RT-AC68U running open source firmware and a cable modem + router combination I got from the ISP.</p></li>
+</ul>
+
+<h2 id="physical-layer:6ebf8a256e9904bf4ef1916ea9b0780e">Physical layer</h2>
+
+<p>Any attacks on the physical layer would require the attacker to be in close physical proximity to the network. I have a door. I have custom made RPi security cameras.</p>
+
+<h2 id="link-layer:6ebf8a256e9904bf4ef1916ea9b0780e">Link layer</h2>
+
+<p>MAC address leaks. The one I am really worried about here is the ISP provided router. So I keep that one segregated behind the RT-AC68U.</p>
+
+<p>I guess the smart TV, Sonos and all the other closed source elements can also be collecting MAC addresses and phoning them home, but since I need to connect to those in order for them to function at all there&rsquo;s not much one can do at this layer.</p>
+
+<p>Of course, I also leak the addresses over WiFi, but that requires physical proximity.</p>
+
+<p>A funny attack here is the ISP router recognizing this situation and silently sniffing the WiFi traffic around it. Which is why I have it in a metal box bricked into the armed concrete wall, with the antennas screwed out.</p>
+
+<p>I&rsquo;m not that worried about DoS attacks at link layer, like table exhaustions. Those can happen because of accidents as well and I expect the router software to mostly have those patched at this point. And if they don&rsquo;t, I can just reboot the whole thing if need be.</p>
+
+<h2 id="internet-and-transport-layer:6ebf8a256e9904bf4ef1916ea9b0780e">Internet and transport layer</h2>
+
+<p>I&rsquo;m still waiting for IPv6 :(</p>
+
+<p>Before that happens, not much. The NAT between the WAN and LAN helps keep things segregated quite a bit. For defense in depth I also map the externally accessible port on the NAT to a random port. Doesn&rsquo;t stop a dedicated, provisioned or adept attacker but it does stop random people that go around scanning port 22 and 80.</p>
+
+<p>I did purposefully host my personal website on a server rather than from my home so I don&rsquo;t expose my external IP address, so there&rsquo;s that.</p>
+
+<p>I considered IPSec and might revisit the decision in the future but for now, it&rsquo;s more trouble than it&rsquo;s worth.</p>
+
+<h2 id="application-layer:6ebf8a256e9904bf4ef1916ea9b0780e">Application layer</h2>
+
+<p>Here&rsquo;s where the fun starts. On all devices that I completely control I try to reduce the application layer to only two endpoints: SSH and HTTPS.</p>
+
+<p>Note that both SSH and HTTPS secure my information even if the underlying network is outright hostile. Defense in depth.</p>
+
+<h3 id="https:6ebf8a256e9904bf4ef1916ea9b0780e">HTTPS</h3>
+
+<p>HTTPS is used for end to end encryption of all &ldquo;nice UI&rdquo; parts of the network, like the camera dashboard. I use <a href="/blog/2014/04/12/encrypting-access-to-all-local-web-consoles-using-nginx-as-reverse-ssl-proxy/">Nginx as a reverse SSL proxy</a> which allows me to encrypt any tool with a web UI.</p>
+
+<p>I use a private root certificate to issue SSL certificates for all trusted devices, <strong>including smartphones and Chromebooks</strong>, which conveniently allows me to set up 2-way SSL.</p>
+
+<p>This means that my actual useful information is secure even if someone obtains unauthorized access to my private network, even active access to the network infrastructure like the router.</p>
+
+<p>This also means that I could even expose the HTTPS endpoints to the Internet and access them over crappy hotspot networks and still be OK. Of course I don&rsquo;t actually do this, because it would leak some metadata, but I could make this usability choice if I wanted to.</p>
+
+<h3 id="ssh:6ebf8a256e9904bf4ef1916ea9b0780e">SSH</h3>
+
+<p>SSH is my control channel. I mostly use it for settings and configuration. Ideally very rarely.</p>
+
+<p>I have the standard set of precautions in place.</p>
+
+<p>I <a href="/blog/2013/11/26/how-to-pick-the-best-non-standard-port-for-ssh-or-other-services/">run SSH on a non-standard port</a>, <a href="blog/2014/05/28/using-ssh-config-file-to-simplify-swarm-management/">using a config</a> to counteract the usability loss.</p>
+
+<p>I only allow public key logins, and I use the shiny new <a href="https://en.wikipedia.org/wiki/EdDSA">Ed25519</a> which probably makes the passphrase the weakest link of the entire scheme.</p>
+
+<h2 id="usability:6ebf8a256e9904bf4ef1916ea9b0780e">Usability</h2>
+
+<p>Almost everything is setup only. Once the keys are distributed on the devices they just work.</p>
+
+<p>The only non-periodic interaction is entering the SSH key.</p>
+
+<p>Note that this means that devices that belong to family members get security completely transparently as far as their users are concerned.</p>
+
+<p>Adding a new device is a rare event (1 / year). For HTTPS it&rsquo;s just provisioning a new certificate and figuring out how to load it on the device. For SSH it&rsquo;s a bit more work to verify the connections as I establish them.</p>
+
+<p>Rotating the root certificate is a very rare event (0.5 / year) and would require a bit more work to rotate all HTTPS certificates on all devices. Obviously this doesn&rsquo;t impact SSH.</p>
+
+<h2 id="next-up:6ebf8a256e9904bf4ef1916ea9b0780e">Next up</h2>
+
+<p>Individual device security.</p>
+
+  </div>
+</div>
+
+    <div id="contact"><a href="mailto:marko@ivankovic.me" title="Send me an email!">@</a></div>
+
+  </body>
+</html>
+
