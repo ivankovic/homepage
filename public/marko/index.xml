@@ -48,7 +48,7 @@
     &lt;span itemprop=&#34;name&#34;&gt;Marko Ivanković&lt;/span&gt;
     - Resume
   &lt;/h1&gt;
-&lt;p&gt;Last updated: October 14th, 2014.&lt;/p&gt;
+&lt;p&gt;Last updated: October 13th, 2016.&lt;/p&gt;
 &lt;h2&gt;Work&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;
@@ -65,6 +65,7 @@
 &lt;/ul&gt;
 &lt;h2&gt;Publications and presentations&lt;/h2&gt;
 &lt;ul&gt;
+  &lt;li&gt;Patent: &lt;a href=&#34;http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&amp;Sect2=HITOFF&amp;d=PALL&amp;p=1&amp;u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&amp;r=1&amp;f=G&amp;l=50&amp;s1=9,405,662.PN.&amp;OS=PN/9,405,662&amp;RS=PN/9,405,662&#34;&gt;Process for displaying test coverage data during code reviews&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Presentation: &lt;a href=&#34;http://swisstestingday.ch/&#34;&gt;Swiss Testing Day&lt;/a&gt;
   - &lt;a href=&#34;http://swisstestingday.ch/analyzing-statement-coverage-at-google/&#34;&gt;
   Analyzing statement coverage at Google&lt;/a&gt;&lt;/li&gt;
@@ -122,7 +123,7 @@
     &lt;span itemprop=&#34;award&#34;&gt;
       Certificate of achievement at ACM Central European Programming Contest:&lt;br/&gt;
       Budapest, Hungary (2006.), Prague, Czech Republic (2007.), Wroclaw, Poland (2009.)
-    &lt;/span&gt;&lt;br /&gt;
+    &lt;/span&gt;
   &lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
 </description>

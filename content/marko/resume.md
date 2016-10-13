@@ -11,7 +11,7 @@ aliases = [
     <span itemprop="name">Marko Ivanković</span>
     - Resume
   </h1>
-<p>Last updated: October 14th, 2014.</p>
+<p>Last updated: October 13th, 2016.</p>
 <h2>Work</h2>
 <ul>
   <li>
@@ -28,6 +28,7 @@ aliases = [
 </ul>
 <h2>Publications and presentations</h2>
 <ul>
+  <li>Patent: <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9,405,662.PN.&OS=PN/9,405,662&RS=PN/9,405,662">Process for displaying test coverage data during code reviews</a></li>
   <li>Presentation: <a href="http://swisstestingday.ch/">Swiss Testing Day</a>
   - <a href="http://swisstestingday.ch/analyzing-statement-coverage-at-google/">
   Analyzing statement coverage at Google</a></li>
@@ -60,14 +61,14 @@ aliases = [
 </ul>
 <h2>Education</h2>
 <ul>
-  <li>BSc in Computer Science - 
+  <li>BSc in Computer Science -
   <span itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization">
     <span itemprop="name">University of Zagreb</span>
     <a href="http://unizg.hr" itemprop="sameAs">http://unizg.hr</a>
   </span>
   (2007 - 2010)<br/>
   Thesis: <i>Library for RPC calls over HTTP protocol between web browsers</i></li>
-  <li>MSc in Computer Science - 
+  <li>MSc in Computer Science -
   <span itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization">
     <span itemprop="name">University of Zagreb</span>
     <a href="http://unizg.hr" itemprop="sameAs">http://unizg.hr</a>
@@ -85,6 +86,6 @@ aliases = [
     <span itemprop="award">
       Certificate of achievement at ACM Central European Programming Contest:<br/>
       Budapest, Hungary (2006.), Prague, Czech Republic (2007.), Wroclaw, Poland (2009.)
-    </span>  
+    </span>
   </li>
 </ul>
