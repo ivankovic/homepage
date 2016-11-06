@@ -2,17 +2,23 @@
 
 {{ template "partials/navigation.html" . }}
 
-<div id="main">
-  <header>
-    <b> > Index </b>
-  </header>
-  
-  <div id="content">
-    <h1>Welcome to Ivanković family website</h1>
-
-    <p>This website contains Marko Ivanković's and Marina Čelar Ivanković's  contact information, up-to-date resume and blog.</p>
+<div id="content">
+  <div class="box">
+    <img src="img/PhotoSeal.svg"></img>
+    <a href="/photography/">Photography</a>
   </div>
-
+  <div class="box">
+    <img src="img/BlogSeal.svg"></img>
+    <a href="/blog/">Blog</a>
+  </div>
+  <div class="box">
+    <img src="img/ContactSeal.svg"></img>
+    <a href="/contact/">Contact</a>
+  </div>
+  <div class="box">
+    <img src="img/AboutSeal.svg"></img>
+    <a href="/about/">About us</a>
+  </div>
 </div>
 
 {{ template "partials/footer.html" . }}
