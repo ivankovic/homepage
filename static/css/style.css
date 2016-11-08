@@ -68,6 +68,10 @@ a:link, a:visited {
   text-decoration: none;
 }
 
+a.black {
+  color: black;
+}
+
 a:hover, a:active {
   color: #e6a44e;
   text-decoration: none;
