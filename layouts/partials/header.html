@@ -14,4 +14,9 @@
     </script>
   </head>
   <body>
-    <div id="main">
+    <div
+       id="main"
+       {{ if .IsNode }}
+       style="height: 100%;"
+       {{ end }}
+    >
