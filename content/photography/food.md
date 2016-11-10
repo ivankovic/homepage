@@ -17,4 +17,7 @@ title = "Food"
 <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FYmRxeTE1VlNZdEE">
 <img src="/img/Pumpkins on sale in Wettswil thumbnail.jpg" />
 </a>
+<a href="https://drive.google.com/open?id=0B3e2zRvXHH5FWU1jZnlDQ0VMc00">
+<img src="/img/White grapes thumbnail.jpg" />
+</a>
 </div>

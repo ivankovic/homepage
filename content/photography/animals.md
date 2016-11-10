@@ -17,4 +17,7 @@ title = "Animals"
 <a href="https://drive.google.com/open?id=0B3e2zRvXHH5FRXNjNTN6T0ZzdDA">
 <img src="/img/Cat%20walk%20thumbnail.jpg" />
 </a>
+<a href="https://drive.google.com/open?id=0B3e2zRvXHH5FS3hZSlN3a04zRlE">
+<img src="/img/Black and white cat thumbnail.jpg" />
+</a>
 </div>

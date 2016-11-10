@@ -2,31 +2,21 @@
 
 {{ template "partials/navigation.html" . }}
 
-<div id="main">
-  <header>
-    <b> > Marko Ivankovic > Blog > List of posts</b>
-  </header>
-
-  <div id="content">
-    <div itemscope itemtype="https://schema.org/Blog">
-      <ul>
-        {{ range .Data.Pages }}
-        <li>
+<div id="content">
+  <p style="text-align: center; width:100%;">
+    <a href="{{ .RSSLink }}"><img src="{{ .Site.BaseURL }}/img/feed-icon.svg" style="width: 16px; padding-right: 8px;" />Subscribe</a>
+  </p>
+  <div itemscope itemtype="https://schema.org/Blog" style="width: 100%; display: flex; justify-content: center;">
+    <ul>
+      {{ range .Data.Pages }}
+      <li style="padding-top: 16px;">
         <div itemscope itemtype="https://schema.org/BlogPosting">
           <a href="{{ .Permalink }}">{{ .Title }}</a>
           <aside>Posted at: <span itemprop="datePublished">{{ .Date }}</span></aside>
         </div>
-        </li> 
-        {{ end }}
-      </ul>
-    </div>
-    <p>
-    <a href="{{ .RSSLink }}"><img src="{{ .Site.BaseURL }}/img/feed-icon.svg" style="width: 16px" />Subscribe</a>
-    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}/css/style.css" media="screen">
-    </p>
-    <p>
-    My blog used to be hosted at <a href="https://mivankovic.blogspot.com">Blogger</a>. Some of the posts have been moved here, but I didn't bother moving all of them.
-    </p>
+      </li>
+      {{ end }}
+    </ul>
   </div>
 </div>
 

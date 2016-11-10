@@ -46,6 +46,40 @@ div#content {
   flex-wrap: wrap;
 }
 
+h1 {
+  padding-bottom: 1em;
+  color: #e6a44e;
+}
+
+h2 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #e6a44e;
+}
+
+h3 {
+  padding-top: 0.5em;
+  margin-left: 0.5em;
+  color: #e6a44e;
+}
+
+pre {
+  margin-left: 3em;
+  padding-top: 16px;
+}
+
+p {
+  margin-left: 1.5em;
+  padding-top: 1em;
+}
+
+div#content ol {
+  margin-left: 1.5em;
+}
+
+div#content li {
+  padding-top: 1em;
+}
 
 @media (max-width: 896px) {
   div.box {
