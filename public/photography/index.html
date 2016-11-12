@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Photographies</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://www.ivankovic.me/css/style.css" media="screen">
     <link rel="icon" href="/favicon.ico">
     <meta charset="utf-8">
@@ -11,73 +12,50 @@
     <script>
       function toggle() {
         menu = document.getElementById('menu')
-        menu.style.display = (menu.style.display == 'none' || menu.style.display == '' ? 'block' : 'none') 
+        menu.style.display = (menu.style.display == 'none' || menu.style.display == '' ? 'block' : 'none')
       }
     </script>
   </head>
   <body>
+    <div
+       id="main"
+       
+       style="height: 100%;"
+       
+    >
 
 
-<div id="mbutton" onclick="toggle();">&#9776;</div>
-<div id="menu">
-  <header>
-    <a href="/">Ivankovic.Me</a>
-  </header>
+<header>
   <nav>
-    <ul>
-      <li><a href="/marko/contact" > Marko</a>
-      <ul>
-        <li><a href="/marko/contact" >Contact</a></li>
-        <li><a href="/marko/resume" >Resume</a></li>
-        <li><a href="/blog/" >Blog</a></li>
-      </ul>
-      </li>
-      <li><a href="/marina/contact" > Marina</a>
-      <ul>
-        <li><a href="/marina/contact" >Contact</a></li>
-        <li><a href="/marina/resume" >Resume</a></li>
-      </ul>
-      </li>
-      <li><a href="/photography/">Photography</a>
-        <ul>
-          <li><a href="/photography/landscapes">Landscapes</a></li>
-          <li><a href="/photography/cityscapes">Cityscapes</a></li>
-          <li><a href="/photography/animals">Animals</a></li>
-          <li><a href="/photography/food">Food</a></li>
-        </ul>
-      </li>
-    </ul>
+    <a href="/">Ivankovic.Me</a>
+    <a href="/photography/">Photography</a>
+    <a href="/blog/" >Blog</a>
+    <a href="/contact/" >Contact</a>
+    <a href="/about/" >About</a>
   </nav>
-
-  <footer>
-    <p>
-  Copyright Marko Ivanković<br/>
-  All rights reserved
-</p>
-
-  </footer>
-</div>
+</header>
 
 
-<div id="main">
-  <header>
-    <b> > Photography </b>
-  </header>
-
-  <div id="content">
-    <h1>Galleries</h1>
-    All images are available without watermarks uppon request. Please see contact info in the dropdown menu or use the small round "@" button in the lower right corner. <br/><br/>
-    <ul>
-      <li><a href="/photography/landscapes/">> Landscapes</a></li>
-      <li><a href="/photography/cityscapes/">> Cityscapes</a></li>
-      <li><a href="/photography/animals/">> Animals</a></li>
-      <li><a href="/photography/food/">> Food</a></li>
-    </ul>
+<div id="content">
+  <div class="box photocategory"
+       style="background-image: url('/img/Snow Covered HooDoos - Bryce National Park.png');">
+    <a href="/photography/landscapes/">N a t u r e</a>
+  </div>
+  <div class="box photocategory"
+       style="background-image: url('/img/Torre de Belem.png');">
+    <a href="/photography/cityscapes/">C i t y s c a p e s</a>
+  </div>
+  <div class="box photocategory"
+       style="background-image: url('/img/Desert Mouse - Arches National Park.png');">
+    <a href="/photography/animals/">A n i m a l s</a>
+  </div>
+  <div class="box photocategory"
+       style="background-image: url('/img/Tea in Sintra.png');">
+    <a href="/photography/food/">F o o d</a>
   </div>
 </div>
 
-    <div id="contact"><a href="mailto:marko@ivankovic.me" title="Send me an email!">@</a></div>
-
+    </div>
   </body>
 </html>
 

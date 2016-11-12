@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contacts on Marko Ivankovic and Marina Celar Ivankovic - personal website</title>
+    <link>https://www.ivankovic.me/contact/</link>
+    <description>Recent content in Contacts on Marko Ivankovic and Marina Celar Ivankovic - personal website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Jul 2014 20:30:02 +0000</lastBuildDate>
+    <atom:link href="https://www.ivankovic.me/contact/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Marina Celar Ivankovic &gt; Contact</title>
+      <link>https://www.ivankovic.me/contact/marina/</link>
+      <pubDate>Thu, 10 Jul 2014 20:30:02 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/contact/marina/</guid>
+      <description>&lt;div itemscope itemtype=&#34;http://schema.org/Person&#34;&gt;
+
+&lt;h1&gt;Contact information&lt;/h1&gt;
+
+&lt;p&gt;The following contact information can be used to reach &lt;span itemprop=&#34;name&#34;&gt;Marina Čelar Ivanković&lt;/span&gt;:&lt;p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Main contact: &lt;span class=&#34;email&#34; itemprop=&#34;email&#34;&gt;marina [at] ivankovic (dot) me&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://plus.google.com/109500750097728646594/about&#34;&gt;Google Plus profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://hr.linkedin.com/in/marinacelarivankovic&#34;&gt;LinkedIn profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://www.instagram.com/vetonamat/&#34;&gt;Instagram profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is the canonical list of my profiles. Any other profile is either another person with the same name or a fake.&lt;/p&gt;
+
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Marko Ivankovic &gt; Contact</title>
+      <link>https://www.ivankovic.me/contact/marko/</link>
+      <pubDate>Thu, 10 Jul 2014 20:24:51 +0000</pubDate>
+      
+      <guid>https://www.ivankovic.me/contact/marko/</guid>
+      <description>&lt;div itemscope itemtype=&#34;http://schema.org/Person&#34;&gt;
+
+&lt;h1&gt;Contact information&lt;/h1&gt;
+
+&lt;p&gt;The following contact information can be used to reach &lt;span itemprop=&#34;name&#34;&gt;Marko Ivanković&lt;/span&gt;:&lt;p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Main contact: &lt;span class=&#34;email&#34; itemprop=&#34;email&#34;&gt;marko [at] ivankovic (dot) me&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://keybase.io/ivankovic&#34;&gt;Keybase.io profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://github.com/ivankovic&#34;&gt;GitHub profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://twitter.com/ivankovicme&#34;&gt;Twitter profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://www.google.com/+MarkoIvankovic/about&#34;&gt;Google Plus profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/ivankovicmarko&#34;&gt;LinkedIn profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#34;https://www.instagram.com/engineerwithcookinggear/?hl=en&#34;&gt;Instagram profile&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is the canonical list of my profiles. Any other profile is either another person with the same name or a fake.&lt;/p&gt;
+
+&lt;p&gt;My public key is: 5307 38FD 7A87 E6E8 9101 BBBE 72FE C3F6 4C87 DF37&lt;/p&gt;
+
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

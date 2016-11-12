@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>A nice directory structure for Go code</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://www.ivankovic.me/css/style.css" media="screen">
     <link rel="icon" href="/favicon.ico">
     <meta charset="utf-8">
@@ -11,64 +12,30 @@
     <script>
       function toggle() {
         menu = document.getElementById('menu')
-        menu.style.display = (menu.style.display == 'none' || menu.style.display == '' ? 'block' : 'none') 
+        menu.style.display = (menu.style.display == 'none' || menu.style.display == '' ? 'block' : 'none')
       }
     </script>
   </head>
   <body>
+    <div
+       id="main"
+       
+    >
 
 
-<div id="mbutton" onclick="toggle();">#</div>
-<div id="menu">
-  <header> 
-    <a href="/">Ivankovic.Me</a>
-  </header>
+<header>
   <nav>
-    <ul>
-      <li><a href="/marko/contact" > Marko</a>
-      <ul>
-        <li><a href="/marko/contact" >Contact</a></li>
-        <li><a href="/marko/resume" >Resume</a></li>
-        <li><a href="/blog/" >Blog</a></li>
-      </ul>
-      </li>
-      <li><a href="/marina/contact" > Marina</a>
-      <ul>
-        <li><a href="/marina/contact" >Contact</a></li>
-        <li><a href="/marina/resume" >Resume</a></li>
-      </ul>
-      </li>
-      <li><a href="/photography/">Photography</a>
-        <ul>
-          <li><a href="/photography/landscapes">Landscapes</a></li>
-          <li><a href="/photography/cityscapes">Cityscapes</a></li>
-          <li><a href="/photography/animals">Animals</a></li>
-          <li><a href="/photography/food">Food</a></li>
-        </ul>
-      </li>
-    </ul>
+    <a href="/">Ivankovic.Me</a>
+    <a href="/photography/">Photography</a>
+    <a href="/blog/" >Blog</a>
+    <a href="/contact/" >Contact</a>
+    <a href="/about/" >About</a>
   </nav>
-
-  <footer>
-    <p>
-        <a href="/blog/index.xml"><img src="https://www.ivankovic.me/img/feed-icon.svg" style="width: 16px" />Subscribe</a>
-    </p>
-    <p>
-  Copyright Marko Ivanković<br/>
-  All rights reserved
-</p>
-
-  </footer>
-</div>
+</header>
 
 
-<div id="main">
-  <header>
-    <b> > Marko Ivankovic > Blog > A nice directory structure for Go code </b>
-  </header>
-
-  <div id="content" itemscope itemtype="https://schema.org/BlogPosting">
-    
+<div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
+  
 
 <h1 id="a-nice-directory-structure-for-go-code:66e9facd3641635f7e0e15acfb12cb3b">A nice directory structure for Go code</h1>
 
@@ -128,11 +95,9 @@ It reduces management overhead: Just one root directory to back up, just one roo
 
 <p>That&rsquo;s all there is to it.</p>
 
-  </div>
 </div>
 
-    <div id="contact"><a href="mailto:marko@ivankovic.me" title="Send me an email!">@</a></div>
-
+    </div>
   </body>
 </html>
 

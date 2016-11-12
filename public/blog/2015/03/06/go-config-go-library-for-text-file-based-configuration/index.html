@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>go-config - Go library for text file based configuration</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://www.ivankovic.me/css/style.css" media="screen">
     <link rel="icon" href="/favicon.ico">
     <meta charset="utf-8">
@@ -11,64 +12,30 @@
     <script>
       function toggle() {
         menu = document.getElementById('menu')
-        menu.style.display = (menu.style.display == 'none' || menu.style.display == '' ? 'block' : 'none') 
+        menu.style.display = (menu.style.display == 'none' || menu.style.display == '' ? 'block' : 'none')
       }
     </script>
   </head>
   <body>
+    <div
+       id="main"
+       
+    >
 
 
-<div id="mbutton" onclick="toggle();">#</div>
-<div id="menu">
-  <header> 
-    <a href="/">Ivankovic.Me</a>
-  </header>
+<header>
   <nav>
-    <ul>
-      <li><a href="/marko/contact" > Marko</a>
-      <ul>
-        <li><a href="/marko/contact" >Contact</a></li>
-        <li><a href="/marko/resume" >Resume</a></li>
-        <li><a href="/blog/" >Blog</a></li>
-      </ul>
-      </li>
-      <li><a href="/marina/contact" > Marina</a>
-      <ul>
-        <li><a href="/marina/contact" >Contact</a></li>
-        <li><a href="/marina/resume" >Resume</a></li>
-      </ul>
-      </li>
-      <li><a href="/photography/">Photography</a>
-        <ul>
-          <li><a href="/photography/landscapes">Landscapes</a></li>
-          <li><a href="/photography/cityscapes">Cityscapes</a></li>
-          <li><a href="/photography/animals">Animals</a></li>
-          <li><a href="/photography/food">Food</a></li>
-        </ul>
-      </li>
-    </ul>
+    <a href="/">Ivankovic.Me</a>
+    <a href="/photography/">Photography</a>
+    <a href="/blog/" >Blog</a>
+    <a href="/contact/" >Contact</a>
+    <a href="/about/" >About</a>
   </nav>
-
-  <footer>
-    <p>
-        <a href="/blog/index.xml"><img src="https://www.ivankovic.me/img/feed-icon.svg" style="width: 16px" />Subscribe</a>
-    </p>
-    <p>
-  Copyright Marko Ivanković<br/>
-  All rights reserved
-</p>
-
-  </footer>
-</div>
+</header>
 
 
-<div id="main">
-  <header>
-    <b> > Marko Ivankovic > Blog > go-config - Go library for text file based configuration </b>
-  </header>
-
-  <div id="content" itemscope itemtype="https://schema.org/BlogPosting">
-    
+<div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
+  
 
 <h1 id="go-config-go-library-for-text-file-based-configuration:567eb8a85f7be3e1831957b8a14fb757">Go-config - Go library for text file based configuration</h1>
 
@@ -118,11 +85,9 @@ v := x.Get(&quot;section&quot;, &quot;key&quot;, &quot;default_value&quot;)
 
 <p>You can see a more <a href="https://github.com/ivankovic/go-config/blob/master/config/config_test.go#L62">concrete example here</a></p>
 
-  </div>
 </div>
 
-    <div id="contact"><a href="mailto:marko@ivankovic.me" title="Send me an email!">@</a></div>
-
+    </div>
   </body>
 </html>
 
