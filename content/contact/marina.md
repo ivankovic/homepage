@@ -3,7 +3,8 @@ date = 2014-07-10T20:30:02Z
 title = "Marina Celar Ivankovic > Contact"
 description = "Marina Celar Ivankovic's contact information."
 aliases = [
-  "/marina_contact.html"
+  "/marina_contact.html",
+  "/marina/contact"
 ]
 +++
 <div itemscope itemtype="http://schema.org/Person">

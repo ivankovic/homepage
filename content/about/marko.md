@@ -3,7 +3,8 @@ date = 2014-07-09T20:40:05Z
 title = "Marko Ivankovic > Resume"
 description = "Marko Ivankovic's resume."
 aliases = [
-  "/marko_resume.html"
+  "/marko_resume.html",
+  "/marko/resume"
 ]
 +++
 <div itemscope itemtype="http://schema.org/Person">
@@ -89,3 +90,4 @@ aliases = [
     </span>
   </li>
 </ul>
+

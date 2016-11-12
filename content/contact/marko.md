@@ -3,7 +3,8 @@ date = 2014-07-10T20:24:51Z
 title = "Marko Ivankovic > Contact"
 description = "Marko Ivankovic's contact information."
 aliases = [
-  "/marko_contact.html"
+  "/marko_contact.html",
+  "/marko/contact"
 ]
 +++
 <div itemscope itemtype="http://schema.org/Person">
@@ -22,7 +23,7 @@ aliases = [
 </ul>
 <p>This is the canonical list of my profiles. Any other profile is either another person with the same name or a fake.</p>
 
-<p>My public key is: <b>5307 38FD 7A87 E6E8 9101 BBBE 72FE C3F6 4C87 DF37</b></p>
+<p>My public key is: 5307 38FD 7A87 E6E8 9101 BBBE 72FE C3F6 4C87 DF37</p>
 
 </div>
 

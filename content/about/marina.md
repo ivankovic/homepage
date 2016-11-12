@@ -3,7 +3,8 @@ date = 2014-07-10T20:27:05Z
 title = "Marina Celar Ivankovic > Resume"
 description = "Marina Celar Ivankovic's resume."
 aliases = [
-  "/marina_resume.html"
+  "/marina_resume.html",
+  "/marina/resume"
 ]
 +++
 <h1>dr. vet. med. Marina Čelar Ivanković - Resume</h1>
@@ -31,3 +32,4 @@ aliases = [
   <li><a href="http://en.wikipedia.org/wiki/Clerkship_(medicine)">Clinical clerkship</a> at <a href="http://www.bessys.ch/">Bessy's Kleintierklinik</a> (2014.)</li>
   <li>University of Zagreb, Faculty of veterinary medicine - integrated undergraduate and graduate study (2008. - 2015.)</li>
 </ul>
+

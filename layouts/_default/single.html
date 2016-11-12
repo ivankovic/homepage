@@ -2,15 +2,8 @@
 
 {{ template "partials/navigation.html" . }}
 
-<div id="main">
-  <header>
-    <b> > {{ .Title }} </b>
-  </header>
-  
-  <div id="content">
-    {{ .Content }}
-  </div>
-
+<div id="content" style="display: block; padding-left: 64px;">
+  {{ .Content }}
 </div>
 
 {{ template "partials/footer.html" . }}
