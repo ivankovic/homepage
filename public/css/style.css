@@ -21,6 +21,12 @@ header {
   font-size: 24px;
 }
 
+@media (max-width: 600px) {
+  nav span#subpages {
+    display: none;
+  }
+}
+
 div#contact {
   position: fixed;
   bottom: 64px;
@@ -48,19 +54,19 @@ div#content {
 
 h1 {
   padding-bottom: 1em;
-  color: #e6a44e;
+  color: #ff0000;
 }
 
 h2 {
   padding-top: 1em;
   padding-bottom: 1em;
-  color: #e6a44e;
+  color: #ff0000;
 }
 
 h3 {
   padding-top: 0.5em;
   margin-left: 0.5em;
-  color: #e6a44e;
+  color: #ff0000;
 }
 
 pre {
@@ -105,12 +111,30 @@ div#content li {
 }
 
 div.box img {
-  width: 40%;
+  width: 49%;
+}
+
+div.box a {
+  text-align: center;
+}
+
+@media (max-width: 896px) {
+  div#content a.pselect {
+    width: 100%;
+  }
+}
+
+@media (min-width: 896px) {
+  div#content a.pselect {
+    width: 50%;
+  }
 }
 
 div.photocategory {
   background-size: 100% 100%;
   font-size: 3em;
+  height: 100%;
+  width: 100%;
 }
 
 a:link, a:visited {
@@ -123,7 +147,7 @@ a.black {
 }
 
 a:hover, a:active {
-  color: #e6a44e;
+  color: #ff0000;
   text-decoration: none;
 }
 
