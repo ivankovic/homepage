@@ -48,19 +48,19 @@ div#content {
 
 h1 {
   padding-bottom: 1em;
-  color: #e6a44e;
+  color: #ff0000;
 }
 
 h2 {
   padding-top: 1em;
   padding-bottom: 1em;
-  color: #e6a44e;
+  color: #ff0000;
 }
 
 h3 {
   padding-top: 0.5em;
   margin-left: 0.5em;
-  color: #e6a44e;
+  color: #ff0000;
 }
 
 pre {
@@ -141,7 +141,7 @@ a.black {
 }
 
 a:hover, a:active {
-  color: #e6a44e;
+  color: #ff0000;
   text-decoration: none;
 }
 
