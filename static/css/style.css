@@ -105,12 +105,30 @@ div#content li {
 }
 
 div.box img {
-  width: 40%;
+  width: 49%;
+}
+
+div.box a {
+  text-align: center;
+}
+
+@media (max-width: 896px) {
+  div#content a.pselect {
+    width: 100%;
+  }
+}
+
+@media (min-width: 896px) {
+  div#content a.pselect {
+    width: 50%;
+  }
 }
 
 div.photocategory {
   background-size: 100% 100%;
   font-size: 3em;
+  height: 100%;
+  width: 100%;
 }
 
 a:link, a:visited {

@@ -3,22 +3,30 @@
 {{ template "partials/navigation.html" . }}
 
 <div id="content">
-  <div class="box photocategory"
-       style="background-image: url('/img/Snow Covered HooDoos - Bryce National Park.png');">
-    <a href="/photography/landscapes/">N a t u r e</a>
-  </div>
-  <div class="box photocategory"
-       style="background-image: url('/img/Torre de Belem.png');">
-    <a href="/photography/cityscapes/">C i t y s c a p e s</a>
-  </div>
-  <div class="box photocategory"
-       style="background-image: url('/img/Desert Mouse - Arches National Park.png');">
-    <a href="/photography/animals/">A n i m a l s</a>
-  </div>
-  <div class="box photocategory"
-       style="background-image: url('/img/Tea in Sintra.png');">
-    <a href="/photography/food/">F o o d</a>
-  </div>
+  <a href="/photography/landscapes/" class="pselect">
+    <div class="box photocategory"
+         style="background-image: url('/img/Snow Covered HooDoos - Bryce National Park.png');">
+      N a t u r e
+    </div>
+  </a>
+  <a href="/photography/cityscapes/" class="pselect">
+    <div class="box photocategory"
+         style="background-image: url('/img/Torre de Belem.png');">
+      C i t y s c a p e s
+    </div>
+  </a>
+  <a href="/photography/animals/" class="pselect">
+    <div class="box photocategory"
+         style="background-image: url('/img/Desert Mouse - Arches National Park.png');">
+      A n i m a l s
+    </div>
+  </a>
+  <a href="/photography/food/" class="pselect">
+    <div class="box photocategory"
+         style="background-image: url('/img/Tea in Sintra.png');">
+      F o o d
+    </div>
+  </a>
 </div>
 
 {{ template "partials/footer.html" . }}
