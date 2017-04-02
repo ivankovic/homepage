@@ -1,7 +1,7 @@
 #!/bin/bash
 
-python /root/acme_tiny.py --account-key /root/account.key --csr /root/domain.csr --acme-dir /var/www/challenges/ > /root/signed.crt
-wget -O - https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem > /root/intermediate.pem
-cat /root/signed.crt /root/intermediate.pem > /root/chained.pem
+python /root/acme-tiny/acme_tiny.py --account-key /etc/ssl/private/account.key --csr /etc/ssl/private/domain.csr --acme-dir /var/www/challenges/ > /etc/ssl/private/signed.crt
+wget -O - https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem > /etc/ssl/private/intermediate.pem
+cat /etc/ssl/private/signed.crt /etc/ssl/private/intermediate.pem > /etc/ssl/private/chained.pem
 /etc/init.d/nginx reload
 
