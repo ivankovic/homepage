@@ -135,10 +135,11 @@ div.photocategory {
   font-size: 3em;
   height: 100%;
   width: 100%;
+  color: #EEEEEE;
 }
 
 a:link, a:visited {
-  color: #EEEEEE;
+  color: #d88913;
   text-decoration: none;
 }
 
