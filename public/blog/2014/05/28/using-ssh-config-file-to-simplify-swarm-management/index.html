@@ -39,11 +39,11 @@
 <div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
   
 
-<h1 id="using-ssh-config-file-to-simplify-swarm-management:39f07bb5d89bfecb462d92772db06fea">Using SSH config file to simplify Swarm management</h1>
+<h1 id="using-ssh-config-file-to-simplify-swarm-management">Using SSH config file to simplify Swarm management</h1>
 
 <p>While the whole point of having a swarm of devices is to automate things as much as possible, sometimes you just have to SSH into some, or all, of them. Increasing security by using <a href="http://www.ivankovic.me/blog/2013/11/26/how-to-pick-the-best-non-standard-port-for-ssh-or-other-services.html">non-standard ports</a> will cause some usability problems though. It’s really easy to work around it using a bit of config.</p>
 
-<h2 id="ssh-config:39f07bb5d89bfecb462d92772db06fea">.ssh/config</h2>
+<h2 id="ssh-config">.ssh/config</h2>
 
 <p><a href="http://linux.die.net/man/5/ssh_config"><code>.ssh/config</code></a> is a fantastic little file. The most important declaration you need to know is <code>Host</code> because it restricts the all other declarations to the host names that match the specified pattern.</p>
 

@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>https://www.ivankovic.me/</loc>
-    <lastmod>2016-09-04T18:16:49+02:00</lastmod>
-    <priority>0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://www.ivankovic.me/blog/2016/09/04/the-layout-and-security-of-my-home-network/</loc>
@@ -168,11 +163,34 @@
   </url>
   
   <url>
+    <loc>https://www.ivankovic.me/about/</loc>
+    <lastmod>2014-07-10T20:27:05+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.ivankovic.me/photography/animals/</loc>
   </url>
   
   <url>
+    <loc>https://www.ivankovic.me/blog/</loc>
+    <lastmod>2016-09-04T18:16:49+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ivankovic.me/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.ivankovic.me/photography/cityscapes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.ivankovic.me/contact/</loc>
+    <lastmod>2014-07-10T20:30:02+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -181,6 +199,22 @@
   
   <url>
     <loc>https://www.ivankovic.me/photography/landscapes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.ivankovic.me/</loc>
+    <lastmod>2016-09-04T18:16:49+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ivankovic.me/photography/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ivankovic.me/tags/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

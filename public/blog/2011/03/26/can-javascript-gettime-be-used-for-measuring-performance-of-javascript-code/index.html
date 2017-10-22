@@ -39,7 +39,7 @@
 <div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
   
 
-<h1 id="can-javascipt-gettime-be-used-for-measuring-performance-of-javascript-code:fa50344588ba855b9b91f392d6293554">Can JavaScipt getTime() be used for measuring performance of JavaScript code?</h1>
+<h1 id="can-javascipt-gettime-be-used-for-measuring-performance-of-javascript-code">Can JavaScipt getTime() be used for measuring performance of JavaScript code?</h1>
 
 <p>Recently, during research for my masters thesis I had to answer the question “Can we use JavaScirpt <code>getTime()</code> function in our benchmarks and get portable benchmarks that are valid?”.</p>
 
@@ -49,7 +49,7 @@
 
 <p>My goal was to measure the precision and not the accuracy (the difference is nicely explained in <a href="http://en.wikipedia.org/wiki/Accuracy_and_precision">this Wikipedia article</a>) of the <code>getTime()</code> function. We could do <em>some</em> analysis of accuracy, but opt not to because it’s not so easy to setup a good experiment for accuracy. Precision on the other hand is nicely quantified in terms of the standard deviation of the experiment. <strong>Smaller standard deviation is better</strong>. The best possible outcome would be for the results to follow a very narrow Gaussian distribution.</p>
 
-<h2 id="the-setup:fa50344588ba855b9b91f392d6293554">The setup</h2>
+<h2 id="the-setup">The setup</h2>
 
 <p>The code for most benchmarks in JavaScript can be summarized in these three lines:</p>
 
@@ -79,11 +79,11 @@ function innerSample(i, result) {
 
 <p>This completes the setup.</p>
 
-<h2 id="the-experiment:fa50344588ba855b9b91f392d6293554">The experiment</h2>
+<h2 id="the-experiment">The experiment</h2>
 
 <p>The experiment is performed by looping 500 times over the sample code with the pre calibrated number of steps. After that the standard deviation is calculated. This is repeated a few times if possible to see if the results are stable.</p>
 
-<h2 id="the-results:fa50344588ba855b9b91f392d6293554">The results</h2>
+<h2 id="the-results">The results</h2>
 
 <p>I tested Firefox 3.6 and 4.0 and Chrome 9 and 10 on Linux (Arch Linux 2.6.37 kernel), Windows XP fully patched and Windows 7 fully patched. I did run the Linux test on four machines: an Intel i3 desktop, two different Core2Duo laptops and Atom netbook and the results did not differ significantly. This shows that the hardware itself does not influence the tests. As for the Windows tests, I don’t even own a Windows box so I used volunteer help for those tests (if you were one of these unfortunate “volunteers” I am so so sorry, I promise not to spam you all again). They were run on a wide variety of machines. There were <strong>significant</strong> variations on Windows machines, these are analysed below.</p>
 
@@ -146,17 +146,17 @@ function innerSample(i, result) {
 
 <p>This chart was produced on Chrome 10 tested on Windows 7. Interesting observation is that the first few measurements were on the 75ms mark, but the execution slowed down afterwards moving the median value up to 125ms. This slow down was not accounted for or explained. It’s left as an open question.</p>
 
-<h2 id="the-conclusion:fa50344588ba855b9b91f392d6293554">The conclusion</h2>
+<h2 id="the-conclusion">The conclusion</h2>
 
 <p>Using <code>getTime()</code> on Linux in the manner described here is <em>valid</em> on both browsers. Using <code>getTime()</code> on Windows will give some results, but you can never be sure that another user will be able to repeat them on his machine.</p>
 
 <p>One possible reason for Windows is that the precision of the <code>GetSystemTime</code> system call is in the 10ms - 16ms range. This however does not explain why sometimes the results of Windows were good. Or help us to deal with benchmarks on Windows.</p>
 
-<h2 id="the-future:fa50344588ba855b9b91f392d6293554">The future</h2>
+<h2 id="the-future">The future</h2>
 
 <p>These results are a good start but there is much room for expansion. If time permits I plan to answer some of these questions in the future: How does the standard deviation behave on longer loads, say 1000ms? What are the possible factors affecting precision on Windows? How do other browser place? Do Windows results follow a pattern? Can some results be discarded and attributed to “start up” problems? Test on more machines</p>
 
-<h2 id="code:fa50344588ba855b9b91f392d6293554">Code</h2>
+<h2 id="code">Code</h2>
 
 <p>The code used can be found on <a href="https://github.com/ivankovic/cccm-benchmark">GitHub</a>. There is also a <a href="https://github.com/ivankovic/cccm-benchmark">GitHub Page that can be used immediately</a>.</p>
 

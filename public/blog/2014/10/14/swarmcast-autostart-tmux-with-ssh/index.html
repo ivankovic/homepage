@@ -39,13 +39,13 @@
 <div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
   
 
-<h1 id="swarmcast-autostart-tmux-with-ssh:add7d24c8241e85dfbbdde82f143fb90">SwarmCast: Autostart Tmux with SSH</h1>
+<h1 id="swarmcast-autostart-tmux-with-ssh">SwarmCast: Autostart Tmux with SSH</h1>
 
 <p>Maintenance tasks on the RPi Swarm nodes can be a bit of a chore. Of course the idea is to <a href="http://www.ivankovic.me/blog/2014/04/30/raspberry-pi-swarm-automatically-installing-security-updates/">automate</a> as much as possible, but sometimes you just need to do the same exact sequence of commands on all nodes at once.</p>
 
 <p>Luckily, Tmux combined with SSH (using SSH keys and <a href="http://www.ivankovic.me/blog/2014/05/28/using-ssh-config-file-to-simplify-swarm-management/">SSH config</a>) is just the thing we need.</p>
 
-<h2 id="starting-tmux-from-a-bash-script:add7d24c8241e85dfbbdde82f143fb90">Starting Tmux from a Bash script</h2>
+<h2 id="starting-tmux-from-a-bash-script">Starting Tmux from a Bash script</h2>
 
 <p>Tmux has a <a href="http://manpages.ubuntu.com/manpages/precise/man1/tmux.1.html">really powerfull set of commands</a>. They allow you to completely control a Tmux session from a Bash script. In this case, we use it to prepare the window with 4 panes, each one with an SSH session to a different swarm node. At the end it turns <code>synchronize-panes</code> option on. This will instruct Tmux to send all keystrokes to all windows at once.</p>
 

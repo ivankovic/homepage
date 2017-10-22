@@ -39,19 +39,19 @@
 <div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
   
 
-<h1 id="self-hosting-a-static-personal-homepage-security:cc763e65dbe54cccb78d1311860964d6">Self-hosting a static personal homepage - Security</h1>
+<h1 id="self-hosting-a-static-personal-homepage-security">Self-hosting a static personal homepage - Security</h1>
 
 <p>I recently switched my website from GitHub pages to an unmanaged VPS. I wanted to enable SSL for my domain and I wanted to experiment with Let&rsquo;s Encrypt.</p>
 
 <p>I also like to do the occasional exercise in over engineering. This blog post documents the security setup of my homepage.</p>
 
-<h2 id="why-vps:cc763e65dbe54cccb78d1311860964d6">Why VPS</h2>
+<h2 id="why-vps">Why VPS</h2>
 
 <p>I chose an unmanaged VPS because they are <a href="http://lowendbox.com/">cheap</a> and provide good operational isolation. The webpage is now hosted on a separate IP, network and machine from anything else I have so if the web page is under attack I don&rsquo;t have any other problems.</p>
 
 <p>It does introduce a new actor to the security model, a possibly dodgy VPS provider, but I like the tradeoff. Especially since there are simple technical solutions to solve some of the problems that come from it. vector, the malicious VPS provider. It&rsquo;s a tradeoff I accept, because it&rsquo;s easier to defend against that then against a DDoS that also takes out your personal network connection.</p>
 
-<h2 id="static-vs-dynamic:cc763e65dbe54cccb78d1311860964d6">Static vs dynamic</h2>
+<h2 id="static-vs-dynamic">Static vs dynamic</h2>
 
 <p>My homepage is 100% static. I use <a href="https://gohugo.io/">Hugo</a> for generation and have hand-crafted CSS and layout optimized to work for command line, desktop UI and mobile.</p>
 
@@ -64,13 +64,13 @@
 <li>I can set the cache expiration time for all URLs to be very large. This has an interesting side effect of making DDoS a little bit more difficult to perform. A naive DDoS that just uses the user&rsquo;s browser will not work. It&rsquo;s not much, but it is funny. If I didn&rsquo;t also plan to switch my site to SSL, it would actually be a much more interesting interaction since intermediate servers would be able to cache much better, but hey.</li>
 </ol>
 
-<h2 id="let-s-encrypt:cc763e65dbe54cccb78d1311860964d6">Let&rsquo;s Encrypt</h2>
+<h2 id="let-s-encrypt">Let&rsquo;s Encrypt</h2>
 
 <p>Experimentation with Let&rsquo;s Encrypt and switching my domain to SSL is my motivation for this whole thing. I tried out Let&rsquo;s Encrypt before when it was in closed beta and the UX of the official client was, less than impressive. To be fair, I tried a non-recommended flow trying to issue the certificate manually. This was a mistake.</p>
 
 <p>So for the VPS, I decided to use <a href="https://github.com/diafygi/acme-tiny">acme-tiny</a> and decided on a fully automated once per month renewal.</p>
 
-<h2 id="key-material-op-sec:cc763e65dbe54cccb78d1311860964d6">Key material op-sec</h2>
+<h2 id="key-material-op-sec">Key material op-sec</h2>
 
 <p>For a fully automatic experience, certain key material has to be stored on the VPS.</p>
 
@@ -95,13 +95,13 @@
 
 <p>To make sure the server is not serving the real page only to the probe I hide each probe behind Tor or VPN.</p>
 
-<h2 id="ssh:cc763e65dbe54cccb78d1311860964d6">SSH</h2>
+<h2 id="ssh">SSH</h2>
 
 <p>Of course the server also runs SSH, with the usual precautions: running on non standard port, public key authentication only, using Ed25519. The key is not used on any other server.</p>
 
 <p>I&rsquo;m not aware of any useful attack anyone could have on this.</p>
 
-<h2 id="lower-levels:cc763e65dbe54cccb78d1311860964d6">Lower levels</h2>
+<h2 id="lower-levels">Lower levels</h2>
 
 <p>Of course, defense in depth is a thing so I also have a very strict iptables based firewall that blocks everything except ports 80, 443 and the SSH port.</p>
 

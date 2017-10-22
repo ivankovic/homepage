@@ -1,13 +1,5 @@
 #!/bin/bash
 
-echo "Hardening the SSH server..."
-
-echo "PasswordAuthentication no" >> /etc/ssh/sshd_config
-
-echo "Installing Nginx..."
-
-apt-get install nginx
-
 echo "Configuring Nginx..."
 
 mkdir /var/www/challenges

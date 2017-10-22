@@ -6,7 +6,9 @@
     <description>Recent content in Photographies on Marko Ivankovic and Marina Celar Ivankovic - personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://www.ivankovic.me/photography/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://www.ivankovic.me/photography/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Animals</title>
@@ -14,27 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.ivankovic.me/photography/animals/</guid>
-      <description>&lt;div class=&#34;photogallery&#34;&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FbVFkNTlvQjQ2dkU&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/My ears touched the chair thumbnail.jpg&#34; /&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FV05mcnplOTBsbG8&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Desert%20Mouse%20-%20Arches%20National%20Park%20thumbnail.jpeg&#34; /&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FdWE4TzFZZ2liZlE&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Wild%20cat%20in%20Zurich%20Wildnispark%20thumbnail.jpeg&#34;&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5Fakx1RmZkaUZZam8&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Bear%20in%20Zurich%20Wildnispark%20thumbnail.jpeg&#34;&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FRXNjNTN6T0ZzdDA&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Cat%20walk%20thumbnail.jpg&#34; /&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FS3hZSlN3a04zRlE&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Black and white cat thumbnail.jpg&#34; /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-</description>
+      <description>       </description>
     </item>
     
     <item>
@@ -43,34 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.ivankovic.me/photography/cityscapes/</guid>
-      <description>&lt;div class=&#34;photogallery&#34;&gt;
-
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FSGpGRGVYNkRxazA&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Lisbon thumbnail.jpeg&#34;&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FZ0habktwTko4MWs&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Streets of Lisbon thumbnail.jpeg&#34;&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FQXIwaTJRTjUtNjQ&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Torre de Belem thumbnail.jpeg&#34;&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5Fd1A0VS1lUjEwRm8&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Uetliberg%20in%20dark%20fog%20thumbnail.jpeg&#34; /&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FbF9IUkdCZTdsVDQ&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/New%20Year%202015%20Fireworks%20Over%20Zurich%20thumbnail.jpeg&#34; /&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FclVBN29LLXNRRmM&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/London underground thumbnail.jpg&#34;&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FNTNRenBJRUZhQlU&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/London underground escalator thumbnail.jpg&#34;&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FektnYlpsV3V3cnM&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Blue door in Chania thumbnail.jpg&#34; /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-</description>
+      <description>         </description>
     </item>
     
     <item>
@@ -79,27 +34,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.ivankovic.me/photography/food/</guid>
-      <description>&lt;div class=&#34;photogallery&#34;&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FdTRUZEFMS2ZYM2s&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Tea in Sintra thumbnail.jpeg&#34;&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FU3hRbDV0MklLb1E&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Apricot pie thumbnail.jpg&#34;&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FTVJHMnRWc09KclE&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Banana bread thumbnail.jpg&#34; /&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FMVFiSGhCMGc3RXM&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Bibimbap thumbnail.jpg&#34; /&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FYmRxeTE1VlNZdEE&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Pumpkins on sale in Wettswil thumbnail.jpg&#34; /&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FWU1jZnlDQ0VMc00&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/White grapes thumbnail.jpg&#34; /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-</description>
+      <description>       </description>
     </item>
     
     <item>
@@ -108,30 +43,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.ivankovic.me/photography/landscapes/</guid>
-      <description>&lt;div class=&#34;photogallery&#34;&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FX1ZHMkdjVzlfSFE&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Snow%20Covered%20HooDoos%20-%20Bryce%20National%20Park%20thumbnail.jpeg&#34; /&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FOGZ5NElxTXRfTDQ&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Abandoned path down Uetliberg thumbnail.jpg&#34; /&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FcVNuSlpYelZCNFk&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Boats moored on Zurisee with Alps thumbnail.jpg&#34; /&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5FaEVtaGtSVlFzSW8&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Train station on top of Rigi thumbnail.jpg&#34; /&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5Fbmszdkt3cUpRLTQ&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Chrysanthemum thumbnail.jpg&#34; /&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5Fa1FhRGNMMG9mSWs&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Sunrise through a tree thumbnail.jpg&#34; /&gt;
-&lt;/a&gt;
-&lt;a href=&#34;https://drive.google.com/open?id=0B3e2zRvXHH5Fb2lqZFRMUGNnZTA&#34;&gt;
-&lt;img src=&#34;https://www.ivankovic.me/img/Delicate%20Arch%20At%20Sunset%20-%20Arches%20National%20Part%20thumbnail.jpeg&#34; /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-</description>
+      <description>        </description>
     </item>
     
   </channel>

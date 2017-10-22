@@ -39,7 +39,7 @@
 <div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
   
 
-<h1 id="how-to-pick-the-best-non-standard-port-for-ssh-or-other-services:c0cc6d4f57aabdeb287a09c1b932c68e">How to pick the best non-standard port for SSH (or other services)</h1>
+<h1 id="how-to-pick-the-best-non-standard-port-for-ssh-or-other-services">How to pick the best non-standard port for SSH (or other services)</h1>
 
 <p>I won’t get in the discussion if this is a <a href="http://www.danielmiessler.com/blog/putting-ssh-another-port-good-idea">good</a> or a <a href="http://www.adayinthelifeof.nl/2012/03/12/why-putting-ssh-on-another-port-than-22-is-bad-idea/">bad</a> idea. Other people have done that. I’m just going to assume you decided by yourself this is a good idea and are now wondering: “How do I pick the best port?”.</p>
 
@@ -54,7 +54,7 @@
 
 <p>On the opposite side of the spectrum is the narrow scan. A targeted attack against a single machine. Scanning all possible ports on a single machine takes a few hundred seconds at most even over a very crappy connection. With a very paranoid approach, scanning a single port once per minute, you can scan all 65535 ports in 6 weeks.</p>
 
-<h2 id="hiding-from-a-targeted-attack:c0cc6d4f57aabdeb287a09c1b932c68e">Hiding from a targeted attack</h2>
+<h2 id="hiding-from-a-targeted-attack">Hiding from a targeted attack</h2>
 
 <p>Let’s get this out of the way first.</p>
 
@@ -62,7 +62,7 @@
 
 <p>With that said, let’s look at the more broader scans.</p>
 
-<h2 id="three-big-port-groups:c0cc6d4f57aabdeb287a09c1b932c68e">Three big port groups</h2>
+<h2 id="three-big-port-groups">Three big port groups</h2>
 
 <p>First of, you should know that there are three big port groups (and one small one):</p>
 
@@ -78,7 +78,7 @@
 b
 <strong>Ports 49153 to 65535</strong> - Dynamic or private ports. Unlike the registered version, these cannot be registered and are to be used for dynamic or ephemeral purposes.</p>
 
-<h2 id="choosing-a-port:c0cc6d4f57aabdeb287a09c1b932c68e">Choosing a port</h2>
+<h2 id="choosing-a-port">Choosing a port</h2>
 
 <p>We can discard ports 0 - 1024. As explained above, they are either unusable or defeat the purpose somewhat.</p>
 

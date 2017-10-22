@@ -39,13 +39,13 @@
 <div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
   
 
-<h1 id="openscad-patterns-and-tips:0b7e788b536ec9af6360e64c8466b37b">OpenSCAD patterns and tips</h1>
+<h1 id="openscad-patterns-and-tips">OpenSCAD patterns and tips</h1>
 
 <p>I recently started playing around with <a href="http://www.ivankovic.me/blog/2014/02/15/laser-cut-raspberry-pi-case-with-camera-mount-version-1.html">laser cutters</a> and 3D printers. So far, I have learned two major lessons: my <a href="http://en.wikipedia.org/wiki/Materials_science">material science</a> knowledge is lacking and <a href="http://en.wikipedia.org/wiki/Computer-aided_design">CAD</a> tools are not as advanced as Iron Man would have you believe.</p>
 
 <p>After a bit of searching and trying out, I ended up using <a href="http://www.openscad.org/index.html">OpenSCAD</a> because it fits my programming soul. As with any other programming language, you quickly learn that there are patterns and anti-patterns, so here’s my list of OpenSCAD patterns and tips.</p>
 
-<h2 id="openscad-patterns-and-tips-1:0b7e788b536ec9af6360e64c8466b37b">OpenSCAD patterns and tips:</h2>
+<h2 id="openscad-patterns-and-tips-1">OpenSCAD patterns and tips:</h2>
 
 <ol>
 <li><p><strong>Design elements in isolation</strong>. Think about how the element will fit in the assembled object, but don’t let that influence the parameters of the element itself. Most importantly, assign priorities to axes and stick with it in all your designs. For example, if you are building the left side of a box, design it as if it was the front side. This helps immensely with <a href="http://en.wikipedia.org/wiki/Constructive_solid_geometry">constructive solid geometry</a> of more complex shapes. It’s also much easier to layout the elements for cutting if they are all in the same plane already.</p></li>

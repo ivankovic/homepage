@@ -39,11 +39,11 @@
 <div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
   
 
-<h1 id="go-config-go-library-for-text-file-based-configuration:567eb8a85f7be3e1831957b8a14fb757">Go-config - Go library for text file based configuration</h1>
+<h1 id="go-config-go-library-for-text-file-based-configuration">Go-config - Go library for text file based configuration</h1>
 
 <p>I just open-sourced a Go library for text file based configuration: <a href="https://github.com/ivankovic/go-config">go-config</a>.</p>
 
-<h2 id="format:567eb8a85f7be3e1831957b8a14fb757">Format</h2>
+<h2 id="format">Format</h2>
 
 <p>The format the library supports is a limited subset of the <a href="http://en.wikipedia.org/wiki/INI_file">.INI format</a>:</p>
 
@@ -58,7 +58,7 @@ key=returned_value
 
 <p>The library is also read-only at the moment. In the future I might implement write support.</p>
 
-<h2 id="usage:567eb8a85f7be3e1831957b8a14fb757">Usage</h2>
+<h2 id="usage">Usage</h2>
 
 <p><a href="https://github.com/ivankovic/go-config/blob/master/config/config_test.go#L8">It&rsquo;s really simple to use</a>:</p>
 
@@ -70,7 +70,7 @@ x := config.Load(&quot;/path/to/config&quot;)
 v := x.Get(&quot;section&quot;, &quot;key&quot;, &quot;default_value&quot;)
 </code></pre>
 
-<h2 id="testing:567eb8a85f7be3e1831957b8a14fb757">Testing</h2>
+<h2 id="testing">Testing</h2>
 
 <p>The library itself is well tested. But perhaps more importantly, any code <em>using</em> the library is easy to test. You can create fully in-memory fake configs just by doing:</p>
 

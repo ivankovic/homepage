@@ -39,7 +39,7 @@
 <div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
   
 
-<h1 id="buildroot-directory-structure-for-multiple-r-pi-devices:325c100223836bce6bc77704f27d5ca3">Buildroot directory structure for multiple R-Pi devices</h1>
+<h1 id="buildroot-directory-structure-for-multiple-r-pi-devices">Buildroot directory structure for multiple R-Pi devices</h1>
 
 <p>I have been experimenting with embedded Linux builds on my R-Pi devices for quite some time now. There are at least 3 ways you can do that:</p>
 
@@ -51,7 +51,7 @@
 
 <p>As you might have guessed, after trying them all out, I went with Buildroot and have been using it now for 3-4 months.</p>
 
-<h2 id="buildroot:325c100223836bce6bc77704f27d5ca3">Buildroot</h2>
+<h2 id="buildroot">Buildroot</h2>
 
 <p>The <a href="https://buildroot.org/downloads/manual/manual.html">Buildroot documentation</a> is reasonably well done and Buildroot <a href="https://git.busybox.net/buildroot/tree/board/raspberrypi">supports Raspberry Pi</a> 1 and 2 out of the box.</p>
 
@@ -59,7 +59,7 @@
 
 <p>The key to a good directory structure is actually in the manual, but it is very easy to miss! The feature is called <a href="https://buildroot.org/downloads/manual/manual.html#_building_out_of_tree">&ldquo;out-of-tree&rdquo; build</a> and what it does is basically enable you to change the output directory from <code>./output</code> to something else. As a nice usability bonus, it also creates a small Makefile wrapper in the &ldquo;out-of-tree&rdquo; output directory to avoid the need for passing the directory as an environment variable all the time.</p>
 
-<h2 id="directory-structure-for-multiple-devices:325c100223836bce6bc77704f27d5ca3">Directory structure for multiple devices</h2>
+<h2 id="directory-structure-for-multiple-devices">Directory structure for multiple devices</h2>
 
 <p>&ldquo;out-of-tree&rdquo; builds allow for the following structure:</p>
 
@@ -72,7 +72,7 @@
 
 <p>Which conveniently allows the use of the same Buildroot source tree from each device-X directory.</p>
 
-<h2 id="sensitive-material-sidenote:325c100223836bce6bc77704f27d5ca3">Sensitive material sidenote</h2>
+<h2 id="sensitive-material-sidenote">Sensitive material sidenote</h2>
 
 <p>Another thing you should also consider is to store all cryptographic or otherwise sensitive material completely out from the project structure and move it to an encrypted USB. When you are not actively building the images, there&rsquo;s no need to store that material on the machine.</p>
 

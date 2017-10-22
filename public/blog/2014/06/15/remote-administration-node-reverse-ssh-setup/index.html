@@ -39,13 +39,13 @@
 <div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
   
 
-<h1 id="remote-administration-node-reverse-ssh-setup:9ce7122a7de8d3ee1521678ff2c3c18b">Remote administration node - reverse SSH setup</h1>
+<h1 id="remote-administration-node-reverse-ssh-setup">Remote administration node - reverse SSH setup</h1>
 
 <p>Sometimes you just need to remotely administer a network 1000 kilometers away. <a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/CrazyPrepared">Thinking ahead</a> can save you a lot of headache in this situation.</p>
 
 <p>A R-PI node connected to the remote network can open a <a href="http://en.wikipedia.org/wiki/Reverse_connection">reverse SSH tunnel</a> back to you.</p>
 
-<h2 id="reverse-ssh-tunnel-setup:9ce7122a7de8d3ee1521678ff2c3c18b">Reverse SSH tunnel setup</h2>
+<h2 id="reverse-ssh-tunnel-setup">Reverse SSH tunnel setup</h2>
 
 <p>Because one of the devices is in a physically remote location you <strong>should not reuse any cryptographic materials</strong>.</p>
 
@@ -65,7 +65,7 @@
 
 <p>Finally, try out your config. Initiate the SSH tunnel from the remote device. You should now be able to SSH to <code>localhost:&lt;port on server&gt;</code> on the server itself and get the login prompt for the remote device.</p>
 
-<h2 id="automatic-ssh-on-startup:9ce7122a7de8d3ee1521678ff2c3c18b">Automatic SSH on startup</h2>
+<h2 id="automatic-ssh-on-startup">Automatic SSH on startup</h2>
 
 <p><a href="http://www.harding.motd.ca/autossh/">autossh</a> is a nice little program that will start an SSH session and monitor it, restarting it as necessary. There’s a <a href="https://packages.debian.org/wheezy/autossh">Debian package</a>.</p>
 

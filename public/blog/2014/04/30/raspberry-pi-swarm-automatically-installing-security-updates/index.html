@@ -39,19 +39,19 @@
 <div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
   
 
-<h1 id="raspberry-pi-swarm-automatically-installing-security-updates:bf8f0fbcb30fa645c12513fccd88bd9a">Raspberry PI swarm - Automatically installing security updates</h1>
+<h1 id="raspberry-pi-swarm-automatically-installing-security-updates">Raspberry PI swarm - Automatically installing security updates</h1>
 
 <p>When the security 0-day hits the fan, you want to update as fast as super humanly possible. <a href="http://en.wikipedia.org/wiki/Responsible_disclosure">Responsible disclosure</a> and <a href="http://en.wikipedia.org/wiki/News_embargo">embargos</a> on major security updates are fantastic, but if the last mile is not fast enough, you will be targeted by opportunistic internet wide scans.</p>
 
 <p>Luckily, setting up automatic security updates on Debian is very easy.</p>
 
-<h2 id="required-packages:bf8f0fbcb30fa645c12513fccd88bd9a">Required packages</h2>
+<h2 id="required-packages">Required packages</h2>
 
 <p>All you need is <a href="http://en.wikipedia.org/wiki/Anacron">Anacron</a> and unnatended-upgrades. Technically you don’t even need anacron, if you are sure all your machines will run <sup>24</sup>&frasl;<sub>7</sub>.</p>
 
 <p>sudo apt-get install anacron unattended-upgrades</p>
 
-<h2 id="configuration:bf8f0fbcb30fa645c12513fccd88bd9a">Configuration</h2>
+<h2 id="configuration">Configuration</h2>
 
 <p>You probably don’t need to configure Anacron. You do need to configure unattended-upgrades a bit though.</p>
 
@@ -65,21 +65,17 @@
 <pre><code> // Enable the update/upgrade script (0=disable)
  APT::Periodic::Enable &quot;1&quot;;
 
-
  // Do &quot;apt-get update&quot; automatically every n-days (0=disable)
  APT::Periodic::Update-Package-Lists &quot;1&quot;;
 
-
  // Do &quot;apt-get upgrade --download-only&quot; every n-days (0=disable)
  APT::Periodic::Download-Upgradeable-Packages &quot;1&quot;;
-
 
  // Run the &quot;unattended-upgrade&quot; security upgrade script
  // every n-days (0=disabled)
  // Requires the package &quot;unattended-upgrades&quot; and will write
  // a log in /var/log/unattended-upgrades
  APT::Periodic::Unattended-Upgrade &quot;1&quot;;
-
 
  // Do &quot;apt-get autoclean&quot; every n-days (0=disable)
  APT::Periodic::AutocleanInterval &quot;7&quot;;

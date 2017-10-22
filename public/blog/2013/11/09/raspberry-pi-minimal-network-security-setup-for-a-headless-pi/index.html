@@ -39,11 +39,11 @@
 <div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
   
 
-<h1 id="raspberry-pi-minimal-network-security-setup-for-a-headless-pi:b80721f111f53300766ae01361a36230">Raspberry PI - Minimal network security setup for a headless PI</h1>
+<h1 id="raspberry-pi-minimal-network-security-setup-for-a-headless-pi">Raspberry PI - Minimal network security setup for a headless PI</h1>
 
 <p>I run a couple of purely headless Raspberry PI units connected to my network. The following is a list of minimal security precautions I use on all units. I am using Raspbian, since it is far more stable and easier to configure securely than Arch. I would recommend everyone to install Arch at least once and play around as much as possible. But for systems you actually plan to use <sup>24</sup>&frasl;<sub>7</sub>, Raspbian is a better choice.</p>
 
-<h2 id="password-and-user:b80721f111f53300766ae01361a36230">Password and user</h2>
+<h2 id="password-and-user">Password and user</h2>
 
 <p>If possible, before connecting the PI to the network you should change the default username and password. When adding the new user, don’t forget to set the appropriate groups.</p>
 
@@ -52,7 +52,7 @@ adduser -G sudo NewUserName
 userdel -r pi
 </code></pre>
 
-<h2 id="remove-the-pi-user-from-the-sudoers-file:b80721f111f53300766ae01361a36230">Remove the PI user from the sudoers file</h2>
+<h2 id="remove-the-pi-user-from-the-sudoers-file">Remove the PI user from the sudoers file</h2>
 
 <p>The pi user has passwordless access to sudo. We deleted the user already, so there is no reason to leave this in.</p>
 
@@ -66,9 +66,9 @@ userdel -r pi
 
 <p>and remove that line.</p>
 
-<h2 id="move-ssh-to-a-different-port:b80721f111f53300766ae01361a36230">Move SSH to a different port</h2>
+<h2 id="move-ssh-to-a-different-port">Move SSH to a different port</h2>
 
-<p>There is a lot of controversy around this one. A lot of people claim that moving SSH to a port different from 22 is <a href="http://en.wikipedia.org/wiki/Security_through_obscurity">security through obscurity</a>. The other side is claiming, and I believe rightfully so, that it is instead <a href="http://en.wikipedia.org/wiki/Defense_in_Depth_(computing">defense in depth</a>).</p>
+<p>There is a lot of controversy around this one. A lot of people claim that moving SSH to a port different from 22 is <a href="http://en.wikipedia.org/wiki/Security_through_obscurity">security through obscurity</a>. The other side is claiming, and I believe rightfully so, that it is instead <a href="http://en.wikipedia.org/wiki/Defense_in_Depth_(computing)">defense in depth</a>.</p>
 
 <p>As anecdotal evidence, during the <a href="http://www.debian.org/security/2008/dsa-1571">2008 Debian SSL Key Generator Incident</a> servers running on standard SSH port were automatically targeted by broad sweeping scans of the entire Internet. Servers running on wacky ports were not, because it is cheaper to scan a single port when scanning the entire Internet.</p>
 
@@ -83,7 +83,7 @@ sudo /etc/init.d/ssh restart
 
 <p>If you were using SSH to do this, you will now be kicked out. Reconnect to the new port.</p>
 
-<h2 id="set-up-a-simple-firewall-with-iptables:b80721f111f53300766ae01361a36230">Set up a simple firewall with iptables</h2>
+<h2 id="set-up-a-simple-firewall-with-iptables">Set up a simple firewall with iptables</h2>
 
 <p><a href="http://www.netfilter.org/">Iptables</a> is the standard way of configuring the Linux kernel firewall. Following the defense in depth principle, the firewall will be configured to stop behaviour which is <strong>definitely</strong> unnecessary for a headless SSH-only R-PI.</p>
 
@@ -154,7 +154,7 @@ iptables -A INPUT -j REJECT --reject-with-icmp-port-unreachable
 
 <p>This setup is only related to the IPv4 firewall. I’ll be posting the IPv6 version once I complete it :)</p>
 
-<h2 id="update-the-system:b80721f111f53300766ae01361a36230">Update the system</h2>
+<h2 id="update-the-system">Update the system</h2>
 
 <p>Do this every so often. If possible, keep track of <a href="http://downloads.raspberrypi.org/raspbian/release_notes.txt">release notes</a> from Raspbian.</p>
 

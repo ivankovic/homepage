@@ -39,7 +39,7 @@
 <div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
   
 
-<h1 id="detecting-the-presence-of-a-specific-smartphone-device-on-the-network:2292df697117d4c1111bbd8bfd51543e">Detecting the presence of a specific smartphone device on the network</h1>
+<h1 id="detecting-the-presence-of-a-specific-smartphone-device-on-the-network">Detecting the presence of a specific smartphone device on the network</h1>
 
 <p>Some parts of my R-PI swarm are more useful when I am at home, and some only make sense if my apartment is empty. It would be relatively easy to do some form of active notification that would require me to press a button, scan an NFC tag or some other action when I enter and leave my apartment, but it would be really cool if each drone in my R-PI swarm could figure out on it’s own if I am at home or not.</p>
 
@@ -47,11 +47,11 @@
 
 <p>As it turns out, getting smartphones to respond to that one critical ping is not as simple, but the following Bash script seems to be reliable enough. I have run this for some time now and it works reasonably well with my Nexus 4. If the device is present it usually picks it up in 2-4 seconds (after the script is run, which is every 60 seconds). If the device is not present, or the arp cache is wrong, it takes about 15-20 seconds to sweep the entire network.</p>
 
-<h2 id="dependencies:2292df697117d4c1111bbd8bfd51543e">Dependencies</h2>
+<h2 id="dependencies">Dependencies</h2>
 
 <p>The script depends on the <a href="http://fping.org/">fping</a> fast ping tool. If you are using <a href="http://www.raspbian.org/">Raspbian</a> you can just <code>apt-get</code> the appropriate <a href="http://packages.debian.org/wheezy/fping">package: fping</a>.</p>
 
-<h2 id="bash-script:2292df697117d4c1111bbd8bfd51543e">Bash script</h2>
+<h2 id="bash-script">Bash script</h2>
 
 <pre><code>#!/bin/bash
 
@@ -116,7 +116,7 @@ try_device $TARGET2
 start_motion
 </code></pre>
 
-<h2 id="usage:2292df697117d4c1111bbd8bfd51543e">Usage</h2>
+<h2 id="usage">Usage</h2>
 
 <p>The script is designed to run as a <a href="http://en.wikipedia.org/wiki/Cron">cron</a> job. Don’t forget, while you have an expanded <code>PATH</code> variable when you log-in to your shell, the <code>cron</code> jobs don’t. So while you are editing your <code>crontab</code> with <code>crontab -e</code> don’t forget to add this somewhere in your file:</p>
 
@@ -125,7 +125,7 @@ start_motion
 
 <p>It’s also probably a good idea to add <code>MAILTO=””</code> to your crontab to prevent any emails going out in case of failures (or even just outputs).</p>
 
-<h2 id="analysis:2292df697117d4c1111bbd8bfd51543e">Analysis</h2>
+<h2 id="analysis">Analysis</h2>
 
 <p>What the script does is:</p>
 
@@ -143,7 +143,7 @@ start_motion
 
 <p>It would be really interesting to see how you could use this to enhance your network security as well. After all, if the firewall knows I am at home, there’s no real reason for keeping the external access port open.</p>
 
-<h2 id="update-27th-of-april-2014:2292df697117d4c1111bbd8bfd51543e">Update: 27th of April 2014</h2>
+<h2 id="update-27th-of-april-2014">Update: 27th of April 2014</h2>
 
 <p>I refactored the script to enable searching for more than one device.</p>
 

@@ -39,7 +39,7 @@
 <div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
   
 
-<h1 id="a-nice-directory-structure-for-go-code:66e9facd3641635f7e0e15acfb12cb3b">A nice directory structure for Go code</h1>
+<h1 id="a-nice-directory-structure-for-go-code">A nice directory structure for Go code</h1>
 
 <p>I recently discovered the wonders of <a href="https://golang.org">Go</a>. I have been using it at work, on the Raspberry Pi and to solve competitive programming problems on <a href="https://projecteuler.net/profile/markoivankovic.png">Project Euler</a>. I even tried out my hand at <a href="https://github.com/ivankovic/go-competitive">open sourcing</a> some Go code on GitHub. And I found it really really fun to use in all these situations.</p>
 
@@ -47,7 +47,7 @@
 
 <p>However, I did struggle with one thing initially. Because Go depends a lot on the path structure of your workspace(s?) it was not immediately clear to me what workspace structure would work best for such an eclectic collection of projects. But I think that now I have found one that works really really well.</p>
 
-<h2 id="number-of-workspaces:66e9facd3641635f7e0e15acfb12cb3b">Number of workspaces</h2>
+<h2 id="number-of-workspaces">Number of workspaces</h2>
 
 <p>The obvious first question is: &ldquo;One workspace per project or one big global workspace?&rdquo;. I have found that one big global workspace is a much better choice here. Unless you have other requirements that would force you to have a clean separation between sets of projects, for example having to separate work and private code, there are only upsides to having one global workspace.</p>
 
@@ -55,7 +55,7 @@
 It reduces mental overhead: No need to keep track of which workspace you are in. There&rsquo;s only one.
 It reduces management overhead: Just one root directory to back up, just one root directory to secure.</p>
 
-<h2 id="directory-structure:66e9facd3641635f7e0e15acfb12cb3b">Directory structure</h2>
+<h2 id="directory-structure">Directory structure</h2>
 
 <p>Let&rsquo;s remind ourselves of the directory structure Go already has built in:</p>
 
@@ -76,11 +76,11 @@ It reduces management overhead: Just one root directory to back up, just one roo
 
 <p>This leaves just one thing: local files. I find it helps to have a <code>local/</code> path that mostly contains just one file <code>main.go</code>. Whenever I need to script a one-off real quick, I just modify this file, run it and move on. Very rarely, I&rsquo;ll <code>cp</code> that file and have <code>main2.go</code> and so on.</p>
 
-<h2 id="packages:66e9facd3641635f7e0e15acfb12cb3b">Packages</h2>
+<h2 id="packages">Packages</h2>
 
 <p>Because each time you import something you need to type the whole path, I strongly recommend you limit the subpackage depth. Since you always have <code>&lt;project&gt;</code> as part of your path, usually you can just have all packages directly in the project directory. If you need subpackages, consider instead extracting them into a separate project. After all, you might reuse them somewhere else!</p>
 
-<h2 id="real-example:66e9facd3641635f7e0e15acfb12cb3b">Real example</h2>
+<h2 id="real-example">Real example</h2>
 
 <p>This is the current structure of my Go workspace:</p>
 

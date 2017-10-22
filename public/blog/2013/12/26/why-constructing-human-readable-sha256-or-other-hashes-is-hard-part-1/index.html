@@ -39,7 +39,7 @@
 <div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
   
 
-<h1 id="why-constructing-human-readable-sha256-or-other-hashes-is-hard-part-1:786cd415ca4148404d4ce22bf450181d">Why constructing human readable SHA256 (or other) hashes is hard - Part 1</h1>
+<h1 id="why-constructing-human-readable-sha256-or-other-hashes-is-hard-part-1">Why constructing human readable SHA256 (or other) hashes is hard - Part 1</h1>
 
 <p>I have been playing around with the idea of making a human readable version of SHA256 hash. It seems like a nice improvement, in theory.</p>
 
@@ -55,7 +55,7 @@
 
 <p>Using real words means that you can easily compare the hash without copy-pasting it. This can be especially important if one of the hashes is not copy-pasteable at all, for example if it is printed on paper.</p>
 
-<h2 id="encoding-a-binary-number-as-a-sequence-of-words:786cd415ca4148404d4ce22bf450181d">Encoding a binary number as a sequence of words</h2>
+<h2 id="encoding-a-binary-number-as-a-sequence-of-words">Encoding a binary number as a sequence of words</h2>
 
 <p>The idea is quite simple. We take a “good” dictionary of “good” words, for example the <a href="http://world.std.com/~reinhold/diceware.html">Diceware dictionary</a>. Then we use these words to encode the SHA 256 hash (or any other binary number). The encoding algorithm is very simple. We treat the 256 bit number as a number in base N where N is the number of words in the dictionary. Each “digit” in base N is one of the dictionary words. Or in code:</p>
 
@@ -73,7 +73,7 @@ print result
 
 <p>And this is where the problems begin.</p>
 
-<h2 id="existing-work:786cd415ca4148404d4ce22bf450181d">Existing work</h2>
+<h2 id="existing-work">Existing work</h2>
 
 <p>Converting binary numbers into words has been done before.</p>
 
@@ -95,7 +95,7 @@ print result
 <pre><code>CUNY SEAL UP ADAM OWLY LIAR ARGO SCAR HOOT BEER PAD EDNA ELLA CUNY ANTE CHAR AJAR IDEA SLUG GARB ALTO SLUG EDIT AGO
 </code></pre>
 
-<h2 id="length:786cd415ca4148404d4ce22bf450181d">Length</h2>
+<h2 id="length">Length</h2>
 
 <p>20 words is a bit too long. 32 words and 24 words is definitely too long. Very few people could memorize 20 random words, and more words lead to more potential errors. There is some research in this subject, and it has shown that humans can remember 7 (+/- 2) random words on average. So to compare 20 random words, you would need to compare the word lists 4 times, assuming the lower limit of 5 words + a bit of position information and careful comparison. Unfortunately, 20 words is probably the best we can do.</p>
 
@@ -184,7 +184,7 @@ print result
 
 <p>The problem is that most of these words are low quality.</p>
 
-<h2 id="quality-metrics:786cd415ca4148404d4ce22bf450181d">Quality metrics</h2>
+<h2 id="quality-metrics">Quality metrics</h2>
 
 <p>Making sure that we don’t introduce security pitfalls is important. Because hexadecimal representations of hashes are so difficult to compare manually, the comparison is usually done by the computer. While you can make a human error in this process as well, by copy-pasting the wrong hash, it’s unlikely that this would result in a false match.</p>
 
@@ -198,7 +198,7 @@ print result
 
 <p>To be able to compare the words quickly, you need to be able to read them quickly. <a href="http://scholar.google.com/scholar?q=readability">Readability</a> is well researched. There are a number of well understood formulas used to compute readability indexes for large texts. The problem is that all of them require sentences and all are researched for English only. We can extract the underlying metrics to adapt this for our needs. Syllable count is a popular metrics in readability. The smaller the syllable count, the more readable a words is. By measuring the maximal and average syllable count, we can have a good overall metrics for any given word list. We can also generate 1000 random SHA256 hashes and treat those as a single large text and compute the readability metrics on that. This is an indirect metric, but still useful.</p>
 
-<h2 id="how-to-construct-a-word-list-with-good-metrics:786cd415ca4148404d4ce22bf450181d">How to construct a word list with good metrics</h2>
+<h2 id="how-to-construct-a-word-list-with-good-metrics">How to construct a word list with good metrics</h2>
 
 <p>So now we have a few metrics we can use to score a word list. As it turns out, all raw wordlists score abysmally low on these metrics. I have tried parsing the <a href="http://dumps.wikimedia.org/enwiktionary/20131117/">English Wiktionary</a>, I have tried parsing books from <a href="http://www.gutenberg.org/">Project Gutenberg</a>, I have tried traditional spellchecking wordlists, and I have tried traditional hacking wordlists. I even tried just constructing wordlists by combining lists of cities, names, animals, plants and so on.</p>
 
@@ -230,7 +230,7 @@ print result
 
 <p>The PGP word list however, is awesome. It was designed specifcally to address these problems, and it shows.</p>
 
-<h2 id="what-s-next:786cd415ca4148404d4ce22bf450181d">What’s next</h2>
+<h2 id="what-s-next">What’s next</h2>
 
 <p>So, constructing a good word list is incredibly hard. I tried to construct a good 137 271 item list and failed miserably.</p>
 

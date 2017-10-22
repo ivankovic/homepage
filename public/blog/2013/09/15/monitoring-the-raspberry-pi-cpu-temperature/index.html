@@ -39,7 +39,7 @@
 <div id="content" style="display: block; padding-left: 64px;" itemscope itemtype="https://schema.org/BlogPosting">
   
 
-<h1 id="monitoring-the-raspberry-pi-cpu-temperature:dfea1ea9d12cd0ead3ac736f5c1b0b7f">Monitoring the Raspberry PI - CPU Temperature</h1>
+<h1 id="monitoring-the-raspberry-pi-cpu-temperature">Monitoring the Raspberry PI - CPU Temperature</h1>
 
 <p>If you are like me, you have a few Raspberry PI-es in the house. They are the perfect platform for hacker enthusiasts and rightfully so. Cheap, versatile, unified platform shared by hundreds of thousands of people, what’s not to like.</p>
 
@@ -49,7 +49,7 @@
 
 <p>The idea is simple: get the raw number from the CPU, stick it in some form of database, once per day send myself an email with the temperature numbers, preferably in graphical chart format.</p>
 
-<h2 id="raw-temperature-numbers:dfea1ea9d12cd0ead3ac736f5c1b0b7f">Raw Temperature Numbers</h2>
+<h2 id="raw-temperature-numbers">Raw Temperature Numbers</h2>
 
 <p>Getting the raw temperature number is super simple. All you have to do is read</p>
 
@@ -63,7 +63,7 @@
 
 <p>but that can easily be fixed.</p>
 
-<h2 id="rrdtool:dfea1ea9d12cd0ead3ac736f5c1b0b7f">RRDTool</h2>
+<h2 id="rrdtool">RRDTool</h2>
 
 <p><a href="http://en.wikipedia.org/wiki/RRDtool">RRDTool</a> is one of the fantastic Linux tools. It does one thing, storing time-series, and does it fantastically well. The use case we are interested here, a sequence of temperature measurements, is the most basic use case for RRD. The RRD database for us can be created like this:</p>
 
@@ -96,7 +96,7 @@ rrdtool graph $DEST_DIR/cputemp.png DEF:cputemp=$DEST_DIR/db.rrd:cputemp:AVERAGE
 
 <p>We can invoke this script once per minute from our crontab.</p>
 
-<h2 id="email:dfea1ea9d12cd0ead3ac736f5c1b0b7f">Email</h2>
+<h2 id="email">Email</h2>
 
 <p>In the same crontab, we can also send ourselves an email once per day with the png attached.</p>
 
