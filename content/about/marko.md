@@ -12,7 +12,7 @@ aliases = [
     <span itemprop="name">Marko Ivanković</span>
     - Resume
   </h1>
-<p>Last updated: October 13th, 2016.</p>
+<p>Last updated: March 11th, 2018.</p>
 <h2>Work</h2>
 <ul>
   <li>
@@ -29,6 +29,9 @@ aliases = [
 </ul>
 <h2>Publications and presentations</h2>
 <ul>
+  <li>Paper:
+    <a href="">An Industrial Application of Mutation Testing: Lessons, Challenges, and Research Directions.</a> (<a href="https://mutation-workshop.github.io/#program">ICST - Mutation 2018</a>)
+  </li>
   <li>Paper:
     <a href="https://research.google.com/pubs/pub46584.html">State of Mutation Testing at Google</a> (<a href="https://www.icse2018.org/event/icse-2018-software-engineering-in-practice-state-of-mutation-testing-at-google">ICSE 2018 - SEIP</a>)
   </li>
