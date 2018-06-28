@@ -6,10 +6,21 @@
     <description>Recent content on Marko Ivankovic and Marina Celar Ivankovic - personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 04 Sep 2016 18:16:49 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 28 Jun 2018 20:27:06 +0100</lastBuildDate>
     
 	<atom:link href="https://www.ivankovic.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Privacy Details</title>
+      <link>https://www.ivankovic.me/privacy/details/</link>
+      <pubDate>Thu, 28 Jun 2018 20:27:06 +0100</pubDate>
+      
+      <guid>https://www.ivankovic.me/privacy/details/</guid>
+      <description>Privacy policy In short, we don&amp;rsquo;t track anything other than the bare minimum technically needed to serve the webpage.
+Cookies and local storage This website doesn&amp;rsquo;t use cookies or web browser provided local storage.
+Logs This website doesn&amp;rsquo;t keep any logs other than the bare minimum required to serve the webpage and prevent abuse. We do not keep access logs other than keeping the request IP address in memory for a few minutes.</description>
+    </item>
     
     <item>
       <title>The layout and security of my home network</title>
@@ -151,7 +162,7 @@ My public key is: 5307 38FD 7A87 E6E8 9101 BBBE 72FE C3F6 4C87 DF37</description
       <pubDate>Wed, 09 Jul 2014 20:40:05 +0000</pubDate>
       
       <guid>https://www.ivankovic.me/about/marko/</guid>
-      <description>Marko Ivanković - Resume  Last updated: October 13th, 2016.
+      <description>Marko Ivanković - Resume  Last updated: March 11th, 2018.
 Work   Google  - Staff Software Engineer, Tools and Infrastructure (2016 - present)  Google - Senior Software Engineer, Tools and Infrastructure (2014 - 2016) Google - Software Engineer, Tools and Infrastructure (2011 - 2014) Google - Software Engineer, Tools and Infrastructure (2010)  Publications and presentations  Paper: An Industrial Application of Mutation Testing: Lessons, Challenges, and Research Directions.</description>
     </item>
     
