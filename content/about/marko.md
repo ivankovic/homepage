@@ -74,13 +74,6 @@ aliases = [
 </ul>
 <h2>Education</h2>
 <ul>
-  <li>BSc in Computer Science -
-  <span itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization">
-    <span itemprop="name">University of Zagreb</span>
-    <a href="http://unizg.hr" itemprop="sameAs">http://unizg.hr</a>
-  </span>
-  (2007 - 2010)<br/>
-  Thesis: <i>Library for RPC calls over HTTP protocol between web browsers</i></li>
   <li>MSc in Computer Science -
   <span itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization">
     <span itemprop="name">University of Zagreb</span>
@@ -89,6 +82,13 @@ aliases = [
   (2010 - 2011)<br/>
   Thesis: <i><a href="/doc/MarkoIvankovicDiplomskiRad.pdf">
     Software framework for performance benchmarks of cross-context communication systems for Web browsers</a></i></li>
+  <li>BSc in Computer Science -
+  <span itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization">
+    <span itemprop="name">University of Zagreb</span>
+    <a href="http://unizg.hr" itemprop="sameAs">http://unizg.hr</a>
+  </span>
+  (2007 - 2010)<br/>
+  Thesis: <i>Library for RPC calls over HTTP protocol between web browsers</i></li>
 </ul>
 <h2>Awards and honors</h2>
 <ul>
