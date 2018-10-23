@@ -14,7 +14,6 @@ aliases = [
 <p>The following contact information can be used to reach <span itemprop="name">Marina Čelar Ivanković</span>:<p>
 <ul>
   <li>Main contact: <span class="email" itemprop="email">marina [at] ivankovic (dot) me</span></li>
-  <li><a href="https://plus.google.com/109500750097728646594/about">Google Plus profile</a></li>
   <li><a href="https://hr.linkedin.com/in/marinacelarivankovic">LinkedIn profile</a></li>
   <li><a href="https://www.instagram.com/vetonamat/">Instagram profile</a></li>
 </ul>
