@@ -13,6 +13,16 @@ aliases = [
     - Resume
   </h1>
 <p>Last updated: July 1st, 2018.</p>
+
+<h2>Contact information</h2>
+<ul>
+  <li>Main contact: <span class="email" itemprop="email">marko [at] ivankovic (dot) me</span></li>
+  <li><a href="https://github.com/ivankovic">GitHub profile</a></li>
+  <li><a href="https://twitter.com/ivankovicme">Twitter profile</a></li>
+  <li><a href="https://www.linkedin.com/in/ivankovicmarko">LinkedIn profile</a></li>
+  <li><a href="https://www.instagram.com/engineerwithcookinggear/?hl=en">Instagram profile</a></li>
+</ul>
+
 <h2>Work</h2>
 <ul>
   <li>
@@ -27,6 +37,7 @@ aliases = [
   <li>Google - Software Engineer, Tools and Infrastructure (2011 - 2014)</li>
   <li>Google - Software Engineer, Tools and Infrastructure (2010)</li>
 </ul>
+
 <h2>Publications and presentations</h2>
 <ul>
   <li>Paper:
@@ -53,6 +64,7 @@ aliases = [
     Cross-context web browser communication with unified communication models and context types (MIPRO)</a>
   </li>
 </ul>
+
 <h2>Open source</h2>
 <ul>
   <li><a href="https://github.com/ivankovic/go-config">go-config</a>
@@ -62,6 +74,7 @@ aliases = [
   <li><a href="https://github.com/izuzak/pmrpc">PMRPC</a>
   - HTML5 inter-window and web workers RPC and publish-subscribe communication library</li>
 </ul>
+
 <h2>Teaching and volounteering</h2>
 <ul>
   <li><a href="http://hsin.hr/coci/">Croatian Open Competition in Informatics</a>
@@ -72,6 +85,7 @@ aliases = [
   <li>TA on several BSc level classes - University of Zagreb (2010 - 2011)</li>
   <li>Numerous summer camp courses, one day workshops, high school and elementary school lectures and mentorship of contestants (2006 - 2012)</li>
 </ul>
+
 <h2>Education</h2>
 <ul>
   <li>MSc in Computer Science -
@@ -90,6 +104,7 @@ aliases = [
   (2007 - 2010)<br/>
   Thesis: <i>Library for RPC calls over HTTP protocol between web browsers</i></li>
 </ul>
+
 <h2>Awards and honors</h2>
 <ul>
   <li>
@@ -102,4 +117,3 @@ aliases = [
     </span>
   </li>
 </ul>
-
