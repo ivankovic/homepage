@@ -6,8 +6,8 @@ html, body {
   height: 100%;
   color: #EEEEEE;
   background-color: #101010;
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 1px;
 }
 
 div#main {

@@ -23,7 +23,5 @@ This website doesn't use any third party analytic software to track visits.
 
 ## Third-party components
 
-This website uses Google Fonts.
-
 The full resolution images are stored on Google Drive. You will only load these
 if you click on the thumbnails.
