@@ -11,7 +11,7 @@ aliases = [
   <h1>
     <span itemprop="name">Marko Ivanković</span>
   </h1>
-<p>Last updated: July 1st, 2018.</p>
+<p>Last updated: February 9th, 2019.</p>
 
 <h2>Contact information</h2>
 <ul>
