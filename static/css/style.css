@@ -133,6 +133,7 @@ div.photocategory {
 
 a:link, a:visited {
   text-decoration: none;
+  color: blue;
 }
 
 a.black {
@@ -141,6 +142,7 @@ a.black {
 
 a:hover, a:active {
   text-decoration: none;
+  color: red;
 }
 
 nav a {
