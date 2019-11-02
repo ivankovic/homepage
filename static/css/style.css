@@ -4,8 +4,6 @@
 
 html, body {
   height: 100%;
-  color: #EEEEEE;
-  background-color: #101010;
   font-family: "Times New Roman", Times, serif;
   letter-spacing: 1px;
 }
@@ -42,7 +40,6 @@ div#contact {
   line-height: 64px;
   font-size: 24px;
   text-align: center;
-  color: #ffffff;
 }
 
 div#content {
@@ -54,19 +51,16 @@ div#content {
 
 h1 {
   padding-bottom: 1em;
-  color: #ff0000;
 }
 
 h2 {
   padding-top: 1em;
   padding-bottom: 1em;
-  color: #ff0000;
 }
 
 h3 {
   padding-top: 0.5em;
   margin-left: 0.5em;
-  color: #ff0000;
 }
 
 pre {
@@ -135,11 +129,9 @@ div.photocategory {
   font-size: 3em;
   height: 100%;
   width: 100%;
-  color: #EEEEEE;
 }
 
 a:link, a:visited {
-  color: #d88913;
   text-decoration: none;
 }
 
@@ -148,7 +140,6 @@ a.black {
 }
 
 a:hover, a:active {
-  color: #ff0000;
   text-decoration: none;
 }
 
