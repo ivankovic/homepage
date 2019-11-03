@@ -1,5 +1,5 @@
 ---
-title: "Privacy Details"
+title: "Privacy - Technical Details"
 date: 2018-06-28T20:27:06+01:00
 ---
 # Privacy policy

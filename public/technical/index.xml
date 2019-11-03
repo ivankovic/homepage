@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Privacies on Marko Ivankovic and Marina Celar Ivankovic - personal website</title>
-    <link>https://www.ivankovic.me/privacy/</link>
-    <description>Recent content in Privacies on Marko Ivankovic and Marina Celar Ivankovic - personal website</description>
+    <title>Technicals on Marko Ivankovic and Marina Celar Ivankovic - personal website</title>
+    <link>https://www.ivankovic.me/technical/</link>
+    <description>Recent content in Technicals on Marko Ivankovic and Marina Celar Ivankovic - personal website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Jun 2018 20:27:06 +0100</lastBuildDate>
     
-	<atom:link href="https://www.ivankovic.me/privacy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ivankovic.me/technical/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Privacy Details</title>
-      <link>https://www.ivankovic.me/privacy/details/</link>
+      <title>Privacy - Technical Details</title>
+      <link>https://www.ivankovic.me/technical/privacy/</link>
       <pubDate>Thu, 28 Jun 2018 20:27:06 +0100</pubDate>
       
-      <guid>https://www.ivankovic.me/privacy/details/</guid>
+      <guid>https://www.ivankovic.me/technical/privacy/</guid>
       <description>Privacy policy I don&amp;rsquo;t track anything other than the minimum technically needed to serve the webpage.
 Cookies and local storage This website doesn&amp;rsquo;t use cookies or web browser provided local storage.
 Logs This website doesn&amp;rsquo;t keep any logs other than the minimum required to serve the webpage and prevent abuse.
