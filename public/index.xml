@@ -17,9 +17,11 @@
       <pubDate>Thu, 28 Jun 2018 20:27:06 +0100</pubDate>
       
       <guid>https://www.ivankovic.me/privacy/details/</guid>
-      <description>Privacy policy In short, I don&amp;rsquo;t track anything other than the bare minimum technically needed to serve the webpage.
+      <description>Privacy policy I don&amp;rsquo;t track anything other than the minimum technically needed to serve the webpage.
 Cookies and local storage This website doesn&amp;rsquo;t use cookies or web browser provided local storage.
-Logs This website doesn&amp;rsquo;t keep any logs other than the bare minimum required to serve the webpage and prevent abuse. I do not keep access logs other than keeping the request IP address in memory for a few minutes.</description>
+Logs This website doesn&amp;rsquo;t keep any logs other than the minimum required to serve the webpage and prevent abuse.
+Third-party analytics This website doesn&amp;rsquo;t use any third party analytic software to track visits.
+Third-party components The full resolution images are stored on Google Drive.</description>
     </item>
     
     <item>
@@ -43,42 +45,6 @@ Teaching  TA on the Internal Medicine classes (2013.</description>
       <description>Marko Ivanković  Last updated: February 9th, 2019.
 Contact information  Main contact: marko [at] ivankovic (dot) me GitHub profile Twitter profile LinkedIn profile Instagram profile 
 CV Marko&amp;rsquo;s EuroPass CV</description>
-    </item>
-    
-    <item>
-      <title>Animals</title>
-      <link>https://www.ivankovic.me/photography/animals/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ivankovic.me/photography/animals/</guid>
-      <description>       </description>
-    </item>
-    
-    <item>
-      <title>Cityscapes</title>
-      <link>https://www.ivankovic.me/photography/cityscapes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ivankovic.me/photography/cityscapes/</guid>
-      <description>         </description>
-    </item>
-    
-    <item>
-      <title>Food</title>
-      <link>https://www.ivankovic.me/photography/food/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ivankovic.me/photography/food/</guid>
-      <description>       </description>
-    </item>
-    
-    <item>
-      <title>Landscapes</title>
-      <link>https://www.ivankovic.me/photography/landscapes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ivankovic.me/photography/landscapes/</guid>
-      <description>        </description>
     </item>
     
   </channel>

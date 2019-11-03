@@ -4,8 +4,6 @@
 
 html, body {
   height: 100%;
-  color: #EEEEEE;
-  background-color: #101010;
   font-family: "Times New Roman", Times, serif;
   letter-spacing: 1px;
 }
@@ -42,7 +40,6 @@ div#contact {
   line-height: 64px;
   font-size: 24px;
   text-align: center;
-  color: #ffffff;
 }
 
 div#content {
@@ -52,21 +49,13 @@ div#content {
   flex-wrap: wrap;
 }
 
-h1 {
-  padding-bottom: 1em;
-  color: #ff0000;
-}
-
 h2 {
   padding-top: 1em;
-  padding-bottom: 1em;
-  color: #ff0000;
 }
 
 h3 {
   padding-top: 0.5em;
   margin-left: 0.5em;
-  color: #ff0000;
 }
 
 pre {
@@ -118,29 +107,9 @@ div.box a {
   text-align: center;
 }
 
-@media (max-width: 896px) {
-  div#content a.pselect {
-    width: 100%;
-  }
-}
-
-@media (min-width: 896px) {
-  div#content a.pselect {
-    width: 50%;
-  }
-}
-
-div.photocategory {
-  background-size: 100% 100%;
-  font-size: 3em;
-  height: 100%;
-  width: 100%;
-  color: #EEEEEE;
-}
-
 a:link, a:visited {
-  color: #d88913;
   text-decoration: none;
+  color: blue;
 }
 
 a.black {
@@ -148,37 +117,10 @@ a.black {
 }
 
 a:hover, a:active {
-  color: #ff0000;
   text-decoration: none;
+  color: red;
 }
 
 nav a {
   padding-left: 20px;
-}
-
-div.photogallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  column-count: 4;
-  column-gap: 0px;
-}
-
-@media (max-width: 2000px) {
-  div.photogallery {
-    column-count: 3;
-  }
-}
-
-@media (max-width: 1500px) {
-  div.photogallery {
-    column-count: 2;
-  }
-}
-
-@media (max-width: 1000px) {
-  div.photogallery {
-    width: 500px;
-  }
 }
