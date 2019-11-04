@@ -1,6 +1,13 @@
 <header>
   <nav>
     <a href="/">Ivankovic.Me</a>
+    <span id="smallscreennav">
+      {{ if .Parent }}
+      {{ if not .Parent.IsHome }}
+      <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a>
+      {{ end }}
+      {{ end }}
+    </span>
     <span id="subpages">
       <a href="/about/" >About</a>
       <a href="/technical/" >Technical</a>

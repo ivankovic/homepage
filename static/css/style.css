@@ -23,6 +23,14 @@ header {
   nav span#subpages {
     display: none;
   }
+  nav span#smallscreen {
+    display: block;
+  }
+}
+@media (min-width: 600px) {
+  nav span#smallscreen {
+    display: none;
+  }
 }
 
 div#content {
