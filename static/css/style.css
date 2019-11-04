@@ -14,7 +14,6 @@ div#main {
 }
 
 header {
-  height: 64px;
   line-height: 64px;
   font-size: 24px;
 }
@@ -23,8 +22,15 @@ header {
   nav span#subpages {
     display: none;
   }
+  nav span#homesubpages {
+    display: flex;
+    flex-flow: column;
+    margin-left: 32px;
+    font-size: 20px;
+    line-height: 32px;
+  }
   nav span#smallscreen {
-    display: block;
+    display: inline;
   }
 }
 @media (min-width: 600px) {

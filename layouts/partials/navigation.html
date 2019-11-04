@@ -8,7 +8,7 @@
       {{ end }}
       {{ end }}
     </span>
-    <span id="subpages">
+    <span id="{{ if .IsHome }}home{{ end }}subpages">
       <a href="/about/" >About</a>
       <a href="/technical/" >Technical</a>
     </span>
