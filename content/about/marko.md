@@ -16,6 +16,7 @@ Last updated: November 3rd, 2019.
 * [Email: marko@ivankovic.me](mailto:marko@ivankovic.me)
 * [GitHub](https://github.com/ivankovic)
 * [LinkedIn](https://www.linkedin.com/in/ivankovicmarko)
+* [ResearchGate](https://www.researchgate.net/profile/Marko_Ivankovic4)
 
 ## CV
 
