@@ -17,9 +17,4 @@ webpage and prevent abuse.
 
 ## Third-party analytics
 
-This website doesn't use any third party analytic software to track visits.
-
-## Third-party components
-
-The full resolution images are stored on Google Drive. You will only load these
-if you click on the thumbnails.
+This website doesn't use any third party analytics services to track visits.
