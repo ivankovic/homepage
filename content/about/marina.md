@@ -1,13 +1,13 @@
 ---
 date: 2014-07-10T20:27:05Z
-title: "Marina Celar Ivankovic > Resume"
-description: "Marina Celar Ivankovic's resume."
+title: "Marina Celar Ivankovic"
+description: "Marina Celar Ivankovic"
 aliases: [
   "/marina_resume.html",
   "/marina/resume"
 ]
 ---
-# dr. vet. med. Marina Čelar Ivanković - Resume
+# Marina Čelar Ivanković, dr. vet. med.
 
 Last updated: November 3rd, 2019.
 

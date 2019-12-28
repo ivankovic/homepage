@@ -41,8 +41,8 @@ header {
 
 div#content {
   display: block;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 h2 {

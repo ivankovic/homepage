@@ -1,7 +1,7 @@
 ---
 date: 2014-07-09T20:40:05Z
-title: "Marko Ivankovic > About"
-description: "About Marko Ivankovic."
+title: "Marko Ivankovic"
+description: "Marko Ivankovic."
 aliases: [
   "/marko_resume.html",
   "/marko/resume"
