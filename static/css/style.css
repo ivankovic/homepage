@@ -73,16 +73,10 @@ div#content li {
 }
 
 a:link, a:visited {
-  text-decoration: none;
   color: blue;
 }
 
-a.black {
-  color: black;
-}
-
 a:hover, a:active {
-  text-decoration: none;
   color: red;
 }
 
