@@ -18,3 +18,7 @@ webpage and prevent abuse.
 ## Third-party analytics
 
 This website doesn't use any third party analytics services to track visits.
+
+# Anonymous access
+
+This website is available over Tor: [fysdajvfgocugqhmzianz4hob6tezxlquaap552sr57szwip7j2o57yd.onion](http://fysdajvfgocugqhmzianz4hob6tezxlquaap552sr57szwip7j2o57yd.onion).
