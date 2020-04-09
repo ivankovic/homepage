@@ -6,6 +6,7 @@ html, body {
   height: 100%;
   font-family: "Times New Roman", Times, serif;
   letter-spacing: 1px;
+  overflow-wrap: break-word;
 }
 
 div#main {
