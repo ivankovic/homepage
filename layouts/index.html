@@ -1,3 +1,11 @@
 {{ define "content" }}
-  {{ partial "home.html" . }}
+  {{ range $name := .Site.Params.names }}
+    <div>
+    {{ with (index $.Site.Params $name).avatarurl }}
+      <div class="avatar"><img src="{{ . | absURL }}" alt="avatar">
+      </div>
+    {{ end }}
+    <a href = "{{ $name | absURL }}">{{ (index $.Site.Params $name).author }}</a>
+    </div>
+  {{ end }}
 {{ end }}

@@ -6,7 +6,10 @@ defaultcontentlanguage = "en"
 paginate = 20
 canonifyurls = true
 
-[[params.marko]]
+[params]
+    names = ["marko", "marina"]
+
+[params.marko]
     author = "Marko Ivanković"
     info = "Software Engineer"
     description = "Marko Ivanković's personal website"
@@ -39,25 +42,12 @@ canonifyurls = true
     weight = 2
     url = "mailto:marko@ivankovic.me"
 
-[[params.marina]]
+[params.marina]
     author = "Marina Čelar Ivanković"
     info = "Doctor of Veterinary Medicine"
     description = "Marina Čelar Ivanković's personal website"
     keywords = "blog,veterinarian,personal"
-    avatarurl = "images/sigil.jpg"
-
-    favicon_32 = "/img/favicon.ico"
-    favicon_16 = "/img/favicon.ico"
-
-    hidefooter = true
-
-    hidecredits = false
-    hidecopyright = false
-
-    rtl = false
-
-    math = true
-    custom_css = ["css/custom.css"]
+    avatarurl = "images/marina/sigil.jpg"
 
 # Social links
 [[params.marina.social]]

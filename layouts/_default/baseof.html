@@ -35,30 +35,6 @@
       <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
     {{ end }}
 
-    {{ if  or (eq .Site.Params.colorscheme "auto") (eq .Site.Params.colorscheme "dark") }}
-      {{ if .Site.IsServer }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) }}
-        {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-      {{ else }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" ) }}
-        {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
-      {{ end }}
-    {{ end }}
-
-    {{ range .Site.Params.custom_scss }}
-      {{/* We don't change the targetPath to because it's transparent to users */}}
-      {{ if $.Site.IsServer }}
-        {{ $cssOpts := (dict "enableSourceMap" true ) }}
-        {{ $styles := resources.Get . | toCSS $cssOpts }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-      {{ else }}
-        {{ $styles := resources.Get . | toCSS | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
-      {{ end }}
-    {{ end }}
-
     <link rel="icon" type="image/png" href="{{ "/images/favicon.ico" | absURL }}" sizes="32x32">
 
     {{ range .AlternativeOutputFormats -}}
@@ -68,13 +44,7 @@
     {{ hugo.Generator }}
   </head>
 
-  {{ $csClass := "colorscheme-light" }}
-  {{ if eq .Site.Params.colorscheme "dark" }}
-    {{ $csClass = "colorscheme-dark" }}
-  {{ else if eq .Site.Params.colorscheme "auto" }}
-    {{ $csClass = "colorscheme-auto" }}
-  {{ end }}
-  <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}">
+  <body class="colorscheme-light">
     <main class="wrapper">
       {{ partial "header.html" . }}
 
