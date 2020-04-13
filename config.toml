@@ -23,6 +23,11 @@ canonifyurls = true
     weight = 1
     url = "https://github.com/ivankovic"
 [[params.marko.social]]
+    name = "ResearchGate"
+    icon = "fab fa-researchgate fa-2x"
+    weight = 2
+    url = "https://www.researchgate.net/profile/Marko_Ivankovic4"
+[[params.marko.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin fa-2x"
     weight = 3
@@ -32,11 +37,11 @@ canonifyurls = true
 [[menu.marko]]
     name = "Blog"
     weight = 1
-    url  = "/blog/"
+    url  = "/marko/blog"
 [[menu.marko]]
     name = "About"
     weight = 2
-    url = "/about/"
+    url = "/marko/about/"
 [[menu.marko]]
     name = "Contact me"
     weight = 2
@@ -60,7 +65,7 @@ canonifyurls = true
 [[menu.marina]]
     name = "About"
     weight = 2
-    url = "/about/"
+    url = "/marina/about/"
 [[menu.marina]]
     name = "Contact me"
     weight = 2
