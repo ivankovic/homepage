@@ -1,16 +1,13 @@
 <section class="container centered">
   <div class="about">
-    {{ if and (isset .Site.Params "avatarurl") (not (isset .Site.Params "gravatar")) }}
-      {{ with .Site.Params.avatarurl }}
+    {{ if (isset (index .Site.Params .Section) "avatarurl") }}
+      {{ with (index .Site.Params .Section).avatarurl }}
         <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
       {{ end }}
     {{ end }}
-    {{ with .Site.Params.gravatar }}
-      <div class="avatar"><img src="https://www.gravatar.com/avatar/{{md5 .}}?s=240&d=mp" alt="gravatar"></div>
-    {{ end }}
-    <h1>{{ .Site.Params.author }}</h1>
-    <h2>{{ .Site.Params.info }}</h2>
-    {{ with .Site.Params.social }}
+    <h1>{{ (index .Site.Params .Section).author }}</h1>
+    <h2>{{ (index .Site.Params .Section).info }}</h2>
+    {{ with (index .Site.Params .Section).social }}
     <ul>
       {{ range sort . "weight" }}
         {{ if .icon }}

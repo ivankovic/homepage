@@ -1,34 +1,36 @@
 <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="{{ .Site.BaseURL | relLangURL }}">
-      {{ .Site.Title }}
-    </a>
-    {{ if or .Site.Menus.main .Site.IsMultiLingual }}
+    {{ if .IsHome }}
+      <a class="navigation-title" href="{{ .Site.BaseURL | relLangURL }}">
+        {{ .Site.Title }}
+      </a>
+    {{ else }}
+      <a class="navigation-title" href="{{ .Section | relLangURL }}">
+        {{ (index .Site.Params .Section).description }}
+      </a>
+    {{ end }}
+
+    {{ if .IsHome }}
     <input type="checkbox" id="menu-toggle" />
     <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
     <ul class="navigation-list">
-      {{ with .Site.Menus.main}}
+      {{ with .Site.Params.names }}
+        {{ range sort . }}
+          <li class="navigation-item">
+            <a class="navigation-link" href="{{ . | absLangURL }}">{{ (index $.Site.Params .).author }}</a>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+    {{ else }}
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      {{ with (index .Site.Menus .Section)}}
         {{ range sort . }}
           <li class="navigation-item">
             <a class="navigation-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
           </li>
-        {{ end }}
-      {{ end }}
-      {{ if .Site.IsMultiLingual }}
-        {{ $node := . }}
-        {{ .Scratch.Set "separator" true }}
-        {{ range .Translations }}
-          {{ if ne $.Site.Language .Language }}
-            {{ if $node.Scratch.Get "separator" }}
-              <li class="navigation-item menu-separator">
-                <span>|</span>
-              </li>
-              {{ $node.Scratch.Set "separator" false }}
-            {{ end }}
-            <li class="navigation-item">
-              <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-            </li>
-          {{ end }}
         {{ end }}
       {{ end }}
     </ul>
