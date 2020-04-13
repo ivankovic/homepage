@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Marko Ivanković</title>
+    <link>https://www.ivankovic.me/marko/tags/</link>
+    <description>Recent content in Tags on Marko Ivanković</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="https://www.ivankovic.me/marko/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
