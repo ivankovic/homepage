@@ -1,11 +1,15 @@
 {{ define "content" }}
+  <div class="container centered">
   {{ range $name := .Site.Params.names }}
-    <div>
+    <div class="container centered">
+      <div class="about">
     {{ with (index $.Site.Params $name).avatarurl }}
       <div class="avatar"><img src="{{ . | absURL }}" alt="avatar">
       </div>
     {{ end }}
-    <a href = "{{ $name | absURL }}">{{ (index $.Site.Params $name).author }}</a>
+    <h1><a href = "{{ $name | absURL }}">{{ (index $.Site.Params $name).author }}</a></h1>
+      </div>
     </div>
   {{ end }}
+  </div>
 {{ end }}
