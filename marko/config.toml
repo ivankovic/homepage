@@ -52,3 +52,7 @@ pygmentscodefencesguesssyntax = true
     name = "About"
     weight = 2
     url = "/about/"
+[[menu.main]]
+    name = "Contact me"
+    weight = 2
+    url = "mailto:marko@ivankovic.me"
