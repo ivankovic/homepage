@@ -35,18 +35,6 @@
       <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
     {{ end }}
 
-    {{ if .Site.Params.rtl }}
-      {{ if .Site.IsServer }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-rtl.css" "enableSourceMap" true ) }}
-        {{ $styles := resources.Get "scss/coder-rtl.scss" | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-      {{ else }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-rtl.css" ) }}
-        {{ $styles := resources.Get "scss/coder-rtl.scss" | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
-      {{ end }}
-    {{ end }}
-
     {{ if  or (eq .Site.Params.colorscheme "auto") (eq .Site.Params.colorscheme "dark") }}
       {{ if .Site.IsServer }}
         {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) }}
@@ -57,14 +45,6 @@
         {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts | minify | fingerprint }}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
       {{ end }}
-    {{ end }}
-
-    {{ range .Site.Params.custom_css }}
-      <link rel="stylesheet" href="{{ . | relURL }}" />
-    {{ end }}
-
-    {{ range .Site.Params.custom_js }}
-      <script src="{{ . | relURL }}"></script>
     {{ end }}
 
     {{ range .Site.Params.custom_scss }}
@@ -79,8 +59,7 @@
       {{ end }}
     {{ end }}
 
-    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | absURL }}" sizes="32x32">
-    <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16x16.png" | absURL }}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{ "/images/favicon.ico" | absURL }}" sizes="32x32">
 
     {{ range .AlternativeOutputFormats -}}
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
@@ -105,13 +84,5 @@
 
       {{ partial "footer.html" . }}
     </main>
-
-    {{ template "_internal/google_analytics.html" . }}
-
-    {{ if and .Site.Params.fathomAnalytics .Site.Params.fathomAnalytics.siteID }}
-      {{- partial "analytics/fathom" . -}}
-    {{ end }}
-
   </body>
-
 </html>
