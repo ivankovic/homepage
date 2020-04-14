@@ -52,7 +52,7 @@ canonifyurls = true
     info = "Doctor of Veterinary Medicine"
     description = "Marina Čelar Ivanković's personal website"
     keywords = "blog,veterinarian,personal"
-    avatarurl = "images/marina/sigil.jpg"
+    avatarurl = "images/marina/sigil.png"
 
 # Social links
 [[params.marina.social]]
