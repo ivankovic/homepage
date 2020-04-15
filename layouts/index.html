@@ -2,13 +2,17 @@
   <div class="container centered">
   {{ range $name := .Site.Params.names }}
     <div class="container centered">
+    <a href = "{{ $name | absURL }}">
       <div class="about">
     {{ with (index $.Site.Params $name).avatarurl }}
       <div class="avatar"><img src="{{ . | absURL }}" alt="avatar">
       </div>
     {{ end }}
-    <h1><a href = "{{ $name | absURL }}">{{ (index $.Site.Params $name).author }}</a></h1>
+      <h1>
+          {{ (index $.Site.Params $name).author }}
+      </h1>
       </div>
+    </a>
     </div>
   {{ end }}
   </div>
