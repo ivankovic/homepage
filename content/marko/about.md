@@ -39,3 +39,8 @@ contributed to the following pieces of Googles' infrastructure:
 *  University of Zagreb, Faculty of electrical engineering and computing - Master of Science (2010. - 2011.)
 *  University of Zagreb, Faculty of electrical engineering and computing - Bachelor of Science (2010. - 2011.)
 
+## Language
+
+*  English - Fluent ([C2 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))
+*  German - Intermediate ([B2 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))
+*  Russian - Basic ([A1 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))

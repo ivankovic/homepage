@@ -27,3 +27,8 @@ Currently on career leave to raise a family.
 * University of Zagreb, Faculty of veterinary medicine - integrated undergraduate and graduate study (2008. - 2015.)
 * Clinical clerkship at [Vetsuisse Faculty - University of Zurich](http://www.vet.uzh.ch/index_en.html) (2014.)
 * Clinical clerkship at [Bessy's Kleintierklinik](http://www.bessys.ch/) (2014.)
+
+## Language
+
+*  English - Fluent ([C2 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))
+*  German - Intermediate ([B2 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages) - Goethe Certificate)
