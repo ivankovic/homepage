@@ -1,6 +1,6 @@
 <nav class="navigation">
   <section class="container">
-    {{ if .IsHome }}
+    {{ if or .IsHome (eq .Section "")}}
       <a class="navigation-title" href="{{ .Site.BaseURL | relLangURL }}">
         {{ .Site.Title }}
       </a>
@@ -10,7 +10,7 @@
       </a>
     {{ end }}
 
-    {{ if .IsHome }}
+    {{ if or .IsHome (eq .Section "")}}
     <input type="checkbox" id="menu-toggle" />
     <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
     <ul class="navigation-list">
