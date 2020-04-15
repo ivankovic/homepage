@@ -12,7 +12,7 @@ canonifyurls = true
 [params.marko]
     author = "Marko Ivanković"
     info = "Software Engineer"
-    description = "Marko Ivanković's personal website"
+    description = "Marko Ivanković"
     keywords = "blog,engineer,personal"
     avatarurl = "images/marko/sigil.png"
 
@@ -50,7 +50,7 @@ canonifyurls = true
 [params.marina]
     author = "Marina Čelar Ivanković"
     info = "Doctor of Veterinary Medicine"
-    description = "Marina Čelar Ivanković's personal website"
+    description = "Marina Čelar Ivanković"
     keywords = "blog,veterinarian,personal"
     avatarurl = "images/marina/sigil.png"
 
