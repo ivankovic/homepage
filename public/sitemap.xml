@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.ivankovic.me/</loc>
+    <lastmod>2020-04-13T10:49:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.ivankovic.me/marina/about/</loc>
+    <lastmod>2020-04-13T10:49:53+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.ivankovic.me/marina/</loc>
+    <lastmod>2020-04-13T10:49:53+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.ivankovic.me/marko/about/</loc>
     <lastmod>2020-04-12T23:25:53+02:00</lastmod>
   </url>
@@ -13,11 +28,11 @@
   </url>
   
   <url>
-    <loc>https://www.ivankovic.me/marko/categories/</loc>
+    <loc>https://www.ivankovic.me/categories/</loc>
   </url>
   
   <url>
-    <loc>https://www.ivankovic.me/marko/tags/</loc>
+    <loc>https://www.ivankovic.me/tags/</loc>
   </url>
   
 </urlset>
