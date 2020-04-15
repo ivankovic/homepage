@@ -6,10 +6,20 @@
     <description>Recent content on Ivanković family website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 13 Apr 2020 10:49:53 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2020 01:01:46 +0200</lastBuildDate>
     
 	<atom:link href="https://www.ivankovic.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Disclaimer</title>
+      <link>https://www.ivankovic.me/disclaimer/</link>
+      <pubDate>Thu, 16 Apr 2020 01:01:46 +0200</pubDate>
+      
+      <guid>https://www.ivankovic.me/disclaimer/</guid>
+      <description>This is a personal website. Any views or opinions represented in this website are personal and belong solely to the website owner and do not represent those of people, institutions or organizations that the owner may or may not be associated with in professional or personal capacity, unless explicitly stated.
+All content provided on this website is for informational purposes only. The owner of this website makes no representations as to the accuracy or completeness of any information on this site or found by following any link on this site.</description>
+    </item>
     
     <item>
       <title>Marina Čelar Ivanković</title>
