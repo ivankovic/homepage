@@ -14,7 +14,7 @@ I have recently started to switch more and more of my content consumption to
 email. Instead of using any social network, like Reddit or Twitter, I subscribe
 to newsletters directly. This has worked great so far. Every day, I get the hot
 news from news outlets like BBC, and every few days I get more creative or long
-form content like XKCD scripts delivered directly to my inbox.
+form content like XKCD scripts, delivered directly to my inbox.
 
 I am not always interested in cosuming the content however, and I also don't
 really want to spend time cleaning up my email when I read something. Luckily,
