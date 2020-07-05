@@ -16,7 +16,7 @@ to newsletters directly. This has worked great so far. Every day, I get the hot
 news from news outlets like BBC, and every few days I get more creative or long
 form content like XKCD scripts, delivered directly to my inbox.
 
-I am not always interested in cosuming the content however, and I also don't
+However, I am not always interested in cosuming the content, and I also don't
 really want to spend time cleaning up my email when I read something. Luckily,
 I am using G Suite for my email, so there is a very simple solution for this. I
 can set up a Google Apps Script that will keep my Inbox clean for me.
