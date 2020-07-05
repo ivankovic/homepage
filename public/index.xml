@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Simple newsletter cleanup with Google Apps Script</title>
+      <link>https://www.ivankovic.me/marko/blog/2020/07/simple-newsletter-cleanup-with-google-apps-script/</link>
+      <pubDate>Sun, 05 Jul 2020 14:57:34 +0200</pubDate>
+      
+      <guid>https://www.ivankovic.me/marko/blog/2020/07/simple-newsletter-cleanup-with-google-apps-script/</guid>
+      <description>I have recently started to switch more and more of my content consumption to email. Instead of using any social network, like Reddit or Twitter, I subscribe to newsletters directly. This has worked great so far. Every day, I get the hot news from news outlets like BBC, and every few days I get more creative or long form content like XKCD scripts, delivered directly to my inbox.
+However, I am not always interested in cosuming the content, and I also don&amp;rsquo;t really want to spend time cleaning up my email when I read something.</description>
+    </item>
+    
+    <item>
       <title>Disclaimer</title>
       <link>https://www.ivankovic.me/disclaimer/</link>
       <pubDate>Thu, 16 Apr 2020 01:01:46 +0200</pubDate>

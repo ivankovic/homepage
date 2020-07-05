@@ -6,9 +6,28 @@
     <description>Recent content in Tags on Ivanković family website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
+    <lastBuildDate>Sun, 05 Jul 2020 14:57:34 +0200</lastBuildDate>
     
 	<atom:link href="https://www.ivankovic.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>automation</title>
+      <link>https://www.ivankovic.me/tags/automation/</link>
+      <pubDate>Sun, 05 Jul 2020 14:57:34 +0200</pubDate>
+      
+      <guid>https://www.ivankovic.me/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scripting</title>
+      <link>https://www.ivankovic.me/tags/scripting/</link>
+      <pubDate>Sun, 05 Jul 2020 14:57:34 +0200</pubDate>
+      
+      <guid>https://www.ivankovic.me/tags/scripting/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ivanković family website</title>
-    <link>https://www.ivankovic.me/marko/blog/</link>
-    <description>Recent content on Ivanković family website</description>
+    <title>automation on Ivanković family website</title>
+    <link>https://www.ivankovic.me/tags/automation/</link>
+    <description>Recent content in automation on Ivanković family website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sun, 05 Jul 2020 14:57:34 +0200</lastBuildDate>
     
-	<atom:link href="https://www.ivankovic.me/marko/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ivankovic.me/tags/automation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

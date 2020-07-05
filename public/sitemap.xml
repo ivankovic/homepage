@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.ivankovic.me/marko/blog/</loc>
+    <lastmod>2020-07-05T14:57:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.ivankovic.me/tags/automation/</loc>
+    <lastmod>2020-07-05T14:57:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.ivankovic.me/marko/</loc>
+    <lastmod>2020-07-05T14:57:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.ivankovic.me/tags/scripting/</loc>
+    <lastmod>2020-07-05T14:57:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.ivankovic.me/marko/blog/2020/07/simple-newsletter-cleanup-with-google-apps-script/</loc>
+    <lastmod>2020-07-05T14:57:34+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.ivankovic.me/tags/</loc>
+    <lastmod>2020-07-05T14:57:34+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.ivankovic.me/disclaimer/</loc>
     <lastmod>2020-04-16T01:01:46+02:00</lastmod>
   </url>
@@ -28,20 +58,7 @@
   </url>
   
   <url>
-    <loc>https://www.ivankovic.me/marko/</loc>
-    <lastmod>2020-04-12T23:25:53+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.ivankovic.me/marko/blog/</loc>
-  </url>
-  
-  <url>
     <loc>https://www.ivankovic.me/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.ivankovic.me/tags/</loc>
   </url>
   
 </urlset>

@@ -1,5 +1,4 @@
 ---
-draft: true
 date: 2020-07-05T14:57:34+02:00
 title: "Simple newsletter cleanup with Google Apps Script"
 description: "How to remove old newsletter emails quickly using GAS."
