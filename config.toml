@@ -6,6 +6,11 @@ defaultcontentlanguage = "en"
 paginate = 20
 canonifyurls = true
 
+[markup]
+  [markup.highlight]
+    noClasses = false
+    style = "monokai"
+
 [params]
     names = ["marko", "marina"]
 
