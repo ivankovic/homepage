@@ -47,6 +47,7 @@ improving the internal developer experience at Google.
 
 ## Publications
 
+*  [Techniques For Easy and Efficient Manipulations of Large Codebases](https://www.tdcommons.org/dpubs_series/3574/)
 *  [Code coverage at Google](https://research.google/pubs/pub48413.pdf) (ESEC/FSE 2019.)
 *  [State of Mutation Testing at Google](https://research.google/pubs/pub46584.pdf) (ICSE - SEIP 2018.)
 *  [An Industrial Application of Mutation Testing: Lessons, Challenges, and Research Directions](https://people.cs.umass.edu/~rjust/publ/industrial_mutation_icst_2018.pdf) (ICSTW - Mutation 2018.)
