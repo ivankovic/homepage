@@ -17,7 +17,9 @@ improving the internal developer experience at Google.
 
 ## Work history
 
-*  Staff Software Engineer / Engineering Manager at Google (2016. - present)
+*  Senior Staff Software Engineer / Engineering Manager at Google (2020. - present)
+
+*  Staff Software Engineer / Engineering Manager at Google (2016. - 2020.)
    * Engineering manager and technical lead in the Engineering Productivity
      group.
 
