@@ -1,5 +1,6 @@
 ---
 date: 2020-12-20T20:45:59+01:00
+draft: true
 title: "Smart Home Intro"
 description: "Transforming a Central European house into a Smart Home - introduction"
 tags:
