@@ -49,9 +49,9 @@ improving the internal developer experience at Google.
 
 ## Publications
 
-*  [Use of Machine Learning To Generate Estimates of Code Review Time and Effort](https://www.tdcommons.org/dpubs_series/3923/)
-*  [Identification of Low-value Code to Improve Efficiency of Automated Code Analysis](https://www.tdcommons.org/dpubs_series/3922/)
-*  [Techniques For Easy and Efficient Manipulations of Large Codebases](https://www.tdcommons.org/dpubs_series/3574/)
+*  [Use of Machine Learning To Generate Estimates of Code Review Time and Effort](https://www.tdcommons.org/dpubs_series/3923/) (TD Commons)
+*  [Identification of Low-value Code to Improve Efficiency of Automated Code Analysis](https://www.tdcommons.org/dpubs_series/3922/) (TD Commons)
+*  [Techniques For Easy and Efficient Manipulations of Large Codebases](https://www.tdcommons.org/dpubs_series/3574/) (TD Commons)
 *  [Code coverage at Google](https://research.google/pubs/pub48413.pdf) (ESEC/FSE 2019.)
 *  [State of Mutation Testing at Google](https://research.google/pubs/pub46584.pdf) (ICSE - SEIP 2018.)
 *  [An Industrial Application of Mutation Testing: Lessons, Challenges, and Research Directions](https://people.cs.umass.edu/~rjust/publ/industrial_mutation_icst_2018.pdf) (ICSTW - Mutation 2018.)
