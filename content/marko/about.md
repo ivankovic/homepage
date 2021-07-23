@@ -49,6 +49,7 @@ improving the internal developer experience at Google.
 
 ## Publications
 
+*  [Does mutation testing improve testing practices?](https://conf.researchr.org/details/icse-2021/icse-2021-papers/70/Does-mutation-testing-improve-testing-practices-) (ICSE 2021.)
 *  [Use of Machine Learning To Generate Estimates of Code Review Time and Effort](https://www.tdcommons.org/dpubs_series/3923/) (TD Commons)
 *  [Identification of Low-value Code to Improve Efficiency of Automated Code Analysis](https://www.tdcommons.org/dpubs_series/3922/) (TD Commons)
 *  [Techniques For Easy and Efficient Manipulations of Large Codebases](https://www.tdcommons.org/dpubs_series/3574/) (TD Commons)
