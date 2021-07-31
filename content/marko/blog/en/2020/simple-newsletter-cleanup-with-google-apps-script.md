@@ -5,7 +5,7 @@ description: "How to remove old newsletter emails quickly using GAS."
 tags:
   - scripting
   - automation
-series:
+series: []
 type: "blog"
 ---
 

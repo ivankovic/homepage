@@ -3,6 +3,8 @@ title: "Marko Ivanković"
 date: 2020-04-12T23:25:53+02:00
 ---
 
+HRVATSKI
+
 I have 10 years of experience building tools and processes for other engineers
 in the biggest software engineering enterprise in the world. I have built
 cutting edge tools that scale to tens of thousands of engineers and billions of

@@ -33,6 +33,16 @@
           </li>
         {{ end }}
       {{ end }}
+      {{ if .Site.IsMultiLingual }}
+      <li class="navigation-item menu-separator">
+        <span>|</span>
+      </li>
+      {{ range .AllTranslations }}
+      <li class="navigation-item">
+        <a href="{{ .Permalink }}">{{ upper .Language.Lang }}</a>
+      </li>
+      {{ end }}
+      {{ end }}
     </ul>
     {{ end }}
   </section>

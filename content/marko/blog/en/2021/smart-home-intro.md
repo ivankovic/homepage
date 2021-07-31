@@ -1,13 +1,13 @@
 ---
-date: 2021-07-24T20:45:59+01:00
-draft: true
+date: 2021-07-23T20:45:59+01:00
 title: "Smart Home Intro"
-description: "Transforming a Central European house into a Smart Home - introduction"
+description: "Transforming a Central European house into a Smart Home."
 tags:
-  - smart home
-series:
+  - automation
+series: []
 type: "blog"
 ---
+
 # Introduction
 
 This series of blog posts is my laboratory notebook as I try, and hopefully
