@@ -30,5 +30,6 @@ Currently on career leave to raise a family.
 
 ## Language
 
+*  Croatian - Native ([C2 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))
 *  English - Fluent ([C2 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))
 *  German - Intermediate ([B2 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages) - Goethe Certificate)

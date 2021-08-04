@@ -16,7 +16,7 @@ canonifyurls = true
   [languages.hr]
     title = "Web stranica obitelji Ivanković"
 
-[params]
+[Params]
     names = ["marko", "marina"]
 
 [languages.en.params.marko]
@@ -34,22 +34,22 @@ canonifyurls = true
     avatarurl = "images/marko/sigil.png"
 
 # Social links
-[[params.marko.social]]
+[[Params.global.marko.social]]
     name = "Github"
     icon = "fab fa-github fa-2x"
     weight = 1
     url = "https://github.com/ivankovic"
-[[params.marko.social]]
+[[Params.global.marko.social]]
     name = "ResearchGate"
     icon = "fab fa-researchgate fa-2x"
     weight = 2
     url = "https://www.researchgate.net/profile/Marko_Ivankovic4"
-[[params.marko.social]]
+[[Params.global.marko.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin fa-2x"
     weight = 3
     url = "https://www.linkedin.com/in/ivankovicmarko/"
-[[params.marko.social]]
+[[Params.global.marko.social]]
     name = "Twitter"
     icon = "fab fa-twitter fa-2x"
     weight = 3
@@ -97,7 +97,7 @@ canonifyurls = true
     avatarurl = "images/marina/sigil.png"
 
 # Social links
-[[params.marina.social]]
+[[Params.global.marina.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin fa-2x"
     weight = 3

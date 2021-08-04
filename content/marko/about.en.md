@@ -51,6 +51,8 @@ improving the internal developer experience at Google.
 
 ## Publications
 
+Citations: [143](https://scholar.google.com/citations?user=Xy_seyYAAAAJ)
+
 *  [Does mutation testing improve testing practices?](https://conf.researchr.org/details/icse-2021/icse-2021-papers/70/Does-mutation-testing-improve-testing-practices-) (ICSE 2021.)
 *  [Use of Machine Learning To Generate Estimates of Code Review Time and Effort](https://www.tdcommons.org/dpubs_series/3923/) (TD Commons)
 *  [Identification of Low-value Code to Improve Efficiency of Automated Code Analysis](https://www.tdcommons.org/dpubs_series/3922/) (TD Commons)
@@ -68,6 +70,7 @@ improving the internal developer experience at Google.
 
 ## Language
 
+*  Croatian - Native ([C2 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))
 *  English - Fluent ([C2 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))
-*  German - Intermediate ([B2 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))
+*  German - Intermediate ([B1 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))
 *  Russian - Basic ([A1 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))

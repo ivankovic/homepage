@@ -7,7 +7,7 @@
     {{ end }}
     <h1>{{ (index .Site.Params .Section).author }}</h1>
     <h2>{{ (index .Site.Params .Section).info }}</h2>
-    {{ with (index .Site.Params .Section).social }}
+    {{ with (index .Site.Params.global .Section).social }}
     <ul>
       {{ range sort . "weight" }}
         {{ if .icon }}
