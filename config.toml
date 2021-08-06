@@ -104,14 +104,21 @@ canonifyurls = true
     author = "Marina Čelar Ivanković"
     info = "Doctor of Veterinary Medicine"
     description = "Marina Čelar Ivanković"
-    keywords = "blog,veterinarian,personal"
+    keywords = "veterinarian"
     avatarurl = "images/marina/sigil.png"
 
 [languages.hr.params.marina]
     author = "Marina Čelar Ivanković"
     info = "Doktor Veterinarske Medicine"
     description = "Marina Čelar Ivanković"
-    keywords = "veterinar,osobni"
+    keywords = "veterinar"
+    avatarurl = "images/marina/sigil.png"
+
+[languages.de.params.marina]
+    author = "Marina Čelar Ivanković"
+    info = "Tierärztin"
+    description = "Marina Čelar Ivanković"
+    keywords = "tierärztin"
     avatarurl = "images/marina/sigil.png"
 
 # Social links

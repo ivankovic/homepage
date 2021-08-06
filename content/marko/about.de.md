@@ -40,8 +40,8 @@ Zahl der Zitaten: [143](https://scholar.google.com/citations?user=Xy_seyYAAAAJ)
 ## Ausbildung
 
 *  Universität Passau, Fakultät für Informatik und Mathematik - Doktor (2018. - derzeit)
-*  Universität Zagrebu, Fakultät für Elektrotehnik und Informatik - Master of Engineering (2010. - 2011.)
-*  Universität Zagrebu, Fakultät für Elektrotehnik und Informatik - Bachelor of Engineering (2010. - 2011.)
+*  Universität Zagreb, Fakultät für Elektrotehnik und Informatik - Master of Engineering (2010. - 2011.)
+*  Universität Zagreb, Fakultät für Elektrotehnik und Informatik - Bachelor of Engineering (2010. - 2011.)
 
 ## Sprachen
 
