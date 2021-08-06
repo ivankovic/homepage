@@ -4,6 +4,16 @@
   <url>
     <loc>https://www.ivankovic.me/marko/blog/</loc>
     <lastmod>2021-07-23T20:45:59+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marko/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marko/blog/"
+                />
   </url><url>
     <loc>https://www.ivankovic.me/tags/automation/</loc>
     <lastmod>2021-07-23T20:45:59+01:00</lastmod>

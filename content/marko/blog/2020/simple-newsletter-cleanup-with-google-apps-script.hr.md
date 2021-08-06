@@ -9,19 +9,17 @@ series: []
 type: "blog"
 ---
 
-I have recently started to switch more and more of my content consumption to
-email. Instead of using any social network, like Reddit or Twitter, I subscribe
-to newsletters directly. This has worked great so far. Every day, I get the hot
-news from news outlets like BBC, and every few days I get more creative or long
-form content like XKCD scripts, delivered directly to my inbox.
+U zadnje vrijeme sve više i više koristim Email pretplate umjesto društvenih
+mreža. Umjesto da svaki dan otvaram Reddit ili Twitter, jednostavno se pretplatim
+na izvore kvalitetnog sadržaja i svaki dan me u Emailu dočeka par mailova. Izgled
+mailova je uvijek isti, gumbi za navigaciju su uvijek na istom mjestu a i sadržaj
+je donekle bolji jer je unaprijed ograničen samo na ono što me zanima.
 
-However, I am not always interested in cosuming the content, and I also don't
-really want to spend time cleaning up my email when I read something. Luckily,
-I am using G Suite for my email, so there is a very simple solution for this. I
-can set up a Google Apps Script that will keep my Inbox clean for me.
+Međutim ponekad nemam vremena za pročitati sve poruke, a dobar dio pretplata je
+dnevni. Zbog toga se ponekad nakupi dosta nepročitanih poruka. Na sreću, koristim
+G Suite za svoj Email, pa mogu koristit Google Apps Script.
 
-Go to [script.google.com](https://script.google.com) and create a new project.
-This should open the script editor. Put the following code in the editor:
+Sljedeća skripta arhivira sve poruke u "Forums" kategoriji u Gmailu:
 
 ```javascript
 
@@ -40,9 +38,6 @@ function cleanUpOldNews() {
 }
 ```
 
-Save this and go to the project overview. Create a daily 6AM trigger that calls
-cleanUpOldNews().
-
-Now all you have to do when you recieve any newsletter is to drag and drop it
-into the Forums category in Gmail. After about 2-3, ML will catch up and start
-categorizing it automatically.
+Sve što sad moram raditi ručno je pomicati pretplate u "Forums" kategoriju. Nakon
+2 - 3 ručno pomaknute poruke AI nauči moj odabir i sve daljnje poruke automatski
+završe u "Forums".

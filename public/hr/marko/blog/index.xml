@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web stranica obitelji Ivanković</title>
-    <link>https://www.ivankovic.me/hr/</link>
+    <link>https://www.ivankovic.me/hr/marko/blog/</link>
     <description>Recent content on Web stranica obitelji Ivanković</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 24 Jul 2021 20:46:59 +0100</lastBuildDate><atom:link href="https://www.ivankovic.me/hr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Jul 2021 20:46:59 +0100</lastBuildDate><atom:link href="https://www.ivankovic.me/hr/marko/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Smart Home Intro</title>
       <link>https://www.ivankovic.me/hr/marko/blog/2021/smart-home-intro/</link>
@@ -18,20 +18,6 @@ Construction materials The house is 15 years old. It is a well built central eur
     </item>
     
     <item>
-      <title>Marko Ivanković</title>
-      <link>https://www.ivankovic.me/hr/marko/about/</link>
-      <pubDate>Thu, 01 Jul 2021 00:00:00 +0200</pubDate>
-      
-      <guid>https://www.ivankovic.me/hr/marko/about/</guid>
-      <description>Magistar inženjer računarstva s 10 godina iskustva u industriji.
-Ekspert za računalno inženjerstvo i razvojne sustave planetarne razine.
-Radno iskustvo   Senior Staff Software Engineer / Engineering Manager u Google (2020. - trenutno)
-  Staff Software Engineer / Engineering Manager u Google (2016. - 2020.)
-  Senior Software Engineer, Tools and Infrastructure u Google (2014. - 2016.)
-  Software Engineer, Tools and Infrastructure u Google (2011. - 2014.</description>
-    </item>
-    
-    <item>
       <title>Čišćenje pretinca elektroničke pošte korištenjem Google Apps Scripta</title>
       <link>https://www.ivankovic.me/hr/marko/blog/2020/simple-newsletter-cleanup-with-google-apps-script/</link>
       <pubDate>Sun, 05 Jul 2020 14:57:34 +0200</pubDate>
@@ -39,17 +25,6 @@ Radno iskustvo   Senior Staff Software Engineer / Engineering Manager u Google (
       <guid>https://www.ivankovic.me/hr/marko/blog/2020/simple-newsletter-cleanup-with-google-apps-script/</guid>
       <description>I have recently started to switch more and more of my content consumption to email. Instead of using any social network, like Reddit or Twitter, I subscribe to newsletters directly. This has worked great so far. Every day, I get the hot news from news outlets like BBC, and every few days I get more creative or long form content like XKCD scripts, delivered directly to my inbox.
 However, I am not always interested in cosuming the content, and I also don&amp;rsquo;t really want to spend time cleaning up my email when I read something.</description>
-    </item>
-    
-    <item>
-      <title>Marina Čelar Ivanković</title>
-      <link>https://www.ivankovic.me/hr/marina/about/</link>
-      <pubDate>Mon, 13 Apr 2020 10:49:53 +0200</pubDate>
-      
-      <guid>https://www.ivankovic.me/hr/marina/about/</guid>
-      <description>Doktor veterinarske medicine s dopuštenjem za rad u Hrvatskoj i Švicarskoj.
-Trenutno na porodiljnom dopustu.
-Radno iskustvo  Studentski volonter na klinici za internu medicinu VEF-a (2012. - 2014.) Dobrovoljni rad u Khulula Wildlife Center, Južnoafrička Republika (2013.) Dobrovoljni rad u županijskoj veterinarskoj stanici Varaždin (2005.) Demonstrator na Internoj Medicini (2013. - 2014.) Demonstrator na Anatomiji (2009. - 2010.)  Publikacije  Procjena bronhoskopije kao dijagnostičke metode u potvrđivanju bolesti donjih dišnih putova u pasa (Veterinar)  Obrazovanje  Sveučilište u Zagrebu, Veterinarski fakultet - integrirani preddiplomski i diplomski sveučilišni studij (2008.</description>
     </item>
     
   </channel>

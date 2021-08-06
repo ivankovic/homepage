@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.ivankovic.me/hr/marko/blog/</loc>
+    <lastmod>2021-07-24T20:46:59+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marko/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marko/blog/"
+                />
+  </url><url>
     <loc>https://www.ivankovic.me/hr/tags/automation/</loc>
     <lastmod>2021-07-24T20:46:59+01:00</lastmod>
     <xhtml:link
@@ -80,19 +93,6 @@
                 href="https://www.ivankovic.me/hr/marko/about/"
                 />
   </url><url>
-    <loc>https://www.ivankovic.me/hr/marko/blog/2020/simple-newsletter-cleanup-with-google-apps-script/</loc>
-    <lastmod>2020-07-05T14:57:34+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.ivankovic.me/marko/blog/2020/simple-newsletter-cleanup-with-google-apps-script/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hr"
-                href="https://www.ivankovic.me/hr/marko/blog/2020/simple-newsletter-cleanup-with-google-apps-script/"
-                />
-  </url><url>
     <loc>https://www.ivankovic.me/hr/tags/scripting/</loc>
     <lastmod>2020-07-05T14:57:34+02:00</lastmod>
     <xhtml:link
@@ -104,6 +104,19 @@
                 rel="alternate"
                 hreflang="hr"
                 href="https://www.ivankovic.me/hr/tags/scripting/"
+                />
+  </url><url>
+    <loc>https://www.ivankovic.me/hr/marko/blog/2020/simple-newsletter-cleanup-with-google-apps-script/</loc>
+    <lastmod>2020-07-05T14:57:34+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marko/blog/2020/simple-newsletter-cleanup-with-google-apps-script/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marko/blog/2020/simple-newsletter-cleanup-with-google-apps-script/"
                 />
   </url><url>
     <loc>https://www.ivankovic.me/hr/marina/about/</loc>
