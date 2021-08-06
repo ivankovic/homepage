@@ -116,7 +116,7 @@
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              2-minute read
+              1-minute read
             </span>
           </div>
           
@@ -131,17 +131,15 @@
 
       <div>
         
-        <p>I have recently started to switch more and more of my content consumption to
-email. Instead of using any social network, like Reddit or Twitter, I subscribe
-to newsletters directly. This has worked great so far. Every day, I get the hot
-news from news outlets like BBC, and every few days I get more creative or long
-form content like XKCD scripts, delivered directly to my inbox.</p>
-<p>However, I am not always interested in cosuming the content, and I also don&rsquo;t
-really want to spend time cleaning up my email when I read something. Luckily,
-I am using G Suite for my email, so there is a very simple solution for this. I
-can set up a Google Apps Script that will keep my Inbox clean for me.</p>
-<p>Go to <a href="https://script.google.com">script.google.com</a> and create a new project.
-This should open the script editor. Put the following code in the editor:</p>
+        <p>U zadnje vrijeme sve više i više koristim Email pretplate umjesto društvenih
+mreža. Umjesto da svaki dan otvaram Reddit ili Twitter, jednostavno se pretplatim
+na izvore kvalitetnog sadržaja i svaki dan me u Emailu dočeka par mailova. Izgled
+mailova je uvijek isti, gumbi za navigaciju su uvijek na istom mjestu a i sadržaj
+je donekle bolji jer je unaprijed ograničen samo na ono što me zanima.</p>
+<p>Međutim ponekad nemam vremena za pročitati sve poruke, a dobar dio pretplata je
+dnevni. Zbog toga se ponekad nakupi dosta nepročitanih poruka. Na sreću, koristim
+G Suite za svoj Email, pa mogu koristit Google Apps Script.</p>
+<p>Sljedeća skripta arhivira sve poruke u &ldquo;Forums&rdquo; kategoriji u Gmailu:</p>
 <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript">
 <span class="kd">function</span> <span class="nx">cleanUpOldNews</span><span class="p">()</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">cutoffDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span> <span class="o">-</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">);</span>
@@ -156,11 +154,9 @@ This should open the script editor. Put the following code in the editor:</p>
     <span class="nx">thread</span><span class="p">.</span><span class="nx">moveToArchive</span><span class="p">();</span>
   <span class="p">}</span>
 <span class="p">}</span>
-</code></pre></div><p>Save this and go to the project overview. Create a daily 6AM trigger that calls
-cleanUpOldNews().</p>
-<p>Now all you have to do when you recieve any newsletter is to drag and drop it
-into the Forums category in Gmail. After about 2-3, ML will catch up and start
-categorizing it automatically.</p>
+</code></pre></div><p>Sve što sad moram raditi ručno je pomicati pretplate u &ldquo;Forums&rdquo; kategoriju. Nakon
+2 - 3 ručno pomaknute poruke AI nauči moj odabir i sve daljnje poruke automatski
+završe u &ldquo;Forums&rdquo;.</p>
 
       </div>
 

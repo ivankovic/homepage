@@ -2,8 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.ivankovic.me/hr/marko/about/</loc>
+    <lastmod>2021-07-01T00:00:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/marko/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marko/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marko/about/"
+                />
+  </url><url>
+    <loc>https://www.ivankovic.me/hr/marko/</loc>
+    <lastmod>2021-07-01T00:00:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marko/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/marko/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marko/"
+                />
+  </url><url>
+    <loc>https://www.ivankovic.me/hr/</loc>
+    <lastmod>2021-07-01T00:00:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/"
+                />
+  </url><url>
     <loc>https://www.ivankovic.me/hr/marko/blog/</loc>
-    <lastmod>2021-07-24T20:46:59+01:00</lastmod>
+    <lastmod>2020-07-05T14:57:34+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +70,7 @@
                 />
   </url><url>
     <loc>https://www.ivankovic.me/hr/tags/automation/</loc>
-    <lastmod>2021-07-24T20:46:59+01:00</lastmod>
+    <lastmod>2020-07-05T14:57:34+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -26,71 +80,6 @@
                 rel="alternate"
                 hreflang="hr"
                 href="https://www.ivankovic.me/hr/tags/automation/"
-                />
-  </url><url>
-    <loc>https://www.ivankovic.me/hr/marko/</loc>
-    <lastmod>2021-07-24T20:46:59+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.ivankovic.me/marko/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hr"
-                href="https://www.ivankovic.me/hr/marko/"
-                />
-  </url><url>
-    <loc>https://www.ivankovic.me/hr/marko/blog/2021/smart-home-intro/</loc>
-    <lastmod>2021-07-24T20:46:59+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.ivankovic.me/marko/blog/2021/smart-home-intro/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hr"
-                href="https://www.ivankovic.me/hr/marko/blog/2021/smart-home-intro/"
-                />
-  </url><url>
-    <loc>https://www.ivankovic.me/hr/tags/</loc>
-    <lastmod>2021-07-24T20:46:59+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.ivankovic.me/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hr"
-                href="https://www.ivankovic.me/hr/tags/"
-                />
-  </url><url>
-    <loc>https://www.ivankovic.me/hr/</loc>
-    <lastmod>2021-07-24T20:46:59+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.ivankovic.me/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hr"
-                href="https://www.ivankovic.me/hr/"
-                />
-  </url><url>
-    <loc>https://www.ivankovic.me/hr/marko/about/</loc>
-    <lastmod>2021-07-01T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.ivankovic.me/marko/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hr"
-                href="https://www.ivankovic.me/hr/marko/about/"
                 />
   </url><url>
     <loc>https://www.ivankovic.me/hr/tags/scripting/</loc>
@@ -104,6 +93,24 @@
                 rel="alternate"
                 hreflang="hr"
                 href="https://www.ivankovic.me/hr/tags/scripting/"
+                />
+  </url><url>
+    <loc>https://www.ivankovic.me/hr/tags/</loc>
+    <lastmod>2020-07-05T14:57:34+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/tags/"
                 />
   </url><url>
     <loc>https://www.ivankovic.me/hr/marko/blog/2020/simple-newsletter-cleanup-with-google-apps-script/</loc>
@@ -123,6 +130,11 @@
     <lastmod>2020-04-13T10:49:53+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/marina/about/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://www.ivankovic.me/marina/about/"
                 />
@@ -136,6 +148,11 @@
     <lastmod>2020-04-13T10:49:53+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/marina/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://www.ivankovic.me/marina/"
                 />
@@ -146,6 +163,11 @@
                 />
   </url><url>
     <loc>https://www.ivankovic.me/hr/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/categories/"
+                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

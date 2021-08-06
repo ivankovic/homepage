@@ -6,25 +6,15 @@
     <description>Recent content on Web stranica obitelji Ivanković</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 24 Jul 2021 20:46:59 +0100</lastBuildDate><atom:link href="https://www.ivankovic.me/hr/marko/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Smart Home Intro</title>
-      <link>https://www.ivankovic.me/hr/marko/blog/2021/smart-home-intro/</link>
-      <pubDate>Sat, 24 Jul 2021 20:46:59 +0100</pubDate>
-      
-      <guid>https://www.ivankovic.me/hr/marko/blog/2021/smart-home-intro/</guid>
-      <description>Introduction This series of blog posts is my laboratory notebook as I try, and hopefully succeed, in upgrading a 15 year old Central European house into a smart home.
-Construction materials The house is 15 years old. It is a well built central european house, with a two-shell external walls made from reinforced concrete and bricks, internal walls made from brick or reinforced concrete and ceilings made exclusively from reinforced concrete.</description>
-    </item>
-    
+    <lastBuildDate>Sun, 05 Jul 2020 14:57:34 +0200</lastBuildDate><atom:link href="https://www.ivankovic.me/hr/marko/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Čišćenje pretinca elektroničke pošte korištenjem Google Apps Scripta</title>
       <link>https://www.ivankovic.me/hr/marko/blog/2020/simple-newsletter-cleanup-with-google-apps-script/</link>
       <pubDate>Sun, 05 Jul 2020 14:57:34 +0200</pubDate>
       
       <guid>https://www.ivankovic.me/hr/marko/blog/2020/simple-newsletter-cleanup-with-google-apps-script/</guid>
-      <description>I have recently started to switch more and more of my content consumption to email. Instead of using any social network, like Reddit or Twitter, I subscribe to newsletters directly. This has worked great so far. Every day, I get the hot news from news outlets like BBC, and every few days I get more creative or long form content like XKCD scripts, delivered directly to my inbox.
-However, I am not always interested in cosuming the content, and I also don&amp;rsquo;t really want to spend time cleaning up my email when I read something.</description>
+      <description>U zadnje vrijeme sve više i više koristim Email pretplate umjesto društvenih mreža. Umjesto da svaki dan otvaram Reddit ili Twitter, jednostavno se pretplatim na izvore kvalitetnog sadržaja i svaki dan me u Emailu dočeka par mailova. Izgled mailova je uvijek isti, gumbi za navigaciju su uvijek na istom mjestu a i sadržaj je donekle bolji jer je unaprijed ograničen samo na ono što me zanima.
+Međutim ponekad nemam vremena za pročitati sve poruke, a dobar dio pretplata je dnevni.</description>
     </item>
     
   </channel>
