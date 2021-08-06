@@ -3,13 +3,13 @@ title: "Marko Ivanković"
 date: 2021-07-01T00:00:00+02:00
 ---
 
-Magistar inženjer računarstva s 10 godina iskustva u industriji.
+Master of Engineering mit 10 Jahren Erfahrung in der Branche.
 
-Ekspert za računalno inženjerstvo i razvojne sustave planetarne razine.
+Expert für Software-Engineering.
 
-## Radno iskustvo
+## Berufliche Erfahrungen
 
-*  Senior Staff Software Engineer / Engineering Manager u Google (2020. - trenutno)
+*  Senior Staff Software Engineer / Engineering Manager u Google (2020. - derzeit)
 
 *  Staff Software Engineer / Engineering Manager u Google (2016. - 2020.)
 
@@ -19,14 +19,14 @@ Ekspert za računalno inženjerstvo i razvojne sustave planetarne razine.
 
 *  Intern, Software Engineer u Google (2010.)
 
-*  IOI 2007 - Evaluacijski komitet (2007.)
+*  IOI 2007 - Evaluationskomitet (2007.)
 
-*  Croatian Open Competition in Informatics - Znanstveni komitet (2007. -
+*  Croatian Open Competition in Informatics - Wisschenschaftskomitet (2007. -
    2011.)
 
-## Publikacije
+## Publikationen
 
-Broj citata: [143](https://scholar.google.com/citations?user=Xy_seyYAAAAJ)
+Zahl der Zitaten: [143](https://scholar.google.com/citations?user=Xy_seyYAAAAJ)
 
 *  [Does mutation testing improve testing practices?](https://conf.researchr.org/details/icse-2021/icse-2021-papers/70/Does-mutation-testing-improve-testing-practices-) (ICSE 2021.)
 *  [Use of Machine Learning To Generate Estimates of Code Review Time and Effort](https://www.tdcommons.org/dpubs_series/3923/) (TD Commons)
@@ -37,15 +37,15 @@ Broj citata: [143](https://scholar.google.com/citations?user=Xy_seyYAAAAJ)
 *  [An Industrial Application of Mutation Testing: Lessons, Challenges, and Research Directions](https://people.cs.umass.edu/~rjust/publ/industrial_mutation_icst_2018.pdf) (ICSTW - Mutation 2018.)
 *  [Process for displaying test coverage data during code reviews](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9,405,662.PN.&OS=PN/9,405,662&RS=PN/9,405,662) (US Pat. No. 9,405,662)
 
-## Obrazovanje
+## Ausbildung
 
-*  Sveučilište u Passau, Fakultet računarstva i matematike - Doktor znanosti (2018. - u toku)
-*  Sveučilište u Zagrebu, Fakultet elektrotehnike i računarstva - Magistar inženjer računarstva (2010. - 2011.)
-*  Sveučilište u Zagrebu, Fakultet elektrotehnike i računarstva - Prvostupnik inženjer računarstva (2010. - 2011.)
+*  Universität Passau, Fakultät für Informatik und Mathematik - Doktor (2018. - derzeit)
+*  Universität Zagrebu, Fakultät für Elektrotehnik und Informatik - Master of Engineering (2010. - 2011.)
+*  Universität Zagrebu, Fakultät für Elektrotehnik und Informatik - Bachelor of Engineering (2010. - 2011.)
 
-## Jezici
+## Sprachen
 
-*  Hrvatski - Izvorni govornik ([C2 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))
-*  Engleski - Izvorni govornik ([C2 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))
-*  Njemački - Samostalni korisnik ([B1 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))
-*  Russian - Početnik ([A1 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))
+*  Kroatisch - Muttersprache ([C2 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))
+*  Englisch - Annähernd muttersprachliche Kenntnisse ([C2 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))
+*  Njemački - Selbstständige Sprachverwendung ([B1 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))
+*  Russian - Elementare Sprachverwendung ([A1 CEFRL](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages))

@@ -15,6 +15,8 @@ canonifyurls = true
     title = "Ivanković family website"
   [languages.hr]
     title = "Web stranica obitelji Ivanković"
+  [languages.de]
+    title = "Die Website der Familie Ivanković"
 
 [Params]
     names = ["marko", "marina"]
@@ -31,6 +33,13 @@ canonifyurls = true
     info = "Magistar inženjer računarstva"
     description = "Marko Ivanković"
     keywords = "blog,inženjer,osobni"
+    avatarurl = "images/marko/sigil.png"
+
+[languages.de.params.marko]
+    author = "Marko Ivanković"
+    info = "Master of Engineering"
+    description = "Marko Ivanković"
+    keywords = "blog,ingenieur"
     avatarurl = "images/marko/sigil.png"
 
 # Social links
@@ -82,6 +91,15 @@ canonifyurls = true
     weight = 3
     url = "mailto:marko@ivankovic.me"
 
+[[languages.de.menu.marko]]
+    name = "Lebenslauf"
+    weight = 2
+    url = "/marko/about/"
+[[languages.de.menu.marko]]
+    name = "Kontakt"
+    weight = 3
+    url = "mailto:marko@ivankovic.me"
+
 [languages.en.params.marina]
     author = "Marina Čelar Ivanković"
     info = "Doctor of Veterinary Medicine"
@@ -118,6 +136,15 @@ canonifyurls = true
     weight = 1
     url = "/marina/about/"
 [[languages.hr.menu.marina]]
+    name = "Kontakt"
+    weight = 2
+    url = "mailto:marina@ivankovic.me"
+
+[[languages.de.menu.marina]]
+    name = "Lebenslauf"
+    weight = 1
+    url = "/marina/about/"
+[[languages.de.menu.marina]]
     name = "Kontakt"
     weight = 2
     url = "mailto:marina@ivankovic.me"

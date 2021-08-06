@@ -64,7 +64,7 @@ Citations: [143](https://scholar.google.com/citations?user=Xy_seyYAAAAJ)
 
 ## Education
 
-*  Universität Passau - Doctor of Science (2018. - ongoing)
+*  Universität Passau, Faculty of Computer Science and Mathematics - Doctor of Science (2018. - ongoing)
 *  University of Zagreb, Faculty of electrical engineering and computing - Master of Science (2010. - 2011.)
 *  University of Zagreb, Faculty of electrical engineering and computing - Bachelor of Science (2010. - 2011.)
 
