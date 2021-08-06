@@ -5,7 +5,7 @@
       {{- print ": " -}}
     {{- end -}}
 
-    {{- .Title -}}
+    {{- i18n (lower .Title) | default .Title | title -}}
   </h1>
   {{ .Content }}
   <ul>
@@ -16,5 +16,4 @@
     </li>
     {{ end }}
   </ul>
-  {{ partial "pagination.html" . }}
 </section>

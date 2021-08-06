@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Ivanković family website</title>
+    <link>https://www.ivankovic.me/tags/</link>
+    <description>Recent content in Tags on Ivanković family website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 23 Jul 2021 20:45:59 +0100</lastBuildDate><atom:link href="https://www.ivankovic.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>automation</title>
+      <link>https://www.ivankovic.me/tags/automation/</link>
+      <pubDate>Fri, 23 Jul 2021 20:45:59 +0100</pubDate>
+      
+      <guid>https://www.ivankovic.me/tags/automation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scripting</title>
+      <link>https://www.ivankovic.me/tags/scripting/</link>
+      <pubDate>Sun, 05 Jul 2020 14:57:34 +0200</pubDate>
+      
+      <guid>https://www.ivankovic.me/tags/scripting/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

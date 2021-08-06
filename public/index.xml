@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ivanković family website</title>
+    <link>https://www.ivankovic.me/</link>
+    <description>Recent content on Ivanković family website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 23 Jul 2021 20:45:59 +0100</lastBuildDate><atom:link href="https://www.ivankovic.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Smart Home Intro</title>
+      <link>https://www.ivankovic.me/marko/blog/2021/smart-home-intro/</link>
+      <pubDate>Fri, 23 Jul 2021 20:45:59 +0100</pubDate>
+      
+      <guid>https://www.ivankovic.me/marko/blog/2021/smart-home-intro/</guid>
+      <description>Introduction This series of blog posts is my laboratory notebook as I try, and hopefully succeed, in upgrading a 15 year old Central European house into a smart home.
+Construction materials The house is 15 years old. It is a well built central european house, with a two-shell external walls made from reinforced concrete and bricks, internal walls made from brick or reinforced concrete and ceilings made exclusively from reinforced concrete.</description>
+    </item>
+    
+    <item>
+      <title>Simple newsletter cleanup with Google Apps Script</title>
+      <link>https://www.ivankovic.me/marko/blog/2020/simple-newsletter-cleanup-with-google-apps-script/</link>
+      <pubDate>Sun, 05 Jul 2020 14:57:34 +0200</pubDate>
+      
+      <guid>https://www.ivankovic.me/marko/blog/2020/simple-newsletter-cleanup-with-google-apps-script/</guid>
+      <description>I have recently started to switch more and more of my content consumption to email. Instead of using any social network, like Reddit or Twitter, I subscribe to newsletters directly. This has worked great so far. Every day, I get the hot news from news outlets like BBC, and every few days I get more creative or long form content like XKCD scripts, delivered directly to my inbox.
+However, I am not always interested in cosuming the content, and I also don&amp;rsquo;t really want to spend time cleaning up my email when I read something.</description>
+    </item>
+    
+    <item>
+      <title>Disclaimer</title>
+      <link>https://www.ivankovic.me/disclaimer/</link>
+      <pubDate>Thu, 16 Apr 2020 01:01:46 +0200</pubDate>
+      
+      <guid>https://www.ivankovic.me/disclaimer/</guid>
+      <description>This is a personal website. Any views or opinions represented in this website are personal and belong solely to the website owner and do not represent those of people, institutions or organizations that the owner may or may not be associated with in professional or personal capacity, unless explicitly stated.
+All content provided on this website is for informational purposes only. The owner of this website makes no representations as to the accuracy or completeness of any information on this site or found by following any link on this site.</description>
+    </item>
+    
+    <item>
+      <title>Marina Čelar Ivanković</title>
+      <link>https://www.ivankovic.me/marina/about/</link>
+      <pubDate>Mon, 13 Apr 2020 10:49:53 +0200</pubDate>
+      
+      <guid>https://www.ivankovic.me/marina/about/</guid>
+      <description>I am a Doctor of Veterinary medicine licensed in Croatia and Switzerland.
+Currently on career leave to raise a family.
+Work history  Volounteer work at the VEF clinics for internal medicine (2012. - 2014.) Volounteer work at the Khulula Wildlife Center, South Africa (2013.) Volounteer work at the county veterinary station in Varaždin (2005.)  Teaching  TA on the Internal Medicine classes (2013. - 2014.) TA on the Comparative Anatomy 101, 102, 103 classes (2009.</description>
+    </item>
+    
+    <item>
+      <title>Marko Ivanković</title>
+      <link>https://www.ivankovic.me/marko/about/</link>
+      <pubDate>Sun, 12 Apr 2020 23:25:53 +0200</pubDate>
+      
+      <guid>https://www.ivankovic.me/marko/about/</guid>
+      <description>I have 10 years of experience building tools and processes for other engineers in the biggest software engineering enterprise in the world. I have built cutting edge tools that scale to tens of thousands of engineers and billions of lines of code. I have extensive experience developing planetary scale distributed systems.
+I am a world class expert in code coverage, mutation testing, large scale code analysis, large scale refactoring and machine learning.</description>
+    </item>
+    
+  </channel>
+</rss>
