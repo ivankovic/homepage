@@ -9,15 +9,15 @@ Expert für Software-Engineering.
 
 ## Berufliche Erfahrungen
 
-*  Senior Staff Software Engineer / Engineering Manager u Google (2020. - derzeit)
+*  Senior Staff Software Engineer / Engineering Manager bei Google (2020. - derzeit)
 
-*  Staff Software Engineer / Engineering Manager u Google (2016. - 2020.)
+*  Staff Software Engineer / Engineering Manager bei Google (2016. - 2020.)
 
-*  Senior Software Engineer, Tools and Infrastructure u Google (2014. - 2016.)
+*  Senior Software Engineer, Tools and Infrastructure bei Google (2014. - 2016.)
 
-*  Software Engineer, Tools and Infrastructure u Google (2011. - 2014.)
+*  Software Engineer, Tools and Infrastructure bei Google (2011. - 2014.)
 
-*  Intern, Software Engineer u Google (2010.)
+*  Intern, Software Engineer bei Google (2010.)
 
 *  IOI 2007 - Evaluationskomitet (2007.)
 

@@ -28,7 +28,9 @@ concrete blocks wireless signals very well.
 # Electricity
 
 Standard 230V/50Hz electrical wiring is pulled through the house. Most rooms have
-plenty of sockets available.
+decent number of sockets available.
+
+The house had a 25A three-phase connection, but I had that upgraded to 40A.
 
 # Communication
 
