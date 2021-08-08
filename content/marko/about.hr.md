@@ -9,9 +9,9 @@ Ekspert za računalno inženjerstvo i razvojne sustave planetarne razine.
 
 ## Radno iskustvo
 
-*  Senior Staff Software Engineer / Engineering Manager u Google (2020. - trenutno)
+*  Senior Staff Software Engineer u Google (2020. - trenutno)
 
-*  Staff Software Engineer / Engineering Manager u Google (2016. - 2020.)
+*  Staff Software Engineer u Google (2016. - 2020.)
 
 *  Senior Software Engineer, Tools and Infrastructure u Google (2014. - 2016.)
 
