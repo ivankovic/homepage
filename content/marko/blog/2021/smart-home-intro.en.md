@@ -4,6 +4,7 @@ title: "Smart Home Intro"
 description: "Transforming a Central European house into a Smart Home."
 tags:
   - automation
+  - smarthome
 series: []
 type: "blog"
 ---
