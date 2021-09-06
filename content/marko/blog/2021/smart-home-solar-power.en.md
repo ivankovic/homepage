@@ -1,5 +1,5 @@
 ---
-date: 2021-09-06T20:45:59+01:00
+date: 2021-09-05T12:00:00+01:00
 title: "Solar Power in Central Europe"
 description: "Solar Power in Central Europe"
 tags:
