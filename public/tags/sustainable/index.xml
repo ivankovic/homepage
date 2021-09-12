@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sustainable on Ivanković family website</title>
+    <link>https://www.ivankovic.me/tags/sustainable/</link>
+    <description>Recent content in sustainable on Ivanković family website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 05 Sep 2021 12:00:00 +0100</lastBuildDate><atom:link href="https://www.ivankovic.me/tags/sustainable/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Solar Power in Central Europe</title>
+      <link>https://www.ivankovic.me/marko/blog/2021/smart-home-solar-power/</link>
+      <pubDate>Sun, 05 Sep 2021 12:00:00 +0100</pubDate>
+      
+      <guid>https://www.ivankovic.me/marko/blog/2021/smart-home-solar-power/</guid>
+      <description>Solar potential My house has excellent solar potential. It&amp;rsquo;s roughly on 47 degrees north. One entire side of the roof has an azimuth of about 220 degrees and a declination of 31 degrees. The total usable surface for the panels is 62 square meters.
+The roof is big enough for 36 panels. 24 at a declination of 31 degrees and 12 at 10 degrees. With 330 wP panels this sums up to 11.</description>
+    </item>
+    
+  </channel>
+</rss>

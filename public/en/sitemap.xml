@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.ivankovic.me/marko/blog/</loc>
-    <lastmod>2021-07-23T20:45:59+01:00</lastmod>
+    <lastmod>2021-09-05T12:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="hr"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://www.ivankovic.me/tags/automation/</loc>
-    <lastmod>2021-07-23T20:45:59+01:00</lastmod>
+    <lastmod>2021-09-05T12:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="hr"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://www.ivankovic.me/</loc>
-    <lastmod>2021-07-23T20:45:59+01:00</lastmod>
+    <lastmod>2021-09-05T12:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -47,7 +47,7 @@
                 />
   </url><url>
     <loc>https://www.ivankovic.me/marko/</loc>
-    <lastmod>2021-07-23T20:45:59+01:00</lastmod>
+    <lastmod>2021-09-05T12:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
@@ -64,11 +64,14 @@
                 href="https://www.ivankovic.me/marko/"
                 />
   </url><url>
-    <loc>https://www.ivankovic.me/marko/blog/2021/smart-home-intro/</loc>
-    <lastmod>2021-07-23T20:45:59+01:00</lastmod>
+    <loc>https://www.ivankovic.me/marko/blog/2021/smart-home-solar-power/</loc>
+    <lastmod>2021-09-05T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://www.ivankovic.me/tags/sustainable/</loc>
+    <lastmod>2021-09-05T12:00:00+01:00</lastmod>
   </url><url>
     <loc>https://www.ivankovic.me/tags/</loc>
-    <lastmod>2021-07-23T20:45:59+01:00</lastmod>
+    <lastmod>2021-09-05T12:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="hr"
@@ -84,6 +87,12 @@
                 hreflang="en"
                 href="https://www.ivankovic.me/tags/"
                 />
+  </url><url>
+    <loc>https://www.ivankovic.me/marko/blog/2021/smart-home-intro/</loc>
+    <lastmod>2021-07-23T20:45:59+01:00</lastmod>
+  </url><url>
+    <loc>https://www.ivankovic.me/tags/smarthome/</loc>
+    <lastmod>2021-07-23T20:45:59+01:00</lastmod>
   </url><url>
     <loc>https://www.ivankovic.me/tags/scripting/</loc>
     <lastmod>2020-07-05T14:57:34+02:00</lastmod>
