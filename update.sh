@@ -2,4 +2,4 @@
 
 cd /root/homepage
 git pull
-rsync -ar public/* /var/www/html/
+rsync -ar public/* /var/www/html/ivankovic.me/
