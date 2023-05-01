@@ -28,6 +28,10 @@ Expert für Software-Engineering.
 
 Zahl der Zitaten: [285](https://scholar.google.com/citations?user=Xy_seyYAAAAJ)
 
+*  [Please fix this mutant: How do developers resolve mutants surfaced during
+   code
+   review?](https://conf.researchr.org/details/icse-2023/icse-2023-SEIP/46/Please-fix-this-mutant-How-do-developers-resolve-mutants-surfaced-during-code-review)
+   (ICSE - SEIP 2023.)
 *  [Practical Mutation Testing at Scale: A view from Google](https://ieeexplore.ieee.org/document/9524503) (IEEE TSE 2021.)
 *  [Automatically Generating Machine Learning Models for Software Tools That Operate on Source Code](https://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/srchnum.html&r=1&f=G&l=50&d=PG01&s1=20210132915.PGNR.) (Us Pat. Application No. 20210132915)
 *  [Does mutation testing improve testing practices?](https://conf.researchr.org/details/icse-2021/icse-2021-papers/70/Does-mutation-testing-improve-testing-practices-) (ICSE 2021.)

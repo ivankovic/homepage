@@ -46,7 +46,7 @@
 
     <link rel="icon" type="image/png" href="https://www.ivankovic.me/images/favicon.ico" sizes="32x32">
 
-    <meta name="generator" content="Hugo 0.85.0" />
+    <meta name="generator" content="Hugo 0.104.2" />
   </head>
 
   <body class="colorscheme-light">
@@ -140,21 +140,21 @@ je donekle bolji jer je unaprijed ograničen samo na ono što me zanima.</p>
 dnevni. Zbog toga se ponekad nakupi dosta nepročitanih poruka. Na sreću, koristim
 G Suite za svoj Email, pa mogu koristit Google Apps Script.</p>
 <p>Sljedeća skripta arhivira sve poruke u &ldquo;Forums&rdquo; kategoriji u Gmailu:</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript">
-<span class="kd">function</span> <span class="nx">cleanUpOldNews</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kd">var</span> <span class="nx">cutoffDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span> <span class="o">-</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">);</span>
-  <span class="nx">Logger</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cutoffDate</span><span class="p">);</span>
-
-  <span class="kd">var</span> <span class="nx">query</span> <span class="o">=</span> <span class="s1">&#39;in:inbox category:forums before:&#39;</span> <span class="o">+</span> <span class="nx">cutoffDate</span><span class="p">.</span><span class="nx">getFullYear</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="p">(</span><span class="nx">cutoffDate</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="nx">cutoffDate</span><span class="p">.</span><span class="nx">getDate</span><span class="p">()</span> <span class="p">;</span>
-  <span class="nx">Logger</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">query</span><span class="p">);</span>
-
-  <span class="kd">var</span> <span class="nx">threads</span> <span class="o">=</span> <span class="nx">GmailApp</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="nx">query</span><span class="p">);</span>
-  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">threads</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">thread</span> <span class="o">=</span> <span class="nx">threads</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
-    <span class="nx">thread</span><span class="p">.</span><span class="nx">moveToArchive</span><span class="p">();</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div><p>Sve što sad moram raditi ručno je pomicati pretplate u &ldquo;Forums&rdquo; kategoriju. Nakon
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">function</span> <span class="nx">cleanUpOldNews</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">cutoffDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span> <span class="o">-</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">Logger</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">cutoffDate</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">query</span> <span class="o">=</span> <span class="s1">&#39;in:inbox category:forums before:&#39;</span> <span class="o">+</span> <span class="nx">cutoffDate</span><span class="p">.</span><span class="nx">getFullYear</span><span class="p">()</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="p">(</span><span class="nx">cutoffDate</span><span class="p">.</span><span class="nx">getMonth</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="nx">cutoffDate</span><span class="p">.</span><span class="nx">getDate</span><span class="p">()</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">Logger</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">query</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="kd">var</span> <span class="nx">threads</span> <span class="o">=</span> <span class="nx">GmailApp</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="nx">query</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">threads</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">var</span> <span class="nx">thread</span> <span class="o">=</span> <span class="nx">threads</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">thread</span><span class="p">.</span><span class="nx">moveToArchive</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Sve što sad moram raditi ručno je pomicati pretplate u &ldquo;Forums&rdquo; kategoriju. Nakon
 2 - 3 ručno pomaknute poruke AI nauči moj odabir i sve daljnje poruke automatski
 završe u &ldquo;Forums&rdquo;.</p>
 
@@ -179,7 +179,7 @@ završe u &ldquo;Forums&rdquo;.</p>
       
         ©
         
-        2021
+        2023
         
         ·
         <a href="https://www.ivankovic.me/disclaimer">Disclaimer</a>
