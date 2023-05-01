@@ -26,7 +26,7 @@ Ekspert za računalno inženjerstvo i razvojne sustave planetarne razine.
 
 ## Publikacije
 
-Broj citata: [149](https://scholar.google.com/citations?user=Xy_seyYAAAAJ)
+Broj citata: [285](https://scholar.google.com/citations?user=Xy_seyYAAAAJ)
 
 *  [Practical Mutation Testing at Scale: A view from Google](https://ieeexplore.ieee.org/document/9524503) (IEEE TSE 2021.)
 *  [Automatically Generating Machine Learning Models for Software Tools That Operate on Source Code](https://appft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&p=1&u=/netahtml/PTO/srchnum.html&r=1&f=G&l=50&d=PG01&s1=20210132915.PGNR.) (Us Pat. Application No. 20210132915)
