@@ -1,6 +1,0 @@
-[submodule "marko/themes/coder"]
-	path = marko/themes/coder
-	url = https://github.com/luizdepra/hugo-coder.git
-[submodule "marina/themes/coder"]
-	path = marina/themes/coder
-	url = https://github.com/luizdepra/hugo-coder.git
