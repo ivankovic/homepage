@@ -58,11 +58,6 @@ canonifyurls = true
     icon = "fab fa-linkedin fa-2x"
     weight = 3
     url = "https://www.linkedin.com/in/ivankovicmarko/"
-[[Params.global.marko.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter fa-2x"
-    weight = 3
-    url = "https://twitter.com/IvankovicMe"
 
 # Menu links
 [[languages.en.menu.marko]]
