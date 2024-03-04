@@ -59,13 +59,12 @@ Work history Volounteer work at the VEF clinics for internal medicine (2012. - 2
     </item>
     
     <item>
-      <title>Marko Ivanković</title>
+      <title>13 years of moving Software Engineering forward</title>
       <link>https://www.ivankovic.me/marko/about/</link>
       <pubDate>Sun, 12 Apr 2020 23:25:53 +0200</pubDate>
       
       <guid>https://www.ivankovic.me/marko/about/</guid>
-      <description>I have 10 years of experience building tools and processes for other engineers in the biggest software engineering enterprise in the world. I have built cutting edge tools that scale to tens of thousands of engineers and billions of lines of code. I have extensive experience developing planetary scale distributed systems.
-I am a world class expert in code coverage, mutation testing, large scale code analysis, large scale refactoring and machine learning.</description>
+      <description>Technical Leadership AI for Code - Engineered a transformative AI model for code and developed it into a product that automatically reviews code for all Google engineers (blogpost). Software testing - Groundbreaking coverage infrastructure (paper) sped up code reviews at Google by 5% and reduced the code review costs by 11% (paper). Invented an entirely new type of code coverage, Productive Coverage (paper) that further reduced code review cost by further 2% and improved code and test quality.</description>
     </item>
     
   </channel>

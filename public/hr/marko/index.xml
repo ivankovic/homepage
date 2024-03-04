@@ -8,19 +8,12 @@
     <language>en-US</language>
     <lastBuildDate>Thu, 01 Jul 2021 00:00:00 +0200</lastBuildDate><atom:link href="https://www.ivankovic.me/hr/marko/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Marko Ivanković</title>
+      <title>13 godina napretka u računalnom inžinjerstvu</title>
       <link>https://www.ivankovic.me/hr/marko/about/</link>
       <pubDate>Thu, 01 Jul 2021 00:00:00 +0200</pubDate>
       
       <guid>https://www.ivankovic.me/hr/marko/about/</guid>
-      <description>Magistar inženjer računarstva s 10 godina iskustva u industriji.
-Ekspert za računalno inženjerstvo i razvojne sustave planetarne razine.
-Radno iskustvo Senior Staff Software Engineer u Google (2020. - trenutno)
-Staff Software Engineer u Google (2016. - 2020.)
-Senior Software Engineer, Tools and Infrastructure u Google (2014. - 2016.)
-Software Engineer, Tools and Infrastructure u Google (2011. - 2014.)
-Intern, Software Engineer u Google (2010.)
-IOI 2007 - Evaluacijski komitet (2007.)</description>
+      <description>Tehničko vodstvo AI za kodiranje - Projektirao transformativni AI model za kod i razvio ga u proizvod koji automatski pregledava kod za sve Googleove inženjere (blogpost). Software testing - Revolucionarna infrastruktura za izračunavanje pokrivenosti koda testovima (znanstveni rad) ubrzala je pregled koda u Googleu za 5% i smanjila troškove pregleda koda za 11% (znanstveni rad). Izumio potpuno novu vrstu pokrivenosti koda, produktivnu pokrivenost (znanstveni rad) koja je dodatno smanjila troškove pregleda koda za dodatnih 2% i poboljšala kvalitetu koda i testa.</description>
     </item>
     
   </channel>
