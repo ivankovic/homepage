@@ -1,33 +1,48 @@
 ---
-title: "Marko Ivanković"
+title: "Software Engineering seit 13 Jahren voranbringen"
 date: 2021-07-01T00:00:00+02:00
 ---
 
-Master of Engineering mit 10 Jahren Erfahrung in der Branche.
+## Technische Führungs
 
-Expert für Software-Engineering.
+*  **KI für Code** - Erstellte und entwickelte ein transformatives KI-Modell für
+   Code in ein Produkt, das automatisch Code für alle Google-Ingenieure
+   überprüft
+   ([Blogpost](https://blog.research.google/2023/05/large-sequence-models-for-software.html)).
+*  **Software testing** - Neue Testabdeckung Infrastruktur ([Papier](https://dl.acm.org/doi/abs/10.1145/3338906.3340459)) verbesserte die Geschwindigkeit der Codeüberprüfungen bei Google um 5 % und reduzierte den Code Überprüfungskosten um 11 %
+   ([Papier](https://conf.researchr.org/details/icse-2024/icse-2024-software-engineering-in-practice/22/Productive-Coverage-Improving-the-Actionability-of-Code-Coverage)). Erfand eine völlig neue Art der Testabdeckung: Productive
+    Abdeckung([Papier](https://conf.researchr.org/details/icse-2024/icse-2024-software-engineering-in-practice/22/Productive-Coverage-Improving-the-Actionability-of-Code-Coverage)) wodurch die Kosten für die Codeüberprüfung um weitere 2 % gesenkt und die Code- und Testqualität verbessert wurden.
+*  **Code quality** - Systems zum Löschen toten Codes, das mehr als 5 % des gesamten C++-Codes bei Google und insgesamt fast eine halbe Milliarde Codelinien löschte ([Blogpost](https://testing.googleblog.com/2023/04/sensenmann-code-deletion-at-scale.html)).
+*  Viele andere Projekte, einschließlich Mutationstests, Codeänderungsanalyse, Optimierung der Ressourcennutzung sowie Zuverlässigkeits- und Fehleranalyse.
+
+## Organisatorische Führungs
+
+*  Leitung einer Organisation mit 50 Mitarbeitern
+*  Führung Manager von Managern
+*  Betreuung von Junior-, Senior- und Staff-Mitarbeitern
+*  Betreuung von Projekten in jeder Entwicklungsphase, von der Idee bis zum langfristigen Produktionsbetrieb
+*  Einstellungs- und Leistungsmanagement
 
 ## Berufliche Erfahrungen
 
 *  Senior Staff Software Engineer bei Google (2020. - derzeit)
-
 *  Staff Software Engineer bei Google (2016. - 2020.)
-
 *  Senior Software Engineer, Tools and Infrastructure bei Google (2014. - 2016.)
-
 *  Software Engineer, Tools and Infrastructure bei Google (2011. - 2014.)
-
 *  Intern, Software Engineer bei Google (2010.)
-
 *  IOI 2007 - Evaluationskomitet (2007.)
-
 *  Croatian Open Competition in Informatics - Wisschenschaftskomitet (2007. -
    2011.)
 
 ## Publikationen
 
-Zahl der Zitaten: [285](https://scholar.google.com/citations?user=Xy_seyYAAAAJ)
+Zahl der Zitaten: [392](https://scholar.google.com/citations?user=Xy_seyYAAAAJ)
+(am 4. März 2024.)
 
+*  [Productive Coverage: Improving the Actionability of Code Coverage](https://conf.researchr.org/details/icse-2024/icse-2024-software-engineering-in-practice/22/Productive-Coverage-Improving-the-Actionability-of-Code-Coverage)
+   (ICSE - SEIP 2024.)
+*  [MuRS: Mutant Ranking and Suppression using Identifier Templates?](https://dl.acm.org/doi/abs/10.1145/3611643.3613901)
+   (ESEC/FSE 2023.)
 *  [Please fix this mutant: How do developers resolve mutants surfaced during
    code
    review?](https://conf.researchr.org/details/icse-2023/icse-2023-SEIP/46/Please-fix-this-mutant-How-do-developers-resolve-mutants-surfaced-during-code-review)
