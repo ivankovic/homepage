@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ivanković - Obiteljska web stranica on Ivankovic Family Website</title>
+    <link>http://localhost:1313/hr/</link>
+    <description>Recent content in Ivanković - Obiteljska web stranica on Ivankovic Family Website</description>
+    <generator>Hugo</generator>
+    <language>hr</language>
+    <atom:link href="http://localhost:1313/hr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Impressum</title>
+      <link>http://localhost:1313/hr/impressum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hr/impressum/</guid>
+      <description>&lt;p&gt;Marina Čelar Ivanković&lt;/p&gt;&#xA;&lt;p&gt;Rüchligstrasse 50, 8912 Obfelden&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;mailto:marina@softhands.ch&#34;&gt;marina@softhands.ch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pravila o žaštiti podataka</title>
+      <link>http://localhost:1313/hr/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hr/privacy/</guid>
+      <description>&lt;p&gt;Ova pravila o zaštiti podataka objašnjavaju kako softhands.ch koristi osobne&#xA;podatke koje prikupljamo od posjetitelja našeg website-a.&lt;/p&gt;&#xA;&lt;h1 id=&#34;koje-podatke-prikupljamo&#34;&gt;Koje podatke prikupljamo?&lt;/h1&gt;&#xA;&lt;h2 id=&#34;tehnički-nužni-podaci-za-prikaz-web-stranice&#34;&gt;Tehnički nužni podaci za prikaz web stranice&lt;/h2&gt;&#xA;&lt;p&gt;Naši poslužitelji moraju znati vašu &lt;a href=&#34;https://en.wikipedia.org/wiki/IP_address&#34;&gt;IP&#xA;adresu&lt;/a&gt; kako bi vam mogli prikazati&#xA;website.&lt;/p&gt;&#xA;&lt;p&gt;Vaš web preglednik nam također automatski dojavljuje vaš tip preglednika i&#xA;podatke o uređaju s kojeg pristupate web stranici (na primjer veličina ekrana).&lt;/p&gt;&#xA;&lt;h2 id=&#34;elektronička-pošta&#34;&gt;Elektronička pošta&lt;/h2&gt;&#xA;&lt;p&gt;Naš pružatelj elektroničke pošte je Google/Gmail. Ukoliko nam pošaljete&#xA;elektroničku poštu vaša adresa elektroničke pošte i sadržaj poruke biti će&#xA;spremljeni na Google-ovim poslužiteljima. Google-ova &lt;a href=&#34;https://policies.google.com/privacy&#34;&gt;pravila o privatnosti&#xA;možete pročitati ovdje&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

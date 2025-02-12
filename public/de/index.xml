@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ivanković - Familienwebsite on Ivankovic Family Website</title>
+    <link>http://localhost:1313/de/</link>
+    <description>Recent content in Ivanković - Familienwebsite on Ivankovic Family Website</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <atom:link href="http://localhost:1313/de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Datenschutz</title>
+      <link>http://localhost:1313/de/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/privacy/</guid>
+      <description>&lt;p&gt;Diese Datenschutzerklärung erklärt, wie softhands.ch die persönlichen Daten&#xA;verwendet, die wir von Ihnen bei der Nutzung unserer Website sammeln.&lt;/p&gt;&#xA;&lt;h1 id=&#34;welche-daten-sammeln-wir&#34;&gt;Welche Daten sammeln wir?&lt;/h1&gt;&#xA;&lt;h2 id=&#34;die-daten-die-erforderlich-sind-um-ihnen-die-website-zu-zeigen&#34;&gt;Die Daten, die erforderlich sind, um Ihnen die Website zu zeigen&lt;/h2&gt;&#xA;&lt;p&gt;Unsere Server müssen Ihre &lt;a href=&#34;https://en.wikipedia.org/wiki/IP_address&#34;&gt;IP-Adresse&lt;/a&gt;&#xA;kennen um Ihnen die Website zeigen zu können.&lt;/p&gt;&#xA;&lt;p&gt;Ihr Browser teilt uns auch Ihren Browsertyp und die Metadaten Ihres Geräts mit&#xA;(z. B. Bildschirmgröße).&lt;/p&gt;&#xA;&lt;h2 id=&#34;e-mail&#34;&gt;E-Mail&lt;/h2&gt;&#xA;&lt;p&gt;Wir verwenden Google/Gmail als unseren E-Mail-Anbieter. Wenn Sie uns eine E-Mail&#xA;senden, werden Ihre E-Mail-Adresse und alle Daten, die Sie im Text der E-Mail&#xA;angeben, auf den Servern von Google gespeichert. Die &lt;a href=&#34;https://policies.google.com/privacy&#34;&gt;Datenschutzbestimmungen&#xA;von Google finden Sie hier&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Impressum</title>
+      <link>http://localhost:1313/de/impressum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/de/impressum/</guid>
+      <description>&lt;p&gt;Marina Celar Ivankovic&lt;/p&gt;&#xA;&lt;p&gt;Rüchligstrasse 50, 8912 Obfelden&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;mailto:marina@softhands.ch&#34;&gt;marina@softhands.ch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

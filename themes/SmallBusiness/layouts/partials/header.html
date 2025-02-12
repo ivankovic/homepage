@@ -1,0 +1,26 @@
+<header>
+  <nav>
+    <div class="menu">
+      {{ range .Site.Menus.main}}
+      <a {{ with .Params.class }}class="{{ . }}" {{ end }} href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+      {{ end }}
+    </div>
+    {{ if hugo.IsMultilingual }}
+    <div class="languages">
+      {{ range sort .AllTranslations "Language.Lang" }}
+      <a href="{{ .Permalink }}">
+        {{ if eq .Language.LanguageName "de" }}
+        🇨🇭
+        {{ else if eq .Language.LanguageName "en" }}
+        🇺🇸
+        {{ else if eq .Language.LanguageName "hr" }}
+        🇭🇷
+        {{ else }}
+        {{.Language.LanguageName}}
+        {{ end }}
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </nav>
+</header>

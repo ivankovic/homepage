@@ -1,0 +1,69 @@
+baseURL: "https://www.ivankovic.me/"
+title: Ivankovic Family Website
+
+pagination:
+  pagerSize: 5
+
+disableKinds: ["taxonomy"]
+ignoreErrors: ["error-disable-taxonomy"]
+
+theme: "SmallBusiness"
+
+enableRobotsTXT: true
+enableEmoji: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+defaultContentLanguage: en
+
+languages:
+  en:
+    languageName: "en"
+    weight: 1
+    menu:
+      main:
+        - name: Marina Čelar Ivanković
+          url: marina
+          weight: 1
+        - name: Marko Ivanković
+          url: marko
+          weight: 2
+        - name: Contact
+          url: contact
+          params:
+            class: call-to-action
+            weight: 100
+  de:
+    languageName: "de"
+    weight: 2
+    menu:
+      main:
+        - name: Marina Čelar Ivanković
+          url: marina
+          weight: 1
+        - name: Marko Ivanković
+          url: marko
+          weight: 2
+        - name: Kontakt
+          url: contact
+          params:
+            class: call-to-action
+            weight: 100
+  hr:
+    languageName: "hr"
+    weight: 3
+    menu:
+      main:
+        - name: Marina Čelar Ivanković
+          url: marina
+          weight: 1
+        - name: Marko Ivanković
+          url: marko
+          weight: 2
+        - name: Kontakt
+          url: contact
+          params:
+            class: call-to-action
+            weight: 100

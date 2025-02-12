@@ -1,0 +1,25 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>{{ with .Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
+<link rel="apple-touch-icon" href="/app-icon.png" />
+
+<link rel="canonical" href="{{ .Page.Permalink }}" />
+
+{{ with .Params.description }}
+<meta name="description" content="{{ . }}" />{{ end }}
+{{ with .Params.keywords }}
+<meta name="keywords" content="{{ delimit . ", "}}" />{{ end }}
+
+<link rel="preload" as="font" href="/fonts/Sora.ttf" type="font/ttf" crossorigin />
+
+{{ $reset := (resources.Get "css/reset.css") }}
+{{ $main := (resources.Get "css/main.css") }}
+{{ $style := (slice $reset $main | resources.Concat "css/bundle.css") | minify | fingerprint }}
+<link crossorigin="anonymous" integrity="{{ $style.Data.Integrity }}" rel="stylesheet" href="{{ $style.RelPermalink }}" />
+
+{{ template "_internal/twitter_cards.html" . }}
+{{ template "_internal/opengraph.html" . }}

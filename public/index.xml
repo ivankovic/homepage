@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ivanković - Family website on Ivankovic Family Website</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Ivanković - Family website on Ivankovic Family Website</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 07 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Registering a birth in Switzerland</title>
+      <link>http://localhost:1313/resources/registering-a-birth/</link>
+      <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/resources/registering-a-birth/</guid>
+      <description>&lt;h1 id=&#34;registering-a-birth-in-switzerland&#34;&gt;Registering a birth in Switzerland&lt;/h1&gt;&#xA;&lt;p&gt;Pregnancy is a beautiful time when your body is going through changes. You are&#xA;nesting in and preparing everything for the new addition to your family. The&#xA;last thing you want to think about is red tape, forms, paperwork and&#xA;international treaties.&lt;/p&gt;&#xA;&lt;p&gt;Unfortunately, paperwork is a constant part of life and birth is no exception.&#xA;Your baby&amp;rsquo;s birth will have to be registered in Switzerland. Like everything&#xA;else in Switzerland, how exactly you register a newborn depends on the kanton&#xA;and the local community, but things generally follow the same flow.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Impressum</title>
+      <link>http://localhost:1313/impressum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/impressum/</guid>
+      <description>&lt;p&gt;Marko Ivanković&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;mailto:marko@ivankovic.me&#34;&gt;marko@ivankovic.me&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy policy</title>
+      <link>http://localhost:1313/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/privacy/</guid>
+      <description>&lt;p&gt;This privacy policy will explain how ivankovic.me uses the personal data we&#xA;collect from you when you use our website.&lt;/p&gt;&#xA;&lt;h1 id=&#34;what-data-do-we-collect&#34;&gt;What data do we collect?&lt;/h1&gt;&#xA;&lt;h2 id=&#34;the-data-required-to-show-you-the-website&#34;&gt;The data required to show you the website&lt;/h2&gt;&#xA;&lt;p&gt;Our servers need to know your &lt;a href=&#34;https://en.wikipedia.org/wiki/IP_address&#34;&gt;IP address&lt;/a&gt;&#xA;to be able to show you the website.&lt;/p&gt;&#xA;&lt;p&gt;Your browser also provides us with your browser type and device metadata&#xA;(e.g. screen size).&lt;/p&gt;&#xA;&lt;h2 id=&#34;email&#34;&gt;Email&lt;/h2&gt;&#xA;&lt;p&gt;We use Google/Gmail as our email provider. If you email us, your email address and&#xA;any data you provide in the body of the email will be stored on Google&amp;rsquo;s servers.&#xA;You can find &lt;a href=&#34;https://policies.google.com/privacy&#34;&gt;Google&amp;rsquo;s privacy policy here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

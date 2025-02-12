@@ -1,0 +1,19 @@
+<div class="package">
+  {{ with .Get "name" }}
+  <div class="name">
+    {{ . }}
+  </div>
+  {{ else }}
+  {{ errorf "missing value for param 'name': %s" .Position }}
+  {{ end }}
+  <ul>
+    {{ .Inner }}
+  </ul>
+  {{ with .Get "price" }}
+  <div class="price">
+    {{ . }}
+  </div>
+  {{ else }}
+  {{ errorf "missing value for param 'price': %s" .Position }}
+  {{ end }}
+</div>

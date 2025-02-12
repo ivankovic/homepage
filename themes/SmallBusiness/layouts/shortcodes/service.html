@@ -1,0 +1,9 @@
+<li>
+  {{ if isset .Params "strong" }}
+  <strong>
+  {{ end }}
+  {{ .Inner }}
+  {{ if isset .Params "strong" }}
+  </strong>
+  {{ end }}
+</li>
