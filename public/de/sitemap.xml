@@ -69,5 +69,22 @@
                 hreflang="de"
                 href="http://localhost:1313/de/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/de/disclaimer/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/disclaimer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="http://localhost:1313/hr/disclaimer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/disclaimer/"
+                />
   </url>
 </urlset>
