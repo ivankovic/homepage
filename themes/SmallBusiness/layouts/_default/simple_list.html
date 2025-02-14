@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div id="content">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <ul class="page-list">
+    <!-- Renders the li.html content view for each content/posts/*.md -->
+    {{ range .Pages }}
+    <li class="centered">
+      <div>
+        <a href="{{ .Permalink }}">
+          {{ .Title }}
+        </a>
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

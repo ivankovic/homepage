@@ -174,12 +174,17 @@ div#content li {
       margin: 1rem;
     }
 
-    div#content ul.page-list li a {
-      font-weight: bold;
-    }
+  div#content ul.page-list li a {
+    font-weight: bold;
+  }
 
-    div#content ul.page-list li div.date {
-      text-align: right;
+  div#content ul.page-list li div.date {
+    text-align: right;
+  }
+
+  div#content ul.page-list li.centered {
+    text-align: center;
+  }
 }
 
 footer {
