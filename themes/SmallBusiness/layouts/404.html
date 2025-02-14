@@ -3,13 +3,10 @@
   {{ $logo := resources.Get "images/small.png" }}
   {{ $logo := $logo.Resize "320x" }}
   {{ $logo_link := $logo.RelPermalink }}
-  <picture>
-    <img src="{{ $logo_link }}" id="logo" alt="Soft Hands Logo">
-  </picture>
   <div>
-    <p>Unfortunately this link doesn't point to any page.</p>
+    <p>Unfortunately this link doesn't point to an existing page.</p>
     <p>
-      <a href="/">Go to the homepage</a>
+      Please feel free to <a href="/">go to the homepage</a>.
     </p>
   </div>
 </div>

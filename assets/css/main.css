@@ -196,6 +196,10 @@ div.sigil {
   font-weight: bold;
 }
 
+div.sigil a {
+  text-decoration: none;
+}
+
 div.packages {
   display: flex;
 }

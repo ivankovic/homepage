@@ -5,13 +5,15 @@
   {{ $logo := $logo.Resize "320x webp" }}
   {{ $logo_link := $logo.RelPermalink }}
   <div class="sigil">
-    <picture>
-      <img src="{{ $logo_link }}" width="{{ $logo.Width }}" height="{{ $logo.Height }}" id="logo-{{ $person.id }}"
-        alt="Sigil representing {{ $person.name }}">
-    </picture>
-    <div>
-      {{ $person.name }}
-    </div>
+    <a href="{{ absLangURL $person.id }}">
+      <picture>
+        <img src=" {{ $logo_link }}" width="{{ $logo.Width }}" height="{{ $logo.Height }}" id="logo-{{ $person.id }}"
+          alt="Sigil representing {{ $person.name }}">
+      </picture>
+      <div>
+        {{ $person.name }}
+      </div>
+    </a>
   </div>
   {{ end }}
 </div>
