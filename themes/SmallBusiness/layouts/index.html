@@ -1,13 +1,18 @@
 {{ define "main" }}
 <div id="content" class="home">
-  {{ $logo := resources.Get "images/small.png" }}
+  {{ range $i, $person := .Site.Params.people }}
+  {{ $logo := resources.Get (printf "images/%s.png" $person.id) }}
   {{ $logo := $logo.Resize "320x webp" }}
   {{ $logo_link := $logo.RelPermalink }}
-  <picture>
-    <img src="{{ $logo_link }}" width="{{ $logo.Width }}" height="{{ $logo.Height }}" id="logo" alt="Soft Hands Logo">
-  </picture>
-  <div>
-    {{ .Content }}
+  <div class="sigil">
+    <picture>
+      <img src="{{ $logo_link }}" width="{{ $logo.Width }}" height="{{ $logo.Height }}" id="logo-{{ $person.id }}"
+        alt="Sigil representing {{ $person.name }}">
+    </picture>
+    <div>
+      {{ $person.name }}
+    </div>
   </div>
+  {{ end }}
 </div>
 {{ end }}

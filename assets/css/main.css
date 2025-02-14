@@ -192,6 +192,10 @@ footer span {
   text-align: center;
 }
 
+div.sigil {
+  font-weight: bold;
+}
+
 div.packages {
   display: flex;
 }
@@ -214,11 +218,20 @@ div.package {
   div.packages {
     flex-direction: column;
   }
+  div#content.home {
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 600px) {
   div.package {
     width: 30%;
+  }
+  div#content.home {
+    flex-direction: row;
+  }
+  div.sigil {
+    padding-right: 64px;
   }
 }
 

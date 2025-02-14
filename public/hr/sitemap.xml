@@ -53,23 +53,6 @@
                 href="http://localhost:1313/hr/"
                 />
   </url><url>
-    <loc>http://localhost:1313/hr/privacy/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/privacy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/privacy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hr"
-                href="http://localhost:1313/hr/privacy/"
-                />
-  </url><url>
     <loc>http://localhost:1313/hr/disclaimer/</loc>
     <xhtml:link
                 rel="alternate"
@@ -85,6 +68,23 @@
                 rel="alternate"
                 hreflang="hr"
                 href="http://localhost:1313/hr/disclaimer/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/hr/privacy/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="http://localhost:1313/hr/privacy/"
                 />
   </url>
 </urlset>

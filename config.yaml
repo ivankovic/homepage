@@ -18,6 +18,13 @@ minify:
 
 defaultContentLanguage: en
 
+params:
+  people:
+    - name: Marina Čelar Ivanković
+      id: marina
+    - name: Marko Ivanković
+      id: marko
+
 languages:
   en:
     languageName: "en"

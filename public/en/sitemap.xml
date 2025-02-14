@@ -41,23 +41,6 @@
                 href="http://localhost:1313/resources/"
                 />
   </url><url>
-    <loc>http://localhost:1313/impressum/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="http://localhost:1313/de/impressum/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hr"
-                href="http://localhost:1313/hr/impressum/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/impressum/"
-                />
-  </url><url>
     <loc>http://localhost:1313/disclaimer/</loc>
     <xhtml:link
                 rel="alternate"
@@ -73,6 +56,23 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/disclaimer/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/impressum/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://localhost:1313/de/impressum/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="http://localhost:1313/hr/impressum/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/impressum/"
                 />
   </url><url>
     <loc>http://localhost:1313/privacy/</loc>
