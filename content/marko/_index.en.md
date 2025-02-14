@@ -1,5 +1,3 @@
 ---
-title: "Resources"
+title: "Marko Ivanković"
 ---
-I hope the following free resources can help you navigate pregnancy, birth
-and having children in Switzerland.
