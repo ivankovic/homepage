@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/hr/resources/</loc>
+    <loc>http://localhost:1313/hr/marko/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/resources/"
+                href="http://localhost:1313/marko/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/resources/"
+                href="http://localhost:1313/de/marko/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hr"
-                href="http://localhost:1313/hr/resources/"
+                href="http://localhost:1313/hr/marko/"
                 />
   </url><url>
     <loc>http://localhost:1313/hr/impressum/</loc>

@@ -20,25 +20,25 @@
                 href="http://localhost:1313/"
                 />
   </url><url>
-    <loc>http://localhost:1313/resources/registering-a-birth/</loc>
+    <loc>http://localhost:1313/marko/registering-a-birth/</loc>
     <lastmod>2023-01-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/resources/</loc>
+    <loc>http://localhost:1313/marko/</loc>
     <lastmod>2023-01-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/resources/"
+                href="http://localhost:1313/de/marko/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hr"
-                href="http://localhost:1313/hr/resources/"
+                href="http://localhost:1313/hr/marko/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/resources/"
+                href="http://localhost:1313/marko/"
                 />
   </url><url>
     <loc>http://localhost:1313/disclaimer/</loc>
