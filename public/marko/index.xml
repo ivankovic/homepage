@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Marko Ivanković on Ivankovic Family Website</title>
-    <link>http://localhost:1313/marko/</link>
+    <link>https://www.ivankovic.me/marko/</link>
     <description>Recent content in Marko Ivanković on Ivankovic Family Website</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/marko/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.ivankovic.me/marko/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About me</title>
-      <link>http://localhost:1313/marko/about/</link>
+      <link>https://www.ivankovic.me/marko/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/marko/about/</guid>
+      <guid>https://www.ivankovic.me/marko/about/</guid>
       <description>&lt;h1 id=&#34;14-years-of-experience-in-software-engineering&#34;&gt;14 Years of experience in Software Engineering&lt;/h1&gt;&#xA;&lt;p&gt;Leading cutting edge technical work:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;AI Software Engineer&lt;/strong&gt; - Engineered a transformative AI model for code and deployed it in&#xA;a product that automatically reviews code for all Google engineers. Built a system that&#xA;automatically produces full stack applications at &lt;a href=&#34;https://www.cogna.co/&#34;&gt;Cogna&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Code quality&lt;/strong&gt; - Co-owned the dead code deletion system that deleted more than 5% of all&#xA;C++ code at Google and almost half a billion lines total.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Software testing&lt;/strong&gt; - Groundbreaking coverage infrastructure that sped up code reviews at&#xA;Google by 5% and reduced the code review costs by 11%. Invented an entirely new type of code&#xA;coverage, Productive Coverage that further reduced code review cost by further 2% and improved&#xA;code and test quality.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Other projects, including code change analysis, resource usage optimization and reliability&#xA;and failure analysis.&lt;/p&gt;</description>
     </item>
   </channel>

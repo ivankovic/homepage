@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ivanković - Familienwebsite on Ivankovic Family Website</title>
-    <link>http://localhost:1313/de/</link>
+    <link>https://www.ivankovic.me/de/</link>
     <description>Recent content in Ivanković - Familienwebsite on Ivankovic Family Website</description>
     <generator>Hugo</generator>
     <language>de</language>
-    <atom:link href="http://localhost:1313/de/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.ivankovic.me/de/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Datenschutz</title>
-      <link>http://localhost:1313/de/privacy/</link>
+      <link>https://www.ivankovic.me/de/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/privacy/</guid>
+      <guid>https://www.ivankovic.me/de/privacy/</guid>
       <description>&lt;p&gt;Diese Datenschutzerklärung erklärt, wie ivankovic.me die persönlichen Daten&#xA;verwendet, die wir von Ihnen bei der Nutzung unserer Website sammeln.&lt;/p&gt;&#xA;&lt;h1 id=&#34;welche-daten-sammeln-wir&#34;&gt;Welche Daten sammeln wir?&lt;/h1&gt;&#xA;&lt;h2 id=&#34;die-daten-die-erforderlich-sind-um-ihnen-die-website-zu-zeigen&#34;&gt;Die Daten, die erforderlich sind, um Ihnen die Website zu zeigen&lt;/h2&gt;&#xA;&lt;p&gt;Unsere Server müssen Ihre &lt;a href=&#34;https://en.wikipedia.org/wiki/IP_address&#34;&gt;IP-Adresse&lt;/a&gt;&#xA;kennen um Ihnen die Website zeigen zu können.&lt;/p&gt;&#xA;&lt;p&gt;Ihr Browser teilt uns auch Ihren Browsertyp und die Metadaten Ihres Geräts mit&#xA;(z. B. Bildschirmgröße).&lt;/p&gt;&#xA;&lt;h2 id=&#34;e-mail&#34;&gt;E-Mail&lt;/h2&gt;&#xA;&lt;p&gt;Wir verwenden Google/Gmail als unseren E-Mail-Anbieter. Wenn Sie uns eine E-Mail&#xA;senden, werden Ihre E-Mail-Adresse und alle Daten, die Sie im Text der E-Mail&#xA;angeben, auf den Servern von Google gespeichert. Die &lt;a href=&#34;https://policies.google.com/privacy&#34;&gt;Datenschutzbestimmungen&#xA;von Google finden Sie hier&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Haftungsausschluss</title>
-      <link>http://localhost:1313/de/disclaimer/</link>
+      <link>https://www.ivankovic.me/de/disclaimer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/disclaimer/</guid>
+      <guid>https://www.ivankovic.me/de/disclaimer/</guid>
       <description>&lt;h1 id=&#34;haftungsausschluss&#34;&gt;Haftungsausschluss&lt;/h1&gt;&#xA;&lt;p&gt;Dies ist eine persönliche Website. Alle auf dieser Website geäußerten Meinungen sind persönlich&#xA;und gehören ausschließlich dem Websiteinhaber und repräsentieren keine andere Person, Institution&#xA;oder Organisation, unabhängig von einer möglichen privaten oder beruflichen Verbindung zum&#xA;Websiteinhaber.&lt;/p&gt;&#xA;&lt;p&gt;Alle Inhalte dieser Website dienen ausschließlich zu Informationszwecken. Für die Richtigkeit,&#xA;Vollständigkeit und Aktualität der bereitgestellten Inhalte übernimmt der Anbieter dieser Website&#xA;jedoch keine Gewähr.&lt;/p&gt;&#xA;&lt;p&gt;Diese Website enthält Links zu anderen Websites. Die Inhalte der Links unterliegen nicht der&#xA;Kontrolle des Eigentümers dieser Website und die Existenz von Links auf dieser Website stellt keine&#xA;Billigung, Übertragung des Eigentums oder Urheberrechts hinsichtlich der Inhalte der verlinkten&#xA;Websites dar.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Impressum</title>
-      <link>http://localhost:1313/de/impressum/</link>
+      <link>https://www.ivankovic.me/de/impressum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/impressum/</guid>
+      <guid>https://www.ivankovic.me/de/impressum/</guid>
       <description>&lt;p&gt;Marko Ivanković&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;mailto:marko@ivankovic.me&#34;&gt;marko@ivankovic.me&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Kontakt</title>
-      <link>http://localhost:1313/de/contact/</link>
+      <link>https://www.ivankovic.me/de/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/contact/</guid>
+      <guid>https://www.ivankovic.me/de/contact/</guid>
       <description>&lt;h1 id=&#34;kontakt&#34;&gt;Kontakt&lt;/h1&gt;&#xA;&lt;p&gt;Sie können uns per E-Mail unter den folgenden Adressen kontaktieren:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Marina - &lt;a href=&#34;mailto:marina@ivankovic.me&#34;&gt;marina@ivankovic.me&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Marko - &lt;a href=&#34;mailto:marko@ivankovic.me&#34;&gt;marko@ivankovic.me&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Wir verwenden nur E-Mail zur Kommunikation mit Besuchern dieser Website.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lebenslauf</title>
-      <link>http://localhost:1313/de/marko/about/</link>
+      <link>https://www.ivankovic.me/de/marko/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/de/marko/about/</guid>
+      <guid>https://www.ivankovic.me/de/marko/about/</guid>
       <description>&lt;h1 id=&#34;14-jahre-erfahrung-im-software-engineering&#34;&gt;14 Jahre Erfahrung im Software Engineering&lt;/h1&gt;&#xA;&lt;p&gt;Führende technische Spitzenarbeit:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;KI-Softwareentwickler&lt;/strong&gt; - Entwickelte ein transformatives KI-Modell für Code und setzte es in&#xA;einem Produkt ein, das Code für alle Google-Entwickler automatisch überprüft. Baute ein System auf,&#xA;das bei &lt;a href=&#34;https://www.cogna.co/&#34;&gt;Cogna&lt;/a&gt; automatisch Full-Stack-Applikationen erstellt.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Codequalität&lt;/strong&gt; - Entwickelte ein Systems zur Löschung von totem Code, das mehr als 5% des&#xA;gesamten C++-Codes bei Google und insgesamt fast eine halbe Milliarde Linien löschte.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Software test&lt;/strong&gt; - Test-Coverage-Infrastruktur, die Codeüberprüfungen bei Google um 5%&#xA;beschleunigte und die Codeüberprüfungskosten um 11% reduzierte. Erfand eine völlig neue Art der&#xA;Testabdeckungmessung, Productive Coverage, die die Codeüberprüfungskosten um weitere 2% reduzierte&#xA;und die Code- und Testqualität verbesserte.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Andere Projekte, einschließlich Codeänderungsanalyse, Optimierung der Ressourcennutzung sowie&#xA;Zuverlässigkeits- und Fehleranalyse.&lt;/p&gt;</description>
     </item>
   </channel>

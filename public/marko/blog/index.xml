@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Ivankovic Family Website</title>
-    <link>http://localhost:1313/marko/blog/</link>
+    <link>https://www.ivankovic.me/marko/blog/</link>
     <description>Recent content in Blog on Ivankovic Family Website</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 07 Jan 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/marko/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.ivankovic.me/marko/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Registering a birth in Switzerland</title>
-      <link>http://localhost:1313/marko/blog/registering-a-birth/</link>
+      <link>https://www.ivankovic.me/marko/blog/registering-a-birth/</link>
       <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/marko/blog/registering-a-birth/</guid>
+      <guid>https://www.ivankovic.me/marko/blog/registering-a-birth/</guid>
       <description>&lt;h1 id=&#34;registering-a-birth-in-switzerland&#34;&gt;Registering a birth in Switzerland&lt;/h1&gt;&#xA;&lt;p&gt;Pregnancy is a beautiful time when your body is going through changes. You are&#xA;nesting in and preparing everything for the new addition to your family. The&#xA;last thing you want to think about is red tape, forms, paperwork and&#xA;international treaties.&lt;/p&gt;&#xA;&lt;p&gt;Unfortunately, paperwork is a constant part of life and birth is no exception.&#xA;Your baby&amp;rsquo;s birth will have to be registered in Switzerland. Like everything&#xA;else in Switzerland, how exactly you register a newborn depends on the kanton&#xA;and the local community, but things generally follow the same flow.&lt;/p&gt;</description>
     </item>
   </channel>

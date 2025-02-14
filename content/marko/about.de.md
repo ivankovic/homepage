@@ -26,21 +26,21 @@ Kader:
 *  Leitung von Projekten in jeder Entwicklungsphase, von der Idee bis zum langfristigen
 Produktionsbetrieb.
 
-# Employment history
+# Berufliche Erfahrung
 
-*  November 2024 to Present - VP of Engineering at [Cogna](https://www.cogna.co/)
-*  May 2011 to November 2024 - Senior Staff Software Engineering at Google
-*  June 2010 to September 2010 - Software Engineering internship at Google
+*  November 2024 bis jetzt - VP of Engineering bei [Cogna](https://www.cogna.co/)
+*  Mai 2011 bis November 2024 - Senior Staff Software Engineering bei Google
+*  Juni 2010 bis September 2010 - Software Engineering internship bei Google
 
-# Education
+# Ausbildung
 
-*  August 2018 to Present - PhD in Computer Science at University of Passau, Germany
-*  September 2009 to July 2011 - MSc in Computer Science at University of Zagreb, Croatia
-*  September 2006 to July 2009 - BSc in Computer Science at at University of Zagreb, Croatia
+*  August 2018 bis jetzt - PhD in Informatik an der Universität Passau, Deutschland
+*  September 2009 to July 2011 - MSc in Informatik an der Universität Zagreb, Kroatien
+*  September 2006 to July 2009 - BSc in Informatik an der Universität Zagreb, Kroatien
 
-# Publications
+# Forschungsarbeiten
 
-Citations: [547](https://scholar.google.com/citations?user=Xy_seyYAAAAJ&hl=en) as of 14th of February 2025.
+Anzahl der Zitate: [547](https://scholar.google.com/citations?user=Xy_seyYAAAAJ&hl=en) am 14.02.2025.
 
 *  [AI-assisted assessment of coding practices in modern code review](https://dl.acm.org/doi/pdf/10.1145/3664646.3665664), 10th of July 2024, Proceedings of the 1st ACM International Conference on AI-Powered Software
 *  [Productive Coverage: Improving the Actionability of Code Coverage](https://dl.acm.org/doi/pdf/10.1145/3639477.3639733), 14th of April 2024, Proceedings of the 46th International Conference on Software Engineering: Software Engineering in Practice
@@ -53,14 +53,14 @@ Citations: [547](https://scholar.google.com/citations?user=Xy_seyYAAAAJ&hl=en) a
 *  [An Industrial Application of Mutation Testing: Lessons, Challenges, and Research Directions](https://www.researchgate.net/profile/Marko-Ivankovic/publication/326499184_An_Industrial_Application_of_Mutation_Testing_Lessons_Challenges_and_Research_Directions/links/5cfa1b0f4585157d1598caf6/An-Industrial-Application-of-Mutation-Testing-Lessons-Challenges-and-Research-Directions.pdf), 9th of April 2018, Proceedings of the International Workshop on Mutation Analysis (Mutation)
 *  [Cross-context web browser communication with unified communication models and context types](https://www.bib.irb.hr:8443/510394/download/510394.pmrpc_07.pdf), 27th of May 2011, 34th International Convention on Information and Communication Technology, Electronics and Microelectronics
 
-# Patents
+# Patenten
 
 *  [Automatically generating machine learning models for software tools that operate on source code](https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/11150877), US-11150877-B2, Issued October 19th 2021
 *  [Process for displaying test coverage data during code reviews](https://patentimages.storage.googleapis.com/d5/88/18/193a386c969d40/US9405662.pdf), US 9,405,662, Issued August 2nd 2016.
 
-# Language
+# Sprachkenntnisse
 
-*  Croatian - Proficient user - Mother tounge / C2 CEFRL
-*  English - Proficient user - C2 CEFRL
-*  German - Independent user - B2/B1 CEFRL
-*  Russian - Basic user - A1 CEFRL
+*  Kroatisch - Kompetente Sprachverwendung - Muttersprache / C2 CEFRL
+*  Englisch - Kompetente Sprachverwendung - C2 CEFRL
+*  Deutsch - Selbstständige Sprachverwendung - B2/B1 CEFRL
+*  Russich - Elementare Sprachverwendung - A1 CEFRL
