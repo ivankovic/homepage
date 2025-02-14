@@ -2,89 +2,140 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/hr/marko/</loc>
+    <loc>https://www.ivankovic.me/hr/impressum/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/marko/"
+                href="https://www.ivankovic.me/impressum/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/marko/"
+                href="https://www.ivankovic.me/de/impressum/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hr"
-                href="http://localhost:1313/hr/marko/"
+                href="https://www.ivankovic.me/hr/impressum/"
                 />
   </url><url>
-    <loc>http://localhost:1313/hr/impressum/</loc>
+    <loc>https://www.ivankovic.me/hr/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/impressum/"
+                href="https://www.ivankovic.me/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/impressum/"
+                href="https://www.ivankovic.me/de/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hr"
-                href="http://localhost:1313/hr/impressum/"
+                href="https://www.ivankovic.me/hr/"
                 />
   </url><url>
-    <loc>http://localhost:1313/hr/</loc>
+    <loc>https://www.ivankovic.me/hr/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/"
+                href="https://www.ivankovic.me/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/"
+                href="https://www.ivankovic.me/de/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hr"
-                href="http://localhost:1313/hr/"
+                href="https://www.ivankovic.me/hr/contact/"
                 />
   </url><url>
-    <loc>http://localhost:1313/hr/disclaimer/</loc>
+    <loc>https://www.ivankovic.me/hr/marko/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/disclaimer/"
+                href="https://www.ivankovic.me/marko/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/disclaimer/"
+                href="https://www.ivankovic.me/de/marko/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hr"
-                href="http://localhost:1313/hr/disclaimer/"
+                href="https://www.ivankovic.me/hr/marko/"
                 />
   </url><url>
-    <loc>http://localhost:1313/hr/privacy/</loc>
+    <loc>https://www.ivankovic.me/hr/marko/blog/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/privacy/"
+                href="https://www.ivankovic.me/marko/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://localhost:1313/de/privacy/"
+                href="https://www.ivankovic.me/de/marko/blog/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="hr"
-                href="http://localhost:1313/hr/privacy/"
+                href="https://www.ivankovic.me/hr/marko/blog/"
+                />
+  </url><url>
+    <loc>https://www.ivankovic.me/hr/marko/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marko/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/marko/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marko/about/"
+                />
+  </url><url>
+    <loc>https://www.ivankovic.me/hr/disclaimer/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/disclaimer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/disclaimer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/disclaimer/"
+                />
+  </url><url>
+    <loc>https://www.ivankovic.me/hr/privacy/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/privacy/"
                 />
   </url>
 </urlset>

@@ -2,38 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ivanković - Family website on Ivankovic Family Website</title>
-    <link>http://localhost:1313/</link>
+    <link>https://www.ivankovic.me/</link>
     <description>Recent content in Ivanković - Family website on Ivankovic Family Website</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 07 Jan 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.ivankovic.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Registering a birth in Switzerland</title>
-      <link>http://localhost:1313/marko/registering-a-birth/</link>
+      <link>https://www.ivankovic.me/marko/blog/registering-a-birth/</link>
       <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/marko/registering-a-birth/</guid>
+      <guid>https://www.ivankovic.me/marko/blog/registering-a-birth/</guid>
       <description>&lt;h1 id=&#34;registering-a-birth-in-switzerland&#34;&gt;Registering a birth in Switzerland&lt;/h1&gt;&#xA;&lt;p&gt;Pregnancy is a beautiful time when your body is going through changes. You are&#xA;nesting in and preparing everything for the new addition to your family. The&#xA;last thing you want to think about is red tape, forms, paperwork and&#xA;international treaties.&lt;/p&gt;&#xA;&lt;p&gt;Unfortunately, paperwork is a constant part of life and birth is no exception.&#xA;Your baby&amp;rsquo;s birth will have to be registered in Switzerland. Like everything&#xA;else in Switzerland, how exactly you register a newborn depends on the kanton&#xA;and the local community, but things generally follow the same flow.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Disclaimer</title>
-      <link>http://localhost:1313/disclaimer/</link>
+      <title>About me</title>
+      <link>https://www.ivankovic.me/marko/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/disclaimer/</guid>
+      <guid>https://www.ivankovic.me/marko/about/</guid>
+      <description>&lt;h1 id=&#34;14-years-of-experience-in-software-engineering&#34;&gt;14 Years of experience in Software Engineering&lt;/h1&gt;&#xA;&lt;p&gt;Leading cutting edge technical work:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;AI Software Engineer&lt;/strong&gt; - Engineered a transformative AI model for code and deployed it in&#xA;a product that automatically reviews code for all Google engineers. Built a system that&#xA;automatically produces full stack applications at &lt;a href=&#34;https://www.cogna.co/&#34;&gt;Cogna&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Code quality&lt;/strong&gt; - Co-owned the dead code deletion system that deleted more than 5% of all&#xA;C++ code at Google and almost half a billion lines total.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Software testing&lt;/strong&gt; - Groundbreaking coverage infrastructure that sped up code reviews at&#xA;Google by 5% and reduced the code review costs by 11%. Invented an entirely new type of code&#xA;coverage, Productive Coverage that further reduced code review cost by further 2% and improved&#xA;code and test quality.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Other projects, including code change analysis, resource usage optimization and reliability&#xA;and failure analysis.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://www.ivankovic.me/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.ivankovic.me/contact/</guid>
+      <description>&lt;h1 id=&#34;contact&#34;&gt;Contact&lt;/h1&gt;&#xA;&lt;p&gt;We would be happy to hear from you at:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Marina - &lt;a href=&#34;mailto:marina@ivankovic.me&#34;&gt;marina@ivankovic.me&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Marko - &lt;a href=&#34;mailto:marko@ivankovic.me&#34;&gt;marko@ivankovic.me&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;We only use email for communication with visitors of this website.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Disclaimer</title>
+      <link>https://www.ivankovic.me/disclaimer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.ivankovic.me/disclaimer/</guid>
       <description>&lt;h1 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h1&gt;&#xA;&lt;p&gt;This is a personal website. Any views or opinions represented in this website are personal and belong&#xA;solely to the website owner and do not represent those of people, institutions or organizations that&#xA;the owner may or may not be associated with in professional or personal capacity, unless explicitly&#xA;stated.&lt;/p&gt;&#xA;&lt;p&gt;All content provided on this website is for informational purposes only. The owner of this website&#xA;makes no representations as to the accuracy or completeness of any information on this site or&#xA;found by following any link on this site.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Impressum</title>
-      <link>http://localhost:1313/impressum/</link>
+      <link>https://www.ivankovic.me/impressum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/impressum/</guid>
+      <guid>https://www.ivankovic.me/impressum/</guid>
       <description>&lt;p&gt;Marko Ivanković&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;mailto:marko@ivankovic.me&#34;&gt;marko@ivankovic.me&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Privacy policy</title>
-      <link>http://localhost:1313/privacy/</link>
+      <link>https://www.ivankovic.me/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/privacy/</guid>
+      <guid>https://www.ivankovic.me/privacy/</guid>
       <description>&lt;p&gt;This privacy policy will explain how ivankovic.me uses the personal data we&#xA;collect from you when you use our website.&lt;/p&gt;&#xA;&lt;h1 id=&#34;what-data-do-we-collect&#34;&gt;What data do we collect?&lt;/h1&gt;&#xA;&lt;h2 id=&#34;the-data-required-to-show-you-the-website&#34;&gt;The data required to show you the website&lt;/h2&gt;&#xA;&lt;p&gt;Our servers need to know your &lt;a href=&#34;https://en.wikipedia.org/wiki/IP_address&#34;&gt;IP address&lt;/a&gt;&#xA;to be able to show you the website.&lt;/p&gt;&#xA;&lt;p&gt;Your browser also provides us with your browser type and device metadata&#xA;(e.g. screen size).&lt;/p&gt;&#xA;&lt;h2 id=&#34;email&#34;&gt;Email&lt;/h2&gt;&#xA;&lt;p&gt;We use Google/Gmail as our email provider. If you email us, your email address and&#xA;any data you provide in the body of the email will be stored on Google&amp;rsquo;s servers.&#xA;You can find &lt;a href=&#34;https://policies.google.com/privacy&#34;&gt;Google&amp;rsquo;s privacy policy here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,4 +1,4 @@
 ---
-title: "Gut zu wissen"
+title: "Blog"
 ---
 Coming soon

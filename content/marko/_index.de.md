@@ -1,4 +1,3 @@
 ---
-title: "Gut zu wissen"
+title: "Marko Ivanković"
 ---
-Coming soon
