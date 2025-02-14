@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Marko Ivanković on Ivankovic Family Website</title>
-    <link>https://www.ivankovic.me/de/marko/</link>
+    <link>http://localhost:1313/de/marko/</link>
     <description>Recent content in Marko Ivanković on Ivankovic Family Website</description>
     <generator>Hugo</generator>
     <language>de</language>
-    <atom:link href="https://www.ivankovic.me/de/marko/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/de/marko/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lebenslauf</title>
-      <link>https://www.ivankovic.me/de/marko/about/</link>
+      <link>http://localhost:1313/de/marko/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.ivankovic.me/de/marko/about/</guid>
+      <guid>http://localhost:1313/de/marko/about/</guid>
       <description>&lt;h1 id=&#34;14-jahre-erfahrung-im-software-engineering&#34;&gt;14 Jahre Erfahrung im Software Engineering&lt;/h1&gt;&#xA;&lt;p&gt;Führende technische Spitzenarbeit:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;KI-Softwareentwickler&lt;/strong&gt; - Entwickelte ein transformatives KI-Modell für Code und setzte es in&#xA;einem Produkt ein, das Code für alle Google-Entwickler automatisch überprüft. Baute ein System auf,&#xA;das bei &lt;a href=&#34;https://www.cogna.co/&#34;&gt;Cogna&lt;/a&gt; automatisch Full-Stack-Applikationen erstellt.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Codequalität&lt;/strong&gt; - Entwickelte ein Systems zur Löschung von totem Code, das mehr als 5% des&#xA;gesamten C++-Codes bei Google und insgesamt fast eine halbe Milliarde Linien löschte.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Software test&lt;/strong&gt; - Test-Coverage-Infrastruktur, die Codeüberprüfungen bei Google um 5%&#xA;beschleunigte und die Codeüberprüfungskosten um 11% reduzierte. Erfand eine völlig neue Art der&#xA;Testabdeckungmessung, Productive Coverage, die die Codeüberprüfungskosten um weitere 2% reduzierte&#xA;und die Code- und Testqualität verbesserte.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Andere Projekte, einschließlich Codeänderungsanalyse, Optimierung der Ressourcennutzung sowie&#xA;Zuverlässigkeits- und Fehleranalyse.&lt;/p&gt;</description>
     </item>
   </channel>
