@@ -1,5 +1,4 @@
 ---
 title: "Blog"
 ---
-I hope the following free resources can help you navigate pregnancy, birth
-and having children in Switzerland.
+A collection of my thoughts. Do make sure to read the disclamer linked at the bottom of the page.

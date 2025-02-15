@@ -158,33 +158,32 @@ div#content div.package li {
 div#content li {
   margin-top: 0.5rem;
   margin-left: 1rem;
-    list-style-type: circle;
-  }
+  list-style-type: circle;
+}
 
-  div#content ul.page-list li {
-    margin-top: 0.5rem;
-    margin-left: 1rem;
-    list-style-type: none;
-    border-radius: 8px;
-      border: solid var(--stark-color);
-      border-width: 1.5px;
-      background-color: var(--soft-color);
+div#content ul.page-list li {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  list-style-type: none;
+  border-radius: 8px;
+  border: solid var(--stark-color);
+  border-width: 1.5px;
+  background-color: var(--soft-color);
 
-      padding: 1rem;
-      margin: 1rem;
-    }
+  padding: 1rem;
+  margin: 1rem;
+}
 
-  div#content ul.page-list li a {
-    font-weight: bold;
-  }
+div#content ul.page-list li a {
+  font-weight: bold;
+}
 
-  div#content ul.page-list li div.date {
-    text-align: right;
-  }
+div#content ul.page-list li div.date {
+  text-align: right;
+}
 
-  div#content ul.page-list li.centered {
-    text-align: center;
-  }
+div#content ul.page-list li.centered {
+  text-align: center;
 }
 
 footer {
@@ -219,8 +218,8 @@ div.package {
   margin: 1rem;
 
   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 600px) {
