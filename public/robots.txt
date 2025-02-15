@@ -64,6 +64,6 @@ Disallow: /
 User-agent: FacebookBot
 Disallow: /
 
-#Twitter's bot used to index the content of any given URL
+# Twitter's bot used to index the content of any given URL
 User-agent: Twitterbot
 Disallow: /
