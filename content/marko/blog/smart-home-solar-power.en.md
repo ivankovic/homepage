@@ -2,7 +2,7 @@
 title: "Solar Power in Central Europe"
 description: "The initial report on the solar panels installed on my roof"
 date: "2021-09-05"
-keywords: [ ]
+keywords: [ "solar power", "central europe", "first report", "home solar", "green energy" ]
 ---
 # Solar potential
 

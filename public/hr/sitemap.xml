@@ -2,6 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://www.ivankovic.me/hr/</loc>
+    <lastmod>2021-09-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/"
+                />
+  </url><url>
+    <loc>https://www.ivankovic.me/hr/marko/</loc>
+    <lastmod>2021-09-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marko/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/marko/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marko/"
+                />
+  </url><url>
+    <loc>https://www.ivankovic.me/hr/marko/blog/</loc>
+    <lastmod>2021-09-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marko/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/marko/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marko/blog/"
+                />
+  </url><url>
+    <loc>https://www.ivankovic.me/hr/marko/blog/smart-home-solar-power/</loc>
+    <lastmod>2021-09-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marko/blog/smart-home-solar-power/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/marko/blog/smart-home-solar-power/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marko/blog/smart-home-solar-power/"
+                />
+  </url><url>
     <loc>https://www.ivankovic.me/hr/impressum/</loc>
     <xhtml:link
                 rel="alternate"
@@ -17,23 +89,6 @@
                 rel="alternate"
                 hreflang="hr"
                 href="https://www.ivankovic.me/hr/impressum/"
-                />
-  </url><url>
-    <loc>https://www.ivankovic.me/hr/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.ivankovic.me/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://www.ivankovic.me/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hr"
-                href="https://www.ivankovic.me/hr/"
                 />
   </url><url>
     <loc>https://www.ivankovic.me/hr/contact/</loc>
@@ -68,40 +123,6 @@
                 rel="alternate"
                 hreflang="hr"
                 href="https://www.ivankovic.me/hr/marina/"
-                />
-  </url><url>
-    <loc>https://www.ivankovic.me/hr/marko/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.ivankovic.me/marko/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://www.ivankovic.me/de/marko/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hr"
-                href="https://www.ivankovic.me/hr/marko/"
-                />
-  </url><url>
-    <loc>https://www.ivankovic.me/hr/marko/blog/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.ivankovic.me/marko/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://www.ivankovic.me/de/marko/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hr"
-                href="https://www.ivankovic.me/hr/marko/blog/"
                 />
   </url><url>
     <loc>https://www.ivankovic.me/hr/disclaimer/</loc>

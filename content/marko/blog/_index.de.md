@@ -1,4 +1,4 @@
 ---
 title: "Blog"
 ---
-Coming soon
+Eine Sammlung meiner Gedanken. Lesen Sie unbedingt den unten verlinkten Haftungsausschluss.

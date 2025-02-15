@@ -58,6 +58,21 @@
   </url><url>
     <loc>https://www.ivankovic.me/marko/blog/smart-home-solar-power/</loc>
     <lastmod>2021-09-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/marko/blog/smart-home-solar-power/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marko/blog/smart-home-solar-power/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marko/blog/smart-home-solar-power/"
+                />
   </url><url>
     <loc>https://www.ivankovic.me/marina/about/</loc>
     <xhtml:link
