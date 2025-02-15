@@ -3,6 +3,7 @@ title: "Solarna energija u Srednjoj Europi"
 description: "Prvi rezultati solarnih panela na mom krovu"
 date: "2021-09-05"
 keywords: [ "solarna energija", "srednja europa", "prvo izvješće", "kućna solarna energija", "zelena energija" ]
+layout: "blogpost"
 ---
 
 # Solarni potencijal

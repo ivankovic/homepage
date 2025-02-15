@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div id="content">
+  <div id="blog-headline">
+    <div id="blog-title">
+      {{ .Title }}
+    </div>
+    <div>
+      {{ i18n "readingTime" .ReadingTime }}
+    </div>
+  </div>
+  {{ .Content }}
+</div>
+{{ end }}

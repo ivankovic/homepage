@@ -3,3 +3,10 @@ privacyPolicy:
 
 disclaimer:
   other: "Odricanje od odgovornosti"
+
+readingTime:
+  one: "Jedna minuta za čitanje"
+  other: "{{.Count}} minuta za čitanje"
+
+shareOn:
+  other: "Podijeli ovaj članak"

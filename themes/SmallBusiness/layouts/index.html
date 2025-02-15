@@ -7,8 +7,7 @@
   <div class="sigil">
     <a href="{{ absLangURL $person.id }}">
       <picture>
-        <img src=" {{ $logo_link }}" width="{{ $logo.Width }}" height="{{ $logo.Height }}" id="logo-{{ $person.id }}"
-          alt="Sigil representing {{ $person.name }}">
+        <img src="{{ $logo_link }}" id="logo-{{ $person.id }}" alt="Sigil representing {{ $person.name }}">
       </picture>
       <div>
         {{ $person.name }}

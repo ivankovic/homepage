@@ -150,11 +150,6 @@ h3 {
 h4 {
   font-weight: bold;
 }
-div#content div.package li {
-  margin-top: 0.5rem;
-  margin-left: 0rem;
-  list-style-type: none;
-}
 div#content li {
   margin-top: 0.5rem;
   margin-left: 1rem;
@@ -204,37 +199,23 @@ div.sigil a {
   text-decoration: none;
 }
 
-div.packages {
-  display: flex;
-}
-
-div.package {
-  border-radius: 3%;
-  border: solid var(--stark-color);
-  border-width: 1.5px;
-  background-color: var(--soft-color);
-
-  padding: 1.5rem;
-  margin: 1rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-@media screen and (max-width: 600px) {
-  div.packages {
-    flex-direction: column;
-  }
+@media screen and (max-width: 700px) {
   div#content.home {
     flex-direction: column;
   }
+  div.menu {
+    flex-direction: column;
+  }
+  div.menu .call-to-action {
+    display: none;
+  }
+  div.sigil img {
+    width: 160px;
+    height: 160px;
+  }
 }
 
-@media screen and (min-width: 600px) {
-  div.package {
-    width: 30%;
-  }
+@media screen and (min-width: 700px) {
   div#content.home {
     flex-direction: row;
   }
@@ -243,22 +224,19 @@ div.package {
   }
 }
 
-div.package li {
-  margin-top: 1rem;
+div#blog-headline {
+  display: flex;
+  flex-direction: column;
 }
 
-div.package div.price {
-  margin-top: 1.5rem;
-
+div#blog-headline div {
   text-align: center;
-  font-weight: bold;
 }
 
-div.package div.name {
-  margin-bottom: 1.5rem;
-
-  text-align: center;
+div#blog-title {
   font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--stark-color);
 }
 
 div.quote {

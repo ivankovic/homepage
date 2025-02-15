@@ -8,18 +8,20 @@
 <link rel="apple-touch-icon" href="/app-icon.png" />
 
 <link rel="canonical" href="{{ .Page.Permalink }}" />
+<link rel="alternate" type="application/rss+xml" href="{{.Site.BaseURL }}/index.xml" title="{{ .Site.Title }}">
 
 {{ with .Params.description }}
 <meta name="description" content="{{ . }}" />{{ end }}
 {{ with .Params.keywords }}
-<meta name="keywords" content="{{ delimit . ", "}}" />{{ end }}
+<meta name="keywords" content="{{ delimit . " , "}}" />{{ end }}
 
 <link rel="preload" as="font" href="/fonts/Sora.ttf" type="font/ttf" crossorigin />
 
 {{ $reset := (resources.Get "css/reset.css") }}
 {{ $main := (resources.Get "css/main.css") }}
 {{ $style := (slice $reset $main | resources.Concat "css/bundle.css") | minify | fingerprint }}
-<link crossorigin="anonymous" integrity="{{ $style.Data.Integrity }}" rel="stylesheet" href="{{ $style.RelPermalink }}" />
+<link crossorigin="anonymous" integrity="{{ $style.Data.Integrity }}" rel="stylesheet"
+  href="{{ $style.RelPermalink }}" />
 
 {{ template "_internal/twitter_cards.html" . }}
 {{ template "_internal/opengraph.html" . }}

@@ -3,6 +3,7 @@ title: "Solarenergie in Mitteleuropa"
 description: "Der Erstbericht zu den auf meinem Dach installierten Solarmodulen"
 date: "2021-09-05"
 keywords: [ "solar power", "central europe", "first report", "home solar", "green energy" ]
+layout: "blogpost"
 ---
 # Solarpotenzial
 

@@ -3,3 +3,10 @@ privacyPolicy:
 
 disclaimer:
   other: "Haftungsausschluss"
+
+readingTime:
+  one: "Eine Minute zum Lesen"
+  other: "{{.Count}} Minuten Lesedauer"
+
+shareOn:
+  other: "Diesen Website teilen"
