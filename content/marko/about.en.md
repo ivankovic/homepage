@@ -59,7 +59,7 @@ Citations: [547](https://scholar.google.com/citations?user=Xy_seyYAAAAJ&hl=en) a
 
 # Language
 
-*  Croatian - Proficient user - Mother tounge / C2 CEFRL
+*  Croatian - Proficient user - C2 CEFRL (Mothertounge)
 *  English - Proficient user - C2 CEFRL
-*  German - Independent user - B2/B1 CEFRL
-*  Russian - Basic user - A1 CEFRL
+*  German - Independent user - B2/B1 CEFRL (FIDE certificate)
+*  Russian - Basic user - A1 CEFRL (Langauge school certificate)

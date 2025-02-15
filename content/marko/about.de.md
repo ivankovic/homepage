@@ -60,7 +60,7 @@ Anzahl der Zitate: [547](https://scholar.google.com/citations?user=Xy_seyYAAAAJ&
 
 # Sprachkenntnisse
 
-*  Kroatisch - Kompetente Sprachverwendung - Muttersprache / C2 CEFRL
+*  Kroatisch - Kompetente Sprachverwendung - C2 CEFRL (Muttersprache)
 *  Englisch - Kompetente Sprachverwendung - C2 CEFRL
-*  Deutsch - Selbstständige Sprachverwendung - B2/B1 CEFRL
-*  Russich - Elementare Sprachverwendung - A1 CEFRL
+*  Deutsch - Selbstständige Sprachverwendung - B2/B1 CEFRL (FIDE Zertifikat)
+*  Russich - Elementare Sprachverwendung - A1 CEFRL (Sprachschulzertifikat)

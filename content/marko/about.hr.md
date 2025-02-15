@@ -59,7 +59,7 @@ Broj citata: [547](https://scholar.google.com/citations?user=Xy_seyYAAAAJ&hl=en)
 
 # Jezici
 
-*  Hrvatski - Napredni korisnik - Izvorni govornik / C2 CEFRL
+*  Hrvatski - Napredni korisnik - C2 CEFRL (Izvorni govornik)
 *  Engleski - Napredni korisnik - C2 CEFRL
-*  Njemački - Samostalni korisnik - B2/B1 CEFRL
-*  Ruski - Početnik - A1 CEFRL
+*  Njemački - Samostalni korisnik - B2/B1 CEFRL (FIDE certifikat)
+*  Ruski - Početnik - A1 CEFRL (Potvrda jezične škole)
