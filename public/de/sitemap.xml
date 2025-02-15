@@ -104,6 +104,23 @@
                 href="https://www.ivankovic.me/de/contact/"
                 />
   </url><url>
+    <loc>https://www.ivankovic.me/de/marina/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marina/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marina/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/marina/about/"
+                />
+  </url><url>
     <loc>https://www.ivankovic.me/de/marko/about/</loc>
     <xhtml:link
                 rel="alternate"
@@ -119,6 +136,23 @@
                 rel="alternate"
                 hreflang="de"
                 href="https://www.ivankovic.me/de/marko/about/"
+                />
+  </url><url>
+    <loc>https://www.ivankovic.me/de/marina/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marina/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marina/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/marina/"
                 />
   </url><url>
     <loc>https://www.ivankovic.me/de/marko/</loc>

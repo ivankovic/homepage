@@ -53,6 +53,23 @@
                 href="https://www.ivankovic.me/hr/contact/"
                 />
   </url><url>
+    <loc>https://www.ivankovic.me/hr/marina/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marina/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/marina/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marina/"
+                />
+  </url><url>
     <loc>https://www.ivankovic.me/hr/marko/</loc>
     <xhtml:link
                 rel="alternate"
@@ -87,23 +104,6 @@
                 href="https://www.ivankovic.me/hr/marko/blog/"
                 />
   </url><url>
-    <loc>https://www.ivankovic.me/hr/marko/about/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://www.ivankovic.me/marko/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://www.ivankovic.me/de/marko/about/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="hr"
-                href="https://www.ivankovic.me/hr/marko/about/"
-                />
-  </url><url>
     <loc>https://www.ivankovic.me/hr/disclaimer/</loc>
     <xhtml:link
                 rel="alternate"
@@ -136,6 +136,40 @@
                 rel="alternate"
                 hreflang="hr"
                 href="https://www.ivankovic.me/hr/privacy/"
+                />
+  </url><url>
+    <loc>https://www.ivankovic.me/hr/marina/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marina/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/marina/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marina/about/"
+                />
+  </url><url>
+    <loc>https://www.ivankovic.me/hr/marko/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marko/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/marko/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marko/about/"
                 />
   </url>
 </urlset>

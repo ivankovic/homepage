@@ -1,5 +1,5 @@
 ---
-title: "O meni"
+title: "Životopis"
 ---
 # 14 godina iskustva u računalnom inžinjerstvu
 
