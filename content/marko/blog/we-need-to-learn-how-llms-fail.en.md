@@ -6,13 +6,13 @@ date: "2025-02-16"
 keywords: [ "software engineering management", "llms", "large language models", "software management", "failure analysis", "how LLMs fail"]
 layout: "blogpost"
 ---
-# Short, easy to read summary
+## Short, easy to read summary
 
 LLMs change how software fails. We spent the last 50 years learning how to build software that
 doesn't fail. This knowledge is no longer useful. We need to experience, learn and teach others
 how software that uses LLMs fails. This will take time.
 
-# Why you should trust me?
+## Why you should trust me?
 
 I have been working on LLMs for code for the alst 6 years. Back in the days before ChatGPT. The model
 that first caught my attention was the [code2vec](https://code2vec.org) model, way back in 2019. It

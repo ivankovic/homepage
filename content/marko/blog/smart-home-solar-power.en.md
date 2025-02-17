@@ -5,7 +5,7 @@ date: "2021-09-05"
 keywords: [ "solar power", "central europe", "first report", "home solar", "green energy" ]
 layout: "blogpost"
 ---
-# Solar potential
+## Solar potential
 
 My house has excellent solar potential. It’s roughly on 47 degrees north. One entire side of the
 roof has an azimuth of about 220 degrees and a declination of 31 degrees. The total usable surface
@@ -15,7 +15,7 @@ The roof is big enough for 36 panels. 24 at a declination of 31 degrees and 12 a
 330 wP panels this sums up to 11.8 kWp. The local utility company that installed the system projects
 a yearly production of 12.2 MWh.
 
-# Current results
+## Current results
 
 The system has been running since December 2020. The best day so far was the 30th of May 2021 when
 the system produced 81.3 kWh in a single day. Unfortunately the summer of 2021 was exceptionally
@@ -23,7 +23,7 @@ rainy for Europe, so the system didn’t quite reach it’s full potential, but 
 9.9 MWh in the first 8 months of the year. Given that the darker winter months are now coming, the
 projected 12.2 MWh seems spot on.
 
-# Surprises so far
+## Surprises so far
 
 I was surprised to see that the panels do not produce peak output in the summer months. This is when
 I learned that panels are usually rated at 25 degrees Celsius and in the sumer my roof was easily
