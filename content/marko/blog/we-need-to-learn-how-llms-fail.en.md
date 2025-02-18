@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "We need to learn how LLMs fail"
-description: "Lessons learned from 6 years of managing projects that use LLMs for their core functionality."
+description: "Lessons about failure from 6 years of managing projects that use LLMs."
 date: "2025-02-16"
 keywords: [ "software engineering management", "llms", "large language models", "software management", "failure analysis", "how LLMs fail"]
 layout: "blogpost"
@@ -24,4 +24,3 @@ it took several years of care and work on the training data, re-training ever be
 model and moving to [T5X](https://github.com/google-research/t5x) before we were finally able to
 reach quality that could be used in production in a real product. The product in question was
 [automated code review](https://dl.acm.org/doi/pdf/10.1145/3664646.3665664).
-
