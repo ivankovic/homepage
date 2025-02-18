@@ -193,10 +193,20 @@ footer span {
 
 div.sigil {
   font-weight: bold;
+  text-align: center;
 }
 
 div.sigil a {
   text-decoration: none;
+}
+
+div.small-sigil {
+  text-align: center;
+}
+
+div.small-sigil img {
+  width: 160px;
+  height: 160px;
 }
 
 @media screen and (max-width: 700px) {
