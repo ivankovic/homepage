@@ -108,6 +108,23 @@
                 href="https://www.ivankovic.me/hr/contact/"
                 />
   </url><url>
+    <loc>https://www.ivankovic.me/hr/marko/contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marko/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/marko/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marko/contact/"
+                />
+  </url><url>
     <loc>https://www.ivankovic.me/hr/marina/</loc>
     <xhtml:link
                 rel="alternate"
