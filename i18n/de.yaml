@@ -9,4 +9,4 @@ readingTime:
   other: "{{.Count}} Minuten Lesedauer"
 
 shareOn:
-  other: "Diesen Website teilen"
+  other: "Teilen am"

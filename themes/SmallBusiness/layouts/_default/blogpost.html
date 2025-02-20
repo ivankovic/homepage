@@ -7,6 +7,13 @@
     <div>
       {{ i18n "readingTime" .ReadingTime }}
     </div>
+    <div>
+      {{ i18n "shareOn" }}:
+      <a href="https://bsky.app/intent/compose?text=I am reading {{ .Permalink }}" rel="noopener noreferrer">Bluesky</a>
+      <a href="https://www.linkedin.com/feed/?shareActive=true&text=I am reading {{ .Permalink }}" target="_blank"
+        rel="noopener noreferrer">Linkedin</a>
+      <a href="https://twitter.com/intent/tweet?text=&url={{ .Permalink }})" rel="noopener noreferrer">Twitter</a>
+    </div>
   </div>
   {{ .Content }}
 </div>

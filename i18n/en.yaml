@@ -9,4 +9,4 @@ readingTime:
   other: "{{.Count}} minutes to read"
 
 shareOn:
-  other: "Share this blogpost"
+  other: "Share on"

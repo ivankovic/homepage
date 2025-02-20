@@ -9,4 +9,4 @@ readingTime:
   other: "{{.Count}} minuta za čitanje"
 
 shareOn:
-  other: "Podijeli ovaj članak"
+  other: "Podijeli na"
