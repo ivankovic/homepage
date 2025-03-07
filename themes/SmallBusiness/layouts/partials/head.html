@@ -18,8 +18,9 @@
 <link rel="preload" as="font" href="/fonts/Sora.ttf" type="font/ttf" crossorigin />
 
 {{ $reset := (resources.Get "css/reset.css") }}
+{{ $syntax := (resources.Get "css/syntax.css") }}
 {{ $main := (resources.Get "css/main.css") }}
-{{ $style := (slice $reset $main | resources.Concat "css/bundle.css") | minify | fingerprint }}
+{{ $style := (slice $reset $syntax $main | resources.Concat "css/bundle.css") | minify | fingerprint }}
 <link crossorigin="anonymous" integrity="{{ $style.Data.Integrity }}" rel="stylesheet"
   href="{{ $style.RelPermalink }}" />
 

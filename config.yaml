@@ -21,6 +21,7 @@ defaultContentLanguage: en
 markup:
   highlight:
     style: catppuccin-latte
+    noClasses: false
 
 params:
   people:
