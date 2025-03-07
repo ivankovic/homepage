@@ -18,6 +18,10 @@ minify:
 
 defaultContentLanguage: en
 
+markup:
+  highlight:
+    style: catppuccin-latte
+
 params:
   people:
     - name: Marina Čelar Ivanković
