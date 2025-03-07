@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.ivankovic.me/hr/</loc>
-    <lastmod>2021-09-05T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -21,7 +21,7 @@
                 />
   </url><url>
     <loc>https://www.ivankovic.me/hr/marko/</loc>
-    <lastmod>2021-09-05T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -39,7 +39,7 @@
                 />
   </url><url>
     <loc>https://www.ivankovic.me/hr/marko/blog/</loc>
-    <lastmod>2021-09-05T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -54,6 +54,24 @@
                 rel="alternate"
                 hreflang="hr"
                 href="https://www.ivankovic.me/hr/marko/blog/"
+                />
+  </url><url>
+    <loc>https://www.ivankovic.me/hr/marko/blog/mikrotik-sync-firewall-rules-script/</loc>
+    <lastmod>2025-03-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.ivankovic.me/marko/blog/mikrotik-sync-firewall-rules-script/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://www.ivankovic.me/de/marko/blog/mikrotik-sync-firewall-rules-script/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="hr"
+                href="https://www.ivankovic.me/hr/marko/blog/mikrotik-sync-firewall-rules-script/"
                 />
   </url><url>
     <loc>https://www.ivankovic.me/hr/marko/blog/smart-home-solar-power/</loc>

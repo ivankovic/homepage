@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "Sync MikroTik Firewall Filtering Rules"
 description: "A script that syncs firewall filtering rules. Good fit for CAPsMAN."
 date: "2025-03-06"
@@ -29,7 +28,7 @@ Here is the script:
     :put (($cpe->"address") . " " . $cpe->"identity");
 
     /tool fetch upload=yes mode=ftp \
-        user="admin" password="PASWORD" \
+        user="admin" password="PASSWORD" \
         src-path=filterRules.rsc dst-path=filterRules.rsc \
         address=($cpe->"address")
 
