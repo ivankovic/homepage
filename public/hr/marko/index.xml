@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Marko Ivanković on Ivankovic Family Website</title>
-    <link>http://localhost:1313/hr/marko/</link>
+    <link>https://www.ivankovic.me/hr/marko/</link>
     <description>Recent content in Marko Ivanković on Ivankovic Family Website</description>
     <generator>Hugo</generator>
     <language>hr</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/hr/marko/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.ivankovic.me/hr/marko/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kontakt i društvene mreže</title>
-      <link>http://localhost:1313/hr/marko/contact/</link>
+      <link>https://www.ivankovic.me/hr/marko/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hr/marko/contact/</guid>
+      <guid>https://www.ivankovic.me/hr/marko/contact/</guid>
       <description>&lt;h1 id=&#34;hvala-vam-na-interesu&#34;&gt;Hvala Vam na interesu!&lt;/h1&gt;&#xA;&lt;p&gt;Slobodno stupite u kontat na sljedećim poveznicama:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Email: &lt;a href=&#34;mailto:marko@ivankovic.me&#34;&gt;marko@ivankovic.me&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;LinkedIn: &lt;a href=&#34;https://www.linkedin.com/in/ivankovicmarko/&#34;&gt;Marko Ivanković&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;ORCID: &lt;a href=&#34;https://orcid.org/0000-0002-8548-6008&#34;&gt;0000-0002-8548-6008&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Životopis</title>
-      <link>http://localhost:1313/hr/marko/about/</link>
+      <link>https://www.ivankovic.me/hr/marko/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hr/marko/about/</guid>
+      <guid>https://www.ivankovic.me/hr/marko/about/</guid>
       <description>&lt;h1 id=&#34;14-godina-iskustva-u-računalnom-inžinjerstvu&#34;&gt;14 godina iskustva u računalnom inžinjerstvu&lt;/h1&gt;&#xA;&lt;p&gt;Svjetski vodeći rad na novim tehnologijama:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Umjetna inteligencija u računalnom inžinjerstvu&lt;/strong&gt; - Stvorio model umjetne inteligencije koji&#xA;razumije računalni kod i upotrijebio ga u proizvodu koji automatski provjerava sav kod kojeg pišu&#xA;Googleovi inžinjeri. Izgradio sustav koji potpuno automatski proizvodi potpune aplikacije u &lt;a href=&#34;https://www.cogna.co/&#34;&gt;Cogni&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Kvaliteta softwarea&lt;/strong&gt; - Stvorio sustav za traženje i brisanje mrtvog koda koji je obrisao više&#xA;od 5% C++ koda u Googleu i više od pola miljarde linija koda ukupno.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Testiranje Softwarea&lt;/strong&gt; - Stvorio tehnički inovativnu infrastrukturu koja je ubrzala provjeru koda&#xA;u Googleu za 5% i smanjila cijenu provjere koda za 11%. Stvorio potpuno novi tip mjerenja kvalitete&#xA;testova, pod engleskim imenom Productive Coverage, koja je dodatno smanjila cijenu za 2% i poboljšala&#xA;kvalitetu koda i testova.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Drugi projekti, uključujući automatski pregled promjena izvornog koda, poboljšanje korištenja resursa&#xA;te analizu kvarova.&lt;/p&gt;</description>
     </item>
   </channel>

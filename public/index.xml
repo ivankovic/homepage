@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ivanković - Family website on Ivankovic Family Website</title>
-    <link>http://localhost:1313/</link>
+    <link>https://www.ivankovic.me/</link>
     <description>Recent content in Ivanković - Family website on Ivankovic Family Website</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 06 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.ivankovic.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sync MikroTik Firewall Filtering Rules</title>
-      <link>http://localhost:1313/marko/blog/mikrotik-sync-firewall-rules-script/</link>
+      <link>https://www.ivankovic.me/marko/blog/mikrotik-sync-firewall-rules-script/</link>
       <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/marko/blog/mikrotik-sync-firewall-rules-script/</guid>
+      <guid>https://www.ivankovic.me/marko/blog/mikrotik-sync-firewall-rules-script/</guid>
       <description>&lt;h2 id=&#34;the-problem&#34;&gt;The problem&lt;/h2&gt;&#xA;&lt;p&gt;You have a single main MikroTik router. You want to sync the firewall rules from the main router to all neighbors.&lt;/p&gt;&#xA;&lt;p&gt;Commonly, this would be the case if you have CAPsMAN on a central router, and a few CAP APs, because CAPsMAN doesn&amp;rsquo;t sync filtering rules.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-script&#34;&gt;The script&lt;/h2&gt;&#xA;&lt;p&gt;You &lt;strong&gt;must&lt;/strong&gt; have &lt;a href=&#34;https://help.mikrotik.com/docs/spaces/ROS/pages/132350014/SSH#SSH-EnablingPKIauthentication&#34;&gt;SSH public key login&lt;/a&gt; enabled.&lt;/p&gt;&#xA;&lt;p&gt;Here is the script:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:put &lt;span class=&#34;s2&#34;&gt;&amp;#34;Exporting current firewall filter rules...&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/ip firewall filter &lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;filterRules&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:local cpes &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;/ip neighbor print as-value&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:foreach cpe &lt;span class=&#34;nv&#34;&gt;in&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$cpes&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;={&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    :put &lt;span class=&#34;o&#34;&gt;((&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$cpe&lt;/span&gt;-&amp;gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;address&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; . &lt;span class=&#34;s2&#34;&gt;&amp;#34; &amp;#34;&lt;/span&gt; . &lt;span class=&#34;nv&#34;&gt;$cpe&lt;/span&gt;-&amp;gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;identity&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    /tool fetch &lt;span class=&#34;nv&#34;&gt;upload&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;yes &lt;span class=&#34;nv&#34;&gt;mode&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;ftp &lt;span class=&#34;se&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;        &lt;span class=&#34;nv&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;admin&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;password&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;PASSWORD&amp;#34;&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;        src-path&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;filterRules.rsc dst-path&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;filterRules.rsc &lt;span class=&#34;se&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;        &lt;span class=&#34;nv&#34;&gt;address&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$cpe&lt;/span&gt;-&amp;gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;address&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;   /system ssh-exec &lt;span class=&#34;nv&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;admin&amp;#34;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;address&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$cpe&lt;/span&gt;-&amp;gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;address&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;        &lt;span class=&#34;nv&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/ip firewall filter remove [find dynamic=no]; import filterRules.rsc; /file remove filterRules.rsc;&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;:put &lt;span class=&#34;s2&#34;&gt;&amp;#34;Firewall filter rule sync complete!&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This script first deletes all manually added rules on the cAPs, so keep that in mind. It will ensure that the rules are &lt;strong&gt;exactly&lt;/strong&gt; the same. Any modifications you do afterwards will be deleted if you run the script again.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Solar Power in Central Europe</title>
-      <link>http://localhost:1313/marko/blog/smart-home-solar-power/</link>
+      <link>https://www.ivankovic.me/marko/blog/smart-home-solar-power/</link>
       <pubDate>Sun, 05 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/marko/blog/smart-home-solar-power/</guid>
+      <guid>https://www.ivankovic.me/marko/blog/smart-home-solar-power/</guid>
       <description>&lt;h2 id=&#34;solar-potential&#34;&gt;Solar potential&lt;/h2&gt;&#xA;&lt;p&gt;My house has excellent solar potential. It’s roughly on 47 degrees north. One entire side of the&#xA;roof has an azimuth of about 220 degrees and a declination of 31 degrees. The total usable surface&#xA;for the panels is 62 square meters.&lt;/p&gt;&#xA;&lt;p&gt;The roof is big enough for 36 panels. 24 at a declination of 31 degrees and 12 at 10 degrees. With&#xA;330 wP panels this sums up to 11.8 kWp. The local utility company that installed the system projects&#xA;a yearly production of 12.2 MWh.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About me</title>
-      <link>http://localhost:1313/marina/about/</link>
+      <link>https://www.ivankovic.me/marina/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/marina/about/</guid>
+      <guid>https://www.ivankovic.me/marina/about/</guid>
       <description>&lt;h1 id=&#34;midwife-in-training-doctor-of-veterinary-medicine&#34;&gt;Midwife in training, Doctor of Veterinary Medicine&lt;/h1&gt;&#xA;&lt;p&gt;I am a Doctor of Veterinary medicine licensed in Croatia and Switzerland.&lt;/p&gt;&#xA;&lt;p&gt;Currently studying at the &lt;a href=&#34;https://www.zhaw.ch/en/health/a-course-of-study-in-health-care/bachelors-programmes-in-the-health-professions/bachelor-in-midwifery&#34;&gt;ZHAW for a Bachelor in Midwifery&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h1 id=&#34;work-history&#34;&gt;Work history&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;September 2012 to July 2014 - Volounteer work at the Clinic for Internal Medicine at the Faculty of Veterinary Medicine at the University of Zagreb, Croatia&lt;/li&gt;&#xA;&lt;li&gt;April 2014 - Clinical clerkship at Vetsuisse Faculty at the University of Zurich, Switzerland&lt;/li&gt;&#xA;&lt;li&gt;April 2014 - Clinical clerkship at Bessy’s Kleintierklinik, Regensdorf, Switzerland&lt;/li&gt;&#xA;&lt;li&gt;August 2013 - Volounteer work at the Khulula Wildlife Center, South Africa&lt;/li&gt;&#xA;&lt;li&gt;August 2005 - Volounteer work at the County Veterinary Station Varaždin, Croatia&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;education&#34;&gt;Education&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;August 2023 to present - Bachelor in Midwifery at the ZHAW, Switzerland&lt;/li&gt;&#xA;&lt;li&gt;September 2008 to July 2014. - Doctor of Veterinary Medicine at the University of Zagreb, Croatia&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;teaching&#34;&gt;Teaching&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;September 2013 to July 2014 - TA on Internal Medicine classes, Faculty of Veterinary Medicine, University of Zagreb&lt;/li&gt;&#xA;&lt;li&gt;September 2009 to July 2010 - TA on Comparative Anatomy 101, 102, 103 classes, Faculty of Veterinary Medicine, University of Zagreb&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;publications&#34;&gt;Publications&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.vef.unizg.hr/wp-content/uploads/2018/09/veterinar-52-1.pdf&#34;&gt;Procjena bronhoskopije kao dijagnostičke metode u potvrđivanju bolesti donjih dišnih putova u pasa&lt;/a&gt;, 2014., Veterinar&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;language&#34;&gt;Language&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Croatian - Proficient user - C2 CEFRL (Mother tounge)&lt;/li&gt;&#xA;&lt;li&gt;English - Proficient user - C2 CEFRL (Bilingual high-school)&lt;/li&gt;&#xA;&lt;li&gt;German - Proficient user - C1 CEFRL (TELC Certificate)&lt;/li&gt;&#xA;&lt;li&gt;Italian - Basic user - A1 CEFRL (Language school certificate)&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>About me</title>
-      <link>http://localhost:1313/marko/about/</link>
+      <link>https://www.ivankovic.me/marko/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/marko/about/</guid>
+      <guid>https://www.ivankovic.me/marko/about/</guid>
       <description>&lt;h1 id=&#34;14-years-of-experience-in-software-engineering&#34;&gt;14 Years of experience in Software Engineering&lt;/h1&gt;&#xA;&lt;p&gt;Leading cutting edge technical work:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;AI Software Engineer&lt;/strong&gt; - Engineered a transformative AI model for code and deployed it in&#xA;a product that automatically reviews code for all Google engineers. Built a system that&#xA;automatically produces full stack applications at &lt;a href=&#34;https://www.cogna.co/&#34;&gt;Cogna&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Code quality&lt;/strong&gt; - Co-owned the dead code deletion system that deleted more than 5% of all&#xA;C++ code at Google and almost half a billion lines total.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Software testing&lt;/strong&gt; - Groundbreaking coverage infrastructure that sped up code reviews at&#xA;Google by 5% and reduced the code review costs by 11%. Invented an entirely new type of code&#xA;coverage, Productive Coverage that further reduced code review cost by further 2% and improved&#xA;code and test quality.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Other projects, including code change analysis, resource usage optimization and reliability&#xA;and failure analysis.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>https://www.ivankovic.me/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>https://www.ivankovic.me/contact/</guid>
       <description>&lt;h1 id=&#34;contact&#34;&gt;Contact&lt;/h1&gt;&#xA;&lt;p&gt;We would be happy to hear from you at:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Marina - &lt;a href=&#34;mailto:marina@ivankovic.me&#34;&gt;marina@ivankovic.me&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Marko - &lt;a href=&#34;mailto:marko@ivankovic.me&#34;&gt;marko@ivankovic.me&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;We only use email for communication with visitors of this website.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact and social media</title>
-      <link>http://localhost:1313/marko/contact/</link>
+      <link>https://www.ivankovic.me/marko/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/marko/contact/</guid>
+      <guid>https://www.ivankovic.me/marko/contact/</guid>
       <description>&lt;h1 id=&#34;thank-you-for-trying-to-get-in-touch&#34;&gt;Thank you for trying to get in touch!&lt;/h1&gt;&#xA;&lt;p&gt;Feel free to reach out to me on:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Email: &lt;a href=&#34;mailto:marko@ivankovic.me&#34;&gt;marko@ivankovic.me&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;LinkedIn: &lt;a href=&#34;https://www.linkedin.com/in/ivankovicmarko/&#34;&gt;Marko Ivankovic&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;ORCID: &lt;a href=&#34;https://orcid.org/0000-0002-8548-6008&#34;&gt;0000-0002-8548-6008&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Disclaimer</title>
-      <link>http://localhost:1313/disclaimer/</link>
+      <link>https://www.ivankovic.me/disclaimer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/disclaimer/</guid>
+      <guid>https://www.ivankovic.me/disclaimer/</guid>
       <description>&lt;h1 id=&#34;disclaimer&#34;&gt;Disclaimer&lt;/h1&gt;&#xA;&lt;p&gt;This is a personal website. Any views or opinions represented in this website are personal and belong&#xA;solely to the website owner and do not represent those of people, institutions or organizations that&#xA;the owner may or may not be associated with in professional or personal capacity, unless explicitly&#xA;stated.&lt;/p&gt;&#xA;&lt;p&gt;All content provided on this website is for informational purposes only. The owner of this website&#xA;makes no representations as to the accuracy or completeness of any information on this site or&#xA;found by following any link on this site.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Impressum</title>
-      <link>http://localhost:1313/impressum/</link>
+      <link>https://www.ivankovic.me/impressum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/impressum/</guid>
+      <guid>https://www.ivankovic.me/impressum/</guid>
       <description>&lt;p&gt;Marko Ivanković&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;mailto:marko@ivankovic.me&#34;&gt;marko@ivankovic.me&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Privacy policy</title>
-      <link>http://localhost:1313/privacy/</link>
+      <link>https://www.ivankovic.me/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/privacy/</guid>
+      <guid>https://www.ivankovic.me/privacy/</guid>
       <description>&lt;p&gt;This privacy policy will explain how ivankovic.me uses the personal data we&#xA;collect from you when you use our website.&lt;/p&gt;&#xA;&lt;h1 id=&#34;what-data-do-we-collect&#34;&gt;What data do we collect?&lt;/h1&gt;&#xA;&lt;h2 id=&#34;the-data-required-to-show-you-the-website&#34;&gt;The data required to show you the website&lt;/h2&gt;&#xA;&lt;p&gt;Our servers need to know your &lt;a href=&#34;https://en.wikipedia.org/wiki/IP_address&#34;&gt;IP address&lt;/a&gt;&#xA;to be able to show you the website.&lt;/p&gt;&#xA;&lt;p&gt;Your browser also provides us with your browser type and device metadata&#xA;(e.g. screen size).&lt;/p&gt;&#xA;&lt;h2 id=&#34;email&#34;&gt;Email&lt;/h2&gt;&#xA;&lt;p&gt;We use Google/Gmail as our email provider. If you email us, your email address and&#xA;any data you provide in the body of the email will be stored on Google&amp;rsquo;s servers.&#xA;You can find &lt;a href=&#34;https://policies.google.com/privacy&#34;&gt;Google&amp;rsquo;s privacy policy here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

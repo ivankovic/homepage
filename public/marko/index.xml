@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Marko Ivanković on Ivankovic Family Website</title>
-    <link>http://localhost:1313/marko/</link>
+    <link>https://www.ivankovic.me/marko/</link>
     <description>Recent content in Marko Ivanković on Ivankovic Family Website</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/marko/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.ivankovic.me/marko/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About me</title>
-      <link>http://localhost:1313/marko/about/</link>
+      <link>https://www.ivankovic.me/marko/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/marko/about/</guid>
+      <guid>https://www.ivankovic.me/marko/about/</guid>
       <description>&lt;h1 id=&#34;14-years-of-experience-in-software-engineering&#34;&gt;14 Years of experience in Software Engineering&lt;/h1&gt;&#xA;&lt;p&gt;Leading cutting edge technical work:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;AI Software Engineer&lt;/strong&gt; - Engineered a transformative AI model for code and deployed it in&#xA;a product that automatically reviews code for all Google engineers. Built a system that&#xA;automatically produces full stack applications at &lt;a href=&#34;https://www.cogna.co/&#34;&gt;Cogna&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Code quality&lt;/strong&gt; - Co-owned the dead code deletion system that deleted more than 5% of all&#xA;C++ code at Google and almost half a billion lines total.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Software testing&lt;/strong&gt; - Groundbreaking coverage infrastructure that sped up code reviews at&#xA;Google by 5% and reduced the code review costs by 11%. Invented an entirely new type of code&#xA;coverage, Productive Coverage that further reduced code review cost by further 2% and improved&#xA;code and test quality.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Other projects, including code change analysis, resource usage optimization and reliability&#xA;and failure analysis.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact and social media</title>
-      <link>http://localhost:1313/marko/contact/</link>
+      <link>https://www.ivankovic.me/marko/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/marko/contact/</guid>
+      <guid>https://www.ivankovic.me/marko/contact/</guid>
       <description>&lt;h1 id=&#34;thank-you-for-trying-to-get-in-touch&#34;&gt;Thank you for trying to get in touch!&lt;/h1&gt;&#xA;&lt;p&gt;Feel free to reach out to me on:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Email: &lt;a href=&#34;mailto:marko@ivankovic.me&#34;&gt;marko@ivankovic.me&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;LinkedIn: &lt;a href=&#34;https://www.linkedin.com/in/ivankovicmarko/&#34;&gt;Marko Ivankovic&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;ORCID: &lt;a href=&#34;https://orcid.org/0000-0002-8548-6008&#34;&gt;0000-0002-8548-6008&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
