@@ -6,8 +6,15 @@
     <description>Recent content in Blog on Ivankovic Family Website</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 06 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.ivankovic.me/marko/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LLMs are not human</title>
+      <link>https://www.ivankovic.me/marko/blog/llms-are-not-human/</link>
+      <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.ivankovic.me/marko/blog/llms-are-not-human/</guid>
+      <description>&lt;h2 id=&#34;short-easy-to-read-summary&#34;&gt;Short, easy to read summary&lt;/h2&gt;&#xA;&lt;div class=&#34;quote&#34;&gt;&#xA;  &lt;div class=&#34;text&#34;&gt;&#xA;     We spent the last 50 years figuring out how humans can use computers to build good&#xA;software. Now we have LLMs building software, and LLMs are not humans. Which ideas from the past 50&#xA;years are obsolete because LLMs are not human, and which could make a comeback? Every software&#xA;engineer and every researcher researching Software Engineering should ask themselves these&#xA;questions. &#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;author&#34;&gt;&#xA;    &#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;software-engineering---the-art-of-humans-writing-good-software&#34;&gt;Software Engineering - The art of humans writing good Software&lt;/h2&gt;&#xA;&lt;p&gt;Software Engineering is the science of creating high quality Software while limited by time, money&#xA;&lt;strong&gt;and human abilities&lt;/strong&gt;. The last bit is something that was mostly taken for granted in the last 50&#xA;years, although in some cases, people did take the time to consider it explicitly. DeMilo, Lipton&#xA;and Sayward introduced the &amp;ldquo;competent programmer hypothesis&amp;rdquo; back in 1978. in their paper &amp;ldquo;Hints on&#xA;Test Data Selection: Help for the Practicing Programmer&amp;rdquo;. They explicitly consider the human behind&#xA;the code. Before them, DeRemer and Kron in their 1975 paper &amp;ldquo;Programming-in-the-large versus&#xA;programming-in-the-small&amp;rdquo; also consider how the modeling a computer system should explicitly follow&#xA;not just individual human limits, but the limits of humans working in groups.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Sync MikroTik Firewall Filtering Rules</title>
       <link>https://www.ivankovic.me/marko/blog/mikrotik-sync-firewall-rules-script/</link>

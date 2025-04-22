@@ -1,0 +1,67 @@
+<!doctype html><html lang=en><head><meta name=viewport content="width=device-width,initial-scale=1"><meta charset=utf-8><title>LLMs are not human</title>
+<link rel="shortcut icon" href=/favicon.ico type=image/ico><link rel=apple-touch-icon href=/app-icon.png><link rel=canonical href=https://www.ivankovic.me/marko/blog/llms-are-not-human/><link rel=alternate type=application/rss+xml href=https://www.ivankovic.me//index.xml title="Ivankovic Family Website"><meta name=description content="Software Engineering was built by humans for humans. What happens when non-humans get involved?"><meta name=keywords content="software engineering ,llms ,large language models ,failure analysis ,how LLMs fail ,how humans fail ,difference between LLMs and humans"><link rel=preload as=font href=/fonts/Sora.ttf type=font/ttf crossorigin><link crossorigin=anonymous integrity="sha256-32IPVFGeVqwZ3oD1TMToMq3r6ySxkcRpkGIqpvYF/xo=" rel=stylesheet href=/css/bundle.min.df620f54519e56ac19de80f54cc4e832adebeb24b191c46990622aa6f605ff1a.css><meta name=twitter:card content="summary"><meta name=twitter:title content="LLMs are not human"><meta name=twitter:description content="Software Engineering was built by humans for humans. What happens when non-humans get involved?"><meta property="og:url" content="https://www.ivankovic.me/marko/blog/llms-are-not-human/"><meta property="og:site_name" content="Ivankovic Family Website"><meta property="og:title" content="LLMs are not human"><meta property="og:description" content="Software Engineering was built by humans for humans. What happens when non-humans get involved?"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="marko"><meta property="article:published_time" content="2025-04-20T00:00:00+00:00"><meta property="article:modified_time" content="2025-04-20T00:00:00+00:00"></head><body><header><nav><div class=menu><a href=https://www.ivankovic.me/marina>Marina Čelar Ivanković</a>
+<a href=https://www.ivankovic.me/marko>Marko Ivanković</a>
+<a class=call-to-action href=https://www.ivankovic.me/contact>Contact</a></div><div class=languages><a href=https://www.ivankovic.me/marko/blog/llms-are-not-human/>🇬🇧</a></div></nav></header><div id=main class=page><div id=content><div id=blog-headline><div id=blog-title><h1>LLMs are not human</h1></div><div>5 minutes to read</div><div>Share on:
+<a href="https://bsky.app/intent/compose?text=I am reading https%3a%2f%2fwww.ivankovic.me%2fmarko%2fblog%2fllms-are-not-human%2f" rel="noopener noreferrer">Bluesky</a>
+<a href="https://www.linkedin.com/feed/?shareActive=true&text=I am reading https%3a%2f%2fwww.ivankovic.me%2fmarko%2fblog%2fllms-are-not-human%2f" target=_blank rel="noopener noreferrer">Linkedin</a>
+<a href="https://twitter.com/intent/tweet?text=&url=https%3a%2f%2fwww.ivankovic.me%2fmarko%2fblog%2fllms-are-not-human%2f)" rel="noopener noreferrer">Twitter</a></div></div><h2 id=short-easy-to-read-summary>Short, easy to read summary</h2><div class=quote><div class=text>We spent the last 50 years figuring out how humans can use computers to build good
+software. Now we have LLMs building software, and LLMs are not humans. Which ideas from the past 50
+years are obsolete because LLMs are not human, and which could make a comeback? Every software
+engineer and every researcher researching Software Engineering should ask themselves these
+questions.</div><div class=author></div></div><h2 id=software-engineering---the-art-of-humans-writing-good-software>Software Engineering - The art of humans writing good Software</h2><p>Software Engineering is the science of creating high quality Software while limited by time, money
+<strong>and human abilities</strong>. The last bit is something that was mostly taken for granted in the last 50
+years, although in some cases, people did take the time to consider it explicitly. DeMilo, Lipton
+and Sayward introduced the &ldquo;competent programmer hypothesis&rdquo; back in 1978. in their paper &ldquo;Hints on
+Test Data Selection: Help for the Practicing Programmer&rdquo;. They explicitly consider the human behind
+the code. Before them, DeRemer and Kron in their 1975 paper &ldquo;Programming-in-the-large versus
+programming-in-the-small&rdquo; also consider how the modeling a computer system should explicitly follow
+not just individual human limits, but the limits of humans working in groups.</p><p>But the vast majority of research papers are not so explicit, and usually papers build on top of
+other papers, so the underliying assumptions can be long forgotten in the next decades. Let&rsquo;s look
+at how some of the fundamental principles of Software Engineering only really exist because of some
+human limits:</p><ul><li><strong>&ldquo;Don&rsquo;t repeat yourself&rdquo; or DRY principle</strong> - Repeating information and code in the system
+causes long term costs because it is simply more code to maintain and bugs can slip through when
+the code is being updated. However, this depends on the underliying assumption that humans have a
+cognitive load limit and that going over this limit is likely to cause human errors.</li><li><strong>&ldquo;Separation of concerns&rdquo;</strong> - Coined by Dijkstra in the 1974. paper &ldquo;On the role of scientific
+thought&rdquo;, it even explicitly discusses &ldquo;focusing one&rsquo;s attention upon some aspect&rdquo;, which is a
+very human concern.</li></ul><p>Indeed, it is hard to come up with an example of a principle or best practice in Software
+Engineering that isn&rsquo;t because of a human limit.</p><p>I find it interesting that in contrast, Computer Science, the more mathemathical pursuit of
+algorithms and data structures typically doesn&rsquo;t care if the human is present or not and is largely
+unaffected by the recent advancements in AI.</p><h2 id=llms-are-not-human>LLMs are not human</h2><p>Ever since ChatGPT took the world by surprise in November 2022, people have been debating if it is
+intelligent, sentient, alive, etc. While these are interesting topics to debate, I think one thing
+people miss is a related question for which we know the definitive answer: Are LLMs human? And I
+understand why it is missed, with its clear answer: &ldquo;No, LLMs are not human&rdquo;.</p><p>My question is:</p><div class=quote><div class=text>If LLMs are not human, and we are using LLMs to automate Software Engineering, which
+principles of Software Engineering are no longer valid?</div><div class=author></div></div><p>To answer that question, we need to understand where the limits of human abilities and the LLMs
+differ, and the best way to examine that is to look at how humans and LLMs fail.</p><h2 id=how-do-humans-fail>How do humans fail?</h2><p>The engineering field that studies human errors is called <a href=https://en.wikipedia.org/wiki/Ergonomics>human factor
+engineering</a>. The limits of humans that are broadly
+accepted in the field are:</p><ul><li><strong>Cognitive limits</strong> - The short term working memory of a human is about 5 chunks, if it is
+overloaded the human is likely to forget code branches, dependencies that need updating, etc.
+(<a href="https://journals.sagepub.com/doi/pdf/10.1177/21582440241305082?utm_source=chatgpt.com">Ding et
+al.</a>). We
+can focus on only one thing. Each time the focus changes, humans pay a context switch cost of at
+least 15-20 minutes of lower performance (<a href=https://dl.acm.org/doi/abs/10.1145/3084100.3084116>Trebugov et
+al.</a>).</li><li><strong>Sensory limits</strong> - Human eyes get tired after 8 hours of staring into a glorified light bulb.
+(<a href="https://www.sciencedirect.com/science/article/pii/S2451958824001222?utm_source=chatgpt.com">Beeson et
+al</a>).
+And although this doesn&rsquo;t necessarily increase the number of errors introduced by the human, it
+does measurably increase the number of errors that slip by the human in processes like code
+review.</li><li><strong>Biases</strong> - The long list of logical fallacies and cognitive biases: <a href=https://en.wikipedia.org/wiki/Anchoring_effect>anchoring
+effect</a>, <a href=https://en.wikipedia.org/wiki/Confirmation_bias>confirmation
+bias</a>,
+<a href=https://en.wikipedia.org/wiki/Apophenia>apophenia</a>, etc.</li></ul><h2 id=how-do-llms-fail>How do LLMs fail?</h2><p>This is arguably still an open research question and the answer is changing almost daily. But there
+are a few well known and commonly observed ways in which LLMs fail:</p><ul><li><strong><a href=https://en.wikipedia.org/wiki/Hallucination_%28artificial_intelligence%29>Hallucinations</a></strong> are
+LLM outputs that are plausible, but are not grounded in reality. Note that hallucinations are not
+necessarily false, and not all false LLM outputs are hallucinations. If the LLM is trained on
+wrong data and it returns this wrong data faithfully, it would not be considered as
+hallucinating, it would just be wrong. The hallucinations are particularly impactful when they
+occur in the reasoning chain.</li><li><strong>Degeneration</strong>, commonly experienced as the LLM &ldquo;repeating itself forever&rdquo;, is the failure mode
+where the LLM falls into a low-diversity space of tokens, repeatedly generating the same tokens
+that then proceed to further push the internal state of the LLM to that same low-diversity space.</li></ul><h2 id=the-difference>The difference</h2><p>It is immediately obvious that the human failure modes and LLM failure modes are very different. Of
+course humans can also hallucinate, but it&rsquo;s not typically something that occurs in a professional
+engineering setting.</p><p>And LLMs do not share human cognitive and sensory limits at all. The LLM can keep tens of thousands
+of hunks in working memory and can easily focus on multiple things. Indeed, structurally, multiple
+attention heads are a basic element of LLMs, and agentic systems that use LLMs can easily spawn
+multiple entire LLMs to focus on multiple things.</p><p>LLMs do have biases, that is the only limit that is shared. And while they are not exactly the same
+they are similar enough. Some LLM degradations are caused by the LLM equivalent of anchoring bias.</p></div></div><footer class=footer><span>&copy; 2025 <a href=https://www.ivankovic.me/>Ivankovic Family Website</a> |
+<a href=https://www.ivankovic.me/disclaimer rel="noopener noreferrer" target=_blank>Disclaimer</a> |
+<a href=https://www.ivankovic.me/privacy rel="noopener noreferrer" target=_blank>Privacy Policy</a> |
+<a href=https://www.ivankovic.me/impressum rel="noopener noreferrer" target=_blank>Impressum</a></span></footer></body></html>
