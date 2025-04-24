@@ -17,31 +17,31 @@ questions. {{< /quote >}}
 ## Software Engineering - The art of humans writing good Software
 
 Software Engineering is the science of creating high quality Software while limited by time, money
-**and human abilities**. The last bit is something that was mostly taken for granted in the last 50
-years, although in some cases, people did take the time to consider it explicitly. DeMilo, Lipton
-and Sayward introduced the "competent programmer hypothesis" back in 1978. in their paper "Hints on
+and human abilities. The last bit is something that was mostly taken for granted in the last 50
+years, although in some cases, people did take the time to consider it explicitly. DeMillo, Lipton
+and Sayward introduced the "competent programmer hypothesis" back in 1978 in their paper "Hints on
 Test Data Selection: Help for the Practicing Programmer". They explicitly consider the human behind
 the code. Before them, DeRemer and Kron in their 1975 paper "Programming-in-the-large versus
-programming-in-the-small" also consider how the modeling a computer system should explicitly follow
+programming-in-the-small" also consider how the modeling of a computer system should explicitly follow
 not just individual human limits, but the limits of humans working in groups.
 
 But the vast majority of research papers are not so explicit, and usually papers build on top of
-other papers, so the underliying assumptions can be long forgotten in the next decades. Let's look
+  other papers, so the underlying assumptions can be long forgotten in the subsequent decades. Let's look
 at how some of the fundamental principles of Software Engineering only really exist because of some
 human limits:
 
 *  **"Don't repeat yourself" or DRY principle** - Repeating information and code in the system
    causes long term costs because it is simply more code to maintain and bugs can slip through when
-   the code is being updated. However, this depends on the underliying assumption that humans have a
+   the code is being updated. However, this depends on the underlying assumption that humans have a
    cognitive load limit and that going over this limit is likely to cause human errors.
-*  **"Separation of concerns"** - Coined by Dijkstra in the 1974. paper "On the role of scientific
+*  **"Separation of concerns"** - Coined by Dijkstra in the 1974 paper "On the role of scientific
    thought", it even explicitly discusses "focusing one's attention upon some aspect", which is a
    very human concern.
 
 Indeed, it is hard to come up with an example of a principle or best practice in Software
 Engineering that isn't because of a human limit.
 
-I find it interesting that in contrast, Computer Science, the more mathemathical pursuit of
+I find it interesting that in contrast, Computer Science, the more mathematical pursuit of
 algorithms and data structures typically doesn't care if the human is present or not and is largely
 unaffected by the recent advancements in AI.
 
@@ -68,21 +68,16 @@ accepted in the field are:
 
 *  **Cognitive limits** - The short term working memory of a human is about 5 chunks, if it is
    overloaded the human is likely to forget code branches, dependencies that need updating, etc.
-   ([Ding et
-   al.](https://journals.sagepub.com/doi/pdf/10.1177/21582440241305082?utm_source=chatgpt.com)). We
-   can focus on only one thing. Each time the focus changes, humans pay a context switch cost of at
-   least 15-20 minutes of lower performance ([Trebugov et
-   al.](https://dl.acm.org/doi/abs/10.1145/3084100.3084116)).
+   ([Ding et al.](https://journals.sagepub.com/doi/pdf/10.1177/21582440241305082?utm_source=chatgpt.com)).
+   We can focus on only one thing. Each time the focus changes, humans pay a context switch cost of
+   at least 15-20 minutes of lower performance ([Trebugov et al.](https://dl.acm.org/doi/abs/10.1145/3084100.3084116)).
 *  **Sensory limits** - Human eyes get tired after 8 hours of staring into a glorified light bulb.
-   ([Beeson et
-   al](https://www.sciencedirect.com/science/article/pii/S2451958824001222?utm_source=chatgpt.com)).
+   ([Beeson et al](https://www.sciencedirect.com/science/article/pii/S2451958824001222?utm_source=chatgpt.com)).
    And although this doesn't necessarily increase the number of errors introduced by the human, it
    does measurably increase the number of errors that slip by the human in processes like code
    review.
-*  **Biases** - The long list of logical fallacies and cognitive biases: [anchoring
-   effect](https://en.wikipedia.org/wiki/Anchoring_effect), [confirmation
-   bias](https://en.wikipedia.org/wiki/Confirmation_bias),
-   [apophenia](https://en.wikipedia.org/wiki/Apophenia), etc.
+*  **Biases** - The long list of logical fallacies and cognitive biases: [anchoring effect](https://en.wikipedia.org/wiki/Anchoring_effect),
+   [confirmation bias](https://en.wikipedia.org/wiki/Confirmation_bias), [apophenia](https://en.wikipedia.org/wiki/Apophenia), etc.
 
 ## How do LLMs fail?
 
