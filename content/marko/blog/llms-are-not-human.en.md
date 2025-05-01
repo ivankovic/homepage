@@ -8,42 +8,7 @@ layout: "blogpost"
 ---
 ## Short, easy to read summary
 
-{{< quote >}} We spent the last 50 years figuring out how humans can use computers to build good
-software. Now we have LLMs building software, and LLMs are not humans. Which ideas from the past 50
-years are obsolete because LLMs are not human, and which could make a comeback? Every software
-engineer and every researcher researching Software Engineering should ask themselves these
-questions. {{< /quote >}}
-
-## Software Engineering - The art of humans writing good Software
-
-Software Engineering is the science of creating high quality Software while limited by time, money
-and human abilities. The last bit is something that was mostly taken for granted in the last 50
-years, although in some cases, people did take the time to consider it explicitly. DeMillo, Lipton
-and Sayward introduced the "competent programmer hypothesis" back in 1978 in their paper "Hints on
-Test Data Selection: Help for the Practicing Programmer". They explicitly consider the human behind
-the code. Before them, DeRemer and Kron in their 1975 paper "Programming-in-the-large versus
-programming-in-the-small" also consider how the modeling of a computer system should explicitly follow
-not just individual human limits, but the limits of humans working in groups.
-
-But the vast majority of research papers are not so explicit, and usually papers build on top of
-  other papers, so the underlying assumptions can be long forgotten in the subsequent decades. Let's look
-at how some of the fundamental principles of Software Engineering only really exist because of some
-human limits:
-
-*  **"Don't repeat yourself" or DRY principle** - Repeating information and code in the system
-   causes long term costs because it is simply more code to maintain and bugs can slip through when
-   the code is being updated. However, this depends on the underlying assumption that humans have a
-   cognitive load limit and that going over this limit is likely to cause human errors.
-*  **"Separation of concerns"** - Coined by Dijkstra in the 1974 paper "On the role of scientific
-   thought", it even explicitly discusses "focusing one's attention upon some aspect", which is a
-   very human concern.
-
-Indeed, it is hard to come up with an example of a principle or best practice in Software
-Engineering that isn't because of a human limit.
-
-I find it interesting that in contrast, Computer Science, the more mathematical pursuit of
-algorithms and data structures typically doesn't care if the human is present or not and is largely
-unaffected by the recent advancements in AI.
+{{< quote >}} TODO {{< /quote >}}
 
 ## LLMs are not human
 
@@ -106,6 +71,68 @@ attention heads are a basic element of LLMs, and agentic systems that use LLMs c
 multiple entire LLMs to focus on multiple things.
 
 LLMs do have biases, that is the only limit that is shared. And while they are not exactly the same
-they are similar enough. Some LLM degradations are caused by the LLM equivalent of anchoring bias.
+they are similar enough. Many LLM degradations are caused by the LLM equivalent of anchoring bias.
 
+## Software Engineering - The science of humans writing good Software
 
+Software Engineering is the science of creating high quality Software while limited by time, money
+and human abilities. The last bit is something that was mostly taken for granted in the last 50
+years, although in some cases, people did take the time to consider it explicitly. DeMillo, Lipton
+and Sayward introduced the "competent programmer hypothesis" back in 1978 in their paper "Hints on
+Test Data Selection: Help for the Practicing Programmer". They explicitly consider the human behind
+the code. Before them, DeRemer and Kron in their 1975 paper "Programming-in-the-large versus
+programming-in-the-small" also consider how the modeling of a computer system should explicitly
+follow not just individual human limits, but the limits of humans working in groups. But the vast
+majority of research papers are not so explicit, and as papers build on top of other papers the
+underlying assumptions can be long forgotten in the subsequent decades.
+
+Let's look at how some of the fundamental principles of Software Engineering only really exist
+because of some human limits:
+
+*  **"Don't repeat yourself" or DRY principle** - Repeating information and code in the system
+   causes long term costs because it is simply more code to maintain and bugs can slip through when
+   the code is being updated. However, this depends on the underlying assumption that humans have a
+   cognitive load limit and that going over this limit is likely to cause human errors.
+*  **"Separation of concerns"** - Coined by Dijkstra in the 1974 paper "On the role of scientific
+   thought", it even explicitly discusses "focusing one's attention upon some aspect", which is a
+   very human concern.
+
+Indeed, it is hard to come up with an example of a principle or best practice in Software
+Engineering that isn't because of a human limit.[^1]
+
+## What does this mean for software engineering?
+
+Us engineers should answer the following research questions:
+
+1.  **If the AI can produce any code on demand, is it necessary to have modules and dependencies
+    anymore?** - Why bother with package management, versioning, supply chain management, API
+    incompatibilities and other problems caused by the dependency hell if you can just ask the AI to
+    implement exactly the functionality you need in your codebase? In other words, to the basic
+    principles of modularity and separation of concerns need to be reconsidered?
+1.  **If the AI context is big enough that entire documentations can be sent to the AI with every
+    request, and the AI is able to perfctly recall every interface detail, are abstractions
+    necessary anymore?** - Do we need to build more abstract APIs that hide complex interactions of more
+    concrete APIs behind simpler interfaces or can we just have one interface, the human language,
+    and let the AI do the rest? Is the principle of abstraction still relevant?
+1.  **Can the AI just be given data access directly? Do we need encapsulation?** - We don't need to
+    protect "internal state" of objects or enforce loose coupling if the AI can just couple with the
+    entire dataset at once.
+1.  **Is "Keep it simple, stupid" still relevant if only the AI is going to read the code?** - Can we
+    ask the AI to build hard to read but more robust code? What would happen if, for example, we ask
+    the AI to start every single function with an exhaustive list of checks of inputs? All of us
+    were taught to do this, and we all generally agree it would be a good idea but nobody does it
+    because it takes far to long to write and produces unreadable, unmaintainable code.
+1.  **What types of tests do we need if the AI can just generate entire categories of tests
+    perfectly every time?** - Developers write a lot of automated tests that AI can just
+    replace[^2], do we still need to write those? And if not, do we need to write some other tests
+    now?
+
+## Footnotes
+
+[^1]: I find it interesting that in contrast, Computer Science, the more mathematical pursuit of
+algorithms and data structures typically doesn't care if the human is present or not and is largely
+unaffected by the recent advancements in AI.
+
+[^2]: If you permit me the faux-pas of citing my own paper: [What Types of Automated Tests do
+    Developers
+    Write](https://conf.researchr.org/details/ast-2025/ast-2025-papers/6/What-Types-of-Automated-Tests-do-Developers-Write-)
