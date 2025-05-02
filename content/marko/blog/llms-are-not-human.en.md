@@ -6,10 +6,6 @@ date: "2025-04-20"
 keywords: [ "software engineering", "llms", "large language models", "failure analysis", "how LLMs fail", "how humans fail", "difference between LLMs and humans"]
 layout: "blogpost"
 ---
-## Short, easy to read summary
-
-{{< quote >}} TODO {{< /quote >}}
-
 ## LLMs are not human
 
 Ever since ChatGPT took the world by surprise in November 2022, people have been debating if it is
@@ -125,6 +121,12 @@ Us engineers should answer the following research questions:
     perfectly every time?** - Developers write a lot of automated tests that AI can just
     replace[^2], do we still need to write those? And if not, do we need to write some other tests
     now?
+
+## Wan't to joine me?
+
+If you would like to help me answer some of these questions, my company is hiring. You can see the
+list of open roles [on this link](https://www.cogna.co/careers), or reach out directly to me at
+[marko@cogna.co](mailto:marko@cogna.co).
 
 ## Footnotes
 
