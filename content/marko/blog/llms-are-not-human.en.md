@@ -110,18 +110,17 @@ Us engineers should answer the following research questions:
     implement exactly the functionality you need in your codebase? In other words, to the basic
     principles of modularity and separation of concerns need to be reconsidered?
 1.  **If the AI context is big enough that entire documentations can be sent to the AI with every
-    request, and the AI is able to perfctly recall every interface detail, are abstractions
-    necessary anymore?** - Do we need to build more abstract APIs that hide complex interactions of more
-    concrete APIs behind simpler interfaces or can we just have one interface, the human language,
-    and let the AI do the rest? Is the principle of abstraction still relevant?
+    request, and the AI is able to perfectly recall every interface detail, are abstractions
+    necessary anymore?** - Do we need to build more abstract APIs that hide complex interactions of
+    more and let the AI do the rest? Is the principle of abstraction still relevant?
 1.  **Can the AI just be given data access directly? Do we need encapsulation?** - We don't need to
     protect "internal state" of objects or enforce loose coupling if the AI can just couple with the
     entire dataset at once.
-1.  **Is "Keep it simple, stupid" still relevant if only the AI is going to read the code?** - Can we
-    ask the AI to build hard to read but more robust code? What would happen if, for example, we ask
-    the AI to start every single function with an exhaustive list of checks of inputs? All of us
-    were taught to do this, and we all generally agree it would be a good idea but nobody does it
-    because it takes far to long to write and produces unreadable, unmaintainable code.
+1.  **Is "Keep it simple, stupid" still relevant if only the AI is going to read the code?** - Can
+    we ask the AI to build hard to read but more robust code? What would happen if, for example, we
+    ask the AI to start every single function with an exhaustive list of validity checks for inputs?
+    All of us were taught to do this, and we all generally agree it would be a good idea but nobody
+    does it because it takes far to long to write and produces unreadable, unmaintainable code.
 1.  **What types of tests do we need if the AI can just generate entire categories of tests
     perfectly every time?** - Developers write a lot of automated tests that AI can just
     replace[^2], do we still need to write those? And if not, do we need to write some other tests
