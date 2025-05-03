@@ -126,7 +126,7 @@ Us engineers should answer the following research questions:
 
 If you would like to help me answer some of these questions, my company is hiring. You can see the
 list of open roles [on this link](https://www.cogna.co/careers), or reach out directly to me at
-[marko@cogna.co](mailto:marko@cogna.co).
+[marko@cogna.co](mailto:marko@cogna.co). Feel free to mention this blog post in your message.
 
 ## Footnotes
 
