@@ -102,27 +102,28 @@ Us engineers should answer the following research questions:
 
 1.  **If the AI can produce any code on demand, is it necessary to have modules and dependencies
     anymore?** - Why bother with package management, versioning, supply chain management, API
-    incompatibilities and other problems caused by the dependency hell if you can just ask the AI to
-    implement exactly the functionality you need in your codebase? In other words, to the basic
-    principles of modularity and separation of concerns need to be reconsidered?
+    incompatibilities and other problems caused by the dependency hell if you can just ask the AI
+    to implement exactly the functionality you need in your codebase? In other words, do the
+    basic principles of modularity and separation of concerns need to be reconsidered?
 1.  **If the AI context is big enough that entire documentations can be sent to the AI with every
     request, and the AI is able to perfectly recall every interface detail, are abstractions
-    necessary anymore?** - Do we need to build more abstract APIs that hide complex interactions of
-    more and let the AI do the rest? Is the principle of abstraction still relevant?
-1.  **Can the AI just be given data access directly? Do we need encapsulation?** - We don't need to
-    protect "internal state" of objects or enforce loose coupling if the AI can just couple with the
-    entire dataset at once.
+    necessary anymore?** - Do we need to build more abstract APIs that hide complex interactions
+    of more and let the AI do the rest? Is the principle of abstraction still relevant?
+1.  **Can the AI just be given data access directly? Do we need encapsulation?** - If the AI can
+    just access the entire dataset at once, especially with agents and tools, do we need to
+    protect the internal state of objects or enforce loose coupling?
 1.  **Is "Keep it simple, stupid" still relevant if only the AI is going to read the code?** - Can
-    we ask the AI to build hard to read but more robust code? What would happen if, for example, we
-    ask the AI to start every single function with an exhaustive list of validity checks for inputs?
-    All of us were taught to do this, and we all generally agree it would be a good idea but nobody
-    does it because it takes far to long to write and produces unreadable, unmaintainable code.
+    we ask the AI to build hard to read but more robust code? What would happen if, for example,
+    we ask the AI to start every single function with an exhaustive list of validity checks for
+    inputs? All of us were taught to do this, and we all generally agree it would be a good idea
+    but nobody does it because it takes far too long to write and produces unreadable,
+    unmaintainable code.
 1.  **What types of tests do we need if the AI can just generate entire categories of tests
     perfectly every time?** - Developers write a lot of automated tests that AI can just
-    replace[^2], do we still need to write those? And if not, do we need to write some other tests
-    now?
+    replace[^2], do we still need to write those? And if not, do we need to write some other
+    tests now?
 
-## Wan't to joine me?
+## Want to join me?
 
 If you would like to help me answer some of these questions, my company is hiring. You can see the
 list of open roles [on this link](https://www.cogna.co/careers), or reach out directly to me at
