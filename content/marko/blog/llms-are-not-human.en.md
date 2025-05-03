@@ -2,7 +2,7 @@
 draft: false
 title: "LLMs are not human"
 description: "Software Engineering was built by humans for humans. What happens when non-humans get involved?"
-date: "2025-04-20"
+date: "2025-05-03"
 keywords: [ "software engineering", "llms", "large language models", "failure analysis", "how LLMs fail", "how humans fail", "difference between LLMs and humans"]
 layout: "blogpost"
 ---
