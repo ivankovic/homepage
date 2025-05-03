@@ -9,17 +9,17 @@ layout: "blogpost"
 ## LLMs are not human
 
 Ever since ChatGPT took the world by surprise in November 2022, people have been debating if it is
-intelligent, sentient, alive, etc. While these are interesting topics to debate, I think one thing
-people miss is a related question for which we know the definitive answer: Are LLMs human? And I
-understand why it is missed, with its clear answer: "No, LLMs are not human".
+intelligent, sentient, alive, etc. While these are philosophical questions worth exploring, I
+believe we're overlooking a more practical question with a definitive answer: Are LLMs human? The
+answer is clearly "No, LLMs are not human" – and this has profound implications for our field.
 
-My question is:
+The question I think software engineers are missing is:
 
 {{< quote >}} If LLMs are not human, and we are using LLMs to automate Software Engineering, which
 principles of Software Engineering are no longer valid? {{< /quote >}}
 
-To answer that question, we need to understand where the limits of human abilities and the LLMs
-differ, and the best way to examine that is to look at how humans and LLMs fail.
+To answer this, we need to understand where the limits of human abilities and LLMs differ. The most
+revealing approach is to examine how humans and LLMs fail in fundamentally different ways.
 
 ## How do humans fail?
 
@@ -57,16 +57,14 @@ are a few well known and commonly observed ways in which LLMs fail:
 
 ## The difference
 
-It is immediately obvious that the human failure modes and LLM failure modes are very different. Of
-course humans can also hallucinate, but it's not typically something that occurs in a professional
-engineering setting.
+It is immediately obvious that the human failure modes and LLM failure modes are very different.[^3]
 
-And LLMs do not share human cognitive and sensory limits at all. The LLM can keep tens of thousands
+LLMs do not share human cognitive and sensory limits at all. The LLM can keep tens of thousands
 of hunks in working memory and can easily focus on multiple things. Indeed, structurally, multiple
 attention heads are a basic element of LLMs, and agentic systems that use LLMs can easily spawn
 multiple entire LLMs to focus on multiple things.
 
-LLMs do have biases, that is the only limit that is shared. And while they are not exactly the same
+LLMs do have biases, which is the only limit that is shared. And while they are not exactly the same
 they are similar enough. Many LLM degradations are caused by the LLM equivalent of anchoring bias.
 
 ## Software Engineering - The science of humans writing good Software
@@ -123,7 +121,7 @@ Us engineers should answer the following research questions:
     replace[^2], do we still need to write those? And if not, do we need to write some other
     tests now?
 
-## Want to join me?
+## Want to join me in answering these questions?
 
 If you would like to help me answer some of these questions, my company is hiring. You can see the
 list of open roles [on this link](https://www.cogna.co/careers), or reach out directly to me at
@@ -138,3 +136,5 @@ unaffected by the recent advancements in AI.
 [^2]: If you permit me the faux-pas of citing my own paper: [What Types of Automated Tests do
     Developers
     Write](https://conf.researchr.org/details/ast-2025/ast-2025-papers/6/What-Types-of-Automated-Tests-do-Developers-Write-)
+
+[^3]: Of course humans can also hallucinate, but it's not typically something that occurs in a professional engineering setting.

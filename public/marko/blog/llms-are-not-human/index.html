@@ -5,11 +5,11 @@
 <a href="https://bsky.app/intent/compose?text=I am reading https%3a%2f%2fwww.ivankovic.me%2fmarko%2fblog%2fllms-are-not-human%2f" rel="noopener noreferrer">Bluesky</a>
 <a href="https://www.linkedin.com/feed/?shareActive=true&text=I am reading https%3a%2f%2fwww.ivankovic.me%2fmarko%2fblog%2fllms-are-not-human%2f" target=_blank rel="noopener noreferrer">Linkedin</a>
 <a href="https://twitter.com/intent/tweet?text=&url=https%3a%2f%2fwww.ivankovic.me%2fmarko%2fblog%2fllms-are-not-human%2f)" rel="noopener noreferrer">Twitter</a></div></div><h2 id=llms-are-not-human>LLMs are not human</h2><p>Ever since ChatGPT took the world by surprise in November 2022, people have been debating if it is
-intelligent, sentient, alive, etc. While these are interesting topics to debate, I think one thing
-people miss is a related question for which we know the definitive answer: Are LLMs human? And I
-understand why it is missed, with its clear answer: &ldquo;No, LLMs are not human&rdquo;.</p><p>My question is:</p><div class=quote><div class=text>If LLMs are not human, and we are using LLMs to automate Software Engineering, which
-principles of Software Engineering are no longer valid?</div><div class=author></div></div><p>To answer that question, we need to understand where the limits of human abilities and the LLMs
-differ, and the best way to examine that is to look at how humans and LLMs fail.</p><h2 id=how-do-humans-fail>How do humans fail?</h2><p>The engineering field that studies human errors is called <a href=https://en.wikipedia.org/wiki/Ergonomics>human factor
+intelligent, sentient, alive, etc. While these are philosophical questions worth exploring, I
+believe we&rsquo;re overlooking a more practical question with a definitive answer: Are LLMs human? The
+answer is clearly &ldquo;No, LLMs are not human&rdquo; – and this has profound implications for our field.</p><p>The question I think software engineers are missing is:</p><div class=quote><div class=text>If LLMs are not human, and we are using LLMs to automate Software Engineering, which
+principles of Software Engineering are no longer valid?</div><div class=author></div></div><p>To answer this, we need to understand where the limits of human abilities and LLMs differ. The most
+revealing approach is to examine how humans and LLMs fail in fundamentally different ways.</p><h2 id=how-do-humans-fail>How do humans fail?</h2><p>The engineering field that studies human errors is called <a href=https://en.wikipedia.org/wiki/Ergonomics>human factor
 engineering</a>. The limits of humans that are broadly
 accepted in the field are:</p><ul><li><strong>Cognitive limits</strong> - The short term working memory of a human is about 5 chunks, if it is
 overloaded the human is likely to forget code branches, dependencies that need updating, etc.
@@ -28,12 +28,10 @@ wrong data and it returns this wrong data faithfully, it would not be considered
 hallucinating, it would just be wrong. The hallucinations are particularly impactful when they
 occur in the reasoning chain.</li><li><strong>Degeneration</strong>, commonly experienced as the LLM &ldquo;repeating itself forever&rdquo;, is the failure mode
 where the LLM falls into a low-diversity space of tokens, repeatedly generating the same tokens
-that then proceed to further push the internal state of the LLM to that same low-diversity space.</li></ul><h2 id=the-difference>The difference</h2><p>It is immediately obvious that the human failure modes and LLM failure modes are very different. Of
-course humans can also hallucinate, but it&rsquo;s not typically something that occurs in a professional
-engineering setting.</p><p>And LLMs do not share human cognitive and sensory limits at all. The LLM can keep tens of thousands
+that then proceed to further push the internal state of the LLM to that same low-diversity space.</li></ul><h2 id=the-difference>The difference</h2><p>It is immediately obvious that the human failure modes and LLM failure modes are very different.<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p><p>LLMs do not share human cognitive and sensory limits at all. The LLM can keep tens of thousands
 of hunks in working memory and can easily focus on multiple things. Indeed, structurally, multiple
 attention heads are a basic element of LLMs, and agentic systems that use LLMs can easily spawn
-multiple entire LLMs to focus on multiple things.</p><p>LLMs do have biases, that is the only limit that is shared. And while they are not exactly the same
+multiple entire LLMs to focus on multiple things.</p><p>LLMs do have biases, which is the only limit that is shared. And while they are not exactly the same
 they are similar enough. Many LLM degradations are caused by the LLM equivalent of anchoring bias.</p><h2 id=software-engineering---the-science-of-humans-writing-good-software>Software Engineering - The science of humans writing good Software</h2><p>Software Engineering is the science of creating high quality Software while limited by time, money
 and human abilities. The last bit is something that was mostly taken for granted in the last 50
 years, although in some cases, people did take the time to consider it explicitly. DeMillo, Lipton
@@ -50,7 +48,7 @@ the code is being updated. However, this depends on the underlying assumption th
 cognitive load limit and that going over this limit is likely to cause human errors.</li><li><strong>&ldquo;Separation of concerns&rdquo;</strong> - Coined by Dijkstra in the 1974 paper &ldquo;On the role of scientific
 thought&rdquo;, it even explicitly discusses &ldquo;focusing one&rsquo;s attention upon some aspect&rdquo;, which is a
 very human concern.</li></ul><p>Indeed, it is hard to come up with an example of a principle or best practice in Software
-Engineering that isn&rsquo;t because of a human limit.<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p><h2 id=what-does-this-mean-for-software-engineering>What does this mean for software engineering?</h2><p>Us engineers should answer the following research questions:</p><ol><li><strong>If the AI can produce any code on demand, is it necessary to have modules and dependencies
+Engineering that isn&rsquo;t because of a human limit.<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup></p><h2 id=what-does-this-mean-for-software-engineering>What does this mean for software engineering?</h2><p>Us engineers should answer the following research questions:</p><ol><li><strong>If the AI can produce any code on demand, is it necessary to have modules and dependencies
 anymore?</strong> - Why bother with package management, versioning, supply chain management, API
 incompatibilities and other problems caused by the dependency hell if you can just ask the AI
 to implement exactly the functionality you need in your codebase? In other words, do the
@@ -66,14 +64,14 @@ inputs? All of us were taught to do this, and we all generally agree it would be
 but nobody does it because it takes far too long to write and produces unreadable,
 unmaintainable code.</li><li><strong>What types of tests do we need if the AI can just generate entire categories of tests
 perfectly every time?</strong> - Developers write a lot of automated tests that AI can just
-replace<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>, do we still need to write those? And if not, do we need to write some other
-tests now?</li></ol><h2 id=want-to-join-me>Want to join me?</h2><p>If you would like to help me answer some of these questions, my company is hiring. You can see the
+replace<sup id=fnref:3><a href=#fn:3 class=footnote-ref role=doc-noteref>3</a></sup>, do we still need to write those? And if not, do we need to write some other
+tests now?</li></ol><h2 id=want-to-join-me-in-answering-these-questions>Want to join me in answering these questions?</h2><p>If you would like to help me answer some of these questions, my company is hiring. You can see the
 list of open roles <a href=https://www.cogna.co/careers>on this link</a>, or reach out directly to me at
-<a href=mailto:marko@cogna.co>marko@cogna.co</a>. Feel free to mention this blog post in your message.</p><h2 id=footnotes>Footnotes</h2><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>I find it interesting that in contrast, Computer Science, the more mathematical pursuit of
+<a href=mailto:marko@cogna.co>marko@cogna.co</a>. Feel free to mention this blog post in your message.</p><h2 id=footnotes>Footnotes</h2><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>Of course humans can also hallucinate, but it&rsquo;s not typically something that occurs in a professional engineering setting.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2><p>I find it interesting that in contrast, Computer Science, the more mathematical pursuit of
 algorithms and data structures typically doesn&rsquo;t care if the human is present or not and is largely
-unaffected by the recent advancements in AI.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2><p>If you permit me the faux-pas of citing my own paper: <a href=https://conf.researchr.org/details/ast-2025/ast-2025-papers/6/What-Types-of-Automated-Tests-do-Developers-Write->What Types of Automated Tests do
+unaffected by the recent advancements in AI.&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:3><p>If you permit me the faux-pas of citing my own paper: <a href=https://conf.researchr.org/details/ast-2025/ast-2025-papers/6/What-Types-of-Automated-Tests-do-Developers-Write->What Types of Automated Tests do
 Developers
-Write</a>&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div></div></div><footer class=footer><span>&copy; 2025 <a href=https://www.ivankovic.me/>Ivankovic Family Website</a> |
+Write</a>&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div></div></div><footer class=footer><span>&copy; 2025 <a href=https://www.ivankovic.me/>Ivankovic Family Website</a> |
 <a href=https://www.ivankovic.me/disclaimer rel="noopener noreferrer" target=_blank>Disclaimer</a> |
 <a href=https://www.ivankovic.me/privacy rel="noopener noreferrer" target=_blank>Privacy Policy</a> |
 <a href=https://www.ivankovic.me/impressum rel="noopener noreferrer" target=_blank>Impressum</a></span></footer></body></html>
