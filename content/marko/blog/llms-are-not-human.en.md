@@ -3,15 +3,17 @@ draft: false
 title: "LLMs are not human"
 description: "Software Engineering was built by humans for humans. What happens when non-humans get involved?"
 date: "2025-05-03"
-keywords: [ "software engineering", "llms", "large language models", "failure analysis", "how LLMs fail", "how humans fail", "difference between LLMs and humans"]
+keywords: [ "software engineering", "llms", "large language models", "failure analysis", "how LLMs fail", "how humans fail", "difference between LLMs and humans", "AI in software development"]
 layout: "blogpost"
 ---
 ## LLMs are not human
 
+**Software engineering is about to undergo its most profound transformation since its inception. Here's why.**
+
 Ever since ChatGPT took the world by surprise in November 2022, people have been debating if it is
 intelligent, sentient, alive, etc. While these are philosophical questions worth exploring, I
 believe we're overlooking a more practical question with a definitive answer: Are LLMs human? The
-answer is clearly "No, LLMs are not human" – and this has profound implications for our field.
+answer is clearly "No, LLMs are not human" – and this has huge implications for our field.
 
 The question I think software engineers are missing is:
 
@@ -51,9 +53,16 @@ are a few well known and commonly observed ways in which LLMs fail:
    wrong data and it returns this wrong data faithfully, it would not be considered as
    hallucinating, it would just be wrong. The hallucinations are particularly impactful when they
    occur in the reasoning chain.
+
+   **Example:** When asked to explain a code snippet, an LLM might confidently describe functions or
+   variables that don't exist in the actual code.
+
 *  **Degeneration**, commonly experienced as the LLM "repeating itself forever", is the failure mode
    where the LLM falls into a low-diversity space of tokens, repeatedly generating the same tokens
    that then proceed to further push the internal state of the LLM to that same low-diversity space.
+
+   **Example:** When generating documentation, an LLM might get stuck in a loop explaining the same
+   concept repeatedly with slightly different wording.
 
 ## The difference
 
@@ -63,6 +72,15 @@ LLMs do not share human cognitive and sensory limits at all. The LLM can keep te
 of hunks in working memory and can easily focus on multiple things. Indeed, structurally, multiple
 attention heads are a basic element of LLMs, and agentic systems that use LLMs can easily spawn
 multiple entire LLMs to focus on multiple things.
+
+| Capability         | Human      | LLM        |
+|--------------------|------------|------------|
+| Working memory     | ~5 chunks  | Thousands  |
+| Context switching  | High cost  | None       |
+| Fatigue            | Yes        | No         |
+| Hallucinations     | Rare       | Common     |
+| Degeneration       | No         | Yes        |
+| Biases             | Many       | Many       |
 
 LLMs do have biases, which is the only limit that is shared. And while they are not exactly the same
 they are similar enough. Many LLM degradations are caused by the LLM equivalent of anchoring bias.
@@ -120,6 +138,19 @@ Us engineers should answer the following research questions:
     perfectly every time?** - Developers write a lot of automated tests that AI can just
     replace[^2], do we still need to write those? And if not, do we need to write some other
     tests now?
+
+## Conclusion: A New Era of Software Engineering
+
+The fundamental principles of software engineering were developed for humans, by humans. As LLMs
+become increasingly integrated into the development process, we need to reconsider which principles
+remain valid and which need to evolve.
+
+This isn't just an academic exercise—it's a practical necessity. The companies and engineers who
+understand how to leverage LLMs' strengths while mitigating their unique failure modes will define
+the next generation of software development practices.
+
+We're standing at the beginning of a new era in software engineering. The rules are being rewritten,
+and the field is wide open for innovation.
 
 ## Want to join me in answering these questions?
 

@@ -311,12 +311,48 @@ div.highlight code {
   box-sizing: border-box;
 }
 
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  display: block;
+}
+
+@media screen and (min-width: 700px) {
+  table {
+    display: table;
+  }
+}
+
+table th {
+  background-color: var(--stark-color);
+  color: var(--soft-color);
+  font-weight: bold;
+  text-align: left;
+  padding: 0.75rem 1rem;
+}
+
+table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+table tr:nth-child(even) {
+  background-color: var(--soft-color);
+}
+
+table tr:hover {
+  background-color: rgba(21, 101, 192, 0.1);
+}
+
 @media screen and (max-width: 700px) {
   div#content {
     margin-left: 16px;
     margin-right: 16px;
   }
-  
+
   div.highlight pre {
     font-size: 0.8em;
   }
@@ -327,12 +363,12 @@ div.highlight code {
     margin-left: 12px;
     margin-right: 12px;
   }
-  
+
   div.highlight {
     margin: 0.5rem -12px;
     border-radius: 0;
   }
-  
+
   div.highlight pre {
     font-size: 0.75em;
   }
