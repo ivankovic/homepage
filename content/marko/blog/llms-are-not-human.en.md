@@ -8,14 +8,15 @@ layout: "blogpost"
 ---
 ## LLMs are not human
 
-**Software engineering is about to undergo its most profound transformation since its inception. Here's why.**
+**Software engineering is going through its most profound transformation since its inception. Here's why.**
 
 Ever since ChatGPT took the world by surprise in November 2022, people have been debating if it is
 intelligent, sentient, alive, etc. While these are philosophical questions worth exploring, I
 believe we're overlooking a more practical question with a definitive answer: Are LLMs human? The
-answer is clearly "No, LLMs are not human" – and this has huge implications for our field.
+answer is clearly "No, LLMs are not human" – and this has huge implications for the field of
+software engineering.
 
-The question I think software engineers are missing is:
+The question I think software engineers are failing to ask is:
 
 {{< quote >}} If LLMs are not human, and we are using LLMs to automate Software Engineering, which
 principles of Software Engineering are no longer valid? {{< /quote >}}
@@ -32,7 +33,7 @@ accepted in the field are:
 *  **Cognitive limits** - The short term working memory of a human is about 5 chunks, if it is
    overloaded the human is likely to forget code branches, dependencies that need updating, etc.
    ([Ding et al.](https://journals.sagepub.com/doi/pdf/10.1177/21582440241305082?utm_source=chatgpt.com)).
-   We can focus on only one thing. Each time the focus changes, humans pay a context switch cost of
+   We can focus on only one thing. Each time their focus changes, humans pay a context switch cost of
    at least 15-20 minutes of lower performance ([Trebugov et al.](https://dl.acm.org/doi/abs/10.1145/3084100.3084116)).
 *  **Sensory limits** - Human eyes get tired after 8 hours of staring into a glorified light bulb.
    ([Beeson et al](https://www.sciencedirect.com/science/article/pii/S2451958824001222?utm_source=chatgpt.com)).
@@ -139,7 +140,7 @@ Us engineers should answer the following research questions:
     replace[^2], do we still need to write those? And if not, do we need to write some other
     tests now?
 
-## Conclusion: A New Era of Software Engineering
+## A New Era of Software Engineering
 
 The fundamental principles of software engineering were developed for humans, by humans. As LLMs
 become increasingly integrated into the development process, we need to reconsider which principles
