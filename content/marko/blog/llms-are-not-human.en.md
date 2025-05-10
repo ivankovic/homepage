@@ -16,8 +16,6 @@ believe we're overlooking a more practical question with a definitive answer: Ar
 answer is clearly "No, LLMs are not human" – and this has huge implications for the field of
 software engineering.
 
-The question I think software engineers are failing to ask is:
-
 {{< quote >}} If LLMs are not human, and we are using LLMs to automate Software Engineering, which
 principles of Software Engineering are no longer valid? {{< /quote >}}
 
@@ -33,7 +31,7 @@ accepted in the field are:
 *  **Cognitive limits** - The short term working memory of a human is about 5 chunks, if it is
    overloaded the human is likely to forget code branches, dependencies that need updating, etc.
    ([Ding et al.](https://journals.sagepub.com/doi/pdf/10.1177/21582440241305082?utm_source=chatgpt.com)).
-   We can focus on only one thing. Each time their focus changes, humans pay a context switch cost of
+   Additionally, we can focus on only one thing. Each time their focus changes, humans pay a context switch cost of
    at least 15-20 minutes of lower performance ([Trebugov et al.](https://dl.acm.org/doi/abs/10.1145/3084100.3084116)).
 *  **Sensory limits** - Human eyes get tired after 8 hours of staring into a glorified light bulb.
    ([Beeson et al](https://www.sciencedirect.com/science/article/pii/S2451958824001222?utm_source=chatgpt.com)).
@@ -139,6 +137,12 @@ Us engineers should answer the following research questions:
     perfectly every time?** - Developers write a lot of automated tests that AI can just
     replace[^2], do we still need to write those? And if not, do we need to write some other
     tests now?
+
+And then there is the following meta-question:
+
+1.  **Which parts of the codebase will be *shared* between the human and the LLM, which will be
+    human only and which will be LLM only?** - The shared parts of the codebase obviously being the
+    most interesting ones because there the two sets of limits interact the most.
 
 ## A New Era of Software Engineering
 
